@@ -71,7 +71,7 @@ permalink: /publications/
 {% endfor %}
 
 {% if site.group_pub_by_year == true %}{% else %}
-## Journal Papers and Proceedings 
+## Journal papers and proceedings 
 {% endif %}
 
 {% for myyear in site.data.years %}

@@ -37,6 +37,8 @@ collections:
     output: true
   publications:
     output: true
+  workshops:
+    output: true
 
 include:
   - .htaccess

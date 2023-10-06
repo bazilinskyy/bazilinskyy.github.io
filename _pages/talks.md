@@ -36,3 +36,13 @@ permalink: /talks/
 {% endfor %}
 </div>
 {% endif %}
+
+{% if site.workshops %}
+## Workshops
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for workshop in site.workshops %}
+{{ forloop.index }}. <a href="{{ workshop.url | replace:'.html', '' }}" target="_blank"><strong>{{ workshop.title }}</strong></a> ({{ workshop.year }})<br/> {{workshop.conf}}, {{workshop.place}}{% if workshop.online %} (online){% endif %}.
+{% endfor %}
+</div>
+{% endif %}
