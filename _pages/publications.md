@@ -145,4 +145,6 @@ permalink: /publications/
 
 {% endfor %}
 
+Download all papers in bib file <a href="{{ site.url }}{{ site.baseurl }}/publications/bazilinskyy.bib">here</a>.
+
 \* Joint first author.
