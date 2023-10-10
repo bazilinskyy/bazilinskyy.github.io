@@ -46,3 +46,13 @@ permalink: /talks/
 {% endfor %}
 </div>
 {% endif %}
+
+{% if site.data.outreach %}
+## Outreach activities
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for outreach in site.data.outreach %}
+{{ forloop.index }}. <a href="{{ outreach.url | replace:'.html', '' }}" target="_blank"><strong>{{ outreach.title }}</strong></a> ({{ outreach.year }})<br/> {{outreach.event}}, {{outreach.place}}{% if workshop.online %} (online){% endif %}.
+{% endfor %}
+</div>
+{% endif %}
