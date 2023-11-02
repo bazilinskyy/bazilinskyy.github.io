@@ -7,5 +7,5 @@
   pages={109673},
   year={2023},
   publisher={Elsevier},
-  doi={https://doi.org/10.1016/j.apacoust.2023.109673}
+  doi={10.1016/j.apacoust.2023.109673}
 }

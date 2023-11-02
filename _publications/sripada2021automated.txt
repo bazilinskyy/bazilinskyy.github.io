@@ -4,5 +4,6 @@
   journal={Ergonomics},
   pages={1--13},
   year={2021},
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  doi={10.1080/00140139.2021.1925353}
 }

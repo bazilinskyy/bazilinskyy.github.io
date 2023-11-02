@@ -3,6 +3,5 @@
   author={Dong, Haoyu and Tram, Thi Minh Tran and Bazilinskyy, Pavlo and Hoggenmueller, Marius and Dey, Debargha and Cazacu, Silvia and Franssen, Mervyn and Gao, Ruolin},
   year={2023},
   pages={237--240},
-  doi={10.1145/3581961.3609837},
-  url={https://doi.org/10.1145/3581961.3609837}
+  doi={10.1145/3581961.3609837}
 }

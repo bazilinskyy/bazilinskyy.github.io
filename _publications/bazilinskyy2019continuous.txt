@@ -6,5 +6,6 @@
   number={6},
   pages={382--390},
   year={2019},
-  publisher={Acoustical Society of Japan}
+  publisher={Acoustical Society of Japan},
+  doi={10.1250/ast.40.382}
 }

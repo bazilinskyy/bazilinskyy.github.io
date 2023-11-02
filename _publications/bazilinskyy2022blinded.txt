@@ -2,5 +2,6 @@
   title={Blinded windows and empty driver seats: the effects of automated vehicle characteristics on cyclist decision-making},
   author={Bazilinskyy, Pavlo and Dodou, Dimitra and Eisma, Y. B. and Vlakveld, W . V. and De Winter, J. C. F.},
   journal={IET Intelligent Transportation Systems},
-  year={2022}
+  year={2022},
+  doi={10.1049/itr2.12235}
 }

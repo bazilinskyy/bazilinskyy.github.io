@@ -3,5 +3,6 @@
   author={Bazilinskyy, Pavlo and Dodou, Dimitra and De Winter, J. C. F.},
   booktitle={Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)},
   year={2022},
-  address={New York, USA}
+  address={New York, USA},
+  doi={10.54941/ahfe1002444}
 }

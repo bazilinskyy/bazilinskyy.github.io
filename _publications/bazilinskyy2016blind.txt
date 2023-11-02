@@ -7,5 +7,6 @@
   pages={525--530},
   year={2016},
   publisher={Elsevier},
-  address={Kyoto, Japan}
+  address={Kyoto, Japan},
+  doi={10.1016/j.ifacol.2016.10.612}
 }

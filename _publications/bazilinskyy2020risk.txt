@@ -6,5 +6,6 @@
   number={6},
   pages={347--353},
   year={2020},
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  doi={10.1080/15389588.2020.1762871}
 }

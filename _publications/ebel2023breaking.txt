@@ -4,6 +4,5 @@
   booktitle={Proceedings of AutomotiveUI. Ingolstadt, Germany},
   year={2023},
   pages={227--230}
-  doi={10.1145/3581961.3609835},
-  url={https://doi.org/10.1145/3581961.3609835}
+  doi={10.1145/3581961.3609835}
 }

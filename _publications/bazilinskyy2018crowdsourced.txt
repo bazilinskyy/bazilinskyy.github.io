@@ -6,5 +6,6 @@
   number={8},
   pages={1192--1206},
   year={2018},
-  publisher={Sage Publications Sage CA: Los Angeles, CA}
+  publisher={Sage Publications Sage CA: Los Angeles, CA},
+  doi={10.1177/0018720818787126}
 }
