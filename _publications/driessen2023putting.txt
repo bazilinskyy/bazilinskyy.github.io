@@ -1,0 +1,5 @@
+@techreport{driessen2023putting,
+  title={Putting ChatGPT Vision (GPT-4V) to the test: Risk perception in traffic images},
+  author={Driessen, Tom and Dodou, Dimitra and Bazilinskyy, Pavlo and De Winter, J. C. F.},
+  year={2023}
+}
