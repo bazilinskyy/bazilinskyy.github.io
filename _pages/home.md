@@ -28,7 +28,7 @@ I am currently engaged in research on communication between multiple automated v
 
 ### Free time
 * 🏃‍♂🚴‍♂️🏊‍♂️ Running, [cycling](https://www.wielervrienden.nl/profiel/pavlo-7126007), swimming, cross-country skiing, hiking. Like, [a lot of it](https://www.strava.com/athletes/bazilinskyy).
-* 🗺️ Travelling (especially through [couchsurfing](https://www.couchsurfing.com/people/pavlo.bazilinskyy)/[bewelcome](https://www.bewelcome.org/members/bazilinskyy)/[trustroots](https://www.trustroots.org/profile/bazilinskyy), [travel map](https://www.roadgoat.com/travelers/pavlo-bazilinskyy?share_map=City)).
+* 🗺️ Travelling (especially through [couchsurfing](https://www.couchsurfing.com/people/pavlo.bazilinskyy)/[bewelcome](https://www.bewelcome.org/members/bazilinskyy)/[trustroots](https://www.trustroots.org/profile/bazilinskyy), [travel map](https://beeneverywhere.net/user/bazilinskyy)).
 * 💻 Coding ([github](https://github.com/bazilinskyy)).
 * 📖 Reading ([goodreads](https://www.goodreads.com/user/show/5571310-pavlo-bazilinskyy)).
 * ♟️ Chess ([chess.com](https://www.chess.com/member/bazilinskyy)).
