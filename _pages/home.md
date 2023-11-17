@@ -26,7 +26,7 @@ I am currently engaged in research on communication between multiple automated v
   Demo of [coupled simulator](https://github.com/bazilinskyy/coupled-sim) with 3 agents in the same traffic scene.
 </div>
 
-### Free time
+<!-- ### Free time
 * 🏃‍♂🚴‍♂️🏊‍♂️ Running, [cycling](https://www.wielervrienden.nl/profiel/pavlo-7126007), swimming, cross-country skiing, hiking. Like, [a lot of it](https://www.strava.com/athletes/bazilinskyy).
 * 🗺️ Travelling ([travel map](https://beeneverywhere.net/user/bazilinskyy)).
 * 💻 Coding ([github](https://github.com/bazilinskyy)).
@@ -35,7 +35,7 @@ I am currently engaged in research on communication between multiple automated v
 * 🎸 Music ([last.fm](https://www.last.fm/user/Hollgam)). I also play sax alto and guitar.
 * 📺 Films and tv series ([imdb](https://www.imdb.com/user/ur16534776), [trakt](https://trakt.tv/users/bazilinskyy)). Somebody likes tv, surprise! 😬
 
-<br/>
+<br/> -->
 
 <div class="well-md">
   <h3>Funding</h3>
