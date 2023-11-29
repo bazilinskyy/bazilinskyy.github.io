@@ -3,7 +3,7 @@ layout: publication
 sitemap: false
 title: "Slideo: Using bicycle-to-vehicle communication to intuitively share intentions to automated vehicles"
 authors: Versteggen, J., Bazilinskyy, P.
-pdf:
+pdf: verstegen2024slideo
 image: verstegen2024slideo.jpg
 display: Submitted for publication
 year:
