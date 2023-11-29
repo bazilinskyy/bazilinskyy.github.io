@@ -1,0 +1,5 @@
+@techreport{verstegen2024slideo,
+  title={Slideo: Using bicycle-to-vehicle communication to intuitively share intentions to automated vehicles},
+  author={Versteggen, Jochem and Bazilinskyy, Pavlo},
+  year={2024}
+}

@@ -1,4 +1,10 @@
-- name: FAIR data fund
+- name: 4TU.NIRICT Community fund
+  name_url: https://www.4tu.nl/nirict/news/Two%20projects%20awarded%20funding%20for%204TU.NIRICT%20call%20Community%20Funding%202023
+  organisation: 4TU.NIRICT
+  organisation_url: https://www.4tu.nl/nirict
+  year: 2023
+
+- name: FAIR Data fund
   name_url: https://community.data.4tu.nl/2021/05/15/fair-data-fund-spring-call-2021-meet-the-grantees
   organisation: 4TU.ResearchData
   organisation_url: https://data.4tu.nl
