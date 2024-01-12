@@ -5,7 +5,7 @@ sitemap: false
 name: Conversational design with multi-modalities
 name_url: https://tue.osiris-student.nl/#/onderwijscatalogus/extern/cursus?cursuscode=DCM220&collegejaar=2022
 year_start: 2023
-year_end: 
+year_end: 2024
 institution: TU/e
 type: msc
 students: 30+

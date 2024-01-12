@@ -5,7 +5,7 @@ sitemap: false
 name: Data analytics for engineers
 name_url: https://educationguide.tue.nl/programs/bachelor-college/basic-courses/data-analytics-for-engineers/?L=2
 year_start: 2023
-year_end: 
+year_end:  2024
 institution: TU/e
 type: bsc
 students: 1200+
