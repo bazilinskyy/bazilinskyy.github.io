@@ -1,9 +1,16 @@
+- name: Job van Houten
+  name_url: https://www.linkedin.com/in/job-van-houten-a78536226/
+  project: Relation between trust and eye gaze behaviour of the driver of an automated vehicle
+  project_url: 
+  year: 2024
+  status: inprogress
+
 - name: Alexandra van Dijk
   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233/
   project: Reducing stress using heart-rate and eye gaze data
   project_url:
   year: 2023
-  status: inprogress
+  status: completed
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Tom Bergman, Ariën Helder, Emir Kadrić, Yuanyuan Xu
