@@ -25,14 +25,14 @@
   name_url: https://www.linkedin.com/in/peihang-li-785a45227/
   project: Characterizing situational awareness of transport operators based on eye tracking
   project_url:
-  year: 2023
-  status: inprogress
+  year: 2024
+  status: completed
 
 - name: Thomas Marinissen
   name_url: https://www.linkedin.com/in/thomas-marinissen-4a2155b9
   project: Multimodal interface for controlling UI in an AV
   project_url:
-  year: 2023
+  year: 2024
   status: inprogress
 
 - name: Yuanzi Wang
@@ -47,7 +47,7 @@
   project: Looking behaviour of pedestrians
   project_url:
   year: 2022
-  status: inprogress
+  status: fail
 
 - name: Iva Surana
   name_url: https://www.linkedin.com/in/ivasurana
