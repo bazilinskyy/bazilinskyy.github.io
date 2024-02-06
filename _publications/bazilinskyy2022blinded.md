@@ -5,7 +5,7 @@ title: "Blinded windows and empty driver seats: The effects of automated vehicle
 authors: Bazilinskyy, P., Dodou, D., Eisma, Y. B., Vlakveld, W. V., De Winter, J. C. F.
 pdf: bazilinskyy2022blinded
 image: bazilinskyy2022blinded.jpg
-display: IET Intelligent Transportation Systems
+display: IET Intelligent Transportation Systems, 17, 1
 year: 2022
 doi: 10.1049/itr2.12235
 suppmat: https://doi.org/10.4121/20103188

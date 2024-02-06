@@ -3,5 +3,7 @@
   author={Bazilinskyy, Pavlo and Dodou, Dimitra and Eisma, Y. B. and Vlakveld, W . V. and De Winter, J. C. F.},
   journal={IET Intelligent Transportation Systems},
   year={2022},
+  volume={17},
+  pages={72-84},
   doi={10.1049/itr2.12235}
 }
