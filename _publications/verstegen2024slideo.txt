@@ -1,5 +1,7 @@
-@techreport{verstegen2024slideo,
+@inproceedings{verstegen2024slideo,
   title={Slideo: Using bicycle-to-vehicle communication to intuitively share intentions to automated vehicles},
   author={Versteggen, Jochem and Bazilinskyy, Pavlo},
-  year={2024}
+  booktitle={Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)},
+  year={2024},
+  address={Nice, France}
 }
