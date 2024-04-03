@@ -15,24 +15,23 @@
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Alexandra van Dijk
-  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233/
+  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
   project: Using generative AI for person-based traffic research
-  project_url:
   year: 2024
-  status: completed
+  status: inprogress
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Job van Houten
-  name_url: https://www.linkedin.com/in/job-van-houten-a78536226/
+  name_url: https://www.linkedin.com/in/job-van-houten-a78536226
   project: Relation between trust and eye gaze behaviour of the driver of an automated vehicle
   project_url: 
   year: 2024
   status: inprogress
 
 - name: Alexandra van Dijk
-  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233/
+  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
   project: Reducing stress using heart-rate and eye gaze data
-  project_url:
+  project_url: https://mobility-squad.com/turn
   year: 2023
   status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
@@ -46,7 +45,7 @@
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Peihang Li
-  name_url: https://www.linkedin.com/in/peihang-li-785a45227/
+  name_url: https://www.linkedin.com/in/peihang-li-785a45227
   project: Characterizing situational awareness of transport operators based on eye tracking
   project_url:
   year: 2024
@@ -61,7 +60,7 @@
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Yuanzi Wang
-  name_url: https://www.linkedin.com/in/yuanzi-wang-44bab5213/
+  name_url: https://www.linkedin.com/in/yuanzi-wang-44bab5213
   project: "A real road study of automated driving: The influence of the non-critical cue on automation surprise"
   project_url: https://research.tue.nl/en/studentTheses/a-real-road-study-of-automated-driving
   year: 2023
