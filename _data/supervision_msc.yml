@@ -1,3 +1,27 @@
+- name: Thomas Marinissen
+  name_url: https://www.linkedin.com/in/thomas-marinissen-4a2155b9
+  project: Control of UI in a car by voice
+  project_url:
+  year: 2024
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Xingjian Zeng
+  name_url: https://www.linkedin.com/in/xingjian-zeng-596a29213
+  project: In-vehcile animal-inspired agent
+  project_url:
+  year: 2024
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Alexandra van Dijk
+  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233/
+  project: Using generative AI for person-based traffic research
+  project_url:
+  year: 2024
+  status: completed
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Job van Houten
   name_url: https://www.linkedin.com/in/job-van-houten-a78536226/
   project: Relation between trust and eye gaze behaviour of the driver of an automated vehicle
@@ -11,7 +35,7 @@
   project_url:
   year: 2023
   status: completed
-  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Tom Bergman, Ariën Helder, Emir Kadrić, Yuanyuan Xu
   name_url: 
@@ -35,13 +59,6 @@
   year: 2023
   status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
-
-- name: Thomas Marinissen
-  name_url: https://www.linkedin.com/in/thomas-marinissen-4a2155b9
-  project: Control UI in a car by voide
-  project_url:
-  year: 2024
-  status: inprogress
 
 - name: Yuanzi Wang
   name_url: https://www.linkedin.com/in/yuanzi-wang-44bab5213/
