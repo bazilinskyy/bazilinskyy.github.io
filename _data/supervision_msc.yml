@@ -30,7 +30,15 @@
 
 - name: Thomas Marinissen
   name_url: https://www.linkedin.com/in/thomas-marinissen-4a2155b9
-  project: Multimodal interface for controlling UI in an AV
+  project: Exploring how to teach multimodal interaction in cars to first-time users
+  project_url:
+  year: 2023
+  status: completed
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Thomas Marinissen
+  name_url: https://www.linkedin.com/in/thomas-marinissen-4a2155b9
+  project: Control UI in a car by voide
   project_url:
   year: 2024
   status: inprogress
