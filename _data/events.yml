@@ -5,12 +5,12 @@
 
 - date_start: 24.07.2022
   date_end: 28.07.2022
-  headline: "Applied Human Factors and Ergonomics (AHFE) conference"
+  headline: "Applied Human Factors and Ergonomics (AHFE) Conference"
   location: New York, US
   
 - date_start: 17.09.2022
   date_end: 20.09.2022
-  headline: "Automotive User Interfaces (AutoUI) conference"
+  headline: "Automotive User Interfaces (AutoUI) Conference"
   location: Seoul, South Korea
 
 - date_start: 24.02.2023
@@ -20,7 +20,7 @@
 
 - date_start: 27.03.2023
   date_end: 31.03.2023
-  headline: "Intelligent User Interfaces (IUI) conference"
+  headline: "Intelligent User Interfaces (IUI) Conference"
   location: Sydney, Australia
 
 - date_start: 12.05.2023
@@ -30,12 +30,12 @@
 
 - date_start: 18.09.2023
   date_end: 21.09.2023
-  headline: "Automotive User Interfaces (AutoUI) conference"
+  headline: "Automotive User Interfaces (AutoUI) Conference"
   location: Ingolstand, Germany
 
 - date_start: 14.11.2023
   date_end: 15.11.2023
-  headline: "MSCA Spanish Presidency conference"
+  headline: "MSCA Spanish Presidency Conference"
   location: Toledo, Spain
 
 - date_start: 28.11.2023
@@ -50,12 +50,12 @@
 
 - date_start: 18.04.2024
   date_end: 19.04.2024
-  headline: "MSCA Belgian Presidency conference"
+  headline: "MSCA Belgian Presidency Conference"
   location: Mons, Belgium
 
 - date_start: 11.05.2024
   date_end: 16.05.2024
-  headline: "CHI"
+  headline: "Conference on Human Factors in Computing Systems (CHI)"
   location: Honolulu, HW, USA
 
 - date_start: 12.06.2024
@@ -65,5 +65,5 @@
 
 - date_start: 22.09.2024
   date_end: 25.09.2024
-  headline: "Automotive User Interfaces (AutoUI) conference"
+  headline: "Automotive User Interfaces (AutoUI) Conference"
   location: Stanford, HI, USA
