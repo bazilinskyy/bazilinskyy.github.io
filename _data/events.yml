@@ -48,7 +48,17 @@
   headline: "MCAA Annual Conference and General Assembly"
   location: Milan, Italy
 
+- date_start: 18.04.2024
+  date_end: 19.04.2024
+  headline: "MSCA Belgian Presidency conference"
+  location: Mons, Belgium
+
 - date_start: 11.05.2024
   date_end: 16.05.2024
   headline: "CHI"
   location: Honolulu, USA
+
+- date_start: 12.06.2024
+  date_end: 15.06.2024
+  headline: "EuroScience Open Forum"
+  location: Katowice, Poland
