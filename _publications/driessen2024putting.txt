@@ -1,0 +1,10 @@
+@article{driessen2024putting,
+  title={Putting ChatGPT Vision (GPT-4V) to the test: Risk perception in traffic images},
+  author={Driessen, Tom and Dodou, Dimitra and Bazilinskyy, Pavlo and De Winter, J. C. F.},
+  journal={Royal Society Open Science},
+  volume={},
+  pages={},
+  year={2024},
+  publisher={Royal Society},
+  doi={}
+}

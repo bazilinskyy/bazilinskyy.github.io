@@ -1,7 +1,8 @@
 @inproceedings{jeon2015report,
   title={Report on the in-vehicle auditory interactions workshop: Taxonomy, challenges, and approaches},
   author={Jeon, Myounghoon and Hermann, Thomas and Bazilinskyy, Pavlo},
-  booktitle={Proceedings of AutomotiveUI. Graz, Austria},
+  booktitle={Proceedings of the 7th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   volume={15},
-  year={2015}
+  year={2015},
+  address={Graz, Austria}
 }

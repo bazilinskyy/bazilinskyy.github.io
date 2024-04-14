@@ -2,6 +2,8 @@
   title={Holistic HMI design for automated vehicles: Bridging in-vehicle and external communication},
   author={Dong, Haoyu and Tram, Thi Minh Tran and Bazilinskyy, Pavlo and Hoggenmueller, Marius and Dey, Debargha and Cazacu, Silvia and Franssen, Mervyn and Gao, Ruolin},
   year={2023},
+  booktitle={Adjunct Proceedings of the 15th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   pages={237--240},
-  doi={10.1145/3581961.3609837}
+  doi={10.1145/3581961.3609837},
+  address={Ingolstadt, Germany}
 }
