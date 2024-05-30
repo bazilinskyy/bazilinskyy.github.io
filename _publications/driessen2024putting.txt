@@ -2,9 +2,9 @@
   title={Putting ChatGPT Vision (GPT-4V) to the test: Risk perception in traffic images},
   author={Driessen, Tom and Dodou, Dimitra and Bazilinskyy, Pavlo and De Winter, J. C. F.},
   journal={Royal Society Open Science},
-  volume={},
-  pages={},
+  volume={11},
+  pages={231676},
   year={2024},
   publisher={Royal Society},
-  doi={}
+  doi={https://doi.org/10.4121/dfbe6de4-d559-49cd-a7c6-9bebe5d43d50}
 }
