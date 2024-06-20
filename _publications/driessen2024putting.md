@@ -1,7 +1,7 @@
 ---
 layout: publication
 sitemap: false
-title: "Putting ChatGPT vision (GPT-4V) to the test: risk perception in traffic images"
+title: "Putting ChatGPT vision (GPT-4V) to the test: Risk perception in traffic images"
 authors: Driessen, T., Dodou, D., Bazilinskyy, P., De Winter, J. C. F.
 pdf: driessen2024putting
 image: driessen2024putting.jpg
