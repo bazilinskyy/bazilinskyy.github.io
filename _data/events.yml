@@ -58,12 +58,28 @@
   headline: "Conference on Human Factors in Computing Systems (CHI)"
   location: Honolulu, HW, USA
 
+- date_start: 27.05.2024
+  date_end: 28.05.2024
+  headline: "Erasmus Mundus 20th Anniversary Conference"
+  location: Brussels, Belgium
+
+- date_start: 29.05.2024
+  date_end: 31.05.2024
+  headline: "MSCA 2024 PF Hands-on Training"
+  location: Ankara and Istanbul, Türkiye
+
 - date_start: 12.06.2024
   date_end: 15.06.2024
   headline: "EuroScience Open Forum"
   location: Katowice, Poland
 
+- date_start: 25.06.2024
+  date_end: 26.06.2024
+  headline: "ScaDSAI Summer School"
+  location: Leipzig, Germany
+
 - date_start: 22.09.2024
   date_end: 25.09.2024
   headline: "Automotive User Interfaces (AutoUI) Conference"
   location: Stanford, HI, USA
+
