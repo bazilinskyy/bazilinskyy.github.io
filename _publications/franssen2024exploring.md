@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Exploring the correlation between emotions and uncertainty in daily travel"
-authors: Franssen, M., Verstegen, R., Bazilinskyy, P., Martens, M. 
+authors: Franssen, M., Verstegen, R.*, Bazilinskyy, P., Martens, M. 
 pdf: franssen2024exploring
 image: franssen2024exploring.jpg
 display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). Nice, France
