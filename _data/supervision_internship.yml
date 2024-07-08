@@ -1,6 +1,13 @@
+- name: Sanchayita Kainth
+  name_url: https://www.linkedin.com/in/sanchayitakainth
+  project: Dsigning cirtuits (ASML)
+  project_url: 
+  year: 2024
+  status: inprogress
+
 - name: William Yen
   name_url: https://www.linkedin.com/in/william-yen-1029bb28a/
-  project: Flexible electronic circuits
+  project: Flexible electronic circuits (TNO)
   project_url: 
   year: 2023
   status: completed

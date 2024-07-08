@@ -12,19 +12,19 @@
   year: 2023
   status: inprogress
 
-# - name: Mervyn Franssen
-#   name_url: https://www.linkedin.com/in/mervynfranssen
-#   project: Interaction of humans and automated vehicles
-#   # project_url:
-#   year: 2022
-#   status: inprogress
+- name: Mervyn Franssen
+  name_url: https://www.linkedin.com/in/mervynfranssen
+  project: Interaction of humans and automated vehicles (supervision during 2022–2023)
+  # project_url:
+  year: 2022
+  status: inprogress
 
-# - name: Haoyu Dong 
-#   name_url: https://www.linkedin.com/in/haoyudong
-#   project: The interaction design between in-car driver/passenger and highly automated vehicle for calibrating trust and enhancing user experience 
-#   # project_url:
-#   year: 2021
-#   status: inprogress
+- name: Haoyu Dong 
+  name_url: https://www.linkedin.com/in/haoyudong
+  project: The interaction design between in-car driver/passenger and highly automated vehicle for calibrating trust and enhancing user experience (supervision during 2022–2023)
+  # project_url:
+  year: 2021
+  status: inprogress
 
 - name: Roulin Gao
   name_url: https://www.linkedin.com/in/ruolin-gao-731904163
