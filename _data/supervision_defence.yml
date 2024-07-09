@@ -1,3 +1,19 @@
+- name: Hao-Xuan Lu
+  degree: MSc
+  name_url: https://www.linkedin.com/in/alvin-l-1b9195181
+  project: "INTUIPRECISION: Multiple sensory modalities to enhance intuitiveness in precise interaction - examplified by VR modeling"
+  project_url: 
+  year: 2024
+  institution: TU Eindhoven
+
+- name: Lin Vliegenthart
+  degree: MSc
+  name_url: https://www.linkedin.com/in/lin-vliegenthart
+  project: "HelpTrek: Enhancing information literacy among European migrant workers"
+  project_url: 
+  year: 2024
+  institution: TU Eindhoven
+
 - name: Davanshi Bansal
   degree: MSc
   name_url: https://www.linkedin.com/in/devanshi-bansal05
@@ -24,7 +40,7 @@
 
 - name: Jeroen Brattinga
   degree: MSc
-  name_url: https://www.linkedin.com/in/jbrattinga/
+  name_url: https://www.linkedin.com/in/jbrattinga
   project: "Imagination at work: Alternative way of having conversations in organisational setting"
   project_url:
   year: 2024
