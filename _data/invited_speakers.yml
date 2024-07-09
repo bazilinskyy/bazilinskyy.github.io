@@ -1,0 +1,23 @@
+- name: Dr. Hao Cheng
+  name_url: https://people.utwente.nl/h.cheng-2
+  field: Artificial Intelligence
+  institution: Twente University
+  institution_url: https://www.itc.nl/about-itc/scientific-departments/earth-observation-science
+  venue: TU/e
+  date: 12.04.24
+
+- name: Dr. Jieun Lee
+  name_url: https://www.linkedin.com/in/lee-jieun-494935113
+  field: Human Factors
+  institution: Pukyong National University
+  institution_url: https://www.pknu.ac.kr/eng
+  venue: TU/e
+  date: 03.03.23
+
+- name: Dr. Francesco Walker
+  name_url: https://www.universiteitleiden.nl/en/staffmembers/francesco-walker
+  field: Cognitive Psychology
+  institution: Leiden University
+  institution_url: https://www.universiteitleiden.nl/en/social-behavioural-sciences/psychology/cognitive-psychology
+  venue: TU/e
+  date: 28.10.22

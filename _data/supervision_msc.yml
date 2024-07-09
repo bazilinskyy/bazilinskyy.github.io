@@ -1,9 +1,17 @@
+- name: Jom Dieben, Ugnė Aleksandra Morkute
+  name_url: 
+  project: Group trust during automated and manual driving
+  year: 2024
+  status: inprogress
+  comment: Co-supervision of MSc thesis at University of Leiden
+
+
 - name: Xander Fanchamps, Giovanni Sapienza, Thomas van Heuvelen, Matin Maskitou
   name_url: 
   project: Increasing situational awareness by enhancing the experience of non-intrusive information flow while engaging in NDRT in level 3+ automated vehicles
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Thomas Marinissen
@@ -19,14 +27,14 @@
   project: In-vehicle animal-inspired agent
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Alexandra van Dijk
   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
   project: Using generative AI for person-based traffic research
   year: 2024
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Job van Houten

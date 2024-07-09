@@ -59,7 +59,7 @@ As an avid supporter of open science, since 2019, I have been a participant in [
 
 #### Ukraine 🇺🇦
 
-Together with my friends in Poland, and Ukraine I raise money and buy supplies to give direct support to civilians who are now risking their lives to protect the liberty in Ukraine. It all started with us searching for components of bulletproof vests for medics and local defenders assembled by our volunteers in Kharkiv. [Read more and see how to donate](/ua).
+Together with my friends in Poland, and Ukraine I raise money and buy supplies to give direct support to civilians who are now risking their lives to protect the liberty in Ukraine. It all started with us searching for components of bulletproof vests for medics and local defenders assembled by our volunteers in Kharkiv. [Read more and see how to donate](/ua). Since 2017, I have also been a member of [PGA Ukraine](http://pga.org.ua).
 
   <ul style="overflow: hidden">
   </ul>

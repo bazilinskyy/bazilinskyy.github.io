@@ -105,4 +105,12 @@ permalink: /about/
 </div>
 {% endif %}
 
+{% if site.data.collaborators %}
+## Invited speakers at my group
+<div class="rowl1" style="padding-top: 10px;">
 
+{% for invited_speaker in site.data.invited_speakers %}
+{{ forloop.index }}. {% if invited_speaker.name_url %}<a href="{{ invited_speaker.name_url }}" target="_blank">{% endif %}<strong>{{ invited_speaker.name }}</strong>{% if invited_speaker.name_url %}</a>{% endif %} ({{ invited_speaker.field }}, {% if invited_speaker.institution_url %}<a href="{{ invited_speaker.institution_url }}" target="_blank">{% endif %}{{ invited_speaker.institution }}{% if invited_speaker.institution_url %}</a>{% endif %}){% if invited_speaker.venue %} – at {{ invited_speaker.venue }}{% endif %}{% if invited_speaker.date %}, {{ invited_speaker.date }}{% endif %}.
+{% endfor %}
+</div>
+{% endif %}
