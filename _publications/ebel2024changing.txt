@@ -1,0 +1,7 @@
+@inproceedings{ebel2024changing,
+  title={Changing lanes toward open science: Openness and transparency in automotive user research},
+  author={Ebel, Patrick and Bazilinskyy, Pavlo and Colley, Mark and Goodridge, Courtney Michael and Hock, Philipp and Janssen, Christian and Sandhaus, Hauke and Srinivasan, Aravinda Ramakrishnan and Wintersberger, Philipp},
+  booktitle={Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  year={2024},
+  address={Stanford, CA, USA}
+}
