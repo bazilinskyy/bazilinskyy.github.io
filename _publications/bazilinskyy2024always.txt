@@ -1,0 +1,7 @@
+@inproceedings{bazilinskyy2024always,
+  title={It is not always just one road user: Workshop on multi-agent automotive research},
+  author={Bazilinskyy, Pavlo and Ebel, Patrick and Walkder, Francesco and Debargha, Dey and Tran, Tram},
+  booktitle={Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  year={2024},
+  address={Stanford, CA, USA}
+}
