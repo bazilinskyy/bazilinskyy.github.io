@@ -44,7 +44,7 @@ permalink: /publications/
     {% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank">{% endif %} <strong>{{ publi.title }}</strong> {% if publi.pdf %}</a>{% endif %}<br/>
     {{ publi.authors }}<br/>
     <em>{{ publi.display }}</em><br/>
-    {% if publi.abstract %} <a data-bs-toggle="collapse" href="#{{publi.pdf}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}">ABSTRACT</a> {% endif %}
+    {% if publi.abstract %} <a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a> {% endif %}
     {% if bibpresent == true %} <a data-bs-toggle="collapse" href="#{{publi.pdf}}2"  class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">BIB</a> {% endif %}
     {% if pdfpresent == true %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
     {% if publi.doi %}<a href="http://doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
@@ -53,7 +53,7 @@ permalink: /publications/
     {% if publi.suppmat %}<a href="{{ publi.suppmat }}" target="_blank"><button class="btn-suppmat">SUPPLEMENT</button></a> {% endif %}
 
   {% if publi.abstract %}
-  <div class="collapse" id="{{publi.pdf}}"><div class="well-abstract">
+  <div class="collapse" id="{{{publi.image | remove: '.jpg'}}"><div class="well-abstract">
    {{publi.abstract}}
   </div></div>
   {% endif %}
@@ -115,7 +115,7 @@ permalink: /publications/
   {% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank">{% endif %} <strong>{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %}<br />
   {{ publi.authors }}<br />
   <em>{{ publi.display }}</em>{% if publi.year %} ({{publi.year}}){% endif %}<br/>
-  {% if publi.abstract %} <a data-bs-toggle="collapse" href="#{{publi.pdf}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}">ABSTRACT</a> {% endif %}
+  {% if publi.abstract %} <a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a> {% endif %}
   {% if bibpresent == true %} <a data-bs-toggle="collapse" href="#{{publi.pdf}}2"  class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">BIB</a> {% endif %}
   {% if pdfpresent == true %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
   {% if publi.doi %}<a href="http://doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
@@ -125,14 +125,14 @@ permalink: /publications/
 
 {% if publi.abstract %}
 <br/>
-<div class="collapse" id="{{publi.pdf}}"><div class="well-abstract">
+<div class="collapse" id="{{publi.image | remove: '.jpg'}}"><div class="well-abstract">
  {{publi.abstract}}
 </div></div>
 {% endif %}
 
 {% if bibpresent == true %}
-<div class="collapse" id="{{publi.pdf}}2"><div class="well-bib">
-<iframe src='{{site.url}}{{site.baseurl}}/publications/{{publi.pdf}}.txt' scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
+<div class="collapse" id="{{publi.image | remove: '.jpg'}}2"><div class="well-bib">
+<iframe src="{{site.url}}{{site.baseurl}}/publications/{{publi.image | remove: '.jpg'}}.txt" scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
 </div></div>
 {% endif %}
 
