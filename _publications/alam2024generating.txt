@@ -1,5 +1,5 @@
 @techreport{alam2024generating,
   title={Generating realistic traffic scenarios: A deep learning approach using generative adversarial networks (GANs)},
-  author={Alam, Shadab Mohammad and Martens, Marieke and Bazilinskyy, Pavlo},
+  author={Alam, Md Shadab and Martens, Marieke and Bazilinskyy, Pavlo},
   year={2024}
 }

@@ -1,5 +1,5 @@
 @techreport{alam2024from,
   title={From A to B with ease: User-centric interfaces for shuttle buses},
-  author={Alam, Shadab Mohammad and Martens, Marieke and Bazilinskyy, Pavlo},
+  author={Alam, Md Shadab and Martens, Marieke and Bazilinskyy, Pavlo},
   year={2024}
 }

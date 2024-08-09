@@ -53,7 +53,7 @@ permalink: /publications/
     {% if publi.suppmat %}<a href="{{ publi.suppmat }}" target="_blank"><button class="btn-suppmat">SUPPLEMENT</button></a> {% endif %}
 
   {% if publi.abstract %}
-  <div class="collapse" id="{{{publi.image | remove: '.jpg'}}"><div class="well-abstract">
+  <div class="collapse" id="{{publi.image | remove: '.jpg'}}"><div class="well-abstract">
    {{publi.abstract}}
   </div></div>
   {% endif %}
