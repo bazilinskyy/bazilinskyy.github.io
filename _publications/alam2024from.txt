@@ -1,5 +1,7 @@
-@techreport{alam2024from,
+@inproceedings{alam2024from,
   title={From A to B with ease: User-centric interfaces for shuttle buses},
-  author={Alam, Md Shadab and Martens, Marieke and Bazilinskyy, Pavlo},
-  year={2024}
+  author={Alam, Md Shadab and Subramanian, Thirumanikandan and REmlinger, Wolfram and Martens, Marieke and Bazilinskyy, Pavlo},
+  booktitle={Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  year={2024},
+  address={Stanford, CA, USA}
 }
