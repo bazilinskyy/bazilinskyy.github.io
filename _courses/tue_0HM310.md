@@ -1,9 +1,9 @@
 ---
-title: "0HM310: Automotive human factors"
+title: "0HM310: Automotive societal factors"
 layout: course
 sitemap: false
-name: Automotive human factors
-name_url: https://research.tue.nl/en/courses/automotive-human-factors-3
+name: Automotive societal factors
+name_url: https://research.tue.nl/en/courses/automotive-societal-factors
 year_start: 2022
 year_end: 
 institution: TU/e
@@ -19,7 +19,8 @@ The course Automotive Human Factors addresses the relation between a car or truc
 
 #### My role
 - 2022–2023: lecturer.
-- 2023–: responsible lecturer.
+- 2023–2024: responsible lecturer.
+- 2024–: lecturer.
 
 #### Learning goals
 - **L1**. To gain a basic understanding of the human perceptual system (vision, hearing, touch) and its relevance to automotive tasks and information feedback.
@@ -44,7 +45,7 @@ At the end of the course there will be a written exam. The average grade for the
 
 ##### Assignments
 The assignments are carried out in groups of 4-6 students. The theme will be How can we make use of the interior of the automated car. You will work on this theme over the course of 8 weeks making use of the material from the lectures. A detailed roadmap and list of deliverables will be provided during the course. A rough indication of the topics is shown below:
-- Week 1+2: Research methods & User centred design.
+- Week 1+2: Research methods and user centred design.
 - Week 3+4: Perception and display design.
-- Week 5+7: Attention, Stress and Workload.
+- Week 5+7: Attention, stress and Workload.
 - Week 8: Final deliverable.
