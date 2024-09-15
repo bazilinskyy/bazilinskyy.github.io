@@ -9,7 +9,7 @@ place: Ingolstadt, Germany
 display: Discussing whether internal and external HMIs for AVs should be design holistically
 year: 2023
 website: https://haoyuddd.github.io/AutoUI-workshop-23/
-# publication: /publications/...
+publication: /publications/dong2024exploring
 online: false
 abstract: "As the field of automated vehicles (AVs) advances, it has become increasingly critical to develop human-machine interfaces (HMI) for both internal and external communication. Critical dialogue is emerging around the potential necessity for a holistic approach to HMI unified and coherent experience for different stakeholders interacting with AVs. This workshop seeks to bring together designers, engineers, researchers, and other stakeholders to delve into relevant use cases, exploring the potential advantages and challenges of this approach. The insights generated from this workshop aim to inform further design and research in the development of coherent HMIs for AVs, ultimately for more seamless integration of AVs into existing traffic."
 ---

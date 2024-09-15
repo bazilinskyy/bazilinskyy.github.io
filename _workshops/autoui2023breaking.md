@@ -9,7 +9,7 @@ place: Ingolstadt, Germany
 display: Understaning why publishing open data research is not commonplace in automotive
 year: 2023
 website: https://autouimodelingws.jimdosite.com
-# publication: /publications/...
+publication: /publications/ebel2024changing
 online: false
 abstract: "While the benefits of open science and open data practices are well understood, experimental data sharing is still uncommon in the AutoUI community. The goal of this workshop is to address the current lack of data sharing practices and to promote a culture of openness. By discussing barriers to data sharing, defining best practices, and exploring open data formats, we aim to foster collaboration, improve data quality, and promote transparency. Special interest groups will be formed to identify parameter sets for recur- ring research topics, so that data collected in different individual studies can be used to generate insights beyond the results of the individual studies. Join us at this workshop to help democratize knowledge and advance research in the AutoUI community."
 ---
