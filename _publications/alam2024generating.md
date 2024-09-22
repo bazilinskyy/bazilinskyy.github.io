@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Generating realistic traffic scenarios: A deep learning approach using generative adversarial networks (GANs)"
-authors: Alam, M. S., Martens, M., Bazilinskyy, P.
+authors: Alam, M. S., Martens, M. H., Bazilinskyy, P.
 pdf: alam2024generating
 image: alam2024generating.jpg
 display: Submitted for publication.

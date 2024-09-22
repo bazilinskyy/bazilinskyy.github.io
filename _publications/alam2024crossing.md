@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Crossing borders: Understanding the global language of pedestrian road safety"
-authors: Alam, M. S., Martens, M., Bazilinskyy, P.
+authors: Alam, M. S., Martens, M. H., Bazilinskyy, P.
 # pdf: alam2024crossing
 image: alam2024crossing.jpg
 display: In preparation.

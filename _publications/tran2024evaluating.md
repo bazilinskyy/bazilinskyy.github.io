@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Evaluating autonomous vehicle external communication using a multi-pedestrian VR simulator"
-authors: Tran, T., Parker, C., Yu, X., Dey, D., Martens, M., Bazilinskyy, P., Tomitsch, M.
+authors: Tran, T., Parker, C., Yu, X., Dey, D., Martens, M. H., Bazilinskyy, P., Tomitsch, M.
 pdf: tran2024evaluating
 image: tran2024evaluating.jpg
 display: Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies 8(2)
