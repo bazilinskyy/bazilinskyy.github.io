@@ -1,6 +1,6 @@
 @inproceedings{franssen2024exploring,
   title={Exploring the correlation between emotions and uncertainty in daily travel},
-  author={Franssen, Mervyn and Verstegen, Rutger and Bazilinskyy, Pavlo and Martens, Marieke},
+  author={Franssen, Mervyn and Verstegen, Rutger and Bazilinskyy, Pavlo and Martens, Marieke H.},
   booktitle={Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)},
   year={2024},
   address={Nice, France}

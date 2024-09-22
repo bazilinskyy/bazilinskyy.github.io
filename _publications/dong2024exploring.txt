@@ -1,6 +1,6 @@
 @inproceedings{dong2024exploring,
   title={Exploring holistic HMI design for automated vehicles: Insights from participatory workshop to bridge in-vehicle and external communication},
-  author={Dong, Haoyu and Tram, Thi Minh Tran and Verstegen, Rutger and Cazacu, Silvia and Gao, Ruolin and Hoggenmüller, Marius and Dey, Debargha and Franssen, Mervyn and Sasalovici, Markus and Bazilinskyy, Pavlo and Martens, Marieke},
+  author={Dong, Haoyu and Tram, Thi Minh Tran and Verstegen, Rutger and Cazacu, Silvia and Gao, Ruolin and Hoggenmüller, Marius and Dey, Debargha and Franssen, Mervyn and Sasalovici, Markus and Bazilinskyy, Pavlo and Martens, Marieke H.},
   year={2024},
   booktitle={Extended Abstracts of the 2024 CHI Conference on Human Factors in Computing Systems},
   address={Honolulu, USA}

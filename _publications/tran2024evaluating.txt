@@ -1,6 +1,6 @@
 @techreport{tran2024evaluating,
   title={Evaluating autonomous vehicle external communication using a multi-pedestrian VR simulator},
-  author={Tram, Thi Minh Tran and Parker, Callum and Yu, Xinyan and Dey, Debargha and Martens, Marieke and Bazilinskyy, Pavlo and Tomitsch, Martin},
+  author={Tram, Thi Minh Tran and Parker, Callum and Yu, Xinyan and Dey, Debargha and Martens, Marieke H. and Bazilinskyy, Pavlo and Tomitsch, Martin},
   year={2024},
   journal={Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies},
   volume={8},

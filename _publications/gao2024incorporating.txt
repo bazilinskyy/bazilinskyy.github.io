@@ -1,6 +1,6 @@
 @inproceedings{gao2024incorporating,
   title={From A to B with ease: User-centric interfaces for shuttle buses},
-  author={Gao, Ruolun and Verstegen, Rutger and Dong, Haoyu and Bazilinskyy, Pavlo and Martens, Marieke},
+  author={Gao, Ruolun and Verstegen, Rutger and Dong, Haoyu and Bazilinskyy, Pavlo and Martens, Marieke H.},
   booktitle={Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   year={2024},
   address={Stanford, CA, USA}

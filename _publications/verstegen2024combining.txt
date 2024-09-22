@@ -1,6 +1,6 @@
 @inproceedings{verstegen2024combining,
   title={Combining internal and external communication: The design of a holistic Human-Machine Interface for automated vehicles},
-  author={Verstegen, Rutger and Gao, Ruolin and Bernhaupt, Regina and Bazilinskyy, Pavlo and Martens, Marieke},
+  author={Verstegen, Rutger and Gao, Ruolin and Bernhaupt, Regina and Bazilinskyy, Pavlo and Martens, Marieke H.},
   booktitle={Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)},
   year={2024},
   address={Nice, France}
