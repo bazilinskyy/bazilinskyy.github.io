@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Combining internal and external communication: The design of a holistic Human-Machine Interface for automated vehicles"
-authors: Versteggen, R., Gao, R., Bernhaupt, R., Bazilinskyy, P., Martens, M.
+authors: Versteggen, R., Gao, R., Bernhaupt, R., Bazilinskyy, P., Martens, M. H.
 pdf: verstegen2024combining
 image: verstegen2024combining.jpg
 display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). Nice, France

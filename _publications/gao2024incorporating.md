@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Incorporating multiple users' perspectives in HMI design for automated vehicles: Exploration of a role-switching approach"
-authors: Gao, R., Verstegen, R., Dong, H., Bazilinskyy, P., Martens, M.
+authors: Gao, R., Verstegen, R., Dong, H., Bazilinskyy, P., Martens, M. H.
 pdf: gao2024incorporating
 image: gao2024incorporating.jpg
 display: Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Stanford, CA, USA
