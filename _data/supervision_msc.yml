@@ -1,10 +1,49 @@
+- name: Xinyue, Liu, Yulong Tian, Lisanne Verbeet, Stijn Wuite
+  name_url: 
+  project: Investigating AV-MDV interactions and potential HMI solutions in mixed traffic scenarios
+  project_url:
+  year: 2024
+  status: inprogress
+  comment: M1.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Matin Maskitou
+  name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
+  project: In-vehicle interface controlled by YOLO
+  project_url:
+  year: 2024
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Thomas van Heuvelen
+  name_url: https://www.linkedin.com/in/thomas-van-heuvelen-6385271bb
+  project: Accident avoidance for motorcyclists
+  project_url:
+  year: 2024
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Xingjian Zeng
+  name_url: https://www.linkedin.com/in/xingjian-zeng-596a29213
+  project: In-vehicle agent that shows emotions
+  project_url:
+  year: 2024
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Giovanni Sapienza
+  name_url: https://www.linkedin.com/in/giovanni-sapienza/
+  project: Enforcing the 1.5-metre distance between cyclists and drivers
+  project_url:
+  year: 2024
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Jom Dieben, Ugnė Aleksandra Morkute
   name_url: 
   project: Group trust during automated and manual driving
   year: 2024
   status: inprogress
   comment: Co-supervision of MSc thesis at University of Leiden
-
 
 - name: Xander Fanchamps, Giovanni Sapienza, Thomas van Heuvelen, Matin Maskitou
   name_url: 
@@ -19,7 +58,7 @@
   project: Control of UI in a car by voice
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xingjian Zeng
@@ -42,7 +81,7 @@
   project: Relation between trust and eye gaze behaviour of the driver of an automated vehicle
   project_url: 
   year: 2024
-  status: inprogress
+  status: completed
 
 - name: Alexandra van Dijk
   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233

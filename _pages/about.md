@@ -105,7 +105,18 @@ permalink: /about/
 </div>
 {% endif %}
 
-{% if site.data.collaborators %}
+
+{% if site.data.research_visits %}
+## Research visits
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for research_visit in site.data.research_visits %}
+{{ forloop.index }}. {% if research_visit.institution_url %}<a href="{{ research_visit.institution_url }}" target="_blank">{% endif %}<strong>{{ research_visit.institution }}</strong>{% if research_visit.institution_url %}</a>{% endif %}{% if research_visit.location %} ({{ research_visit.location }}){% endif %}{% if research_visit.period %}, {{ research_visit.period }}{% endif %}.
+{% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.invited_speakers %}
 ## Invited speakers at my group
 <div class="rowl1" style="padding-top: 10px;">
 
