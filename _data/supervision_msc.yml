@@ -1,3 +1,10 @@
+- name: Alexandra van Dijk
+  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
+  project: Steer
+  year: 2024
+  status: inprogress
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Xinyue, Liu, Yulong Tian, Lisanne Verbeet, Stijn Wuite
   name_url: 
   project: Investigating AV-MDV interactions and potential HMI solutions in mixed traffic scenarios
