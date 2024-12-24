@@ -1,5 +1,0 @@
-@techreport{alam2024crossing,
-  title={Crossing borders: Understanding the global language of pedestrian road safety},
-  author={Alam, Md Shadab and Martens, Marieke H. and Bazilinskyy, Pavlo},
-  year={2024}
-}
