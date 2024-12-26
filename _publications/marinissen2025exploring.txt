@@ -1,0 +1,5 @@
+@techreport{marinissen2025exploring,
+  title={Exploring visual feedback for automotive voice assistants},
+  author={Marinissen, Thomas and Bazilinskyy, Pavlo},
+  year={2024}
+}
