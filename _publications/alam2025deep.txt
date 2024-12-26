@@ -1,7 +1,7 @@
 @inproceedings{alam2025deep,
-  title={Generating realistic traffic scenarios: A deep learning approach using generative adversarial networks (GANs)},
-  author={Alam, Md Shadab and Martens, Marieke H. and Bazilinskyy, Pavlo},
-  booktitle={Proceedings of International Conference on Human Interaction & Emerging Technologies: Artificial Intelligence & Future Applications (IHIET-AI)},
+  title={Deep learning approach for realistic traffic video changes across lighting and weather conditions},
+  author={Alam, Md Shadab and Parmar, Sagar Hitendra and Martens, Marieke H. and Bazilinskyy, Pavlo},
+  booktitle={Proceedings of International Conference on Information and Computer Technologies (ICICT)},
   year={2025},
-  address={Malaga, Spain}
+  address={Hilo, HI, USA}
 }
