@@ -73,6 +73,11 @@
   headline: "EuroScience Open Forum"
   location: Katowice, Poland
 
+- date_start: 26.06.2024
+  date_end: 29.06.2024
+  headline: "Car.HMI Europe"
+  location: Berlin, Germany
+
 - date_start: 25.06.2024
   date_end: 26.06.2024
   headline: "ScaDSAI Summer School"
@@ -93,7 +98,27 @@
   headline: "World Science Forum"
   location: Budapest, Hungary
 
+- date_start: 05.02.2025
+  date_end: 05.02.2025
+  headline: "4TU.NIRICT Community Day"
+  location: Utrecht, The Netherlands
+
+- date_start: 19.03.2025
+  date_end: 22.03.2025
+  headline: "MCAA Annual Conference and General Assembly"
+  location: Krakow, Poland
+
+- date_start: 15.06.2025
+  date_end: 17.06.2025
+  headline: "Car.HMI Europe"
+  location: Berlin, Germany
+
 - date_start: 18.09.2025
   date_end: 19.09.2025
   headline: "MSCA Danish Presidency Conference"
   location: Copenhagen, Denmark
+
+- date_start: 20.09.2025
+  date_end: 24.09.2025
+  headline: "Automotive User Interfaces (AutoUI) Conference"
+  location: Brisbane, Australia

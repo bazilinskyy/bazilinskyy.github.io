@@ -73,32 +73,35 @@
     <!-- counter of rendered events -->
     {% assign rendered = 0 %}
     <!-- iterate over events -->
-    {% for article in site.data.events %}
+    {% for event in site.data.events %}
       <!-- check if limit was reached -->
       {% if rendered == render_limit %}
         {% break %}
       {% endif %}
       <!-- extract information from dates for comparing things  -->
-      {% assign start_month = article.date_start | date: "%m" %}
-      {% assign start_year = article.date_start | date: "%Y" %}
-      {% assign end_month = article.date_end | date: "%m" %}
-      {% assign end_year = article.date_end | date: "%Y" %}
-      {% assign end_formatted = article.date_end | date: '%s' %}
+      {% assign start_month = event.date_start | date: "%m" %}
+      {% assign start_year = event.date_start | date: "%Y" %}
+      {% assign end_month = event.date_end | date: "%m" %}
+      {% assign end_year = event.date_end | date: "%Y" %}
+      {% assign end_formatted = event.date_end | date: '%s' %}
       {% assign today = 'now' | date: '%s' %}
       <!-- check if event is in the future -->
       {% if end_formatted > today %}
+        <!-- same start and finish -->
+        {% if event.date_start == event.date_end %}
+          <strong>{{ event.date_start | date: "%-d.%m.%y" }}</strong>
         <!-- different month and year -->
-        {% if start_month != end_month && start_year != end_year %}
-          <strong>{{ article.date_start | date: "%-d.%m.%y" }}</strong>–<strong>{{ article.date_end | date: "%-d.%m.%y" }}</strong>
+        {% elsif start_month != end_month && start_year != end_year %}
+          <strong>{{ event.date_start | date: "%-d.%m.%y" }}</strong>–<strong>{{ event.date_end | date: "%-d.%m.%y" }}</strong>
         <!-- different month -->
         {% elsif start_month != end_month && start_year == end_year %}
-          <strong>{{ article.date_start | date: "%-d.%m.%y" }}</strong>–<strong>{{ article.date_end | date: "%-d.%m.%y" }}</strong>
+          <strong>{{ event.date_start | date: "%-d.%m.%y" }}</strong>–<strong>{{ event.date_end | date: "%-d.%m.%y" }}</strong>
         <!-- same month -->
         {% elsif start_month == end_month && start_year == end_year %}
-          <strong>{{ article.date_start | date: "%-d" }}</strong>–<strong>{{ article.date_end | date: "%-d.%m.%y" }}</strong>
+          <strong>{{ event.date_start | date: "%-d" }}</strong>–<strong>{{ event.date_end | date: "%-d.%m.%y" }}</strong>
         {% endif %}
-        <p>{{ article.headline }}<br/>
-        <i>{{ article.location }}</i></p>
+        <p>{{ event.headline }}<br/>
+        <i>{{ event.location }}</i></p>
         <!-- increase counter of rendered events -->
         {% assign rendered = rendered | plus:1 %}
       {% endif %}
