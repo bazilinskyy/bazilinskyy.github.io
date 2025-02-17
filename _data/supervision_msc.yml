@@ -1,8 +1,51 @@
+- name: Thomas van Heuvelen
+  name_url: https://www.linkedin.com/in/thomas-van-heuvelen-6385271bb
+  project: TODO
+  project_url:
+  year: 2024
+  status: completed
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Matin Maskitou
+  name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
+  project: TODO
+  year: 2025
+  status: inprogress
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Max Crutzen
+  name_url: 
+  project: Vibrotactile sensory replacement
+  year: 2025
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Xinyue Liu
+  name_url: 
+  project: Innovating automotive lighting experiences
+  year: 2025
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Sanchayita Kainth
+  name_url: https://www.linkedin.com/in/sanchayitakainth
+  project: TODO
+  year: 2025
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Alexandra van Dijk
+  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
+  project: TODO
+  year: 2025
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Alexandra van Dijk
   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
   project: Steer
   year: 2024
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xinyue Liu, Yulong Tian, Lisanne Verbeet, Stijn Wuite
@@ -10,7 +53,7 @@
   project: Investigating AV-MDV interactions and potential HMI solutions in mixed traffic scenarios
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: M1.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Matin Maskitou
@@ -18,7 +61,7 @@
   project: In-vehicle interface controlled by YOLO
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Thomas van Heuvelen
@@ -26,7 +69,7 @@
   project: Accident avoidance for motorcyclists
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xingjian Zeng
@@ -34,7 +77,7 @@
   project: In-vehicle agent that shows emotions
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Giovanni Sapienza
@@ -42,7 +85,7 @@
   project: Enforcing the 1.5-metre distance between cyclists and drivers
   project_url:
   year: 2024
-  status: inprogress
+  status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Jom Dieben, Ugnė Aleksandra Morkute
@@ -79,6 +122,7 @@
 - name: Alexandra van Dijk
   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
   project: Using generative AI for person-based traffic research
+  project_url:
   year: 2024
   status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>

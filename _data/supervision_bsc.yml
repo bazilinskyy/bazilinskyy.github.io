@@ -1,3 +1,17 @@
+- name: Axel Reitz
+  project: Human-drone interaction in critical situations
+  project_url: 
+  year: 2025
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Jakub Woziwodzki
+  project: Human-drone interaction under uncertainty in public spaces
+  project_url: 
+  year: 2025
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Wouter Salden, Jakub Woziwodzki, Axel Reitz
   project: Designing an emergency drone
   project_url: https://mobility-squad.com/angel

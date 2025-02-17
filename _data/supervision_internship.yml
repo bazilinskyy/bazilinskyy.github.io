@@ -1,9 +1,18 @@
+- name: Giovanni Sapienza
+  name_url: https://www.linkedin.com/in/giovanni-sapienza/
+  project: Enforcing the 1.5-metre distance between cyclists and drivers
+  project_url:
+  year: 2025
+  status: inprogress
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Sanchayita Kainth
   name_url: https://www.linkedin.com/in/sanchayitakainth
-  project: "Testing active and passive tooling solutions to prevent contamination"
+  project: Testing active and passive tooling solutions to prevent contamination
   project_url: 
   year: 2024
-  status: inprogress
+  status: completed
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: William Yen
   name_url: https://www.linkedin.com/in/william-yen-1029bb28a/
@@ -11,6 +20,7 @@
   project_url: 
   year: 2023
   status: completed
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Job van Houten
   name_url: https://www.linkedin.com/in/job-van-houten-a78536226/
