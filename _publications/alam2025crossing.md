@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Evaluation of pedestrian behaviour in 157 cities with 285 hours of dashcam footage from YouTube"
-authors: Alam, M. S., Martens, M. H., Bazilinskyy, P.
+authors: Alam, Md. S., Martens, M. H., Bazilinskyy, P.
 pdf: alam2025crossing
 image: alam2025crossing.jpg
 display: Submitted for publication.

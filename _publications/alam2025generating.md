@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Generating realistic traffic scenarios: A deep learning approach using generative adversarial networks (GANs)"
-authors: Alam, M. S., Martens, M. H., Bazilinskyy, P.
+authors: Alam, Md. S., Martens, M. H., Bazilinskyy, P.
 pdf: alam2025generating
 image: alam2025generating.jpg
 display: "Proceedings of International Conference on Human Interaction & Emerging Technologies: Artificial Intelligence & Future Applications (IHIET-AI). Malaga, Spain"
