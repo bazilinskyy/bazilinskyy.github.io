@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "From A to B with ease: User-centric interfaces for shuttle buses"
-authors: Alam, Md. S., Subramanian, T., Remlinger, W., Martens, M. H., Bazilinskyy, P.
+authors: Alam, M. S., Subramanian, T., Remlinger, W., Martens, M. H., Bazilinskyy, P.
 pdf: alam2024from
 image: alam2024from.jpg
 display: Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Stanford, CA, USA

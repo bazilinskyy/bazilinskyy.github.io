@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Robot-like in-vehicle agent for a level 3 automated vehicle"
-authors: Zeng, X., Alam, Md Shadab, Bazilinskyy, P.
+authors: Zeng, X., Alam, Mohammad Shadab, Bazilinskyy, P.
 pdf: zeng2025robot
 image: zeng2025robot.jpg
 display: Submitted for publication.
