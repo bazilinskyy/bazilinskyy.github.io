@@ -1,0 +1,7 @@
+@inproceedings{bazilinskyy2025psychoacoustic,
+  title={Psychoacoustic assessment of synthetic sounds for electric vehicles in a virtual reality experiment},
+  author={Bazilinskyy, Pavlo and Alam, Mohammad Shadab and Merino-Martınez, Roberto},
+  booktitle={Proceedings of 11th Convention of the European Acoustics Association (Euronoise)},
+  year={2025},
+  address={Malaga, Spain}
+}

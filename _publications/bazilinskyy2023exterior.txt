@@ -2,7 +2,6 @@
   title={Exterior sounds for electric and automated vehicles: Loud is effective},
   author={Bazilinskyy, Pavlo and Merino-Martınez, Roberto and Özcan, Elif and Dodou, Dimitra and De Winter, J. C. F.},
   journal={Applied Acoustics},
-  year={2023},
   volume={214},
   pages={109673},
   year={2023},
