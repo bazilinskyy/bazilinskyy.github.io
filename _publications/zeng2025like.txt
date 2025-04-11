@@ -1,0 +1,5 @@
+@techreport{zeng2025like,
+  title={Robot-like in-vehicle agent for a level 3 automated vehicle},
+  author={Zeng, Xingjian and Alam, Mohammad Shadab and Bazilinskyy, Pavlo},
+  year={2025}
+}

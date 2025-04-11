@@ -1,0 +1,5 @@
+@techreport{sapienza2025enhancing,
+  title={Enhancing cyclist safety in the EU: A study on lateral overtaking distance across seven scenarios using lab and crowdsourced methods},
+  author={Sapienza, Giovanni and Bazilinskyy, Pavlo},
+  year={2025}
+}

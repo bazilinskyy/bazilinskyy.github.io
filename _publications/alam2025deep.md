@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Deep learning approach for realistic traffic video changes across lighting and weather conditions"
-authors: Alam, Md. S., Parmar, S. H., Martens, M. H., Bazilinskyy, P.
+authors: Alam, M. S., Parmar, S. H., Martens, M. H., Bazilinskyy, P.
 pdf: alam2025deep
 image: alam2025deep.jpg
 display: "Proceedings of International Conference on Information and Computer Technologies (ICICT). Hilo, HI, USA"
