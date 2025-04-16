@@ -6,5 +6,5 @@
   pages={231676},
   year={2024},
   publisher={Royal Society},
-  doi={https://doi.org/10.4121/dfbe6de4-d559-49cd-a7c6-9bebe5d43d50}
+  doi={10.4121/dfbe6de4-d559-49cd-a7c6-9bebe5d43d50}
 }

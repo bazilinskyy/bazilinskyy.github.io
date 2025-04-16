@@ -1,5 +1,0 @@
-@techreport{lingam2024behavioural,
-  title={Behavioural effects of a medical delivery drone on feelings of uncertainty: A virtual reality experiment},
-  author={Lingam, Shiva Nischal and Petermeijer, S. M. and Torre, Illaria and Bazilinskyy, Pavlo and Ljungblad, Sara and Martens, M. H.},
-  year={2024}
-}

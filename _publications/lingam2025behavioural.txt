@@ -1,0 +1,9 @@
+@article{lingam2025behavioural,
+  title={Behavioural effects of a delivery drone on feelings of uncertainty: A virtual reality experiment},
+  author={Lingam, Shiva Nischal and Petermeijer, S. M. and Torre, Illaria and Bazilinskyy, Pavlo and Ljungblad, Sara and Martens, M. H.},
+  journal={ACM Transactions on Human-Robot Interaction},
+  year={2025},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi={10.1145/3729538}
+}
