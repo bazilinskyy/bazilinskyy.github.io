@@ -1,4 +1,4 @@
-@article{alam2025cross,
+@techreport{alam2025cross,
   title={Cross or Nah? LLMs Get in the mindset of a pedestrian in front of automated car with an eHMI},
   author={Alam, Md Shadab and Martens, Marieke H. and Bazilinskyy, Pavlo},
   year={2025}

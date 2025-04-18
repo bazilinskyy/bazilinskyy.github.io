@@ -1,0 +1,5 @@
+@techreport{bazilinskyy2025pedestrian,
+  title={Pedestrian crossing behaviour in front of electric vehicles emitting synthetic sounds: A virtual reality experiment},
+  author={Bazilinskyy, Pavlo and Alam, Md Shadab and Merino-Martınez, Roberto},
+  year={2025}
+}
