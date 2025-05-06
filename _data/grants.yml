@@ -1,8 +1,32 @@
+- name: EuroTech Visiting Researcher grant for visiting EPFL
+  name_url: https://eurotech-universities.eu/funding/eurotech-visiting-researcher-programme
+  organisation: EuroTech Universities Alliance 
+  organisation_url: https://eurotech-universities.eu
+  year: 2025
+
+- name: EAISI Visiting professor grant for Dr. P. Ebel to visit TU/e
+  name_url: https://www.tue.nl/en/our-university/calendar-and-events/24-04-2025-eaisi-lecture-of-visiting-professor-patrick-ebel
+  organisation: EAISI institute of TU/e
+  organisation_url: https://www.tue.nl/en/research/institutes/eindhoven-artificial-intelligence-systems-institute
+  year: 2025
+
+- name: Horizon Europe CERTAIN (WP leader)
+  name_url: https://www.tue.nl/en/news-and-events/news-overview/07-02-2025-innovation-in-safety-tues-certain-project-receives-horizon-europe-funding
+  organisation: European Commission
+  organisation_url: https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en
+  year: 2025
+
 - name: 4TU Design United probe
   name_url: 
   organisation: 4TU.NIRICT
   organisation_url: https://www.4tu.nl/du/design-research/probe-funding
   year: 2024
+
+- name: Grant for a PhD for tenure-trackers in the Netherlands
+  name_url:
+  organisation: Ministry of Education, Culture and Science of the Netherlands
+  organisation_url: https://www.government.nl/ministries/ministry-of-education-culture-and-science
+  year: 2023
 
 - name: 4TU.NIRICT Community fund
   name_url: https://www.4tu.nl/nirict/news/Two%20projects%20awarded%20funding%20for%204TU.NIRICT%20call%20Community%20Funding%202023

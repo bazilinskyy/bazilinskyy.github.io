@@ -1,6 +1,6 @@
 - name: Thomas van Heuvelen
   name_url: https://www.linkedin.com/in/thomas-van-heuvelen-6385271bb
-  project: TODO
+  project: AI-based safety system for a motorcycling helmet
   project_url:
   year: 2024
   status: completed
@@ -8,7 +8,7 @@
 
 - name: Matin Maskitou
   name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
-  project: TODO
+  project: In-vehicle dynamic interface
   year: 2025
   status: inprogress
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
@@ -29,17 +29,17 @@
 
 - name: Sanchayita Kainth
   name_url: https://www.linkedin.com/in/sanchayitakainth
-  project: TODO
+  project: Protection from particles for a high-performance machine
   year: 2025
   status: inprogress
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
-- name: Alexandra van Dijk
-  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
-  project: TODO
-  year: 2025
-  status: inprogress
-  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+# - name: Alexandra van Dijk
+#   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
+#   project: TODO
+#   year: 2025
+#   status: inprogress
+#   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Alexandra van Dijk
   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233

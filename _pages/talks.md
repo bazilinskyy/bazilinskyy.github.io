@@ -17,6 +17,16 @@ permalink: /talks/
 </div>
 {% endif %}
 
+{% if site.data.chairing_roman %}
+## IEEE RO-MAN
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for session in site.data.chairing_roman %}
+{{ forloop.index }}. {% if session.link %}<a href="{{ session.link }}" target="_blank">{% endif %}<strong>{{ session.title }}</strong>{% if session.link %}</a>{% endif %} ({{ session.year }}) – {{ session.location }}.{% if session.subtitle %}</br>{{ session.subtitle }}{% endif %}
+{% endfor %}
+</div>
+{% endif %}
+
 # Talks
 
 {% if site.data.conference_talks %}

@@ -1,6 +1,14 @@
+- name: Margarida Fortes Ferreira 
+  name_url: https://www.linkedin.com/in/margaridaff/
+  project: Vibe coding a driving simualator
+  project_url:
+  year: 2025
+  status: inprogress
+  comment: <a href="https://www.universiteitleiden.nl" target="_blank">Leiden University</a> student placement at TU/e
+
 - name: Giovanni Sapienza
   name_url: https://www.linkedin.com/in/giovanni-sapienza/
-  project: Enforcing the 1.5-metre distance between cyclists and drivers
+  project: Suspestion for a solar vehicle
   project_url:
   year: 2025
   status: inprogress
