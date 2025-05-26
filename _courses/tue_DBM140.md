@@ -11,7 +11,7 @@ type: msc
 students: 30+
 code: DBM140
 subheading: Focus on social robotics
-# pdf: tue_DCM220-studyguide
+pdf: tue_DBM140-studyguide
 comment:
 ---
 #### Introduction
