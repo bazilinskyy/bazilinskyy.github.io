@@ -2,6 +2,6 @@
   title={Pedestrian crossing behaviour in front of electric vehicles emitting synthetic sounds: A virtual reality experiment},
   author={Bazilinskyy, Pavlo and Alam, Md Shadab and Merino-Martınez, Roberto},
   booktitle={Proceedings of 54th International Congress & Exposition on Noise Control Engineering (INTER-NOISE)},
-  year={2025}
+  year={2025},
   address={São Paulo, Brazil}
 }
