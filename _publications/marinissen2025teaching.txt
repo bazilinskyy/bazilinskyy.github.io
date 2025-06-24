@@ -1,0 +1,5 @@
+@techreport{marinissen2025teaching,
+  title={Teaching multimodal interaction in cars to first-time users},
+  author={Marinissen, Thomas and Glimmann, Jonas and Bazilinskyy, Pavlo},
+  year={2025}
+}
