@@ -1,0 +1,5 @@
+@techreport{ferreira2025,
+  title={Vibe coding in practice: Building a driving simulator without expert programming skills}, 
+  author={Fortes-Ferreira, Margarida and Alam, Md Shadab and Bazilinskyy, Pavlo},
+  year={2025}
+}
