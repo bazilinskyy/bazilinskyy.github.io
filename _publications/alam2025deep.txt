@@ -2,6 +2,7 @@
   title={Deep learning approach for realistic traffic video changes across lighting and weather conditions},
   author={Alam, Md Shadab and Parmar, Sagar Hitendra and Martens, Marieke H. and Bazilinskyy, Pavlo},
   booktitle={Proceedings of International Conference on Information and Computer Technologies (ICICT)},
+  doi={10.1109/ICICT64582.2025.00034},
   year={2025},
   address={Hilo, HI, USA}
 }
