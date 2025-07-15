@@ -1,7 +1,7 @@
 ---
 layout: publication
 sitemap: false
-title: "Pedestrian planet: What 1,609 hours of YouTube driving from 133 countries teaches us about the world"
+title: "Pedestrian planet: What YouTube driving from 233 countries and territories teaches us about the world"
 authors: Alam, M. S., Martens, M. H., Bazilinskyy, P.
 pdf: alam2025pedestrian
 image: alam2025pedestrian.jpg
