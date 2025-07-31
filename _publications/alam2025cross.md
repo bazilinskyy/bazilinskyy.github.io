@@ -1,12 +1,12 @@
 ---
 layout: publication
 sitemap: false
-title: "Cross or Nah? LLMs Get in the mindset of a pedestrian in front of automated car with an eHMI"
+title: "Cross or Nah? LLMs get in the mindset of a pedestrian in front of automated car with an eHMI"
 authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2025cross
 image: alam2025cross.jpg
-display: Submitted for publication.
-year: 
+display: Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
+year: 2025
 doi: 
 code: https://github.com/Shaadalam9/llms-av-crowdsourced
 suppmat: https://www.dropbox.com/scl/fo/xs37ldfp72dspsrjykc2d/AEnstqB2KFDRjnnl8M0VJz8?rlkey=63vcekw3qr2c91ao38j1wtxow
