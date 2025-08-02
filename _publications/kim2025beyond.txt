@@ -1,6 +1,6 @@
 @article{kim2025beyond,
   title = {Beyond beeps: Evaluating soundscapes for take-over situations in automated vehicles},
-  author = {Soyeon Kim and Pavlo Bazilinskyy and Kexin Liang and René van Egmond and Riender Happee},
+  author = {Kim, Soyeon and Bazilinskyy, Pavlo and Liang, Kexin and Van Egmond, René and Happee, Riender},
   journal = {International Journal of Human–Computer Interaction},
   volume = {0},
   number = {0},

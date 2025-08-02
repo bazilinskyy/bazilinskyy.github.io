@@ -1,0 +1,7 @@
+@inproceedings{bazilinskyy2018graded,
+  title={Graded auditory feedback based on headway: An on-road pilot study},
+  author={Bazilinskyy, Pavlo and Stapel, Jork and De Koning, Coert and Lingmont, Hidde and De Lint, T. S. and Van der Sijs, T. C., Van den Ouden, F. C., Anema, Frank, De Winter, J. C. F.},
+  year={2018},
+  booktitle={Proceedings of the Human Factors and Ergonomics Society Europe Chapter 2017 Annual Conference (HFES Europe)},
+  address={Rome, Italy}
+}

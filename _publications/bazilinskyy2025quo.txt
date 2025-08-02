@@ -1,6 +1,6 @@
 @inproceedings{bazilinskyy2025quo,
   title={Quo-vadis multi-agent automotive research? Insights from a participatory workshop and questionnaire},
-  author={Pavlo Bazilinskyy and Francesco Walker and Debargha Dey and Tram, Thi Minh Tran and Hyungchai Park and Hyochang Kim and Hyunmin Kang and Patrick Ebel},
+  author={Bazilinskyy, Pavlo and Walker, Francesco and Dey, Debargha and Tran, Tram Thi Minh and Park, Hyungchai and Kim, Hyochang and Kang, Hyunmin and Ebel, Patrick},
   booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   address={Brisbane, QLD, Australia},
   year={2025},
