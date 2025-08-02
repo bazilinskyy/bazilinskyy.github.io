@@ -1,7 +1,7 @@
 @inproceedings{sapienza2025enhancing,
   title={Enhancing cyclist safety in the EU: A study on lateral overtaking distance across seven scenarios using lab and crowdsourced methods},
   author={Sapienza, Giovanni and Bazilinskyy, Pavlo},
-  booktitle={Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   address={Brisbane, QLD, Australia},
   year={2025},
   doi={10.1145/3744333.3747813}

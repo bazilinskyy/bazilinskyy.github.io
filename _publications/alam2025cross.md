@@ -5,7 +5,7 @@ title: "Cross or Nah? LLMs get in the mindset of a pedestrian in front of automa
 authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2025cross
 image: alam2025cross.jpg
-display: Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
+display: Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
 year: 2025
 doi: 10.1145/3744335.3758477
 code: https://github.com/Shaadalam9/llms-av-crowdsourced

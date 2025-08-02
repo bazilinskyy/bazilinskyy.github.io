@@ -5,7 +5,7 @@ title: "Vibe coding in practice: Building a driving simulator without expert pro
 authors: Fortes-Ferreira, M., Alam, M. S., Bazilinskyy, P.
 pdf: ferreira2025vibe
 image: ferreira2025vibe.jpg
-display: Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
+display: Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
 year: 2025
 doi: 10.1145/3744335.3758482
 code: https://github.com/Shaadalam9/vibe-simulator

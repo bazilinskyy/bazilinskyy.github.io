@@ -5,7 +5,7 @@ title: "Quo-vadis multi-agent automotive research? Insights from a participatory
 authors: Bazilinskyy, P., Walker, F., Dey, D., Tran, T., Park, H., Kim, H., Kang, H., Ebel, P.
 pdf: bazilinskyy2025quo
 image: bazilinskyy2025quo.jpg
-display: Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
+display: Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
 year: 2025
 doi: 10.1145/3744335.3758500
 suppmat: https://doi.org/10.4121/40d7a8c5-2c68-4681-8a15-a224be5ca1fe
