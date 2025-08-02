@@ -3,5 +3,6 @@
   author={Bazilinskyy, Pavlo and Ebel, Patrick and Walkder, Francesco and Debargha, Dey and Minh Tran, Tram Thi},
   booktitle={Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   year={2024},
-  address={Stanford, CA, USA}
+  address={Stanford, CA, USA},
+  doi={10.1145/3641308.3677400}
 }
