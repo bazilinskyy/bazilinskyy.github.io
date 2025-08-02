@@ -1,5 +1,4 @@
 # by Pavlo Bazilinskyy <pavlo.bazilinskyy@gmail.com>
-
 import os
 
 
