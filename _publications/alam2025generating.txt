@@ -3,5 +3,6 @@
   author={Alam, Md Shadab and Martens, Marieke H. and Bazilinskyy, Pavlo},
   booktitle={Proceedings of International Conference on Human Interaction & Emerging Technologies: Artificial Intelligence & Future Applications (IHIET-AI)},
   year={2025},
-  address={Malaga, Spain}
+  address={Malaga, Spain},
+  doi={10.54941/ahfe1005927}
 }
