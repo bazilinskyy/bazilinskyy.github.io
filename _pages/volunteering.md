@@ -48,7 +48,7 @@ Since 2022, I have been a treasurer (and a member of the excom) of MCAA. In reco
 
 #### Open science
 
-As an avid supporter of open science, since 2019, I have been a participant in [Open Cloud for Research Environments (OCRE)](https://www.ocre-project.eu). I was involved in the workshop to discuss the structure of [European Open Science Cloud (EOSC)](https://www.eosc.eu). I strongly believe that all anonymised output of all research must be accessible by the public by default (after all, we are doing science for the people). I publish all my articles in open access. Whenever possible, I keep datasets to all of my publications in open access at the [4TU.ResearchData](hhttps://data.4tu.nl/authors/00f5980d-ac77-4392-a6e2-e1c3304566b2) data repository. At TU/e, I am one of the of the leaders of [OSC/e](https://osceindhoven.github.io) (Open Science Community Eindhoven), where I serve with 0.1 FTE.
+As an avid supporter of open science, since 2019, I have been a participant in [Open Cloud for Research Environments (OCRE)](https://www.ocre-project.eu). I was involved in the workshop to discuss the structure of [European Open Science Cloud (EOSC)](https://www.eosc.eu). I strongly believe that all anonymised output of all research must be accessible by the public by default (after all, we are doing science for the people). I publish all my articles in open access. Whenever possible, I keep datasets to all of my publications in open access at the [4TU.ResearchData](https://data.4tu.nl/authors/00f5980d-ac77-4392-a6e2-e1c3304566b2) data repository. At TU/e, I am one of the of the leaders of [OSC/e](https://osceindhoven.github.io) (Open Science Community Eindhoven), where I serve with 0.1 FTE.
 
   <ul style="overflow: hidden">
   </ul>
