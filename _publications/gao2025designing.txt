@@ -1,0 +1,7 @@
+@inproceedings{gao2025designing,
+  title={Designing multi-modal communication for merge negotiation with automated vehicles: Insights from a design exploration with prototypes},
+  author={Gao, Ruolin and Liu, Haoyu and Bazilinskyy, Pavlo and Martens, Marieke H.},
+  booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  year={2025},
+  address={Brisbane, QLD, Australia}
+}

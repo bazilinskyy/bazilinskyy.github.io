@@ -1,7 +1,7 @@
 @inproceedings{bazilinskyy2022get,
   title={Get out of the way! Examining eHMIs in critical driver-pedestrian encounters in a coupled simulator},
   author={Bazilinskyy, Pavlo and Kooijman, Lars and Mallant, K. P. T. and Roosens, V. E. R. and Middelweerd, M. D. L. M. and Overbeek, L. D., Dodou Dimitra and De Winter, J. C. F.},
-  booktitle={Proceedings of International ACM Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  booktitle={Adjunct Proceedings of the 14th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   year={2022},
   address={Seoul, South Korea},
   doi={10.1145/3543174.3546849}

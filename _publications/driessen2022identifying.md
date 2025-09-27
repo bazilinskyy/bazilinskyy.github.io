@@ -5,7 +5,7 @@ title: "Identifying lane changes automatically using the GPS sensors of portable
 authors: Driessen, T., Prasad, L., Bazilinskyy, P., De Winter, J. C. F.
 pdf: driessen2022identifying
 image: driessen2022identifying.jpg
-display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). New York, USA
+display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). New York, NY, USA
 year: 2022
 code: https://github.com/tomdries/gps-lane-changes
 suppmat: https://doi.org/10.4121/19170302

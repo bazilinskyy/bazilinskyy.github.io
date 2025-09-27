@@ -5,7 +5,7 @@ title: "Crowdsourced assessment of 227 text-based eHMIs for a crossing scenario"
 authors: Bazilinskyy, P., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2022crowdsourced
 image: bazilinskyy2022crowdsourced.jpg
-display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). New York, USA
+display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). New York, NY, USA
 year: 2022
 code: https://github.com/bazilinskyy/text-crowdsourced
 doi: 10.54941/ahfe1002444

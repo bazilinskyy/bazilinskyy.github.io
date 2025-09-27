@@ -5,7 +5,7 @@ title: "Visual attention of pedestrians in traffic scenes: A crowdsourcing exper
 authors: Bazilinskyy, P., Kyriakidis, M., De Winter, J. C. F.
 pdf: bazilinskyy2021visual
 image: bazilinskyy2021visual.jpg
-display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). New York, USA
+display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). New York, NY, USA
 year: 2021
 doi: 10.1007/978-3-030-80012-3_18
 suppmat: https://doi.org/10.4121/13614824

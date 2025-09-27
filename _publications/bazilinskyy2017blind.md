@@ -5,7 +5,7 @@ title: "Blind driving by means of a steering-based predictor algorithm"
 authors: Bazilinskyy, P., Beaumont, C. J. A. M., Van der Geest, X. O. S., De Jonge, R. F., Van der Kroft, K., De Winter, J. C. F. 
 pdf: bazilinskyy2017blind
 image: bazilinskyy2017blind.jpg
-display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE) Los Angeles, USA
+display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). Los Angeles, CA, USA
 year: 2017
 doi: 10.1007/978-3-319-60441-1_45
 suppmat: https://doi.org/10.4121/uuid:6c02218f-cd2c-4eb2-8c93-1eeac44690ed

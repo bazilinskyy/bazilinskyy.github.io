@@ -5,7 +5,7 @@ title: "The effect of drivers’ eye contact on pedestrians’ perceived safety"
 authors: Onkhar, V., Bazilinskyy, P., Dodou, D., De Winter, J. C. F.
 pdf: onkhar2022effect
 image: onkhar2022effect.jpg
-display: "Transportation Research Part F: Traffic Psychology and Behaviour, 84, 194-210"
+display: "Transportation Research Part F: Traffic Psychology and Behaviour, 84, 194–210"
 year: 2022
 doi: 10.1016/j.trf.2021.10.017
 suppmat: https://doi.org/10.4121/16866709

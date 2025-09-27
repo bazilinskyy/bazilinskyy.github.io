@@ -1,0 +1,7 @@
+@inproceedings{lingam2025thumbs,
+  title={Thumbs up or pointing? Guiding a delivery drone under uncertainty in public space},
+  author={Lingam, Shiva Nischal and Woziwodski, Jakub, and Obaid, Mohammad and Martens, M. H. and Bazilinskyy, Pavlo},
+  booktitle={Proceedings of the 13th International Conference on Human-Agent Interaction (HAI)},
+  year={2025},
+  address={Yokohama, Japan}
+}

@@ -5,7 +5,7 @@ title: "Bio-inspired intent communication for automated vehicles"
 authors: Oudshoorn, M. P. J., De Winter, J. C. F., Bazilinskyy, P., Dodou, D.
 pdf: oudshoorn2021bio
 image: oudshoorn2021bio.jpg
-display: "Transportation Research Part F: Traffic Psychology and Behaviour, 80, 127-140"
+display: "Transportation Research Part F: Traffic Psychology and Behaviour, 80, 127–140"
 year: 2021
 doi: 10.1016/j.trf.2021.03.021
 suppmat: https://doi.org/10.4121/14096067

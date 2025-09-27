@@ -5,7 +5,7 @@ title: "Survey on eHMI concepts: The effect of text, color, and perspective"
 authors: Bazilinskyy, P., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2019survey
 image: bazilinskyy2019survey.jpg
-display: "Transportation Research Part F: Traffic Psychology and Behaviour, 67, 175-194"
+display: "Transportation Research Part F: Traffic Psychology and Behaviour, 67, 175–194"
 year: 2019
 doi: 10.1016/j.trf.2019.10.013
 suppmat: https://doi.org/10.4121/uuid:9ea78136-3ffc-4194-84f7-3116b6a55758

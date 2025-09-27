@@ -5,7 +5,7 @@ title: "Get out of the way! Examining eHMIs in critical driver-pedestrian encoun
 authors: Bazilinskyy, P., Kooijman, L., Dodou, D., Mallant, K. P. T., Roosens, V. E. R., Middelweerd, M. D. L. M., Overbeek, L. D., De Winter, J. C. F.
 pdf: bazilinskyy2022get
 image: bazilinskyy2022get.jpg
-display: Proceedings of International ACM Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)
+display: Adjunct Proceedings of the 14th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Seoul, South Korea
 year: 2022
 doi: 10.1145/3543174.3546849
 code: https://github.com/bazilinskyy/coupled-sim-evasive
