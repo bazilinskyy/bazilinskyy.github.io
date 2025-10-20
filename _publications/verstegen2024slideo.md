@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Slideo: Using bicycle-to-vehicle communication to intuitively share intentions to automated vehicles"
-authors: Versteggen, J., Bazilinskyy, P.
+authors: Verstegen, J., Bazilinskyy, P.
 pdf: verstegen2024slideo
 image: verstegen2024slideo.jpg
 display: Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE). Nice, France

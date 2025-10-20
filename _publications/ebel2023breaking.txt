@@ -3,7 +3,7 @@
   author={Ebel, Patrick and Bazilinskyy, Pavlo and Hwang, Angel Hsing-Chi and Ju, Wendy and  Sandhaus, Hauke and Srinivasan, Aravinda Ramakrishnan and Yang, Qian and Wintersberger, Philipp},
   booktitle={Adjunct Proceedings of the 15th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   year={2023},
-  pages={227--230}
+  pages={227--230},
   doi={10.1145/3581961.3609835},
   address={Ingolstadt, Germany}
 }
