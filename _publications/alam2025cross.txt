@@ -1,5 +1,5 @@
 @inproceedings{alam2025cross,
-  title={Cross or Nah? LLMs get in the mindset of a pedestrian in front of automated car with an eHMI},
+  title={Cross or nah? LLMs get in the mindset of a pedestrian in front of automated car with an eHMI},
   author={Alam, Md Shadab and and Bazilinskyy, Pavlo},
   booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   address={Brisbane, QLD, Australia},
