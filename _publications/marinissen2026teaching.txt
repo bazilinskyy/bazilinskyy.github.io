@@ -1,0 +1,7 @@
+@inproceedings{marinissen2026teaching,
+  title={Teaching multimodal interaction in cars to first-time users},
+  author={Marinissen, Thomas and Glimmann, Jonas and Bazilinskyy, Pavlo},
+  year={2026},
+  booktitle={Proceedings of the 16th International Conference on Human Interaction & Emerging Technologies (IHIET-AI)},
+  address={Valencia, Spain}
+}

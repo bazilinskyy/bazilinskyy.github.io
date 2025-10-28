@@ -5,7 +5,7 @@ title: "Visual feedback for in-car voice assistants"
 authors: Marinissen, T., Bazilinskyy, P.
 pdf: marinissen2026visual
 image: marinissen2026visual.jpg
-display: "Proceedings of the 9th International Conference on Human Intelligent Systems Integration (IHSI): Disruptive and Innovative Technologies. Florence, Italy"
+display: "Proceedings of the 9th International Conference on Human Intelligent Systems Integration (IHSI). Florence, Italy"
 year: 2026
 code: https://cloud.protopie.io/p/4dfbded4fb1d4793a626cf6c
 suppmat: https://doi.org/10.4121/608d5a43-47a1-4f12-ba8e-994767218ee5
