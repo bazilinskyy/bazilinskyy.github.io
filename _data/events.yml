@@ -120,12 +120,12 @@
 
 - date_start: 23.06.2025
   date_end: 26.06.2025
-  headline: "Euronoise"
+  headline: "Euronoise Conference"
   location: Malaga, Spain
 
 - date_start: 24.08.2025
   date_end: 27.08.2025
-  headline: "Internoise"
+  headline: "Internoise Conference"
   location: São Paulo, Brazil
 
 - date_start: 18.09.2025
@@ -137,3 +137,19 @@
   date_end: 25.09.2025
   headline: "Automotive User Interfaces (AutoUI) Conference"
   location: Brisbane, QLD, Australia
+
+- date_start: 18.11.2025
+  date_end: 20.11.2025
+  headline: "Science Europe High Level Workshop on the ERA"
+  location: Oslo, Norway
+
+- date_start: 11.02.2026
+  date_end: 13.02.2026
+  headline: "Intelligent Human Systems Integration (IHSI) Conference"
+  location: Florence, Italy
+
+- date_start: 23.04.2026
+  date_end: 25.04.2026
+  headline: "Human Interaction & Emerging Technologies: Artificial Intelligence & Future Applications
+ (IHIET-AI) Conference"
+  location: Valencia, Spain
