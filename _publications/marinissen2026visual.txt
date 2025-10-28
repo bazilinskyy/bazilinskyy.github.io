@@ -1,4 +1,4 @@
-@techreport{marinissen2025visual,
+@inproceedings{marinissen2025visual,
   title={Visual feedback for in-car voice assistants},
   author={Marinissen, Thomas and Bazilinskyy, Pavlo},
   year={2025}
