@@ -3,8 +3,8 @@ layout: publication
 sitemap: false
 title: "Teaching multimodal interaction in cars to first-time users"
 authors: Marinissen, T., Glimmann, J., Bazilinskyy, P.
-pdf: marinissen2025teaching
-image: marinissen2025teaching.jpg
+pdf: marinissen2026teaching
+image: marinissen2026teaching.jpg
 display: "Proceedings of the 16th International Conference on Human Interaction & Emerging Technologies (IHIET-AI). Valencia, Spain"
 year: 2026
 suppmat: https://dropbox.com/scl/fo/phkpuxl12eeils4ylxlvx/AOZ-2nRVXgCOuVf3rugx0_A?rlkey=8oo0oc38hleyic8mxnabcl5ko
