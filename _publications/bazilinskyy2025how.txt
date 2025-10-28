@@ -1,0 +1,5 @@
+@techreport{bazilinskyy2025how,
+  title={How should drivers’ use of Automated Lane Keeping Systems (ALKS) be assessed? A study with experienced driving assessors in a Wizard of Oz vehicle},
+  author={Bazilinskyy, Pavlo and Heikoop, Daniel and Verstegen, Rutger and Martens, Marieke H. and De Winter, J. C. F.},
+  year={2025}
+}
