@@ -1,8 +1,53 @@
+- name: Bakker Nikki, Thom van Os, Stewart Kealan, Uijlenhoet Tom, Zhang Hemai
+  name_url: 
+  project: Improving cyclist comfort around autoamted vehicles
+  project_url:
+  year: 2025
+  status: inprogress
+  comment: M1.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Max Crutzen
+  name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
+  project: Configurable furniture
+  year: 2025
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Xinyue Liu
+  name_url: https://www.linkedin.com/in/xinyue-liu-4080692a8
+  project: Trust of automated vehicles
+  year: 2025
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Matin Maskitou
+  name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
+  project: Reduction of distraction from mobile phone use during driving
+  year: 2025
+  status: inprogress
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Thomas van Heuvelen
   name_url: https://www.linkedin.com/in/thomas-van-heuvelen-6385271bb
-  project: AI-based safety system for a motorcycling helmet
+  project: A predictive safety motorcycle helmet
   project_url:
-  year: 2024
+  year: 2025
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Giovanni Sapienza
+  name_url: https://www.linkedin.com/in/giovanni-sapienza
+  project: Gravel bicycle frame out of carbon and linen 
+  project_url:
+  year: 2025
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Thomas van Heuvelen
+  name_url: https://www.linkedin.com/in/thomas-van-heuvelen-6385271bb
+  project: "A third eye for motorcycle riders: Researching the requirements for a predictive safety motorcycle helmet."
+  project_url:
+  year: 2025
   status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
@@ -10,28 +55,28 @@
   name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
   project: In-vehicle dynamic interface
   year: 2025
-  status: inprogress
+  status: fail
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Max Crutzen
-  name_url: 
+  name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
   project: Vibrotactile sensory replacement
   year: 2025
-  status: inprogress
+  status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xinyue Liu
-  name_url: 
+  name_url: https://www.linkedin.com/in/xinyue-liu-4080692a8
   project: Innovating automotive lighting experiences
   year: 2025
-  status: inprogress
+  status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Sanchayita Kainth
   name_url: https://www.linkedin.com/in/sanchayitakainth
   project: Protection from particles for a high-performance machine
   year: 2025
-  status: inprogress
+  status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 # - name: Alexandra van Dijk
@@ -67,7 +112,7 @@
 - name: Thomas van Heuvelen
   name_url: https://www.linkedin.com/in/thomas-van-heuvelen-6385271bb
   project: Accident avoidance for motorcyclists
-  project_url:
+  project_url: https://mobility-squad.com/motoGuardian
   year: 2024
   status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
@@ -268,7 +313,7 @@
   project: Auditory feedback for communication between a vehicle and a pedestrian
   project_url:
   year: 2019
-  status: inprogress
+  status: fail
 
 # - name: 
 #   name_url: 

@@ -2,10 +2,10 @@
 layout: publication
 sitemap: false
 title: "How should drivers’ use of Automated Lane Keeping Systems (ALKS) be assessed? A study with experienced driving assessors in a Wizard of Oz vehicle"
-authors: Bazilinskyy, P., Heikoop, D., Verstegen, R., Martens, M. H., De Winter, J. C. F.,
+authors: Bazilinskyy, P., Heikoop, D., Verstegen, R., Martens, M. H., De Winter, J. C. F.
 pdf: bazilinskyy2025how
 image: bazilinskyy2025how.jpg
-display: Submitted for publication
+display: Submitted for publication.
 # year: 
 # doi: 
 suppmat: https://www.dropbox.com/scl/fo/cojlmto3wlzpiih0omtp8/ALEX3oPYuRPkftE1of8AvY4?rlkey=boggm3hvva7o23g1cql86aqn7

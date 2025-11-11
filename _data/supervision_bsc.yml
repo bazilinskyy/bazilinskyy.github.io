@@ -1,15 +1,25 @@
-- name: Axel Reitz
-  project: Human-drone interaction in critical situations
+- name: Nikita Jeevanath
+  name_url: https://www.linkedin.com/in/nikita-jeevanath-979a041ab
+  project: How should drivers’ use of Automated Lane Keeping Systems (ALKS) be assessed?
   project_url: 
   year: 2025
   status: inprogress
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
+- name: Axel Reitz
+  name_url: https://www.linkedin.com/in/axel-reitz-28140b285
+  project: Human-drone interaction in critical situations
+  project_url: 
+  year: 2025
+  status: completed
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Jakub Woziwodzki
+  name_url: https://www.linkedin.com/in/jakub-woziwodzki-70373a211
   project: Human-drone interaction under uncertainty in public spaces
   project_url: 
   year: 2025
-  status: inprogress
+  status: completed
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Wouter Salden, Jakub Woziwodzki, Axel Reitz
@@ -20,7 +30,7 @@
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Jochem Verstegen
-  name_url: https://www.linkedin.com/in/jochemverstegen/
+  name_url: https://www.linkedin.com/in/jochemverstegen
   project: Slidable bicycle handle for AV interaction
   project_url: https://mobility-squad.com/slideo
   year: 2023
