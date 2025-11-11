@@ -65,6 +65,14 @@
   status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
+- name: Haoyu Liu
+  name_url: https://www.linkedin.com/in/haoyu-liu-ab22732b8
+  project: Designing multi-modal communication for merge negotiation with automated vehicles
+  project_url: http://localhost:4000/publications/gao2025designing
+  year: 2025
+  status: completed
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Xinyue Liu
   name_url: https://www.linkedin.com/in/xinyue-liu-4080692a8
   project: Innovating automotive lighting experiences
@@ -133,11 +141,19 @@
   status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
+- name: Haoyu Liu
+  name_url: https://www.linkedin.com/in/haoyu-liu-ab22732b8
+  project: An inter-vehicle communication interaction enhancing manual driver’s perception to calibrate trust in AVs
+  project_url: https://mobility-squad.com/interVehicle
+  year: 2024
+  status: completed
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Jom Dieben, Ugnė Aleksandra Morkute
   name_url: 
   project: Group trust during automated and manual driving
   year: 2024
-  status: inprogress
+  status: completed
   comment: Co-supervision of MSc thesis at University of Leiden
 
 - name: Xander Fanchamps, Giovanni Sapienza, Thomas van Heuvelen, Matin Maskitou
@@ -222,7 +238,7 @@
   project: Looking behaviour of pedestrians
   project_url:
   year: 2022
-  status: inprogress
+  status: fail
 
 - name: Iva Surana
   name_url: https://www.linkedin.com/in/ivasurana
