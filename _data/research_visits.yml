@@ -1,3 +1,8 @@
+- institution: EPFL
+  institution_url: https://www.epfl.ch/labs/vita
+  location: Lausanne, Switzerlands
+  period: 07.2025
+
 - institution: Uppsala University
   institution_url: https://www2.it.uu.se/itwiki.php?page=research/group/CPS-Lab&action=browse
   location: Uppsala, Sweden
@@ -9,7 +14,7 @@
   period: 10–12.2019
 
 - institution: VTTI, Virginia Tech
-  institution_url: https://www.vtti.vt.edu/
+  institution_url: https://www.vtti.vt.edu
   location: Blacksburg, VA, USA
   period: 11–12.2017
 
