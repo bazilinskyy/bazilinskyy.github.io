@@ -4,7 +4,15 @@
   project_url:
   year: 2025
   status: inprogress
-  comment: Co-supervision with IR&IS Department
+  comment: Co-supervision with IE&IS department
+
+- name: Haoyu Liu
+  name_url: https://www.linkedin.com/in/haoyu-liu-ab22732b8
+  project: Joystick for communication with road users
+  project_url:
+  year: 2025
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Bakker Nikki, Thom van Os, Stewart Kealan, Uijlenhoet Tom, Zhang Hemai
   name_url: 
@@ -19,14 +27,14 @@
   project: Configurable furniture
   year: 2025
   status: inprogress
-  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xinyue Liu
   name_url: https://www.linkedin.com/in/xinyue-liu-4080692a8
   project: Ambient visual feedback for SAE level 3/4 automated vehicle
   year: 2025
   status: inprogress
-  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Matin Maskitou
   name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
