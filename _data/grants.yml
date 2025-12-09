@@ -1,3 +1,15 @@
+- name: SURF Cooperative using grant
+  name_url: https://www.surf.nl/en/small-compute-applications-nwo
+  organisation: SURF
+  organisation_url: https://www.surf.nl/en
+  year: 2025
+
+- name: EAISI Visiting professor grant for Dr. M. Colley to visit TU/e
+  name_url: https://www.tue.nl/en/our-university/calendar-and-events/09-12-2025-eaisi-lecture-by-visiting-professor-mark-colley
+  organisation: EAISI institute of TU/e
+  organisation_url: https://www.tue.nl/en/research/institutes/eindhoven-artificial-intelligence-systems-institute
+  year: 2025
+
 - name: EuroTech Visiting Researcher grant for visiting EPFL
   name_url: https://eurotech-universities.eu/funding/eurotech-visiting-researcher-programme
   organisation: EuroTech Universities Alliance 
