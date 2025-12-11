@@ -1,7 +1,7 @@
-- name: SURF Cooperative using grant
+- name: NWO Small compute application
   name_url: https://www.surf.nl/en/small-compute-applications-nwo
-  organisation: SURF
-  organisation_url: https://www.surf.nl/en
+  organisation: NWO
+  organisation_url: https://www.nwo.nl/en
   year: 2025
 
 - name: EAISI Visiting professor grant for Dr. M. Colley to visit TU/e
