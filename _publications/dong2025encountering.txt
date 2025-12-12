@@ -1,0 +1,7 @@
+@inproceedings{dong2025encountering,
+  title={Encountering automation surprise in everyday automated driving: An exploratory phenomenological inspired study using a Wizard‐of‐Oz vehicle on real motorway},
+  author={Dong, Haoyu and Yuanzi, Wang and Bazilinskyy, Pavlo and Bruns, Miguel and Martens, Marieke H.},
+  year={2025},
+  booktitle={Proceedings of International Association of Societies of Design Research Congress 2025},
+  address={Taipei, Taiwan}
+}
