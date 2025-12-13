@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Exploring holistic HMI design for automated vehicles: Insights from participatory workshop to bridge in-vehicle and external communication"
-authors: Dong, H., Tran, T., Verstegen, R., Cazacu, S., Gao, R., Hoggenmüller, M., Dey, D., Franssen, M., Sasalovici, M., Bazilinskyy, P., Martens. M.
+authors: Dong, H., Tran, T., Verstegen, R., Cazacu, S., Gao, R., Hoggenmüller, M., Dey, D., Franssen, M., Sasalovici, M., Bazilinskyy, P., Martens, M. H.
 pdf: dong2024exploring
 image: dong2024exploring.jpg
 display: "Extended Abstracts of the 2024 CHI Conference on Human Factors in Computing Systems. Honolulu, HI, USA"

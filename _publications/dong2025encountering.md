@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Encountering automation surprise in everyday automated driving: An exploratory phenomenological inspired study using a Wizard‐of‐Oz vehicle on real motorways"
-authors: Dong, H., Yuanzi, W., Bazilinskyy, P., Bruns, M., Martens. M. H.
+authors: Dong, H., Yuanzi, W., Bazilinskyy, P., Bruns, M., Martens, M. H.
 pdf: dong2025encountering
 image: dong2025encountering.jpg
 display: "Proceedings of International Association of Societies of Design Research Congress (IASDR). Taipei, Taiwan"

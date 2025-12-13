@@ -1,0 +1,5 @@
+@techreport{zeng2026enhancing,
+  title={Enhancing driver experience in SAE level 3 automated vehicles through multimodal and emotion-aware in-vehicle agents},
+  author={Zeng, Xingjian and Alam, Md Shadab and Bazilinskyy, Pavlo},
+  year={2025}
+}

@@ -1,0 +1,5 @@
+@techreport{alam2026you,
+  title={You’ll never walk alone: Inter-pedestrian distance, eHMIs, and crossing decisions in virtual reality},
+  author={Alam, Md Shadab and Dey, Debargha and Martens, Marieke H. and Bazilinskyy, Pavlo},
+  year={2026}
+}
