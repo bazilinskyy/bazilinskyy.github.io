@@ -1,5 +1,5 @@
 @techreport{alam2026eighteen,
-  title={Eighteen years of ASMR on YouTube: A multilingual, theme-Level analysis of 20,087 videos},
+  title={Eighteen years of ASMR on YouTube: A multilingual, theme-level analysis of 20,087 videos},
   author={Alam, Md Shadab and Bazilinskyy, Pavlo},
   year={2026}
 }

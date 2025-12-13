@@ -1,7 +1,7 @@
 ---
 layout: publication
 sitemap: false
-title: "Eighteen years of ASMR on YouTube: A multilingual, theme-Level analysis of 20,087 videos"
+title: "Eighteen years of ASMR on YouTube: A multilingual, theme-level analysis of 20,087 videos"
 authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2026eighteen
 image: alam2026eighteen.jpg
