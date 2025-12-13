@@ -5,7 +5,7 @@ title: "You’ll never walk alone: Inter-pedestrian distance, eHMIs, and crossin
 authors: Alam, M. S., Dey, D., Martens., M. H., Bazilinskyy, P.
 pdf: alam2026you
 image: alam2026you.jpg
-display: Submitted for publication.
+display: In preparation.
 # year:
 # doi:
 # code:
