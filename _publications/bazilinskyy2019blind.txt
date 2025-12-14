@@ -1,7 +1,7 @@
 @inproceedings{bazilinskyy2019blind,
   title={Blind driving by means of the track angle error},
   author={Bazilinskyy, Pavlo and Bijker, Laurens and Dielissen, Tim and French, Shin and Mooijman, Tom and Peters, Luka and Happee, Riender and Dodou, Dimitra and De Winter, J. C. F.},
-  booktitle={Proceedings of International Congress on Sound and Vibration (ICSE)},
+  booktitle={Proceedings of International Congress on Sound and Vibration (ICSV)},
   year={2019},
   organization={Canadian Acoustical Association},
   address={Montreal, Canada}

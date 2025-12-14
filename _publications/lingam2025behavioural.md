@@ -5,7 +5,7 @@ title: "Behavioural effects of a delivery drone on feelings of uncertainty: A vi
 authors: Lingam, S. N., Petermeijer, S. M., Torre, I., Bazilinskyy, P., Ljungblad, S., Martens, M. H.
 pdf: lingam2025behavioural
 image: lingam2025behavioural.jpg
-display: ACM Transactions on Human-Robot Interaction
+display: ACM Transactions on Human-Robot Interaction, 14(4), 1–27
 year: 2025
 doi: 10.1145/3729538
 suppmat: https://dl.acm.org/doi/10.1145/3729538

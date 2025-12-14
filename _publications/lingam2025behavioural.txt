@@ -4,6 +4,10 @@
   journal={ACM Transactions on Human-Robot Interaction},
   year={2025},
   publisher={Association for Computing Machinery},
+  articleno = {63},
+  numpages = {27},
+  volume = {14},
+  number = {4},
   address={New York, NY, USA},
   doi={10.1145/3729538}
 }

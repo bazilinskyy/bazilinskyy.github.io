@@ -31,7 +31,7 @@
 - date_start: 18.09.2023
   date_end: 21.09.2023
   headline: "Automotive User Interfaces (AutoUI) Conference"
-  location: Ingolstand, Germany
+  location: Ingolstadt, Germany
 
 - date_start: 14.11.2023
   date_end: 15.11.2023
@@ -125,7 +125,7 @@
 
 - date_start: 24.08.2025
   date_end: 27.08.2025
-  headline: "Internoise Conference"
+  headline: "INTER-NOISE Conference"
   location: São Paulo, Brazil
 
 - date_start: 18.09.2025
@@ -158,3 +158,8 @@
   headline: "Human Interaction & Emerging Technologies: Artificial Intelligence & Future Applications
  (IHIET-AI) Conference"
   location: Valencia, Spain
+
+- date_start: 20.09.2026
+  date_end: 23.09.2026
+  headline: "Automotive User Interfaces (AutoUI) Conference"
+  location: Gothenburg, Sweden

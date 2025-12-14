@@ -5,7 +5,7 @@ title: "Predicting perceived risk of traffic scenes using computer vision"
 authors: De Winter, J. C. F., Hoogmoed, J., Stapel, J., Dodou, D., Bazilinskyy, P.
 pdf: dewinter2023predicting
 image: dewinter2023predicting.jpg
-display: "Transportation Research Part F: Traffic Psychology and Behaviour, 84, 194–210"
+display: "Transportation Research Part F: Traffic Psychology and Behaviour, 93, 35–247"
 year: 2023
 doi: 10.1016/j.trf.2023.01.014
 suppmat: https://doi.org/10.4121/21952685
