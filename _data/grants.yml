@@ -34,6 +34,12 @@
   organisation_url: https://www.4tu.nl/du/design-research/probe-funding
   year: 2024
 
+- name: Support in preparation of CSA 2024
+  name_url:
+  organisation: European Commission
+  organisation_url: https://commission.europa.eu
+  year: 2024
+
 - name: Grant for a PhD for tenure-trackers in the Netherlands
   name_url:
   organisation: Ministry of Education, Culture and Science of the Netherlands
@@ -46,20 +52,14 @@
   organisation_url: https://www.4tu.nl/nirict
   year: 2023
 
-- name: FAIR Data fund
-  name_url: https://community.data.4tu.nl/2021/05/15/fair-data-fund-spring-call-2021-meet-the-grantees
-  organisation: 4TU.ResearchData
-  organisation_url: https://data.4tu.nl
-  year: 2021
-
-- name: Support in preperation of CSA (HORIZON-MSCA-2022-ALUMNI-IBA)
+- name: Support in preparation of CSA (HORIZON-MSCA-2022-ALUMNI-IBA)
   name_url: https://cordis.europa.eu/project/id/101086922
   organisation: European Commission
   organisation_url: https://commission.europa.eu
   year: 2022
 
-- name: Support in preperation of CSA 2024
-  name_url:
-  organisation: European Commission
-  organisation_url: https://commission.europa.eu
-  year: 2022
+- name: FAIR Data fund
+  name_url: https://community.data.4tu.nl/2021/05/15/fair-data-fund-spring-call-2021-meet-the-grantees
+  organisation: 4TU.ResearchData
+  organisation_url: https://data.4tu.nl
+  year: 2021
