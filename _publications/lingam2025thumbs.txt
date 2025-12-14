@@ -3,5 +3,6 @@
   author={Lingam, Shiva Nischal and Woziwodski, Jakub, and Obaid, Mohammad and Martens, M. H. and Bazilinskyy, Pavlo},
   booktitle={Proceedings of the 13th International Conference on Human-Agent Interaction (HAI)},
   year={2025},
-  address={Yokohama, Japan}
+  address={Yokohama, Japan},
+  doi={10.1145/3765766.3765837}
 }

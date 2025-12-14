@@ -3,5 +3,6 @@
   author={Marinissen, Thomas and Bazilinskyy, Pavlo},
   year={2026},
   booktitle={Proceedings of the 9th International Conference on Human Intelligent Systems Integration (IHSI)},
-  address={Florence, Italy}
+  address={Florence, Italy},
+  doi={10.54941/AHFE-Paper-0013}
 }
