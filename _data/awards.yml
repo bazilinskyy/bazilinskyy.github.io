@@ -1,3 +1,9 @@
+- name: SaxFDM Open Data Award
+  name_url: https://saxfdm.de/wrapup-2025
+  organisation: SaxFDM
+  organisation_url: https://saxfdm.de
+  year: 2025
+
 - name: AutoUI Honorable Mention Award
   name_url: https://www.auto-ui.org/25/authors/papers
   organisation: SIGCHI
