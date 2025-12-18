@@ -1,3 +1,9 @@
+- name: EAISI Visiting professor grant for Dr. M. Hoggenmueller to visit TU/e
+  name_url: 
+  organisation: EAISI institute of TU/e
+  organisation_url: https://www.tue.nl/en/research/institutes/eindhoven-artificial-intelligence-systems-institute
+  year: 2026
+
 - name: NWO Small compute application
   name_url: https://www.surf.nl/en/small-compute-applications-nwo
   organisation: NWO
