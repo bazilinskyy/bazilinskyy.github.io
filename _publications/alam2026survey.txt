@@ -1,0 +1,5 @@
+@techreport{alam2026survey,
+  title={A survey of day-night illumination domain translation for outdoor vision covering 30 methods 22 datasets and evaluation protocols},
+  author={Alam, Md Shadab and Singh, Priyanshu and Bazilinskyy, Pavlo},
+  year={2026}
+}
