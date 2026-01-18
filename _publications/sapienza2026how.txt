@@ -1,0 +1,5 @@
+@techreport{sapienza2026how,
+  title={How sustainable materials are judged in motion: Designing and testing a hybrid carbon–flax composite gravel bicycle frame},
+  author={Sapienza, Giovanni and Bazilinskyy, Pavlo},
+  year={2026}
+}
