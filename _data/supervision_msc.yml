@@ -249,12 +249,18 @@
   year: 2023
   status: completed
 
-- name: Noureddine Begga
-  name_url: https://www.researchgate.net/profile/Noureddine-Begga
+- name: Student
   project: Looking behaviour of pedestrians
   project_url:
   year: 2022
   status: fail
+
+# - name: Noureddine Begga
+#   name_url: https://www.researchgate.net/profile/Noureddine-Begga
+#   project: Looking behaviour of pedestrians
+#   project_url:
+#   year: 2022
+#   status: fail
 
 - name: Iva Surana
   name_url: https://www.linkedin.com/in/ivasurana
