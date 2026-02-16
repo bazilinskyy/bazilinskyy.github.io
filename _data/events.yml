@@ -153,6 +153,16 @@
   headline: "Intelligent Human Systems Integration (IHSI) Conference"
   location: Florence, Italy
 
+- date_start: 23.03.2026
+  date_end: 26.03.2026
+  headline: "Intelligent User Interfaces (IUI) Conference"
+  location: Paphos, Cyprus
+
+- date_start: 13.04.2026
+  date_end: 16.04.2026
+  headline: "Conference on Human Factors in Computing Systems (CHI)"
+  location: Barcelona, Spain
+
 - date_start: 23.04.2026
   date_end: 25.04.2026
   headline: "Human Interaction & Emerging Technologies: Artificial Intelligence & Future Applications

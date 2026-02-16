@@ -1,3 +1,9 @@
+- name: FAIR Data fund
+  name_url: https://community.data.4tu.nl/the-fair-data-fund
+  organisation: 4TU.ResearchData
+  organisation_url: https://data.4tu.nl
+  year: 2026
+
 - name: EAISI Visiting professor grant for Dr. M. Hoggenmueller to visit TU Eindhoven
   name_url: 
   organisation: EAISI institute of TU Eindhoven
