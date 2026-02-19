@@ -1,3 +1,9 @@
+- name: Leadership micro grant
+  name_url: https://www.mariecuriealumni.eu/mcaa-leadership-micro-grant-2025-26
+  organisation: MCAA
+  organisation_url: https://www.mariecuriealumni.eu
+  year: 2025
+
 - name: FAIR Data fund
   name_url: https://community.data.4tu.nl/the-fair-data-fund
   organisation: 4TU.ResearchData
