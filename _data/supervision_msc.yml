@@ -1,3 +1,47 @@
+- name: Wessel Verstelle
+  name_url: https://www.linkedin.com/in/wessel-verstelle
+  project: Generative AI approaches to car sound design and analysis
+  year: 2026
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Matin Maskitou
+  name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
+  project: TBD
+  year: 2026
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Matin Maskitou
+  name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
+  project: TBD
+  year: 2026
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Max Crutzen
+  name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
+  project: TBD
+  year: 2026
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Sharavan Saai Govindaraj
+  name_url: https://www.linkedin.com/in/saai-sharavan
+  project: TBD
+  project_url:
+  year: 2026
+  status: inprogress
+  comment: Co-supervision with IE&IS department
+
+- name: Niranjan Swaminathan
+  name_url: https://www.linkedin.com/in/niranjan-swaminathan/
+  project: Context-aware exterior sound design for electric vehicles to improve pedestrian crossing safety
+  project_url:
+  year: 2026
+  status: inprogress
+  comment: Co-supervision with IE&IS department
+
 - name: Christian Janssen
   name_url: https://www.linkedin.com/in/christian-janssen-783156288
   project: Dynamic external Human-Machine Interface for pedestrians
@@ -11,7 +55,7 @@
   project: Joystick for communication with road users
   project_url:
   year: 2025
-  status: inprogress
+  status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Bakker Nikki, Thom van Os, Stewart Kealan, Uijlenhoet Tom, Zhang Hemai
@@ -19,28 +63,28 @@
   project: Improving cyclist comfort around automated vehicles
   project_url:
   year: 2025
-  status: inprogress
+  status: completed
   comment: M1.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Max Crutzen
   name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
   project: Configurable furniture
   year: 2025
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xinyue Liu
   name_url: https://www.linkedin.com/in/xinyue-liu-4080692a8
   project: Ambient visual feedback for SAE level 3/4 automated vehicle
   year: 2025
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Matin Maskitou
   name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
   project: Reduction of distraction from mobile phone use during driving
   year: 2025
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Thomas van Heuvelen
@@ -48,7 +92,7 @@
   project: A predictive safety motorcycle helmet
   project_url:
   year: 2025
-  status: inprogress
+  status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Giovanni Sapienza
@@ -56,7 +100,7 @@
   project: Gravel bicycle frame out of carbon and linen 
   project_url:
   year: 2025
-  status: inprogress
+  status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Thomas van Heuvelen

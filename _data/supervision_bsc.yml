@@ -1,7 +1,30 @@
+- name: Chen, Y.-Y., Gupta, A., Lazar, R., Tan, L. S., Tonkinwise, E.
+  project: External communication of an automated vehicle
+  project_url: 
+  year: 2026
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Robert Braun
+  name_url: https://www.linkedin.com/in/adam-bodor
+  project: Design of a drone
+  project_url: 
+  year: 2026
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Adam Bodor
+  name_url: https://www.linkedin.com/in/adam-bodor
+  project: Gesture-based communication with a drone
+  project_url: 
+  year: 2026
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Balaton, G., Van den Brink, W., Cuciuc, F., Geerts, S., Knapen, J., Korevaar, B., Van Ling, M., Shishkov, K., Szabolcs, M., Verhagen, T.
   project: Digital twin of TU/e in coupled simulator
   year: 2025
-  status: inprogress
+  status: completed
   comment: SEP project with <a href="https://www.tue.nl/en/research/institutes/eindhoven-artificial-intelligence-systems-institute/digital-twin-lab" target="_blank">EAISI digital twin lab</a>
 
 - name: Nikita Jeevanath
@@ -9,7 +32,7 @@
   project: How should drivers’ use of Automated Lane Keeping Systems (ALKS) be assessed?
   project_url: 
   year: 2025
-  status: inprogress
+  status: fail
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Axel Reitz
