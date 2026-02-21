@@ -5,6 +5,14 @@
   status: inprogress
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
+- name: Meike Ybema
+  name_url: https://www.linkedin.com/in/meike-ybema
+  project: Device for drone detection
+  project_url: 
+  year: 2026
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Robert Braun
   # name_url:
   project: Design of a drone
