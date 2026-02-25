@@ -2,8 +2,8 @@
 title: "Education"
 layout: gridlay
 sitemap: false
-permalink: /education/
-status: false
+permalink: /education_status/
+status: true
 ---
 {% assign show_status = page.status == false %}
 
