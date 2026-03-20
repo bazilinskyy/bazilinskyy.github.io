@@ -1,0 +1,8 @@
+@inproceedings{ebel2026mrdrive,
+  title={MRDrive: An open source mixed reality driving simulator for automotive user research},
+  author={Ebel, Patrick and Miazga, Michał Patryk and Lorenz, Martin and Getselev, Timur and Bazilinskyy, Pavlo and Conzen, Celine},
+  booktitle={Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)},
+  year={2026},
+  doi={10.48550/arXiv.2603.08080},
+  address={Barcelona, Spain}
+}
