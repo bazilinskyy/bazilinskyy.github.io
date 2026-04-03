@@ -7,28 +7,21 @@
 
 - name: Matin Maskitou
   name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
-  project: TBD
+  project: YOLO-based mitigation of distration during driving
   year: 2026
   status: inprogress
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
-- name: Matin Maskitou
-  name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
-  project: TBD
-  year: 2026
-  status: inprogress
-  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
-
-- name: Max Crutzen
-  name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
-  project: TBD
-  year: 2026
-  status: inprogress
-  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+# - name: Max Crutzen
+#   name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
+#   project: TBD
+#   year: 2026
+#   status: inprogress
+#   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Sharavan Saai Govindaraj
   name_url: https://www.linkedin.com/in/saai-sharavan
-  project: TBD
+  project: Predictive vibrotactile motion cueing to reduce carsickness
   project_url:
   year: 2026
   status: inprogress
@@ -70,7 +63,7 @@
   name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
   project: Configurable furniture
   year: 2025
-  status: completed
+  status: inprogress
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xinyue Liu
