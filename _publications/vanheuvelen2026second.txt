@@ -1,0 +1,5 @@
+@techreport{vanheuvelen2026second,
+  title={A second pair of eyes: Evaluating a helmet-integrated multimodal HMI for proactive urban motorcyclist safety},
+  author={Van Heuvelen, Thomas and Bazilinskyy, Pavlo},
+  year={2026}
+}
