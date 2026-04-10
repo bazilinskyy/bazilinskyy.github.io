@@ -1,0 +1,5 @@
+@techreport{alam2026collision,
+  title={Collision patterns and reporting blind spots in 970 California autonomous vehicle crash reports},
+  author={Alam, Md Shadab and Zhang, Linghan and Li, Jiahui and Dou, Fei and Bazilinskyy, Pavlo},
+  year={2026}
+}
