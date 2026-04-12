@@ -424,56 +424,56 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 }
 
 /* type tags */
-.pub-tag.journal     { background: #0a1e35; color: #90caf9; }
-.pub-tag.conference  { background: #0a2218; color: #80cbc4; }
-.pub-tag.poster      { background: #221a00; color: #ffe082; }
-.pub-tag.preprint    { background: #221000; color: #ffb74d; }
-.pub-tag.thesis      { background: #1a0a22; color: #ce93d8; }
-
+.pub-tag.journal     { background: #081c35; color: #90caf9; }   /* sky blue       */
+.pub-tag.conference  { background: #031c1a; color: #4dd0e1; }   /* bright cyan    */
+.pub-tag.poster      { background: #1f1800; color: #ffe082; }   /* warm yellow    */
+.pub-tag.preprint    { background: #200e00; color: #ffb74d; }   /* amber orange   */
+.pub-tag.thesis      { background: #180a22; color: #ce93d8; }   /* lavender       */
+ 
 /* method tags */
-.pub-tag.crowdsourcing,
-.pub-tag.vr,
-.pub-tag.xr,
-.pub-tag.on-road,
-.pub-tag.simulator,
-.pub-tag.lab,
-.pub-tag.dashcam,
-.pub-tag.ai,
-.pub-tag.cv,
-.pub-tag.sensor,
-.pub-tag.woz,
-.pub-tag.meta,
-.pub-tag.eye-tracking,
-.pub-tag.design,
-.pub-tag.interview,
-.pub-tag.diary,
-.pub-tag.workshop,
-.pub-tag.naturalistic,
-.pub-tag.survey      { background: #081a1a; color: #4db6ac; }
-
+.pub-tag.crowdsourcing { background: #021818; color: #4db6ac; } /* teal           */
+.pub-tag.virtual-reality            { background: #0c0a28; color: #b39ddb; } /* soft violet    */
+.pub-tag.extended-reality            { background: #060820; color: #7986cb; } /* slate indigo   */
+.pub-tag.on-road       { background: #081e08; color: #81c784; } /* medium green   */
+.pub-tag.simulator     { background: #001a14; color: #1de9b6; } /* bright mint    */
+.pub-tag.lab           { background: #011825; color: #4fc3f7; } /* ice blue       */
+.pub-tag.dashcam       { background: #0c1216; color: #90a4ae; } /* steel grey     */
+.pub-tag.artificial-intelligence        { background: #200418; color: #f06292; } /* hot pink       */
+.pub-tag.computer-vision            { background: #1f0404; color: #e57373; } /* rose red       */
+.pub-tag.sensor        { background: #101212; color: #cfd8dc; } /* cool grey      */
+.pub-tag.wizard-of-oz  { background: #1c1000; color: #ffd54f; } /* gold           */
+.pub-tag.meta          { background: #111600; color: #dce775; } /* lime yellow    */
+.pub-tag.eye-tracking  { background: #121e00; color: #d4e157; } /* yellow-green   */
+.pub-tag.design        { background: #200c04; color: #ff8a65; } /* coral          */
+.pub-tag.interview     { background: #1c0e00; color: #ffab91; } /* peach          */
+.pub-tag.diary         { background: #160020; color: #ff80ab; } /* bubblegum pink */
+.pub-tag.workshop      { background: #011c20; color: #40c4ff; } /* bright azure   */
+.pub-tag.naturalistic  { background: #041416; color: #b2dfdb; } /* pale seafoam   */
+.pub-tag.survey        { background: #001820; color: #26c6da; } /* mid cyan       */
+ 
 /* road user tags */
-.pub-tag.pedestrian  { background: #0f1f0a; color: #aed581; }
-.pub-tag.cyclist     { background: #0d1f10; color: #69f0ae; }
-.pub-tag.driver      { background: #0a1929; color: #64b5f6; }
-.pub-tag.motorcyclist{ background: #1f0a0a; color: #ef9a9a; }
-.pub-tag.passenger   { background: #1a0a22; color: #ce93d8; }
-.pub-tag.bystander   { background: #1a0a22; color: #ce93d8; }
-
+.pub-tag.pedestrian    { background: #0f1f0a; color: #aed581; } /* soft lime      */
+.pub-tag.cyclist       { background: #031a0e; color: #69f0ae; } /* bright emerald */
+.pub-tag.driver        { background: #0a1929; color: #64b5f6; } /* periwinkle     */
+.pub-tag.motorcyclist  { background: #200808; color: #ff8a80; } /* salmon red     */
+.pub-tag.passenger     { background: #1a0820; color: #ea80fc; } /* magenta        */
+.pub-tag.bystander     { background: #181008; color: #bcaaa4; } /* warm grey-rose */
+ 
 /* topic tags */
-.pub-tag.ehmi        { background: #001f1f; color: #80deea; }
-.pub-tag.ihmi        { background: #001a2a; color: #80cbc4; }
-.pub-tag.sound       { background: #1f1800; color: #fff176; }
-.pub-tag.visual      { background: #1f1800; color: #fff176; }
-.pub-tag.haptic      { background: #1f1800; color: #fff176; }
-.pub-tag.takeover    { background: #1f0e00; color: #ffcc80; }
-.pub-tag.trust       { background: #1a001f; color: #f48fb1; }
-.pub-tag.uncertainty { background: #1a001f; color: #f48fb1; }
-.pub-tag.robotics    { background: #1a001f; color: #f48fb1; }
-.pub-tag.drone       { background: #1a001f; color: #f48fb1; }
-.pub-tag.dataset     { background: #0f0f1f; color: #9fa8da; }
-.pub-tag.cs          { background: #0f0f1f; color: #9fa8da; }
-.pub-tag.mutli-agent       { background: #0f0f1f; color: #9fa8da; }
-.pub-tag.automated-driving { background: #0f0f1f; color: #9fa8da; }
-.pub-tag.electric-vehicles { background: #0f0f1f; color: #9fa8da; }
-.pub-tag.open-science      { background: #0f0f1f; color: #9fa8da; }
+.pub-tag.ehmi              { background: #001f26; color: #00e5ff; } /* electric cyan  */
+.pub-tag.ihmi              { background: #000f26; color: #82b1ff; } /* periwinkle-v   */
+.pub-tag.sound             { background: #1f1a00; color: #fff176; } /* pale lemon     */
+.pub-tag.visual            { background: #0f1f04; color: #c5e1a5; } /* sage green     */
+.pub-tag.haptic            { background: #1f0e00; color: #ffcc80; } /* warm peach     */
+.pub-tag.takeover          { background: #200800; color: #ff7043; } /* red-orange     */
+.pub-tag.trust             { background: #1a0010; color: #f48fb1; } /* rose pink      */
+.pub-tag.uncertainty       { background: #101818; color: #80deea; } /* pale teal      */
+.pub-tag.robotics          { background: #1a0a00; color: #ffa040; } /* deep amber     */
+.pub-tag.drone             { background: #100a22; color: #d1c4e9; } /* dusty purple   */
+.pub-tag.dataset           { background: #0f0f1f; color: #9fa8da; } /* grey-blue      */
+.pub-tag.computer-science                { background: #161616; color: #e0e0e0; } /* neutral grey   */
+.pub-tag.multi-agent       { background: #001428; color: #00b0ff; } /* bright blue    */
+.pub-tag.automated-driving { background: #001a18; color: #00bfa5; } /* deep teal      */
+.pub-tag.electric-vehicles { background: #001808; color: #b9f6ca; } /* pale mint      */
+.pub-tag.open-science      { background: #121212; color: #a0a0a0; } /* mid grey       */
 

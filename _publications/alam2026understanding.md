@@ -7,7 +7,7 @@ pdf: alam2026understanding
 image: alam2026understanding.jpg
 display: Submitted for publication.
 # year: 
-tags: [ai, cv, dashcam, pedestrian, preprint]
+tags: [artificial-intelligence, computer-vision, dashcam, pedestrian, preprint]
 # doi:
 code: https://github.com/Shaadalam9/pedestrians-in-youtube
 suppmat: https://www.dropbox.com/scl/fo/35l3zd7vi1zz3xvv8moqt/AEkT4HwGtyTTjdDf0XbqTGA?rlkey=ws9q9hegy9kh95jdernpoay23

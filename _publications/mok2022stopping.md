@@ -7,7 +7,7 @@ pdf: mok2022stopping
 image: mok2022stopping.jpg
 display: Applied Ergonomics, 105, 103825
 suppmat: https://doi.org/10.4121/20005565.v1
-tags: [ehmi, eye-tracking, ihmi, driver, pedestrian, visual, journal, vr]
+tags: [ehmi, eye-tracking, ihmi, driver, pedestrian, visual, journal, virtual-reality]
 code: https://github.com/bazilinskyy/coupled-sim-eyegaze
 year: 2022
 doi: 10.1016/j.apergo.2022.103825

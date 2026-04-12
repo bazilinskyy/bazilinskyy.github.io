@@ -13,29 +13,29 @@ permalink: /publications/
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="journal">Journal</button>
   <button class="filter-btn" data-filter="conference">Conference</button>
+    <button class="filter-btn" data-filter="thesis">Thesis</button>
   <button class="filter-btn" data-filter="preprint">Preprint</button>
   <!-- <button class="filter-btn" data-filter="poster">Poster</button> -->
-  <button class="filter-btn" data-filter="thesis">Thesis</button>
 </div>
 <div class="filter-group">
   <span class="filter-label">Method</span>
   <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="crowdsourcing">Crowdsourcing</button>
+  <button class="filter-btn" data-filter="design">Design</button>
+  <button class="filter-btn" data-filter="meta">Meta</button>
   <button class="filter-btn" data-filter="lab">Lab</button>
   <button class="filter-btn" data-filter="simulator">Simulator</button>
+  <button class="filter-btn" data-filter="crowdsourcing">Crowdsourcing</button>
   <button class="filter-btn" data-filter="woz">Wizard of Oz</button>
-  <button class="filter-btn" data-filter="vr">VR</button>
-  <button class="filter-btn" data-filter="xr">XR</button>
+  <button class="filter-btn" data-filter="eye-tracking">Eye tracking</button>
+  <button class="filter-btn" data-filter="virtual-reality">Virtual reality</button>
+  <button class="filter-btn" data-filter="extended-reality">Extended reality</button>
   <button class="filter-btn" data-filter="on-road">On-road</button>
   <button class="filter-btn" data-filter="survey">Survey</button>
   <button class="filter-btn" data-filter="naturalistic">Naturalistic</button>
   <button class="filter-btn" data-filter="dashcam">Dashcam</button>
-  <button class="filter-btn" data-filter="ai">AI</button>
-  <button class="filter-btn" data-filter="cv">Computer vision</button>
+  <button class="filter-btn" data-filter="artificial-intelligence">Artificial intelligence</button>
+  <button class="filter-btn" data-filter="computer-vision">Computer vision</button>
   <button class="filter-btn" data-filter="sensor">Sensor</button>
-  <button class="filter-btn" data-filter="meta">Meta</button>
-  <button class="filter-btn" data-filter="eye-tracking">Eye tracking</button>
-  <button class="filter-btn" data-filter="design">Design</button>
   <button class="filter-btn" data-filter="interview">Interview</button>
   <button class="filter-btn" data-filter="diary">Diary</button>
   <button class="filter-btn" data-filter="interview">Workshop</button>
@@ -43,31 +43,32 @@ permalink: /publications/
 <div class="filter-group">
   <span class="filter-label">User</span>
   <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="driver">Driver</button>
+  <button class="filter-btn" data-filter="passenger">Passenger</button>
   <button class="filter-btn" data-filter="pedestrian">Pedestrian</button>
   <button class="filter-btn" data-filter="cyclist">Cyclist</button>
-  <button class="filter-btn" data-filter="driver">Driver</button>
   <button class="filter-btn" data-filter="motorcyclist">Motorcyclist</button>
-  <button class="filter-btn" data-filter="passenger">Passenger</button>
   <button class="filter-btn" data-filter="bystander">Bystander</button>
 </div>
 <div class="filter-group">
   <span class="filter-label">Topic</span>
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="automated-driving">Automated driving</button>
-  <button class="filter-btn" data-filter="electric-vehicles">Electric vehicles</button>
+  <button class="filter-btn" data-filter="drone">Drones</button>
+  <button class="filter-btn" data-filter="dataset">Dataset</button>
   <button class="filter-btn" data-filter="ehmi">eHMI</button>
   <button class="filter-btn" data-filter="ihmi">iHMI</button>
   <button class="filter-btn" data-filter="sound">Sound</button>
   <button class="filter-btn" data-filter="visual">Visual</button>
   <button class="filter-btn" data-filter="haptic">Haptic</button>
   <button class="filter-btn" data-filter="takeover">Takeover</button>
+  <button class="filter-btn" data-filter="electric-vehicles">Electric vehicles</button>
   <button class="filter-btn" data-filter="trust">Trust</button>
   <button class="filter-btn" data-filter="uncertainty">Uncertainty</button>
   <button class="filter-btn" data-filter="robotics">Robotics</button>
-  <button class="filter-btn" data-filter="drone">Drones</button>
-  <button class="filter-btn" data-filter="dataset">Dataset</button>
+
   <button class="filter-btn" data-filter="mutli-agent">Multi-agent</button>
-  <button class="filter-btn" data-filter="cs">Computer science</button>
+  <button class="filter-btn" data-filter="computer-science">Computer science</button>
   <button class="filter-btn" data-filter="open-science">Open science</button>
 </div>
 <div class="filter-group">
