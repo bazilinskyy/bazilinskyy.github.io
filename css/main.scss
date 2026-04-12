@@ -341,18 +341,17 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   visibility: hidden;
 }
 
-/* Publication tag filters */
-
+/* Publication tag filters - Continuous Flow */
 #pub-filters {
   margin: 0.6em 0 1em;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;       /* Allows wrapping only when the line is full */
   align-items: center;
-  gap: 0.25em 0.35em;
+  gap: 0.35em;           /* Uniform spacing between all elements */
 }
 
 .filter-group {
-  display: contents;
+  display: contents;     /* Strips the group container so buttons flow together */
 }
 
 .filter-label {
@@ -361,10 +360,11 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   color: #66757f;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-left: 0.7em;
-  margin-right: 0.1em;
+  margin-left: 0.5em;    /* Small gap before a new group starts */
+  margin-right: 0.2em;
 }
 
+/* Ensure selected buttons are white (matches "All" style) */
 .filter-btn {
   padding: 0.1em 0.55em;
   border: 1px solid #2e3f4d;
@@ -374,17 +374,17 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   cursor: pointer;
   font-size: 0.78em;
   line-height: 1.6;
-  transition: background 0.12s, color 0.12s, border-color 0.12s;
-
-  &:hover {
-    background: #1e2d3a;
-    border-color: #3d5566;
-  }
+  transition: all 0.12s;
 
   &.active {
-    background: #CCD6DD;
-    color: #141f28;
-    border-color: #CCD6DD;
+    background: #FFFFFF !important; /* Forces white background */
+    color: #141f28 !important;      /* Dark text for contrast */
+    border-color: #FFFFFF !important;
+  }
+
+  &:hover:not(.active) {
+    background: #1e2d3a;
+    border-color: #3d5566;
   }
 }
 

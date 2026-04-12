@@ -38,7 +38,7 @@ permalink: /publications/
   <button class="filter-btn" data-filter="sensor">Sensor</button>
   <button class="filter-btn" data-filter="interview">Interview</button>
   <button class="filter-btn" data-filter="diary">Diary</button>
-  <button class="filter-btn" data-filter="interview">Workshop</button>
+  <button class="filter-btn" data-filter="workshop">Workshop</button>
 </div>
 <div class="filter-group">
   <span class="filter-label">User</span>
