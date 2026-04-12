@@ -66,7 +66,6 @@ permalink: /publications/
   <button class="filter-btn" data-filter="trust">Trust</button>
   <button class="filter-btn" data-filter="uncertainty">Uncertainty</button>
   <button class="filter-btn" data-filter="robotics">Robotics</button>
-
   <button class="filter-btn" data-filter="mutli-agent">Multi-agent</button>
   <button class="filter-btn" data-filter="computer-science">Computer science</button>
   <button class="filter-btn" data-filter="open-science">Open science</button>
@@ -219,33 +218,60 @@ Download all papers in bib file <a href="{{ site.url }}{{ site.baseurl }}/public
 <script>
 (function () {
 var groups = document.querySelectorAll('.filter-group');
-var activeFilters = Array.from(groups).map(function () { return null; });
+// each group holds a Set of active filters; empty Set = "all"
+var activeFilters = Array.from(groups).map(function () { return new Set(); });
 function applyFilters() {
+var required = [];
+activeFilters.forEach(function (set) { set.forEach(function (f) { required.push(f); }); });
 var entries = document.querySelectorAll('.publication-entry');
 var visible = 0;
 entries.forEach(function (entry) {
 var tags = (entry.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
-var match = activeFilters.every(function (f) { return f === null || tags.indexOf(f) !== -1; });
+var match = required.every(function (f) { return tags.indexOf(f) !== -1; });
 entry.classList.toggle('hidden', !match);
 if (match) visible++;
 });
 var countEl = document.getElementById('pub-count');
 if (countEl) countEl.textContent = visible + ' paper' + (visible !== 1 ? 's' : '');
+document.querySelectorAll('h2').forEach(function (h2) {
+var hasPaper = false;
+var el = h2.nextElementSibling;
+while (el && el.tagName !== 'H2') {
+if (el.classList.contains('publication-entry') && !el.classList.contains('hidden')) { hasPaper = true; break; }
+el = el.nextElementSibling;
+}
+h2.style.display = hasPaper ? '' : 'none';
+});
+}
+function syncAllBtn(group, set) {
+var allBtn = group.querySelector('.filter-btn[data-filter="all"]');
+if (allBtn) allBtn.classList.toggle('active', set.size === 0);
 }
 groups.forEach(function (group, groupIndex) {
+var set = activeFilters[groupIndex];
 group.querySelectorAll('.filter-btn[data-filter]').forEach(function (btn) {
 btn.addEventListener('click', function () {
-group.querySelectorAll('.filter-btn[data-filter]').forEach(function (b) { b.classList.remove('active'); });
-btn.classList.add('active');
 var f = btn.getAttribute('data-filter');
-activeFilters[groupIndex] = (f === 'all') ? null : f;
+if (f === 'all') {
+set.clear();
+group.querySelectorAll('.filter-btn[data-filter]').forEach(function (b) { b.classList.remove('active'); });
+} else {
+if (set.has(f)) {
+set.delete(f);
+btn.classList.remove('active');
+} else {
+set.add(f);
+btn.classList.add('active');
+}
+}
+syncAllBtn(group, set);
 applyFilters();
 });
 });
 });
 document.getElementById('reset-filters').addEventListener('click', function () {
-activeFilters.fill(null);
-groups.forEach(function (group) {
+groups.forEach(function (group, i) {
+activeFilters[i].clear();
 group.querySelectorAll('.filter-btn[data-filter]').forEach(function (btn) {
 btn.classList.toggle('active', btn.getAttribute('data-filter') === 'all');
 });
