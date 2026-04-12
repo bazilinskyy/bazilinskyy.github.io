@@ -7,6 +7,7 @@ pdf: sapienza2025enhancing
 image: sapienza2025enhancing.jpg
 display: Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Brisbane, QLD, Australia
 year: 2025
+tags: [conference, cyclist, simulator, driver, visual, crowdsourcing, lab]
 code: https://github.com/gip58/cyclist-distance-crowdsourced
 suppmat: http://doi.org/10.4121/ef92ee06-87c6-4bdb-980f-37cc4f687785
 doi: 10.1145/3744333.3747813

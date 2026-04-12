@@ -58,7 +58,7 @@ img { margin-bottom: 24px;
 }
 
 body {
-	padding-top: 70px;
+    padding-top: 70px;
     color: #CCD6DD;
 }
 
@@ -67,16 +67,16 @@ body {
 
 
 p.byline {
-	text-align: center;
-	font-size: 18px;
-	line-height: 36px;
-	margin-top: -24px;
-	margin-bottom: 48px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: -24px;
+    margin-bottom: 48px;
 }
 
 
 pubtit {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 firstp {
@@ -90,16 +90,16 @@ firstp {
 
 /* Home, News */
 #newsid p {
-	text-align: left;
+    text-align: left;
 }
 
 #homeidtmp h1 {
-	text-align: center;
+    text-align: center;
 }
 
 #newsid img {
-	margin-top: 6px;
-	margin-bottom: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 /* Team & Publications */
@@ -114,14 +114,14 @@ firstp {
 /* Grid overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
 .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-	padding-left: 16px;
-	padding-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* Grid overrides */
 .col-sm-4 {
-	padding-left: 26px;
-	padding-right: 26px;
+    padding-left: 26px;
+    padding-right: 26px;
 }
 
 /* Carousel */
@@ -340,4 +340,140 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   margin-top: -55px; /*same height as header*/
   visibility: hidden;
 }
+
+/* Publication tag filters */
+
+#pub-filters {
+  margin: 0.6em 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6em 1.2em; /* row-gap col-gap: groups stay on one line where space allows */
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.filter-label {
+  font-weight: 600;
+  font-size: 0.78em;
+  color: #66757f;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.15em;
+}
+
+.filter-btn {
+  padding: 0.1em 0.55em;
+  border: 1px solid #2e3f4d;
+  border-radius: 2px;
+  background: transparent;
+  color: #8899a6;
+  cursor: pointer;
+  font-size: 0.78em;
+  line-height: 1.6;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+
+  &:hover {
+    background: #1e2d3a;
+    color: #CCD6DD;
+    border-color: #3d5566;
+  }
+
+  &.active {
+    background: #CCD6DD;
+    color: #141f28;
+    border-color: #CCD6DD;
+  }
+}
+
+#reset-filters {
+  color: #4d6070;
+  border-color: #223040;
+
+  &:hover {
+    color: #8899a6;
+    border-color: #2e3f4d;
+  }
+}
+
+#pub-count {
+  font-size: 0.78em;
+  color: #4d6070;
+}
+
+.publication-entry.hidden {
+  display: none;
+}
+
+/* Tag badges — sit inline next to action buttons */
+
+.pub-tag {
+  display: inline-block;
+  font-size: 0.68em;
+  padding: 0.05em 0.45em;
+  border-radius: 2px;
+  margin-right: 0.25em;
+  vertical-align: middle;
+  background: #1a2633;
+  color: #66757f;
+}
+
+/* type tags */
+.pub-tag.journal     { background: #0a1e35; color: #90caf9; }
+.pub-tag.conference  { background: #0a2218; color: #80cbc4; }
+.pub-tag.poster      { background: #221a00; color: #ffe082; }
+.pub-tag.preprint    { background: #221000; color: #ffb74d; }
+.pub-tag.thesis      { background: #1a0a22; color: #ce93d8; }
+
+/* method tags */
+.pub-tag.crowdsourcing,
+.pub-tag.vr,
+.pub-tag.xr,
+.pub-tag.on-road,
+.pub-tag.simulator,
+.pub-tag.lab,
+.pub-tag.dashcam,
+.pub-tag.ai,
+.pub-tag.cv,
+.pub-tag.sensor,
+.pub-tag.woz,
+.pub-tag.meta,
+.pub-tag.eye-tracking,
+.pub-tag.design,
+.pub-tag.interview,
+.pub-tag.diary,
+.pub-tag.workshop,
+.pub-tag.naturalistic,
+.pub-tag.survey      { background: #081a1a; color: #4db6ac; }
+
+/* road user tags */
+.pub-tag.pedestrian  { background: #0f1f0a; color: #aed581; }
+.pub-tag.cyclist     { background: #0d1f10; color: #69f0ae; }
+.pub-tag.driver      { background: #0a1929; color: #64b5f6; }
+.pub-tag.motorcyclist{ background: #1f0a0a; color: #ef9a9a; }
+.pub-tag.passenger   { background: #1a0a22; color: #ce93d8; }
+.pub-tag.bystander   { background: #1a0a22; color: #ce93d8; }
+
+/* topic tags */
+.pub-tag.ehmi        { background: #001f1f; color: #80deea; }
+.pub-tag.ihmi        { background: #001a2a; color: #80cbc4; }
+.pub-tag.sound       { background: #1f1800; color: #fff176; }
+.pub-tag.visual      { background: #1f1800; color: #fff176; }
+.pub-tag.haptic      { background: #1f1800; color: #fff176; }
+.pub-tag.takeover    { background: #1f0e00; color: #ffcc80; }
+.pub-tag.trust       { background: #1a001f; color: #f48fb1; }
+.pub-tag.uncertainty { background: #1a001f; color: #f48fb1; }
+.pub-tag.robotics    { background: #1a001f; color: #f48fb1; }
+.pub-tag.drone       { background: #1a001f; color: #f48fb1; }
+.pub-tag.dataset     { background: #0f0f1f; color: #9fa8da; }
+.pub-tag.cs          { background: #0f0f1f; color: #9fa8da; }
+.pub-tag.mutli-agent       { background: #0f0f1f; color: #9fa8da; }
+.pub-tag.automated-driving { background: #0f0f1f; color: #9fa8da; }
+.pub-tag.electric-vehicles { background: #0f0f1f; color: #9fa8da; }
+.pub-tag.open-science      { background: #0f0f1f; color: #9fa8da; }
 
