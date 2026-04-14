@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Directional light-based external human-machine interface with onboarding"
-authors: Janssen, C., Bazilinskyy, P., Dou, F., Zhang, L.
+authors: Janssen, C., Alam, M. S., Bazilinskyy, P., Dou, F., Zhang, L.
 pdf: janssen2026directional
 image: janssen2026directional.jpg
 display: Submitted for publication.
