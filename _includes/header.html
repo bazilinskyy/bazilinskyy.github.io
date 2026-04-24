@@ -34,7 +34,10 @@
         <li>
           <button id="theme-toggle" aria-label="Toggle light/dark mode">
             <span id="theme-toggle-icon">☾</span>
-            <span id="theme-toggle-label">Dark</span>
+            <span class="label-stack">
+              <span id="label-dark" class="theme-label">Dark</span>
+              <span id="label-light" class="theme-label">Light</span>
+            </span>
           </button>
         </li>
       </ul>
@@ -44,23 +47,14 @@
 
 <script>
   (function () {
-    var btn   = document.getElementById('theme-toggle');
-    var icon  = document.getElementById('theme-toggle-icon');
-    var label = document.getElementById('theme-toggle-label');
+    var btn  = document.getElementById('theme-toggle');
+    var icon = document.getElementById('theme-toggle-icon');
 
-    /* Inside your existing script at the bottom of header.html */
     function updateButton(theme) {
-      /* This ensures the icon matches the current theme applied by the Init script */
-      if (theme === 'dark') {
-        icon.textContent  = '☀'; // Show Sun because clicking will switch to Light
-        label.textContent = 'Light';
-      } else {
-        icon.textContent  = '☾'; // Show Moon because clicking will switch to Dark
-        label.textContent = 'Dark';
-      }
+      // We only need to swap the icon symbol now
+      icon.textContent = (theme === 'dark') ? '☀' : '☾';
     }
 
-    // Keep the sync call as it is:
     updateButton(document.documentElement.getAttribute('data-theme') || 'dark');
 
     btn.addEventListener('click', function () {

@@ -60,9 +60,31 @@ $phone-width: 480px;
   --btn-arxiv-color:        #ebebeb;
   --btn-code-color:         #ebebeb;
   --btn-suppmat-color:      #ebebeb;
+  /* Footer variables */
   --footer-bg:              #192734;
   --footer-text:            #8899a6;
   --footer-border:          #2e3f4d;
+  /* Tag Text Colors */
+  --tag-journal:            #90caf9;
+  --tag-conference:         #4dd0e1;
+  --tag-preprint:           #ffb74d;
+  --tag-thesis:             #ce93d8;
+  --tag-method:             #81c784;
+  --tag-road-user:          #cfd8dc;
+  --tag-topic:              #80deea;
+  --tag-vr-xr:              #b39ddb;
+  --tag-hardware:           #90a4ae;
+  --tag-ai-cv:              #e57373;
+  --tag-visual:             #c5e1a5; 
+  --tag-sound:         #fff176;
+  --tag-haptic:        #ffcc80;
+  --tag-takeover:      #ff7043;
+  --tag-drone:         #d1c4e9;
+  --tag-dataset:       #9fa8da;
+  --tag-electric-vehicles: #b9f6ca; /* Bright for dark mode */
+  --tag-sound:             #fff176;
+  --tag-cs:                 #e0e0e0; /* Light gray for dark mode */
+  --tag-ai:                 #e57373; /* Soft red for dark mode */
 }
 
 [data-theme="light"] {
@@ -82,9 +104,9 @@ $phone-width: 480px;
   --filter-text:            #455A64;
   --filter-hover-bg:        #E0E8F0;
   --filter-hover-border:    #90A4AE;
-  --filter-active-bg:       #14171A;
-  --filter-active-text:     #F5F8FA;
-  --filter-active-border:   #14171A;
+  --filter-active-bg:       #E1E8ED; 
+  --filter-active-text:     #14171A;
+  --filter-active-border:   #B8C8D4;
   --filter-label:           #546E7A;
   --reset-color:            #78909C;
   --reset-border:           #B0BEC5;
@@ -108,14 +130,31 @@ $phone-width: 480px;
   --btn-border:             #90A4AE;
   --btn-text:               #546E7A;
   --btn-hover-bg:           #D8E4EC;
-  --btn-pdf-color:          #ebebeb;
-  --btn-doi-color:          #ebebeb;
-  --btn-arxiv-color:        #ebebeb;
-  --btn-code-color:         #ebebeb;
-  --btn-suppmat-color:      #ebebeb;
+  /* Footer variables */
   --footer-bg:              #EDF1F5;
   --footer-text:            #546E7A;
   --footer-border:          #B8C8D4;
+  /* Tag Text Colors (Darker for contrast) */
+  --tag-journal:            #1565C0;
+  --tag-conference:         #00838F;
+  --tag-preprint:           #EF6C00;
+  --tag-thesis:             #8E24AA;
+  --tag-method:             #2E7D32;
+  --tag-road-user:          #455A64;
+  --tag-topic:              #0097A7;
+  --tag-vr-xr:              #512DA8;
+  --tag-hardware:           #37474F;
+  --tag-ai-cv:              #C62828;
+  --tag-visual:        #558B2F; /* Dark Green */
+  --tag-sound:         #F9A825; /* Dark Yellow/Gold */
+  --tag-haptic:        #EF6C00; /* Dark Orange */
+  --tag-takeover:      #C62828; /* Dark Red */
+  --tag-drone:         #6A1B9A; /* Dark Purple */
+  --tag-dataset:       #283593; /* Dark Blue */
+  --tag-electric-vehicles: #1B5E20; /* Deep green for contrast */
+  --tag-sound:             #E65100; /* Deep orange for contrast */
+  --tag-cs:                 #616161; /* Dark gray for light mode */
+  --tag-ai:                 #C62828; /* Deep red for light mode */
 }
 
 /* =====================================================
@@ -312,23 +351,16 @@ h4 {
     padding: 8px 12px;
     margin-top: 6px;
     font-size: 0.9em;
-    color: var(--collapse-text); /* Works for Abstract */
-
-    /* Targeting the BibTeX text file inside the iframe */
-    iframe {
-        background: transparent;
-        width: 100%;
-        height: 210px;
-        border: none;
-        /* In dark mode, invert the default black text to light gray */
-        filter: invert(1) hue-rotate(180deg) brightness(0.8);
-        transition: filter 0.25s ease;
-    }
+    color: var(--collapse-text);
+    font-family: inherit; 
+    line-height: 1.5;
 }
 
-/* Remove the inversion for Light Mode so text remains dark */
-[data-theme="light"] .well-bib iframe {
-    filter: none;
+.well-bib {
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 /* ABSTRACT / BIB inline links */
@@ -503,37 +535,45 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 }
 
 .filter-btn {
-  padding: 0.1em 0.55em;
+  padding: 0.2em 0.8em;
   border: 1px solid var(--filter-border);
-  border-radius: 2px;
-  background: transparent;
+  border-radius: 4px;
+  
+  /* Use the variable so it's transparent in dark but off-white in light */
+  background: var(--filter-bg); 
+  
   color: var(--filter-text);
   cursor: pointer;
-  font-size: 0.78em;
-  line-height: 1.6;
-  transition: all 0.12s;
+  font-size: 0.8em;
+  font-weight: 500;
+  transition: all 0.2s ease;
 
+  /* Hover state: make it slightly darker than the base */
+  &:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.08); 
+    border-color: var(--filter-hover-border);
+  }
+
+  /* Active state: uses our 'less white' grey */
   &.active {
     background: var(--filter-active-bg) !important;
     color: var(--filter-active-text) !important;
     border-color: var(--filter-active-border) !important;
-  }
-
-  &:hover:not(.active) {
-    background: var(--filter-hover-bg);
-    border-color: var(--filter-hover-border);
+    /* Soft shadow instead of a hard border makes it look less 'stark' */
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); 
   }
 }
 
 .filter-btn[data-filter="all"]:hover { color: var(--body-text); }
 
 #reset-filters {
+  background: transparent;
   color: var(--reset-color);
-  border-color: var(--reset-border);
-
+  border: 1px solid var(--reset-border);
+  
   &:hover {
+    background: rgba(0, 0, 0, 0.05);
     color: var(--reset-hover-color);
-    border-color: var(--reset-hover-border);
   }
 }
 
@@ -608,7 +648,6 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   margin-right: 0.25em;
   vertical-align: middle;
   background: var(--pub-tag-bg);
-  color: var(--pub-tag-text);
 }
 
 /* In light mode, strip the per-tag dark backgrounds; colorful text reads fine on its own */
@@ -616,116 +655,68 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   background: rgba(0, 0, 0, 0.07) !important;
 }
 
-/* type tags */
-.pub-tag.journal     { background: #081c35; color: #90caf9; }
-.pub-tag.conference  { background: #031c1a; color: #4dd0e1; }
-.pub-tag.poster      { background: #1f1800; color: #ffe082; }
-.pub-tag.preprint    { background: #200e00; color: #ffb74d; }
-.pub-tag.thesis      { background: #180a22; color: #ce93d8; }
+/* Update tags to use variables for theme switching */
+.pub-tag.journal     { color: var(--tag-journal); }
+.pub-tag.conference  { color: var(--tag-conference); }
+.pub-tag.preprint    { color: var(--tag-preprint); }
+.pub-tag.thesis      { color: var(--tag-thesis); }
 
-/* method tags */
-.pub-tag.crowdsourcing { background: #021818; color: #4db6ac; }
-.pub-tag.vr            { background: #0c0a28; color: #b39ddb; }
-.pub-tag.xr            { background: #060820; color: #7986cb; }
-.pub-tag.on-road       { background: #081e08; color: #81c784; }
-.pub-tag.simulator     { background: #001a14; color: #1de9b6; }
-.pub-tag.lab           { background: #011825; color: #4fc3f7; }
-.pub-tag.dashcam       { background: #0c1216; color: #90a4ae; }
-.pub-tag.gen-ai        { background: #200418; color: #f06292; }
-.pub-tag.cv            { background: #1f0404; color: #e57373; }
-.pub-tag.sensor        { background: #101212; color: #cfd8dc; }
-.pub-tag.woz           { background: #1c1000; color: #ffd54f; }
-.pub-tag.meta          { background: #111600; color: #dce775; }
-.pub-tag.eye-tracking  { background: #121e00; color: #d4e157; }
-.pub-tag.design        { background: #200c04; color: #ff8a65; }
-.pub-tag.interview     { background: #1c0e00; color: #ffab91; }
-.pub-tag.diary         { background: #160020; color: #ff80ab; }
-.pub-tag.workshop      { background: #011c20; color: #40c4ff; }
-.pub-tag.naturalistic  { background: #041416; color: #b2dfdb; }
-.pub-tag.survey        { background: #001820; color: #26c6da; }
+.pub-tag.crowdsourcing, .pub-tag.on-road, .pub-tag.simulator, 
+.pub-tag.lab, .pub-tag.naturalistic, .pub-tag.survey { 
+    color: var(--tag-method); 
+}
 
-/* road user tags */
-.pub-tag.pedestrian    { background: #0f1f0a; color: #aed581; }
-.pub-tag.cyclist       { background: #031a0e; color: #69f0ae; }
-.pub-tag.driver        { background: #0a1929; color: #64b5f6; }
-.pub-tag.motorcyclist  { background: #200808; color: #ff8a80; }
-.pub-tag.passenger     { background: #1a0820; color: #ea80fc; }
-.pub-tag.bystander     { background: #181008; color: #bcaaa4; }
+.pub-tag.vr, .pub-tag.xr { color: var(--tag-vr-xr); }
+.pub-tag.gen-ai, .pub-tag.cv { color: var(--tag-ai-cv); }
+.pub-tag.sensor, .pub-tag.dashcam { color: var(--tag-hardware); }
 
-/* topic tags */
-.pub-tag.ehmi              { background: #001f26; color: #00e5ff; }
-.pub-tag.ihmi              { background: #000f26; color: #82b1ff; }
-.pub-tag.sound             { background: #1f1a00; color: #fff176; }
-.pub-tag.visual            { background: #0f1f04; color: #c5e1a5; }
-.pub-tag.haptic            { background: #1f0e00; color: #ffcc80; }
-.pub-tag.takeover          { background: #200800; color: #ff7043; }
-.pub-tag.trust             { background: #1a0010; color: #f48fb1; }
-.pub-tag.uncertainty       { background: #101818; color: #80deea; }
-.pub-tag.robotics          { background: #1a0a00; color: #ffa040; }
-.pub-tag.drone             { background: #100a22; color: #d1c4e9; }
-.pub-tag.dataset           { background: #0f0f1f; color: #9fa8da; }
-.pub-tag.cs                { background: #161616; color: #e0e0e0; }
-.pub-tag.multi-agent       { background: #001428; color: #00b0ff; }
-.pub-tag.automated-driving { background: #001a18; color: #00bfa5; }
-.pub-tag.electric-vehicles { background: #001808; color: #b9f6ca; }
-.pub-tag.open-science      { background: #121212; color: #a0a0a0; }
+.pub-tag.pedestrian, .pub-tag.cyclist, .pub-tag.driver, 
+.pub-tag.motorcyclist, .pub-tag.passenger, .pub-tag.bystander { 
+    color: var(--tag-road-user); 
+}
+
+.pub-tag.ehmi, .pub-tag.ihmi, .pub-tag.automated-driving, 
+.pub-tag.trust, .pub-tag.robotics, .pub-tag.uncertainty { 
+    color: var(--tag-topic); 
+}
+
+/* topic specific overrides */
+.pub-tag.sound             { color: var(--tag-sound); }
+.pub-tag.visual            { color: var(--tag-visual); }
+.pub-tag.haptic            { color: var(--tag-haptic); }
+.pub-tag.takeover          { color: var(--tag-takeover); }
+.pub-tag.drone             { color: var(--tag-drone); }
+.pub-tag.dataset           { color: var(--tag-dataset); }
+.pub-tag.computer-science, 
+.pub-tag.cs { 
+    color: var(--tag-cs); 
+}
+/* AI / Computer Vision tags */
+.pub-tag.artificial-intelligence, 
+.pub-tag.gen-ai, 
+.pub-tag.cv { 
+    color: var(--tag-ai); 
+}
+.pub-tag.multi-agent       { color: #00b0ff; }
+.pub-tag.electric-vehicles { color: var(--tag-electric-vehicles); }
+.pub-tag.open-science      { color: #a0a0a0; }
+
+/* Ensure background is subtle in light mode (already in your file, but verify) */
+[data-theme="light"] .pub-tag {
+  background: rgba(0, 0, 0, 0.07) !important;
+}
 
 /* =====================================================
-   Dark/light mode toggle button
+   Footer styling
    ===================================================== */
-
-#theme-toggle {
-  background: none;
-  border: 1px solid var(--toggle-border);
-  border-radius: 20px;
-  color: var(--nav-text);
-  cursor: pointer;
-  font-size: 13px;
-  padding: 2px 8px; 
-  margin-top: 11px; 
-  margin-left: 8px;
-  
-  display: inline-flex;
-  align-items: center; 
-  justify-content: center;
-  gap: 4px; 
-  
-  opacity: 0.8;
-  transition: border-color 0.2s, opacity 0.2s;
-  vertical-align: middle;
-
-  &:hover {
-    opacity: 1;
-    border-color: var(--toggle-border-hover);
-  }
-}
-
-#theme-toggle-icon {
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  /* Adjust this value to nudge the icon up. 
-     -1px or -2px usually solves the "too low" issue. */
-  margin-top: -2px; 
-  height: 100%;
-}
-
-#theme-toggle-label {
-  display: inline-block;
-  width: 32px; 
-  text-align: left;
-  line-height: 1;
-  /* Ensure the text doesn't have its own margin */
-  margin: 0; 
-}
 
 #footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
   border-top: 1px solid var(--footer-border);
-  padding: 20px 0;
-  margin-top: 10px;
-  border-radius: 0; /* Remove default panel rounding */
+  padding: 30px 0;
+  margin-top: 50px;
+  border-radius: 0;
 
   .panel-footer {
     background-color: transparent;
@@ -738,3 +729,66 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
     font-size: 0.9em;
   }
 }
+
+/* =====================================================
+   Dark/light mode toggle button
+   ===================================================== */
+
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--toggle-border);
+  border-radius: 20px;
+  color: var(--nav-text);
+  cursor: pointer;
+  
+  /* Positioning and Size */
+  padding: 2px 10px; 
+  margin-top: 10px; 
+  margin-left: 8px;
+  height: 28px;      /* Explicit height helps vertical alignment */
+  min-width: 82px;   /* Ensures enough room so menu doesn't jump */
+  
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 6px;
+  
+  opacity: 0.8;
+  transition: all 0.2s;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: 1;
+    border-color: var(--toggle-border-hover);
+  }
+}
+
+#theme-toggle-icon {
+  font-size: 18px; /* Bigger icon */
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  /* If the icon still looks low, use a small negative margin: */
+  margin-top: -3px; 
+}
+
+/* Stack prevents the menu from jumping when word length changes */
+.label-stack {
+  display: inline-grid;
+  grid-template-areas: "stack";
+  text-align: left;
+  font-size: 13px;
+}
+
+.theme-label {
+  grid-area: stack;
+  line-height: 1;
+  transition: opacity 0.2s;
+}
+
+/* Show/Hide labels based on attribute */
+[data-theme="dark"] #label-dark  { opacity: 0; visibility: hidden; }
+[data-theme="dark"] #label-light { opacity: 1; visibility: visible; }
+
+[data-theme="light"] #label-dark  { opacity: 1; visibility: visible; }
+[data-theme="light"] #label-light { opacity: 0; visibility: hidden; }
