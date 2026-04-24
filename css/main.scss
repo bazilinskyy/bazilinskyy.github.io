@@ -123,7 +123,7 @@ $phone-width: 480px;
 }
 
 [data-theme="light"] {
-    --body-bg:                #F5F8FA;
+    --body-bg:                #E8EDF1;
     --body-text:              #14171A;
     --heading-color:          #14171A;
     --link-color:             #1a6aaa;
@@ -131,9 +131,9 @@ $phone-width: 480px;
     --nav-bg:                 #14171A;
     --nav-text:               #F5F8FA;
     --nav-hover:              #7ec8e3;
-    --row-l1-bg:              #E8ECF0;
-    --row-l2-bg:              #DDE3E9;
-    --well-bg:                #E8ECF0;
+    --row-l1-bg:              #DCE3E9;
+    --row-l2-bg:              #D2DAE1;
+    --well-bg:                #DDE4EA;
     --well-border:            #B8C8D4;
     --filter-border:          #B0BEC5;
     --filter-text:            #455A64;
@@ -153,10 +153,10 @@ $phone-width: 480px;
     --toggle-border:          rgba(255, 255, 255, 0.35);
     --toggle-border-hover:    rgba(255, 255, 255, 0.7);
     /* Publication entry cards */
-    --well-sm-bg:             #EDF1F5;
+    --well-sm-bg:             #DDE4EA;
     --well-sm-border:         #B8C8D4;
     /* Abstract / bib collapse panels */
-    --collapse-bg:            #E2EBF2;
+    --collapse-bg:            #D4DDE5;
     --collapse-border:        #B0C4D0;
     --collapse-text:          #37474F;
     /* Action link text (ABSTRACT, BIB) */
@@ -166,7 +166,7 @@ $phone-width: 480px;
     --btn-text:               #546E7A;
     --btn-hover-bg:           #D8E4EC;
     /* Footer variables */
-    --footer-bg:              #EDF1F5;
+    --footer-bg:              #DDE4EA;
     --footer-text:            #546E7A;
     --footer-border:          #B8C8D4;
     /* Tag Text Colors (Darker for contrast) */
