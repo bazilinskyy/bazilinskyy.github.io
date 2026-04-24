@@ -1,23 +1,66 @@
+<!-- Theme init: runs synchronously before first paint to prevent flash of wrong theme -->
+<script>
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var preferred = (!saved && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : (saved || 'dark');
+    document.documentElement.setAttribute('data-theme', preferred);
+  }());
+</script>
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
-		<div class="navbar-header">
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-	      <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">{{ site.title | escape }}</a>
-
-		</div>
-		<div class="collapse navbar-collapse" id="navbar-collapse-1">
-		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-	        {% for page in site.nav_pages %}
-	          <li><a href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">{{page.name | capitalize }}</a></li>
-	        {% endfor %}
-		  </ul>
-		</div>
+    <div class="navbar-header">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">{{ site.title | escape }}</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
+        {% for page in site.nav_pages %}
+          <li><a href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">{{page.name | capitalize }}</a></li>
+        {% endfor %}
+        <li>
+          <button id="theme-toggle" aria-label="Toggle light/dark mode">
+            <span id="theme-toggle-icon">☾</span>
+            <span id="theme-toggle-label">Light</span>
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
+<script>
+  (function () {
+    var btn   = document.getElementById('theme-toggle');
+    var icon  = document.getElementById('theme-toggle-icon');
+    var label = document.getElementById('theme-toggle-label');
+
+    function updateButton(theme) {
+      /* Show what clicking WILL switch to */
+      if (theme === 'dark') {
+        icon.textContent  = '☀';
+        label.textContent = 'Light';
+      } else {
+        icon.textContent  = '☾';
+        label.textContent = 'Dark';
+      }
+    }
+
+    /* Sync button state with whatever the init script already applied */
+    updateButton(document.documentElement.getAttribute('data-theme') || 'dark');
+
+    btn.addEventListener('click', function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateButton(next);
+    });
+  }());
+</script>

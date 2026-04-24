@@ -200,7 +200,7 @@ permalink: /publications/
 {% endif %}
 {% if bibpresent == true %}
 <div class="collapse" id="{{publi.image | remove: '.jpg'}}2"><div class="well-bib">
-<iframe src="{{site.url}}{{site.baseurl}}/publications/{{publi.image | remove: '.jpg'}}.txt" scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
+<iframe src="{{site.url}}{{site.baseurl}}/publications/{{publi.image | remove: '.jpg'}}.txt" scrolling="yes" width="100%" height="210" frameborder="0" allowtransparency="true"></iframe>
 </div></div>
 {% endif %}
 </li>

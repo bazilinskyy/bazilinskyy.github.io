@@ -7,7 +7,131 @@ $container-width: 1100px;
 $tablet-width: 600px;
 $phone-width: 480px;
 
-/* Fluxbox: Added for publication page columns. */
+/* =====================================================
+   Theme variables
+   Default (dark)  |  [data-theme="light"] = light
+   ===================================================== */
+
+:root {
+  --body-bg:                #15202B;
+  --body-text:              #CCD6DD;
+  --heading-color:          #F5F8FA;
+  --link-color:             #2b7bb9;
+  --link-hover:             #3b94d9;
+  --nav-bg:                 #192734;
+  --nav-text:               #F5F8FA;
+  --nav-hover:              #3b94d9;
+  --row-l1-bg:              #292F33;
+  --row-l2-bg:              #3a3a3a;
+  --well-bg:                #192734;
+  --well-border:            #2e3f4d;
+  --filter-border:          #2e3f4d;
+  --filter-text:            #8899a6;
+  --filter-hover-bg:        #1e2d3a;
+  --filter-hover-border:    #3d5566;
+  --filter-active-bg:       #FFFFFF;
+  --filter-active-text:     #141f28;
+  --filter-active-border:   #FFFFFF;
+  --filter-label:           #66757f;
+  --reset-color:            #4d6070;
+  --reset-border:           #223040;
+  --reset-hover-color:      #8899a6;
+  --reset-hover-border:     #2e3f4d;
+  --pub-count-color:        #4d6070;
+  --pub-tag-bg:             #1a2633;
+  --pub-tag-text:           #66757f;
+  --toggle-border:          rgba(255, 255, 255, 0.3);
+  --toggle-border-hover:    rgba(255, 255, 255, 0.65);
+  /* Publication entry cards */
+  --well-sm-bg:             #1e2b38;
+  --well-sm-border:         #2e3f4d;
+  /* Abstract / bib collapse panels */
+  --collapse-bg:            #131e28;
+  --collapse-border:        #2e3f4d;
+  --collapse-text:          #aab8c2;
+  /* Action link text (ABSTRACT, BIB) */
+  --btn-action-text:        #ebebeb;
+  /* Action buttons (PDF, DOI, …) */
+  --btn-border:             #3d5566;
+  --btn-text:               #8899a6;
+  --btn-hover-bg:           #1e2d3a;
+  --btn-pdf-color:          #ebebeb;
+  --btn-doi-color:          #ebebeb;
+  --btn-arxiv-color:        #ebebeb;
+  --btn-code-color:         #ebebeb;
+  --btn-suppmat-color:      #ebebeb;
+}
+
+[data-theme="light"] {
+  --body-bg:                #F5F8FA;
+  --body-text:              #14171A;
+  --heading-color:          #14171A;
+  --link-color:             #1a6aaa;
+  --link-hover:             #2277bb;
+  --nav-bg:                 #14171A;
+  --nav-text:               #F5F8FA;
+  --nav-hover:              #7ec8e3;
+  --row-l1-bg:              #E8ECF0;
+  --row-l2-bg:              #DDE3E9;
+  --well-bg:                #E8ECF0;
+  --well-border:            #B8C8D4;
+  --filter-border:          #B0BEC5;
+  --filter-text:            #455A64;
+  --filter-hover-bg:        #E0E8F0;
+  --filter-hover-border:    #90A4AE;
+  --filter-active-bg:       #14171A;
+  --filter-active-text:     #F5F8FA;
+  --filter-active-border:   #14171A;
+  --filter-label:           #546E7A;
+  --reset-color:            #78909C;
+  --reset-border:           #B0BEC5;
+  --reset-hover-color:      #455A64;
+  --reset-hover-border:     #78909C;
+  --pub-count-color:        #78909C;
+  --pub-tag-bg:             rgba(0, 0, 0, 0.07);
+  --pub-tag-text:           #455A64;
+  --toggle-border:          rgba(255, 255, 255, 0.35);
+  --toggle-border-hover:    rgba(255, 255, 255, 0.7);
+  /* Publication entry cards */
+  --well-sm-bg:             #EDF1F5;
+  --well-sm-border:         #B8C8D4;
+  /* Abstract / bib collapse panels */
+  --collapse-bg:            #E2EBF2;
+  --collapse-border:        #B0C4D0;
+  --collapse-text:          #37474F;
+  /* Action link text (ABSTRACT, BIB) */
+  --btn-action-text:        #37474F;
+  /* Action buttons (PDF, DOI, …) */
+  --btn-border:             #90A4AE;
+  --btn-text:               #546E7A;
+  --btn-hover-bg:           #D8E4EC;
+  --btn-pdf-color:          #ebebeb;
+  --btn-doi-color:          #ebebeb;
+  --btn-arxiv-color:        #ebebeb;
+  --btn-code-color:         #ebebeb;
+  --btn-suppmat-color:      #ebebeb;
+}
+
+/* =====================================================
+   Theme transition
+   ===================================================== */
+
+body,
+.navbar,
+.well, .well-md, .well-sm,
+.well-abstract, .well-bib,
+#gridid .rowl1, #gridid .rowl2,
+.pub-tag, .filter-btn, #pub-count,
+.btn-pdf, .btn-doi, .btn-arxiv, .btn-code, .btn-suppmat,
+.btn-abstract, .btn-bib,
+h1, h2, h3, h4, h5, h6, a {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* =====================================================
+   Fluxbox: publication page columns
+   ===================================================== */
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -39,19 +163,6 @@ $phone-width: 480px;
     }
 }
 
-
-/*@media (max-width: $phone-width) {
-    .flex-item1 {
-      padding: 2px;
-      width: 30%;
-    }
-
-    .flex-item2 {
-      padding: 2px;
-      width: 70%;
-    }
-}*/
-
 img { margin-bottom: 24px;
      margin-top: 17px;
     border-radius:2%;
@@ -59,12 +170,15 @@ img { margin-bottom: 24px;
 
 body {
     padding-top: 70px;
-    color: #CCD6DD;
+    color: var(--body-text);
+    background-color: var(--body-bg);
 }
-
 
 /* Top navigation bar */
 
+.navbar {
+    background-color: var(--nav-bg);
+}
 
 p.byline {
     text-align: center;
@@ -73,7 +187,6 @@ p.byline {
     margin-top: -24px;
     margin-bottom: 48px;
 }
-
 
 pubtit {
     font-weight: bold;
@@ -85,7 +198,7 @@ firstp {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1000px; /* or 950px */
+  max-width: 1000px;
 }
 
 /* Home, News */
@@ -108,8 +221,8 @@ firstp {
 #homeid img { margin: 0 0 0 0; border-radius:5%;}
 #picid img { margin: 6px 3px 60px 6px; border-radius:1%;  }
 #gridid .row { margin-bottom: 24px; }
-#gridid .rowl1 { margin-bottom: 24px; background-color: #2a2a2a; border-radius:10px; padding-left: 10px; padding-right: 10px;}
-#gridid .rowl2 { margin-bottom: 24px; background-color: #3a3a3a; border-radius:10px; padding-left: 10px; padding-right: 10px;}
+#gridid .rowl1 { margin-bottom: 24px; background-color: var(--row-l1-bg); border-radius:10px; padding-left: 10px; padding-right: 10px;}
+#gridid .rowl2 { margin-bottom: 24px; background-color: var(--row-l2-bg); border-radius:10px; padding-left: 10px; padding-right: 10px;}
 
 /* Grid overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
@@ -118,14 +231,12 @@ firstp {
     padding-right: 16px;
 }
 
-/* Grid overrides */
 .col-sm-4 {
     padding-left: 26px;
     padding-right: 26px;
 }
 
 /* Carousel */
-
 .carousel {
     border-radius: 3px 3px 3px 3px;
     margin-bottom: 20px;
@@ -133,8 +244,6 @@ firstp {
     margin-left: 30px;
     margin-right: 30px;
 }
-
-/* Custom style inspired by embedded twitter feed and tweaks */
 
 #homeid {
   padding-left: 7px;
@@ -145,32 +254,12 @@ firstp {
   margin-right: 5px;
   border-radius: 5px;
   margin-left: -12px;
-  background-color: #292F33;
+  background-color: var(--row-l1-bg);
 }
 
 #gridid .rowl1 ol {
   padding-left: 20px;
 }
-
-/* First list in courses. Stupid hack to remove wrong
-   spacing of the list but it works. */
-/*#gridid .rowl1 ul:first-of-type {
-    list-style-position: inside;
-    overflow: hidden;
-}
-
-#gridid .rowl1 ul:first-of-type li {
-    list-style-type: none;
-    position: relative;
-}
-
-#gridid .rowl1 ul:first-of-type li::before {
-  content: '•';
-  position: absolute;
-  left: -13px;
-  top: -3px;
-  font-size: 19px;
-}*/
 
 .row ul {
   padding-left: 20px;
@@ -181,11 +270,11 @@ firstp {
 }
 
 a {
-    color: #2b7bb9;
+    color: var(--link-color);
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: #F5F8FA;
+    color: var(--heading-color);
     font-weight: 300;
 }
 
@@ -194,36 +283,102 @@ h4 {
     line-height: 24px;
 }
 
-.well {
+.well,
+.well-md {
     padding: 10px;
+    background-color: var(--well-bg);
+    border-color: var(--well-border);
 }
 
 .well-sm {
     border-radius: 5px;
+    background-color: var(--well-sm-bg);
+    border-color: var(--well-sm-border);
+}
+
+/* Abstract and bib collapse panels */
+.well-abstract,
+.well-bib {
+    background-color: var(--collapse-bg);
+    border: 1px solid var(--collapse-border);
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 6px;
+    font-size: 0.9em;
+    color: var(--collapse-text); /* Works for Abstract */
+
+    /* Targeting the BibTeX text file inside the iframe */
+    iframe {
+        background: transparent;
+        width: 100%;
+        height: 210px;
+        border: none;
+        /* In dark mode, invert the default black text to light gray */
+        filter: invert(1) hue-rotate(180deg) brightness(0.8);
+        transition: filter 0.25s ease;
+    }
+}
+
+/* Remove the inversion for Light Mode so text remains dark */
+[data-theme="light"] .well-bib iframe {
+    filter: none;
+}
+
+/* ABSTRACT / BIB inline links */
+.btn-abstract,
+.btn-bib,
+.btn-pdf, .btn-doi, .btn-arxiv, .btn-code, .btn-suppmat  {
+    color: var(--btn-action-text);
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-right: 0px;
+
+    &:hover {
+        color: var(--link-hover);
+        text-decoration: none;
+    }
+}
+
+
+.btn-pdf     { color: var(--btn-pdf-color);     border-color: var(--btn-pdf-color);     }
+.btn-doi     { color: var(--btn-doi-color);     border-color: var(--btn-doi-color);     }
+.btn-arxiv   { color: var(--btn-arxiv-color);   border-color: var(--btn-arxiv-color);   }
+.btn-code    { color: var(--btn-code-color);    border-color: var(--btn-code-color);    }
+.btn-suppmat { color: var(--btn-suppmat-color); border-color: var(--btn-suppmat-color); }
+
+.btn-pdf:hover     { background: rgba(229, 115, 115, 0.12); }
+.btn-doi:hover     { background: rgba(100, 181, 246, 0.12); }
+.btn-arxiv:hover   { background: rgba(255, 183,  77, 0.12); }
+.btn-code:hover    { background: rgba(129, 199, 132, 0.12); }
+.btn-suppmat:hover { background: rgba(206, 147, 216, 0.12); }
+
+/* Hidden entries (filter JS) */
+.publication-entry.hidden {
+    display: none;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #F5F8FA;
+    color: var(--nav-text);
 }
 
 .navbar-default .navbar-brand {
-    color: #F5F8FA;
+    color: var(--nav-text);
 }
 
 a:hover {
-    color: #3b94d9;
+    color: var(--link-hover);
     text-decoration: none;
     outline: 0;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #3b94d9;
+    color: var(--nav-hover);
     text-decoration: none;
     outline: 0;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover {
-    color: #3b94d9;
+    color: var(--nav-hover);
     text-decoration: none;
     outline: 0;
 }
@@ -273,7 +428,6 @@ figcaption {
 #gridid img.avatar-about {
     float: left;
     width: 30%;
-    /*margin-left: 15px;*/
 }
 
 .short-bio {
@@ -288,29 +442,6 @@ figcaption {
 }
 
 /* Anchor links */
-/*h1 {
-  text-indent: -12px;
-}
-
-h2 {
-  text-indent: -10px;
-}
-
-h3 {
-  text-indent: -8px;
-}
-
-h4 {
-  text-indent: -6px;
-}
-
-h5 {
-  text-indent: -4px;
-}
-
-h6 {
-  text-indent: -2px;
-}*/
 
 h1 .octicon, h2 .octicon, h3 .octicon, h4 .octicon, h5 .octicon, h6 .octicon  {
   visibility: hidden;
@@ -329,87 +460,82 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 
 .anchor-coach {
   display: block;
-  height: 210px; /*same height as header*/
-  margin-top: -210px; /*same height as header*/
+  height: 210px;
+  margin-top: -210px;
   visibility: hidden;
 }
 
 .anchor-prefix {
   display: block;
-  height: 55px; /*same height as header*/
-  margin-top: -55px; /*same height as header*/
+  height: 55px;
+  margin-top: -55px;
   visibility: hidden;
 }
 
-/* Publication tag filters - Continuous Flow */
+/* Publication tag filters */
 #pub-filters {
   margin: 0.6em 0 1em;
   display: flex;
-  flex-wrap: wrap;       /* Allows wrapping only when the line is full */
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.35em;           /* Uniform spacing between all elements */
+  gap: 0.35em;
 }
 
 .filter-group {
-  display: contents;     /* Strips the group container so buttons flow together */
+  display: contents;
 }
 
 .filter-label {
   font-weight: 600;
   font-size: 0.78em;
-  color: #66757f;
+  color: var(--filter-label);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-left: 0.5em;    /* Small gap before a new group starts */
+  margin-left: 0.5em;
   margin-right: 0.2em;
 }
 
-/* Ensure selected buttons are white (matches "All" style) */
 .filter-btn {
   padding: 0.1em 0.55em;
-  border: 1px solid #2e3f4d;
+  border: 1px solid var(--filter-border);
   border-radius: 2px;
   background: transparent;
-  color: #8899a6;
+  color: var(--filter-text);
   cursor: pointer;
   font-size: 0.78em;
   line-height: 1.6;
   transition: all 0.12s;
 
   &.active {
-    background: #FFFFFF !important; /* Forces white background */
-    color: #141f28 !important;      /* Dark text for contrast */
-    border-color: #FFFFFF !important;
+    background: var(--filter-active-bg) !important;
+    color: var(--filter-active-text) !important;
+    border-color: var(--filter-active-border) !important;
   }
 
   &:hover:not(.active) {
-    background: #1e2d3a;
-    border-color: #3d5566;
+    background: var(--filter-hover-bg);
+    border-color: var(--filter-hover-border);
   }
 }
 
-/* restore hover colour only for untagged buttons */
-.filter-btn[data-filter="all"]:hover { color: #CCD6DD; }
+.filter-btn[data-filter="all"]:hover { color: var(--body-text); }
 
 #reset-filters {
-  color: #4d6070;
-  border-color: #223040;
+  color: var(--reset-color);
+  border-color: var(--reset-border);
 
   &:hover {
-    color: #8899a6;
-    border-color: #2e3f4d;
+    color: var(--reset-hover-color);
+    border-color: var(--reset-hover-border);
   }
 }
 
 #pub-count {
   font-size: 0.78em;
-  color: #4d6070;
+  color: var(--pub-count-color);
 }
 
-/* === Coloured filter buttons ===
-   Default : muted tag colour (~78% brightness) for text
-   Active  : pub-tag dark-tinted background + full-brightness tag colour
-   Specificity of [data-filter="x"].active beats the generic .filter-btn.active */
+/* === Coloured filter buttons === */
 
 /* type */
 .filter-btn[data-filter="journal"]                 { color: #709ec2; }
@@ -466,8 +592,7 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 .filter-btn[data-filter="computer-science"]        { color: #afafaf; }
 .filter-btn[data-filter="open-science"]            { color: #7d7d7d; }
 
-/* Tag badges — sit inline next to action buttons */
-
+/* Tag badges */
 .pub-tag {
   display: inline-block;
   font-size: 0.68em;
@@ -475,60 +600,98 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   border-radius: 2px;
   margin-right: 0.25em;
   vertical-align: middle;
-  background: #1a2633;
-  color: #66757f;
+  background: var(--pub-tag-bg);
+  color: var(--pub-tag-text);
+}
+
+/* In light mode, strip the per-tag dark backgrounds; colorful text reads fine on its own */
+[data-theme="light"] .pub-tag {
+  background: rgba(0, 0, 0, 0.07) !important;
 }
 
 /* type tags */
-.pub-tag.journal     { background: #081c35; color: #90caf9; }   /* sky blue       */
-.pub-tag.conference  { background: #031c1a; color: #4dd0e1; }   /* bright cyan    */
-.pub-tag.poster      { background: #1f1800; color: #ffe082; }   /* warm yellow    */
-.pub-tag.preprint    { background: #200e00; color: #ffb74d; }   /* amber orange   */
-.pub-tag.thesis      { background: #180a22; color: #ce93d8; }   /* lavender       */
+.pub-tag.journal     { background: #081c35; color: #90caf9; }
+.pub-tag.conference  { background: #031c1a; color: #4dd0e1; }
+.pub-tag.poster      { background: #1f1800; color: #ffe082; }
+.pub-tag.preprint    { background: #200e00; color: #ffb74d; }
+.pub-tag.thesis      { background: #180a22; color: #ce93d8; }
 
 /* method tags */
-.pub-tag.crowdsourcing { background: #021818; color: #4db6ac; } /* teal           */
-.pub-tag.vr            { background: #0c0a28; color: #b39ddb; } /* soft violet    */
-.pub-tag.xr            { background: #060820; color: #7986cb; } /* slate indigo   */
-.pub-tag.on-road       { background: #081e08; color: #81c784; } /* medium green   */
-.pub-tag.simulator     { background: #001a14; color: #1de9b6; } /* bright mint    */
-.pub-tag.lab           { background: #011825; color: #4fc3f7; } /* ice blue       */
-.pub-tag.dashcam       { background: #0c1216; color: #90a4ae; } /* steel grey     */
-.pub-tag.gen-ai        { background: #200418; color: #f06292; } /* hot pink       */
-.pub-tag.cv            { background: #1f0404; color: #e57373; } /* rose red       */
-.pub-tag.sensor        { background: #101212; color: #cfd8dc; } /* cool grey      */
-.pub-tag.woz           { background: #1c1000; color: #ffd54f; } /* gold           */
-.pub-tag.meta          { background: #111600; color: #dce775; } /* lime yellow    */
-.pub-tag.eye-tracking  { background: #121e00; color: #d4e157; } /* yellow-green   */
-.pub-tag.design        { background: #200c04; color: #ff8a65; } /* coral          */
-.pub-tag.interview     { background: #1c0e00; color: #ffab91; } /* peach          */
-.pub-tag.diary         { background: #160020; color: #ff80ab; } /* bubblegum pink */
-.pub-tag.workshop      { background: #011c20; color: #40c4ff; } /* bright azure   */
-.pub-tag.naturalistic  { background: #041416; color: #b2dfdb; } /* pale seafoam   */
-.pub-tag.survey        { background: #001820; color: #26c6da; } /* mid cyan       */
+.pub-tag.crowdsourcing { background: #021818; color: #4db6ac; }
+.pub-tag.vr            { background: #0c0a28; color: #b39ddb; }
+.pub-tag.xr            { background: #060820; color: #7986cb; }
+.pub-tag.on-road       { background: #081e08; color: #81c784; }
+.pub-tag.simulator     { background: #001a14; color: #1de9b6; }
+.pub-tag.lab           { background: #011825; color: #4fc3f7; }
+.pub-tag.dashcam       { background: #0c1216; color: #90a4ae; }
+.pub-tag.gen-ai        { background: #200418; color: #f06292; }
+.pub-tag.cv            { background: #1f0404; color: #e57373; }
+.pub-tag.sensor        { background: #101212; color: #cfd8dc; }
+.pub-tag.woz           { background: #1c1000; color: #ffd54f; }
+.pub-tag.meta          { background: #111600; color: #dce775; }
+.pub-tag.eye-tracking  { background: #121e00; color: #d4e157; }
+.pub-tag.design        { background: #200c04; color: #ff8a65; }
+.pub-tag.interview     { background: #1c0e00; color: #ffab91; }
+.pub-tag.diary         { background: #160020; color: #ff80ab; }
+.pub-tag.workshop      { background: #011c20; color: #40c4ff; }
+.pub-tag.naturalistic  { background: #041416; color: #b2dfdb; }
+.pub-tag.survey        { background: #001820; color: #26c6da; }
 
 /* road user tags */
-.pub-tag.pedestrian    { background: #0f1f0a; color: #aed581; } /* soft lime      */
-.pub-tag.cyclist       { background: #031a0e; color: #69f0ae; } /* bright emerald */
-.pub-tag.driver        { background: #0a1929; color: #64b5f6; } /* periwinkle     */
-.pub-tag.motorcyclist  { background: #200808; color: #ff8a80; } /* salmon red     */
-.pub-tag.passenger     { background: #1a0820; color: #ea80fc; } /* magenta        */
-.pub-tag.bystander     { background: #181008; color: #bcaaa4; } /* warm grey-rose */
+.pub-tag.pedestrian    { background: #0f1f0a; color: #aed581; }
+.pub-tag.cyclist       { background: #031a0e; color: #69f0ae; }
+.pub-tag.driver        { background: #0a1929; color: #64b5f6; }
+.pub-tag.motorcyclist  { background: #200808; color: #ff8a80; }
+.pub-tag.passenger     { background: #1a0820; color: #ea80fc; }
+.pub-tag.bystander     { background: #181008; color: #bcaaa4; }
 
 /* topic tags */
-.pub-tag.ehmi              { background: #001f26; color: #00e5ff; } /* electric cyan  */
-.pub-tag.ihmi              { background: #000f26; color: #82b1ff; } /* periwinkle-v   */
-.pub-tag.sound             { background: #1f1a00; color: #fff176; } /* pale lemon     */
-.pub-tag.visual            { background: #0f1f04; color: #c5e1a5; } /* sage green     */
-.pub-tag.haptic            { background: #1f0e00; color: #ffcc80; } /* warm peach     */
-.pub-tag.takeover          { background: #200800; color: #ff7043; } /* red-orange     */
-.pub-tag.trust             { background: #1a0010; color: #f48fb1; } /* rose pink      */
-.pub-tag.uncertainty       { background: #101818; color: #80deea; } /* pale teal      */
-.pub-tag.robotics          { background: #1a0a00; color: #ffa040; } /* deep amber     */
-.pub-tag.drone             { background: #100a22; color: #d1c4e9; } /* dusty purple   */
-.pub-tag.dataset           { background: #0f0f1f; color: #9fa8da; } /* grey-blue      */
-.pub-tag.cs                { background: #161616; color: #e0e0e0; } /* neutral grey   */
-.pub-tag.multi-agent       { background: #001428; color: #00b0ff; } /* bright blue    */
-.pub-tag.automated-driving { background: #001a18; color: #00bfa5; } /* deep teal      */
-.pub-tag.electric-vehicles { background: #001808; color: #b9f6ca; } /* pale mint      */
-.pub-tag.open-science      { background: #121212; color: #a0a0a0; } /* mid grey       */
+.pub-tag.ehmi              { background: #001f26; color: #00e5ff; }
+.pub-tag.ihmi              { background: #000f26; color: #82b1ff; }
+.pub-tag.sound             { background: #1f1a00; color: #fff176; }
+.pub-tag.visual            { background: #0f1f04; color: #c5e1a5; }
+.pub-tag.haptic            { background: #1f0e00; color: #ffcc80; }
+.pub-tag.takeover          { background: #200800; color: #ff7043; }
+.pub-tag.trust             { background: #1a0010; color: #f48fb1; }
+.pub-tag.uncertainty       { background: #101818; color: #80deea; }
+.pub-tag.robotics          { background: #1a0a00; color: #ffa040; }
+.pub-tag.drone             { background: #100a22; color: #d1c4e9; }
+.pub-tag.dataset           { background: #0f0f1f; color: #9fa8da; }
+.pub-tag.cs                { background: #161616; color: #e0e0e0; }
+.pub-tag.multi-agent       { background: #001428; color: #00b0ff; }
+.pub-tag.automated-driving { background: #001a18; color: #00bfa5; }
+.pub-tag.electric-vehicles { background: #001808; color: #b9f6ca; }
+.pub-tag.open-science      { background: #121212; color: #a0a0a0; }
+
+/* =====================================================
+   Dark/light mode toggle button
+   ===================================================== */
+
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--toggle-border);
+  border-radius: 20px;
+  color: var(--nav-text);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 3px 11px;
+  margin-top: 8px;
+  margin-left: 8px;
+  opacity: 0.8;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: border-color 0.2s, opacity 0.2s;
+  vertical-align: middle;
+}
+
+#theme-toggle:hover {
+  opacity: 1;
+  border-color: var(--toggle-border-hover);
+}
+
+#theme-toggle-icon {
+  font-size: 14px;
+  line-height: 1;
+}
