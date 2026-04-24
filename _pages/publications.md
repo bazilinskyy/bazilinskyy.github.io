@@ -280,4 +280,14 @@ applyFilters();
 });
 applyFilters();
 })();
+
+document.querySelectorAll('.well-bib iframe').forEach(function(iframe) {
+    iframe.addEventListener('load', function() {
+        try {
+            var iDoc = iframe.contentDocument || iframe.contentWindow.document;
+            iDoc.body.style.margin = '0';
+            iDoc.body.style.padding = '0';
+        } catch(e) {}
+    });
+});
 </script>

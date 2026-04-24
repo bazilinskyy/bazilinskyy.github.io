@@ -365,10 +365,20 @@ h4 {
 }
 
 .well-bib {
-    white-space: pre-wrap; 
+    /*white-space: pre-wrap; */
     word-wrap: break-word;
     max-height: 300px;
     overflow-y: auto;
+    /*padding: 4px 6px;*/
+}
+
+/* BIB iframe: invert in dark mode so text matches the collapse panel */
+.well-bib iframe {
+    filter: invert(1);
+}
+
+[data-theme="light"] .well-bib iframe {
+    filter: none;
 }
 
 /* ABSTRACT / BIB inline links */
@@ -546,15 +556,13 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   padding: 0.2em 0.8em;
   border: 1px solid var(--filter-border);
   border-radius: 4px;
-  
-  /* Use the variable so it's transparent in dark but off-white in light */
   background: var(--filter-bg); 
-  
   color: var(--filter-text);
   cursor: pointer;
   font-size: 0.8em;
   font-weight: 500;
   transition: all 0.2s ease;
+  margin-bottom: 0.2em;
 
   /* Hover state: make it slightly darker than the base */
   &:hover:not(.active) {
