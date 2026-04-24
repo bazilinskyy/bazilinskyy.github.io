@@ -28,7 +28,7 @@
         <li>
           <button id="theme-toggle" aria-label="Toggle light/dark mode">
             <span id="theme-toggle-icon">☾</span>
-            <span id="theme-toggle-label">Light</span>
+            <span id="theme-toggle-label">Dark</span>
           </button>
         </li>
       </ul>
@@ -43,17 +43,15 @@
     var label = document.getElementById('theme-toggle-label');
 
     function updateButton(theme) {
-      /* Show what clicking WILL switch to */
       if (theme === 'dark') {
-        icon.textContent  = '☀';
+        icon.textContent = '☀';
         label.textContent = 'Light';
       } else {
-        icon.textContent  = '☾';
+        icon.textContent = '☾';
         label.textContent = 'Dark';
       }
     }
 
-    /* Sync button state with whatever the init script already applied */
     updateButton(document.documentElement.getAttribute('data-theme') || 'dark');
 
     btn.addEventListener('click', function () {

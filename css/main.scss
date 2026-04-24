@@ -60,6 +60,9 @@ $phone-width: 480px;
   --btn-arxiv-color:        #ebebeb;
   --btn-code-color:         #ebebeb;
   --btn-suppmat-color:      #ebebeb;
+  --footer-bg:              #192734;
+  --footer-text:            #8899a6;
+  --footer-border:          #2e3f4d;
 }
 
 [data-theme="light"] {
@@ -110,6 +113,9 @@ $phone-width: 480px;
   --btn-arxiv-color:        #ebebeb;
   --btn-code-color:         #ebebeb;
   --btn-suppmat-color:      #ebebeb;
+  --footer-bg:              #EDF1F5;
+  --footer-text:            #546E7A;
+  --footer-border:          #B8C8D4;
 }
 
 /* =====================================================
@@ -118,6 +124,7 @@ $phone-width: 480px;
 
 body,
 .navbar,
+#footer, .panel-footer,
 .well, .well-md, .well-sm,
 .well-abstract, .well-bib,
 #gridid .rowl1, #gridid .rowl2,
@@ -674,24 +681,60 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   color: var(--nav-text);
   cursor: pointer;
   font-size: 13px;
-  line-height: 1.5;
-  padding: 3px 11px;
-  margin-top: 8px;
+  padding: 2px 8px; 
+  margin-top: 11px; 
   margin-left: 8px;
-  opacity: 0.8;
+  
   display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  align-items: center; 
+  justify-content: center;
+  gap: 4px; 
+  
+  opacity: 0.8;
   transition: border-color 0.2s, opacity 0.2s;
   vertical-align: middle;
-}
 
-#theme-toggle:hover {
-  opacity: 1;
-  border-color: var(--toggle-border-hover);
+  &:hover {
+    opacity: 1;
+    border-color: var(--toggle-border-hover);
+  }
 }
 
 #theme-toggle-icon {
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  /* Adjust this value to nudge the icon up. 
+     -1px or -2px usually solves the "too low" issue. */
+  margin-top: -2px; 
+  height: 100%;
+}
+
+#theme-toggle-label {
+  display: inline-block;
+  width: 32px; 
+  text-align: left;
   line-height: 1;
+  /* Ensure the text doesn't have its own margin */
+  margin: 0; 
+}
+
+#footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  border-top: 1px solid var(--footer-border);
+  padding: 20px 0;
+  margin-top: 10px;
+  border-radius: 0; /* Remove default panel rounding */
+
+  .panel-footer {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+  }
+  
+  p {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+  }
 }
