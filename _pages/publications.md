@@ -25,7 +25,7 @@ permalink: /publications/
   <button class="filter-btn" data-filter="lab">Lab</button>
   <button class="filter-btn" data-filter="simulator">Simulator</button>
   <button class="filter-btn" data-filter="crowdsourcing">Crowdsourcing</button>
-  <button class="filter-btn" data-filter="woz">Wizard of Oz</button>
+  <button class="filter-btn" data-filter="wizard-of-oz">Wizard of Oz</button>
   <button class="filter-btn" data-filter="eye-tracking">Eye tracking</button>
   <button class="filter-btn" data-filter="virtual-reality">Virtual reality</button>
   <button class="filter-btn" data-filter="extended-reality">Extended reality</button>

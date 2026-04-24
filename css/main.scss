@@ -14,148 +14,216 @@ $phone-width: 480px;
    ===================================================== */
 
 :root {
-  --body-bg:                #15202B;
-  --body-text:              #CCD6DD;
-  --heading-color:          #F5F8FA;
-  --link-color:             #2b7bb9;
-  --link-hover:             #3b94d9;
-  --nav-bg:                 #192734;
-  --nav-text:               #F5F8FA;
-  --nav-hover:              #3b94d9;
-  --row-l1-bg:              #292F33;
-  --row-l2-bg:              #3a3a3a;
-  --well-bg:                #192734;
-  --well-border:            #2e3f4d;
-  --filter-border:          #2e3f4d;
-  --filter-text:            #8899a6;
-  --filter-hover-bg:        #1e2d3a;
-  --filter-hover-border:    #3d5566;
-  --filter-active-bg:       #FFFFFF;
-  --filter-active-text:     #141f28;
-  --filter-active-border:   #FFFFFF;
-  --filter-label:           #66757f;
-  --reset-color:            #4d6070;
-  --reset-border:           #223040;
-  --reset-hover-color:      #8899a6;
-  --reset-hover-border:     #2e3f4d;
-  --pub-count-color:        #4d6070;
-  --pub-tag-bg:             #1a2633;
-  --pub-tag-text:           #66757f;
-  --toggle-border:          rgba(255, 255, 255, 0.3);
-  --toggle-border-hover:    rgba(255, 255, 255, 0.65);
-  /* Publication entry cards */
-  --well-sm-bg:             #1e2b38;
-  --well-sm-border:         #2e3f4d;
-  /* Abstract / bib collapse panels */
-  --collapse-bg:            #131e28;
-  --collapse-border:        #2e3f4d;
-  --collapse-text:          #aab8c2;
-  /* Action link text (ABSTRACT, BIB) */
-  --btn-action-text:        #ebebeb;
-  /* Action buttons (PDF, DOI, …) */
-  --btn-border:             #3d5566;
-  --btn-text:               #8899a6;
-  --btn-hover-bg:           #1e2d3a;
-  --btn-pdf-color:          #ebebeb;
-  --btn-doi-color:          #ebebeb;
-  --btn-arxiv-color:        #ebebeb;
-  --btn-code-color:         #ebebeb;
-  --btn-suppmat-color:      #ebebeb;
-  /* Footer variables */
-  --footer-bg:              #192734;
-  --footer-text:            #8899a6;
-  --footer-border:          #2e3f4d;
-  /* Tag Text Colors */
-  --tag-journal:            #90caf9;
-  --tag-conference:         #4dd0e1;
-  --tag-preprint:           #ffb74d;
-  --tag-thesis:             #ce93d8;
-  --tag-method:             #81c784;
-  --tag-road-user:          #cfd8dc;
-  --tag-topic:              #80deea;
-  --tag-vr-xr:              #b39ddb;
-  --tag-hardware:           #90a4ae;
-  --tag-ai-cv:              #e57373;
-  --tag-visual:             #c5e1a5; 
-  --tag-sound:         #fff176;
-  --tag-haptic:        #ffcc80;
-  --tag-takeover:      #ff7043;
-  --tag-drone:         #d1c4e9;
-  --tag-dataset:       #9fa8da;
-  --tag-electric-vehicles: #b9f6ca; /* Bright for dark mode */
-  --tag-sound:             #fff176;
-  --tag-cs:                 #e0e0e0; /* Light gray for dark mode */
-  --tag-ai:                 #e57373; /* Soft red for dark mode */
+    --body-bg:                #15202B;
+    --body-text:              #CCD6DD;
+    --heading-color:          #F5F8FA;
+    --link-color:             #2b7bb9;
+    --link-hover:             #3b94d9;
+    --nav-bg:                 #192734;
+    --nav-text:               #F5F8FA;
+    --nav-hover:              #3b94d9;
+    --row-l1-bg:              #292F33;
+    --row-l2-bg:              #3a3a3a;
+    --well-bg:                #192734;
+    --well-border:            #2e3f4d;
+    --filter-border:          #2e3f4d;
+    --filter-text:            #8899a6;
+    --filter-hover-bg:        #1e2d3a;
+    --filter-hover-border:    #3d5566;
+    --filter-active-bg:       #FFFFFF;
+    --filter-active-text:     #141f28;
+    --filter-active-border:   #FFFFFF;
+    --filter-label:           #66757f;
+    --reset-color:            #4d6070;
+    --reset-border:           #223040;
+    --reset-hover-color:      #8899a6;
+    --reset-hover-border:     #2e3f4d;
+    --pub-count-color:        #4d6070;
+    --pub-tag-bg:             #1a2633;
+    --pub-tag-text:           #66757f;
+    --toggle-border:          rgba(255, 255, 255, 0.3);
+    --toggle-border-hover:    rgba(255, 255, 255, 0.65);
+    /* Publication entry cards */
+    --well-sm-bg:             #1e2b38;
+    --well-sm-border:         #2e3f4d;
+    /* Abstract / bib collapse panels */
+    --collapse-bg:            #131e28;
+    --collapse-border:        #2e3f4d;
+    --collapse-text:          #aab8c2;
+    /* Action link text (ABSTRACT, BIB) */
+    --btn-action-text:        #ebebeb;
+    /* Action buttons (PDF, DOI, …) */
+    --btn-border:             #3d5566;
+    --btn-text:               #8899a6;
+    --btn-hover-bg:           #1e2d3a;
+    --btn-pdf-color:          #ebebeb;
+    --btn-doi-color:          #ebebeb;
+    --btn-arxiv-color:        #ebebeb;
+    --btn-code-color:         #ebebeb;
+    --btn-suppmat-color:      #ebebeb;
+    /* Footer variables */
+    --footer-bg:              #192734;
+    --footer-text:            #8899a6;
+    --footer-border:          #2e3f4d;
+    /* Tag Text Colors */
+    --tag-journal:            #90caf9;
+    --tag-conference:         #4dd0e1;
+    --tag-preprint:           #ffb74d;
+    --tag-thesis:             #ce93d8;
+    --tag-method:             #81c784;
+    --tag-road-user:          #cfd8dc;
+    --tag-topic:              #80deea;
+    --tag-vr-xr:              #b39ddb;
+    --tag-hardware:           #90a4ae;
+    --tag-ai-cv:              #e57373;
+    --tag-visual:             #c5e1a5; 
+    --tag-sound:              #fff176;
+    --tag-haptic:             #ffcc80;
+    --tag-takeover:           #ff7043;
+    --tag-drone:              #d1c4e9;
+    --tag-dataset:            #9fa8da;
+    --tag-electric-vehicles:  #b9f6ca; /* Bright for dark mode */
+    --tag-sound:              #fff176;
+    --tag-cs:                 #e0e0e0; /* Light gray for dark mode */
+    --tag-ai:                 #e57373; /* Soft red for dark mode */
+    --tag-wizard-of-oz:       #c7a63e;
+    --tag-meta:              #acb45b;
+    --tag-eye-tracking:      #a5b044;
+    --tag-design:            #c76c4f;
+    --tag-interview:         #c78571;
+    --tag-diary:             #c76485;
+    --tag-workshop:          #3299c7;
+    --tag-virtual-reality:   #8c7aab;
+    --tag-extended-reality:  #5e699e;
+    --tag-computer-vision:   #b35a5a;
+    --tag-pedestrian:        #88a665;
+    --tag-cyclist:           #52bb88;
+    --tag-driver:            #4e8dc0;
+    --tag-motorcyclist:      #c76c64;
+    --tag-passenger:         #b764c5;
+    --tag-bystander:         #938580;
+    --tag-crowdsourcing:      #3c8e86;
+    --tag-on-road:            #659b67;
+    --tag-simulator:          #17b68e;
+    --tag-lab:                #3e98c1;
+    --tag-naturalistic:       #8baeab;
+    --tag-survey:             #1e9aaa;
+    --tag-vr:                 #8c7aab;
+    --tag-xr:                 #5e699e;
+    --tag-gen-ai:             #e57373;
+    --tag-cv:                 #b35a5a;
+    --tag-sensor:             #a1a8ac;
+    --tag-dashcam:            #708088;
+    --tag-ehmi:               #00b3c7;
+    --tag-ihmi:               #658ac7;
+    --tag-automated-driving:  #009581;
+    --tag-trust:              #be708a;
+    --tag-robotics:           #c77d32;
+    --tag-uncertainty:        #64adb7;
 }
 
 [data-theme="light"] {
-  --body-bg:                #F5F8FA;
-  --body-text:              #14171A;
-  --heading-color:          #14171A;
-  --link-color:             #1a6aaa;
-  --link-hover:             #2277bb;
-  --nav-bg:                 #14171A;
-  --nav-text:               #F5F8FA;
-  --nav-hover:              #7ec8e3;
-  --row-l1-bg:              #E8ECF0;
-  --row-l2-bg:              #DDE3E9;
-  --well-bg:                #E8ECF0;
-  --well-border:            #B8C8D4;
-  --filter-border:          #B0BEC5;
-  --filter-text:            #455A64;
-  --filter-hover-bg:        #E0E8F0;
-  --filter-hover-border:    #90A4AE;
-  --filter-active-bg:       #E1E8ED; 
-  --filter-active-text:     #14171A;
-  --filter-active-border:   #B8C8D4;
-  --filter-label:           #546E7A;
-  --reset-color:            #78909C;
-  --reset-border:           #B0BEC5;
-  --reset-hover-color:      #455A64;
-  --reset-hover-border:     #78909C;
-  --pub-count-color:        #78909C;
-  --pub-tag-bg:             rgba(0, 0, 0, 0.07);
-  --pub-tag-text:           #455A64;
-  --toggle-border:          rgba(255, 255, 255, 0.35);
-  --toggle-border-hover:    rgba(255, 255, 255, 0.7);
-  /* Publication entry cards */
-  --well-sm-bg:             #EDF1F5;
-  --well-sm-border:         #B8C8D4;
-  /* Abstract / bib collapse panels */
-  --collapse-bg:            #E2EBF2;
-  --collapse-border:        #B0C4D0;
-  --collapse-text:          #37474F;
-  /* Action link text (ABSTRACT, BIB) */
-  --btn-action-text:        #37474F;
-  /* Action buttons (PDF, DOI, …) */
-  --btn-border:             #90A4AE;
-  --btn-text:               #546E7A;
-  --btn-hover-bg:           #D8E4EC;
-  /* Footer variables */
-  --footer-bg:              #EDF1F5;
-  --footer-text:            #546E7A;
-  --footer-border:          #B8C8D4;
-  /* Tag Text Colors (Darker for contrast) */
-  --tag-journal:            #1565C0;
-  --tag-conference:         #00838F;
-  --tag-preprint:           #EF6C00;
-  --tag-thesis:             #8E24AA;
-  --tag-method:             #2E7D32;
-  --tag-road-user:          #455A64;
-  --tag-topic:              #0097A7;
-  --tag-vr-xr:              #512DA8;
-  --tag-hardware:           #37474F;
-  --tag-ai-cv:              #C62828;
-  --tag-visual:        #558B2F; /* Dark Green */
-  --tag-sound:         #F9A825; /* Dark Yellow/Gold */
-  --tag-haptic:        #EF6C00; /* Dark Orange */
-  --tag-takeover:      #C62828; /* Dark Red */
-  --tag-drone:         #6A1B9A; /* Dark Purple */
-  --tag-dataset:       #283593; /* Dark Blue */
-  --tag-electric-vehicles: #1B5E20; /* Deep green for contrast */
-  --tag-sound:             #E65100; /* Deep orange for contrast */
-  --tag-cs:                 #616161; /* Dark gray for light mode */
-  --tag-ai:                 #C62828; /* Deep red for light mode */
+    --body-bg:                #F5F8FA;
+    --body-text:              #14171A;
+    --heading-color:          #14171A;
+    --link-color:             #1a6aaa;
+    --link-hover:             #2277bb;
+    --nav-bg:                 #14171A;
+    --nav-text:               #F5F8FA;
+    --nav-hover:              #7ec8e3;
+    --row-l1-bg:              #E8ECF0;
+    --row-l2-bg:              #DDE3E9;
+    --well-bg:                #E8ECF0;
+    --well-border:            #B8C8D4;
+    --filter-border:          #B0BEC5;
+    --filter-text:            #455A64;
+    --filter-hover-bg:        #E0E8F0;
+    --filter-hover-border:    #90A4AE;
+    --filter-active-bg:       #E1E8ED; 
+    --filter-active-text:     #14171A;
+    --filter-active-border:   #B8C8D4;
+    --filter-label:           #546E7A;
+    --reset-color:            #78909C;
+    --reset-border:           #B0BEC5;
+    --reset-hover-color:      #455A64;
+    --reset-hover-border:     #78909C;
+    --pub-count-color:        #78909C;
+    --pub-tag-bg:             rgba(0, 0, 0, 0.07);
+    --pub-tag-text:           #455A64;
+    --toggle-border:          rgba(255, 255, 255, 0.35);
+    --toggle-border-hover:    rgba(255, 255, 255, 0.7);
+    /* Publication entry cards */
+    --well-sm-bg:             #EDF1F5;
+    --well-sm-border:         #B8C8D4;
+    /* Abstract / bib collapse panels */
+    --collapse-bg:            #E2EBF2;
+    --collapse-border:        #B0C4D0;
+    --collapse-text:          #37474F;
+    /* Action link text (ABSTRACT, BIB) */
+    --btn-action-text:        #37474F;
+    /* Action buttons (PDF, DOI, …) */
+    --btn-border:             #90A4AE;
+    --btn-text:               #546E7A;
+    --btn-hover-bg:           #D8E4EC;
+    /* Footer variables */
+    --footer-bg:              #EDF1F5;
+    --footer-text:            #546E7A;
+    --footer-border:          #B8C8D4;
+    /* Tag Text Colors (Darker for contrast) */
+    --tag-journal:            #1565C0;
+    --tag-conference:         #00838F;
+    --tag-preprint:           #EF6C00;
+    --tag-thesis:             #8E24AA;
+    --tag-method:             #2E7D32;
+    --tag-road-user:          #455A64;
+    --tag-topic:              #0097A7;
+    --tag-vr-xr:              #512DA8;
+    --tag-hardware:           #37474F;
+    --tag-ai-cv:              #C62828;
+    --tag-visual:        #558B2F; /* Dark Green */
+    --tag-sound:         #F9A825; /* Dark Yellow/Gold */
+    --tag-haptic:        #EF6C00; /* Dark Orange */
+    --tag-takeover:      #C62828; /* Dark Red */
+    --tag-drone:         #6A1B9A; /* Dark Purple */
+    --tag-dataset:       #283593; /* Dark Blue */
+    --tag-electric-vehicles: #1B5E20; /* Deep green for contrast */
+    --tag-sound:             #E65100; /* Deep orange for contrast */
+    --tag-cs:                 #616161; /* Dark gray for light mode */
+    --tag-ai:                 #C62828; /* Deep red for light mode */
+    --tag-wizard-of-oz:               #a07e1a;
+    --tag-meta:              #6b7020;
+    --tag-eye-tracking:      #636b18;
+    --tag-design:            #a03e1e;
+    --tag-interview:         #a04830;
+    --tag-diary:             #a02858;
+    --tag-workshop:          #1a6ea0;
+    --tag-virtual-reality:   #4a3880;
+    --tag-extended-reality:  #2e3c7a;
+    --tag-computer-vision:   #8c2020;
+    --tag-pedestrian:   #4a6e28;
+    --tag-cyclist:       #1e7a52;
+    --tag-driver:        #1a5c8a;
+    --tag-motorcyclist:  #8c2a20;
+    --tag-passenger:     #7a2090;
+    --tag-bystander:     #5a4e4a;
+    --tag-crowdsourcing:      #1a6060;
+    --tag-on-road:            #2e5e30;
+    --tag-simulator:          #0a7a5a;
+    --tag-lab:                #1a6080;
+    --tag-naturalistic:       #3a6060;
+    --tag-survey:             #0a5c6a;
+    --tag-vr:                 #4a3880;
+    --tag-xr:                 #2e3c7a;
+    --tag-gen-ai:             #c62828;
+    --tag-cv:                 #8c2020;
+    --tag-sensor:             #37474f;
+    --tag-dashcam:            #3a4a52;
+    --tag-ehmi:               #00838f;
+    --tag-ihmi:               #2a5aa0;
+    --tag-automated-driving:  #006655;
+    --tag-trust:              #8c3050;
+    --tag-robotics:           #8c4a0a;
+    --tag-uncertainty:        #1a6a78;
 }
 
 /* =====================================================
@@ -548,7 +616,7 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   color: var(--filter-label);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-left: 0.5em;
+  margin-left: 0em;
   margin-right: 0.2em;
 }
 
@@ -618,7 +686,7 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 .filter-btn[data-filter="artificial-intelligence"] { color: #bb4c72; }
 .filter-btn[data-filter="computer-vision"]         { color: #b35a5a; }
 .filter-btn[data-filter="sensor"]                  { color: #a1a8ac; }
-.filter-btn[data-filter="woz"]                     { color: #c7a63e; }
+.filter-btn[data-filter="wizard-of-oz"]            { color: #c7a63e; }
 .filter-btn[data-filter="meta"]                    { color: #acb45b; }
 .filter-btn[data-filter="eye-tracking"]            { color: #a5b044; }
 .filter-btn[data-filter="design"]                  { color: #c76c4f; }
@@ -671,32 +739,12 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   background: rgba(0, 0, 0, 0.07) !important;
 }
 
-/* Update tags to use variables for theme switching */
+/* Tags to use variables for theme switching */
 .pub-tag.journal     { color: var(--tag-journal); }
 .pub-tag.conference  { color: var(--tag-conference); }
 .pub-tag.preprint    { color: var(--tag-preprint); }
 .pub-tag.thesis      { color: var(--tag-thesis); }
 
-.pub-tag.crowdsourcing, .pub-tag.on-road, .pub-tag.simulator, 
-.pub-tag.lab, .pub-tag.naturalistic, .pub-tag.survey { 
-    color: var(--tag-method); 
-}
-
-.pub-tag.vr, .pub-tag.xr { color: var(--tag-vr-xr); }
-.pub-tag.gen-ai, .pub-tag.cv { color: var(--tag-ai-cv); }
-.pub-tag.sensor, .pub-tag.dashcam { color: var(--tag-hardware); }
-
-.pub-tag.pedestrian, .pub-tag.cyclist, .pub-tag.driver, 
-.pub-tag.motorcyclist, .pub-tag.passenger, .pub-tag.bystander { 
-    color: var(--tag-road-user); 
-}
-
-.pub-tag.ehmi, .pub-tag.ihmi, .pub-tag.automated-driving, 
-.pub-tag.trust, .pub-tag.robotics, .pub-tag.uncertainty { 
-    color: var(--tag-topic); 
-}
-
-/* topic specific overrides */
 .pub-tag.sound             { color: var(--tag-sound); }
 .pub-tag.visual            { color: var(--tag-visual); }
 .pub-tag.haptic            { color: var(--tag-haptic); }
@@ -707,15 +755,44 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 .pub-tag.cs { 
     color: var(--tag-cs); 
 }
-/* AI / Computer Vision tags */
-.pub-tag.artificial-intelligence, 
-.pub-tag.gen-ai, 
-.pub-tag.cv { 
-    color: var(--tag-ai); 
-}
 .pub-tag.multi-agent       { color: #00b0ff; }
 .pub-tag.electric-vehicles { color: var(--tag-electric-vehicles); }
 .pub-tag.open-science      { color: #a0a0a0; }
+.pub-tag.wizard-of-oz                { color: var(--tag-wizard-of-oz); }
+.pub-tag.meta               { color: var(--tag-meta); }
+.pub-tag.eye-tracking       { color: var(--tag-eye-tracking); }
+.pub-tag.design             { color: var(--tag-design); }
+.pub-tag.interview          { color: var(--tag-interview); }
+.pub-tag.diary              { color: var(--tag-diary); }
+.pub-tag.workshop           { color: var(--tag-workshop); }
+.pub-tag.virtual-reality    { color: var(--tag-virtual-reality); }
+.pub-tag.extended-reality   { color: var(--tag-extended-reality); }
+.pub-tag.computer-vision    { color: var(--tag-computer-vision); }
+.pub-tag.pedestrian  { color: var(--tag-pedestrian); }
+.pub-tag.cyclist     { color: var(--tag-cyclist); }
+.pub-tag.driver      { color: var(--tag-driver); }
+.pub-tag.motorcyclist { color: var(--tag-motorcyclist); }
+.pub-tag.passenger   { color: var(--tag-passenger); }
+.pub-tag.bystander   { color: var(--tag-bystander); }
+.pub-tag.crowdsourcing     { color: var(--tag-crowdsourcing); }
+.pub-tag.on-road           { color: var(--tag-on-road); }
+.pub-tag.simulator         { color: var(--tag-simulator); }
+.pub-tag.lab               { color: var(--tag-lab); }
+.pub-tag.naturalistic      { color: var(--tag-naturalistic); }
+.pub-tag.survey            { color: var(--tag-survey); }
+.pub-tag.vr                { color: var(--tag-vr); }
+.pub-tag.xr                { color: var(--tag-xr); }
+.pub-tag.gen-ai            { color: var(--tag-gen-ai); }
+.pub-tag.cv                { color: var(--tag-cv); }
+.pub-tag.sensor            { color: var(--tag-sensor); }
+.pub-tag.dashcam           { color: var(--tag-dashcam); }
+.pub-tag.ehmi              { color: var(--tag-ehmi); }
+.pub-tag.ihmi              { color: var(--tag-ihmi); }
+.pub-tag.automated-driving { color: var(--tag-automated-driving); }
+.pub-tag.trust             { color: var(--tag-trust); }
+.pub-tag.robotics          { color: var(--tag-robotics); }
+.pub-tag.uncertainty       { color: var(--tag-uncertainty); }
+.pub-tag.artificial-intelligence { color: var(--tag-ai); }
 
 /* Ensure background is subtle in light mode (already in your file, but verify) */
 [data-theme="light"] .pub-tag {
