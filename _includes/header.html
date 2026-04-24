@@ -2,7 +2,13 @@
 <script>
   (function () {
     var saved = localStorage.getItem('theme');
-    var preferred = (!saved && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : (saved || 'dark');
+    
+    // 1. Check if user previously toggled manually
+    // 2. Otherwise, check if OS/Browser prefers light mode
+    // 3. Default to dark if neither is specified
+    var preferred = saved ? saved : 
+                    (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+
     document.documentElement.setAttribute('data-theme', preferred);
   }());
 </script>
@@ -42,16 +48,19 @@
     var icon  = document.getElementById('theme-toggle-icon');
     var label = document.getElementById('theme-toggle-label');
 
+    /* Inside your existing script at the bottom of header.html */
     function updateButton(theme) {
+      /* This ensures the icon matches the current theme applied by the Init script */
       if (theme === 'dark') {
-        icon.textContent = '☀';
+        icon.textContent  = '☀'; // Show Sun because clicking will switch to Light
         label.textContent = 'Light';
       } else {
-        icon.textContent = '☾';
+        icon.textContent  = '☾'; // Show Moon because clicking will switch to Dark
         label.textContent = 'Dark';
       }
     }
 
+    // Keep the sync call as it is:
     updateButton(document.documentElement.getAttribute('data-theme') || 'dark');
 
     btn.addEventListener('click', function () {
