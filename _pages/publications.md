@@ -66,7 +66,7 @@ permalink: /publications/
   <button class="filter-btn" data-filter="trust">Trust</button>
   <button class="filter-btn" data-filter="uncertainty">Uncertainty</button>
   <button class="filter-btn" data-filter="robotics">Robotics</button>
-  <button class="filter-btn" data-filter="mutli-agent">Multi-agent</button>
+  <button class="filter-btn" data-filter="multi-agent">Multi-agent</button>
   <button class="filter-btn" data-filter="computer-science">Computer science</button>
   <button class="filter-btn" data-filter="open-science">Open science</button>
 </div>
