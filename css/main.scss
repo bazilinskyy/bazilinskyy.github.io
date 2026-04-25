@@ -1,6 +1,6 @@
 ---
 ---
-$grid-float-breakpoint: 910px; /* Force navbar to collapse at 992px instead of 768px */
+$grid-float-breakpoint: 915px; /* Force navbar to collapse at 992px instead of 768px */
     
 @import "bootstrap";
 
@@ -519,7 +519,7 @@ figcaption {
 }
 
 .navbar-right {
-    margin-right: -5px;
+    margin-right: 10px;
 }
 
 #gridid img {
