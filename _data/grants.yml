@@ -1,9 +1,3 @@
-- name: Leadership micro grant
-  name_url: https://www.mariecuriealumni.eu/mcaa-leadership-micro-grant-2025-26
-  organisation: MCAA
-  organisation_url: https://www.mariecuriealumni.eu
-  year: 2025
-
 - name: FAIR Data fund
   name_url: https://community.data.4tu.nl/the-fair-data-fund
   organisation: 4TU.ResearchData
@@ -15,6 +9,12 @@
   organisation: EAISI institute of TU Eindhoven
   organisation_url: https://www.tue.nl/en/research/institutes/eindhoven-artificial-intelligence-systems-institute
   year: 2026
+
+- name: Leadership micro grant
+  name_url: https://www.mariecuriealumni.eu/mcaa-leadership-micro-grant-2025-26
+  organisation: MCAA
+  organisation_url: https://www.mariecuriealumni.eu
+  year: 2025
 
 - name: NWO Small compute application
   name_url: https://www.surf.nl/en/small-compute-applications-nwo
