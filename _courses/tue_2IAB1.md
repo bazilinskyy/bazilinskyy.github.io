@@ -5,7 +5,7 @@ sitemap: false
 name: Foundations of data analytics
 name_url: https://research.tue.nl/en/courses/foundations-of-data-analytics
 year_start: 2024
-year_end:
+year_end: 2025
 institution: TU/e
 type: bsc
 students: 1200+

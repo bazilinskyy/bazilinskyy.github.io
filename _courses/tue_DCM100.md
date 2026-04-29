@@ -5,7 +5,7 @@ sitemap: false
 name: Constructive design research
 name_url: https://studiegids.tue.nl/opleidingen/graduate-school/masters-programs/industrial-design/curriculum/specialization-master-tracks/constructive-design-research-cdr
 year_start: 2024
-year_end: 
+year_end: 2025
 institution: TU/e
 type: msc
 students: 100+
