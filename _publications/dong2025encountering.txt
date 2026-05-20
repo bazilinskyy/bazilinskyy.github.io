@@ -3,5 +3,6 @@
   author={Dong, Haoyu and Yuanzi, Wang and Bazilinskyy, Pavlo and Bruns, Miguel and Martens, Marieke H.},
   year={2025},
   booktitle={Proceedings of International Association of Societies of Design Research Congress 2025},
-  address={Taipei, Taiwan}
+  address={Taipei, Taiwan},
+  doi={10.21606/iasdr.2025.1080}
 }
