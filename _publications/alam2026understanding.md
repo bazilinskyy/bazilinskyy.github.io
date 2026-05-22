@@ -2,7 +2,7 @@
 layout: publication
 sitemap: false
 title: "Understanding global pedestrian behaviour in 4965 cities with dashcam videos on YouTube"
-authors: Alam, Md. S., Martens, M. H., Bazilinska, O., Bazilinskyy, P.
+authors: Alam, M. S., Martens, M. H., Bazilinska, O., Bazilinskyy, P.
 pdf: alam2026understanding
 image: alam2026understanding.jpg
 display: Submitted for publication.
