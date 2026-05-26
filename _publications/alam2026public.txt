@@ -1,0 +1,5 @@
+@techreport{alam2026public,
+  title={What can public traffic cameras reveal? A short horizon privacy audit using open source vehicle tracking},
+  author={Alam, Md Shadab and Bazilinskyy, Pavlo},
+  year={2026}
+}
