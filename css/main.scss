@@ -855,6 +855,14 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   }
 }
 
+@media (max-width: $grid-float-breakpoint) {
+  #theme-toggle {
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+}
+
+
 #theme-toggle-icon {
   font-size: 14px;      /* Smaller icon */
   line-height: 1;
