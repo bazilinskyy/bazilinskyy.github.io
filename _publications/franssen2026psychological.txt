@@ -1,0 +1,8 @@
+@article{franssen2026psychological,
+  title={Psychological uncertainty in human experience and behavior: A systematic review on measurements, induction and effects},
+  author={Franssen, Mervyn and Verstegen, Rutger and Bazilinskyy, Pavlo and Van der Spek Erik H. and Martens, Marieke H.},
+  year={2026},
+  journal={Frontiers in Psychology},
+  volume={17},
+  pages={1844980}
+}
