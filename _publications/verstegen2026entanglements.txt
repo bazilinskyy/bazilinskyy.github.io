@@ -1,0 +1,9 @@
+@inproceedings{verstegen2026entanglements,
+  title={Entanglements and unintended consequences of automated vehicles: An instance-based discussion for generative uncertainty},
+  author={Verstegen, Rutger and Gao, Ruolin and Dong, Haoyu and Bazilinskyy, Pavlo and Martens, Marieke H.},
+  booktitle={Companion Publication of the 2026 ACM Designing Interactive Systems Conference},
+  pages = {469--473},
+  year={2026},
+  address={Singapore, Singapore},
+  doi={10.1145/3802974.3809468}
+}
