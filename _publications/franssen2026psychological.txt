@@ -4,5 +4,6 @@
   year={2026},
   journal={Frontiers in Psychology},
   volume={17},
-  pages={1844980}
+  pages={1844980},
+  doi={10.3389/fpsyg.2026.1844980}
 }
