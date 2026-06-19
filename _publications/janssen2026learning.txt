@@ -1,0 +1,5 @@
+@techreport{janssen2026directional,
+  title={Learning a simple directional eHMI: A VR study of AV-pedestrian interaction},
+  author={Janssen, Christian and Alam, Md Shadab and Bazilinskyy, Pavlo and Dou, Fei and Zhang, Linghan},
+  year={2026}
+}

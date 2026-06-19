@@ -1,0 +1,5 @@
+@techreport{fang2026interviewing,
+  title={Interviewing silicon experts: A persona-based LLM interview pipeline in automated driving},
+  author={Fang, Ying and Bazilinskyy, Pavlo and Martens, Marieke H.},
+  year={2026}
+}
