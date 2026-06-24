@@ -1,3 +1,9 @@
+- name: "Swiss AI Initiative Large Project \"Reality-Grounded World Model\""
+  name_url: https://www.swiss-ai.org/swiss-ai-projects
+  organisation: Swiss AI
+  organisation_url: https://www.swiss-ai.org
+  year: 2026
+
 - name: FAIR Data fund
   name_url: https://community.data.4tu.nl/the-fair-data-fund
   organisation: 4TU.ResearchData
