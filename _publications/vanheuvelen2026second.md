@@ -5,11 +5,11 @@ title: "A second pair of eyes: Evaluating a helmet-integrated multimodal HMI for
 authors: Van Heuvelen, T., Bazilinskyy, P.
 pdf: vanheuvelen2026second
 image: vanheuvelen2026second.jpg
-display: Submitted for publication.
-year: 
+display: Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Gothenburg, Sweden
+year: 2026
 code: https://github.com/T-vH/motex
-suppmat: https://www.dropbox.com/scl/fo/z1nmh1dqsyr6z1yidahh1/AJD5BaZEzN_XaQqV2JPXL4U?rlkey=k7d8zl1kx9holfpv051fwlve8
-doi: 
+suppmat: https://doi.org/10.4121/3ba4edd4-6158-41d6-aa2d-2727f25467b9
+doi: 10.1145/3828158.3838267
 tags: [motorcyclist, ihmi, lab, virtual-reality, simulator, sound, visual, preprint]
-abstract: "Motorcyclists are among the most vulnerable road users, frequently hindered by late detection of hazards in complex urban traffic. We evaluated MOTEX, a helmet-integrated HMI delivering proactive directional cues through peripheral visual, auditory, and multimodal feedback. In a within-subject simulator study (N=13) in 16 scenarios derived from common accident typologies, no statistically significant effects were found for reaction time (p=0.33) or safety margins (p=0.42). However, visual and multimodal cues yielded numerically faster responses (574ms; SD=317 and 570ms; SD=360) compared to the control (747ms; SD=445). Approximately 70% of the participants reported increased situation awareness, alongside low cognitive workload and moderate trust - suggesting the system functions as a supportive \"second pair of eyes\" for spatial confirmation rather than prescriptive warning. These findings demonstrate the feasibility of non-intrusive, decoupled helmet-integrated safety systems as modular retrofits bridging human perception and automated hazard detection."
+abstract: "Motorcyclists are highly vulnerable in complex traffic, where hazards are often detected too late for a timely response. We evaluated MOTEX, a helmet-integrated HMI that provides proactive directional cues through peripheral visual, auditory, and multimodal feedback. In a within-subject simulator study, 14 participants completed 16 scenarios based on common motorcycle crash typologies. The feedback mode did not significantly affect the reaction time or the minimum time-to-collision, although the visual and multimodal conditions showed numerically faster responses and greater safety margins than the audio and control conditions. Participants reported low cognitive workload, moderate trust, and generally positive evaluations of cue clarity. Perceived benefits of situation awareness were mixed, with most of participants reporting a neutral effect. These findings suggest that MOTEX may function less as a direct determinant of behavioural response and more as a supportive \"second pair of eyes\" for spatial confirmation."
 ---

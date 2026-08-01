@@ -1,5 +1,8 @@
-@techreport{vanheuvelen2026second,
+@inproceedings{vanheuvelen2026second,
   title={A second pair of eyes: Evaluating a helmet-integrated multimodal HMI for proactive urban motorcyclist safety},
   author={Van Heuvelen, Thomas and Bazilinskyy, Pavlo},
-  year={2026}
+  booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  address={Gothenburg, Sweden},
+  year={2026},
+  doi={10.1145/3828158.3838267}
 }
