@@ -1,5 +1,8 @@
-@techreport{alam2026exploring,
+@inproceedings{alam2026exploring,
   title={Exploring Veo 3's capabilities for generating urban traffic scenes in 76 cities worldwide},
   author={Alam, Md Shadab and Wang, Zi and Zhang, Linghan and Bazilinskyy, Pavlo},
-  year={2025}
+  booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  address={Gothenburg, Sweden},
+  year={2026},
+  doi={10.1145/3828158.3838250}
 }
