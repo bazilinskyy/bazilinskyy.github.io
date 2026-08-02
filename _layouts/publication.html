@@ -22,7 +22,7 @@ layout: gridlay
     <h4>{{ page.authors }}</h4>
     <h5><em>{{ page.display }}</em>{% if page.year %} ({{page.year}}){% endif %}</h5>
     {% if page.abstract %}
-      <a class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb; pointer-events: none;" role="button">ABSTRACT</a> {{ page.abstract }}
+      <a class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb; pointer-events: none;" role="button">ABSTRACT</a> {{ page.abstract }} {% if page.tags %}{% for tag in page.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}
     {% endif %}
 
     {% assign contentwords = page.content | number_of_words %}
