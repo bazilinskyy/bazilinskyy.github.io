@@ -7,7 +7,7 @@ pdf: fang2026interviewing
 image: fang2026interviewing.jpg
 display: Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI). Gothenburg, Sweden
 year: 2026
-# doi:
+doi: 10.1145/3828158.3838221
 code: https://github.com/FayeFang-creator/llm-expert-interview
 suppmat: https://doi.org/10.4121/bdd8ab4b-6dea-4685-a81b-086f2578371e
 tags: [automated-driving, conference, artificial-intelligence]
