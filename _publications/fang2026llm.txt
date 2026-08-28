@@ -1,0 +1,5 @@
+@techreport{fang2026llm,
+  title={LLM-assisted Systematic review of inaccurate mental models for driving automation systems: Constructs, KPIs and measurements},
+  author={Fang, Ying and Bazilinskyy, Pavlo and Martens, Marieke H.},
+  year={2026}
+}
