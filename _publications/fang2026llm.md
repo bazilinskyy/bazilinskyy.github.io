@@ -1,7 +1,7 @@
 ---
 layout: publication
 sitemap: false
-title: "LLM-assisted Systematic review of inaccurate mental models for driving automation systems: Constructs, KPIs and measurements"
+title: "LLM-assisted systematic review of inaccurate mental models for driving automation systems: Constructs, KPIs and measurements"
 authors: Fang, Y., Bazilinskyy, P., Martens, M. H.
 pdf: fang2026llm
 image: fang2026llm.jpg
