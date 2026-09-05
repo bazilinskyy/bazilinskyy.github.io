@@ -5,7 +5,7 @@ title: "Psychological uncertainty in human experience and behavior: A systematic
 authors: Franssen, M., Verstegen, R., Bazilinskyy, P., Van der Spek, E. D., Martens M. H.
 pdf: franssen2026psychological
 image: franssen2026psychological.jpg
-display: Frontiers in Psychology 17, 1844980.
+display: Frontiers in Psychology, 17, 1844980.
 year: 2026
 doi: 10.3389/fpsyg.2026.1844980
 tags: [uncertainty, meta, journal]

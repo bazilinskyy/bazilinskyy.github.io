@@ -1,0 +1,9 @@
+@article{morkute2026trust,
+  title = {Trust in automated mobility as a social process: Behavioural and conversational evidence from shared rides},
+  author = {Ugnė Aleksandra Morkutė and Pavlo Bazilinskyy and Jom Dieben and Francesco Walker},
+  journal = {Transportation Research Interdisciplinary Perspectives},
+  volume = {39},
+  pages = {102223},
+  year = {2026},
+  doi = {https://doi.org/10.1016/j.trip.2026.102223}
+}
