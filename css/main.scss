@@ -686,10 +686,19 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 /* abstract opened by a search hit; Bootstrap's own collapse state is left alone */
 .collapse.search-expanded { display: block; }
 
-.well-abstract mark {
+.publication-entry mark {
   background: var(--mark-bg);
   color: var(--mark-text);
   padding: 0 0.12em;
+  border-radius: 2px;
+}
+
+/* a tag chip already carries its own colour, so mark it with a ring, not a fill */
+.pub-tag mark {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  box-shadow: 0 0 0 2px var(--mark-bg);
   border-radius: 2px;
 }
 

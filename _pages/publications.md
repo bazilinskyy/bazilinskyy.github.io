@@ -117,9 +117,9 @@ permalink: /publications/
 {% endif %}
 </li>
 <li class="flex-item2">
-{% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank">{% endif %}<strong>{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br/>
-{{ publi.authors }}<br/>
-<em>{{ publi.display }}</em><br/>
+{% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank">{% endif %}<strong class="pub-title">{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br/>
+<span class="pub-authors">{{ publi.authors }}</span><br/>
+<em class="pub-venue">{{ publi.display }}</em><br/>
 {% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
 {% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">BIB</a>{% endif %}
 {% if pdfpresent == true %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
@@ -188,9 +188,9 @@ permalink: /publications/
 {% endif %}
 </li>
 <li class="flex-item2">
-{% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank">{% endif %}<strong>{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br />
-{{ publi.authors }}<br />
-<em>{{ publi.display }}</em>{% if publi.year %} ({{publi.year}}){% endif %}<br/>
+{% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank">{% endif %}<strong class="pub-title">{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br />
+<span class="pub-authors">{{ publi.authors }}</span><br />
+<em class="pub-venue">{{ publi.display }}</em>{% if publi.year %} (<span class="pub-year">{{publi.year}}</span>){% endif %}<br/>
 {% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
 {% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">BIB</a>{% endif %}
 {% if pdfpresent == true %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
@@ -227,21 +227,28 @@ var groups = document.querySelectorAll('.filter-group');
 var search = document.getElementById('pub-search');
 
 // Abstracts are already in the page inside each entry, so searching them costs no extra
-// bytes. Cache the plain text once so a keystroke never has to walk the DOM.
-var abstracts = new Map();
+// bytes. Cache the plain text of every highlightable field once so a keystroke never has
+// to walk the DOM. Each selector must wrap text only, since marking rewrites innerHTML.
+var MARKABLE = '.pub-title, .pub-authors, .pub-venue, .pub-year, .pub-tag';
+var entryData = new Map();
 document.querySelectorAll('.publication-entry').forEach(function (entry) {
-var el = entry.querySelector('.well-abstract');
-if (el) abstracts.set(entry, { el: el, text: el.textContent, lower: el.textContent.toLowerCase(), sig: '' });
+var abstractEl = entry.querySelector('.well-abstract');
+entryData.set(entry, {
+fields: Array.prototype.map.call(entry.querySelectorAll(MARKABLE), field),
+abstract: abstractEl ? field(abstractEl) : null,
+abstractLower: abstractEl ? abstractEl.textContent.toLowerCase() : ''
 });
+});
+function field(el) { return { el: el, text: el.textContent, sig: '' }; }
 function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 function escapeHtml(s) { return s.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
-function markAbstract(a, terms) {
+function mark(f, terms) {
 var sig = terms.join('\u0000');
-if (a.sig === sig) return;              // nothing changed for this entry
-a.sig = sig;
-if (!terms.length) { a.el.textContent = a.text; return; }
+if (f.sig === sig) return;              // nothing changed for this field
+f.sig = sig;
+if (!terms.length) { f.el.textContent = f.text; return; }
 var re = new RegExp('(' + terms.map(escapeRe).join('|') + ')', 'gi');
-a.el.innerHTML = escapeHtml(a.text).replace(re, '<mark>$1</mark>');
+f.el.innerHTML = escapeHtml(f.text).replace(re, '<mark>$1</mark>');
 }
 // each group holds a Set of active filters; empty Set = "all"
 var activeFilters = Array.from(groups).map(function () { return new Set(); });
@@ -254,20 +261,21 @@ var visible = 0;
 entries.forEach(function (entry) {
 var tags = (entry.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
 var match = required.every(function (f) { return tags.indexOf(f) !== -1; });
-var a = abstracts.get(entry);
+var data = entryData.get(entry);
 var fromAbstract = false;
 if (match && terms.length) {
 var haystack = entry.getAttribute('data-search') || '';
-var abstract = a ? a.lower : '';
 // all terms must appear, so "bazilinskyy ehmi" narrows rather than widens
-match = terms.every(function (t) { return haystack.indexOf(t) !== -1 || abstract.indexOf(t) !== -1; });
+match = terms.every(function (t) { return haystack.indexOf(t) !== -1 || data.abstractLower.indexOf(t) !== -1; });
 // a term that only hit the abstract leaves no visible reason for the row,
-// so open that abstract and mark the words
+// so open that abstract too
 fromAbstract = match && terms.some(function (t) { return haystack.indexOf(t) === -1; });
 }
-if (a) {
-markAbstract(a, fromAbstract ? terms : []);
-a.el.parentNode.classList.toggle('search-expanded', fromAbstract);
+var hits = (match && terms.length) ? terms : [];
+data.fields.forEach(function (f) { mark(f, hits); });
+if (data.abstract) {
+mark(data.abstract, fromAbstract ? terms : []);
+data.abstract.el.parentNode.classList.toggle('search-expanded', fromAbstract);
 }
 entry.classList.toggle('hidden', !match);
 if (match) visible++;
