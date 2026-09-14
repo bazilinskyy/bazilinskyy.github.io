@@ -1,0 +1,53 @@
+<script>
+  // BibTeX entries live in _publications/<name>.txt, so they are fetched rather
+  // than inlined at build time. A panel that is already open loads at once; a
+  // collapsed one waits until it is first shown, which keeps them off the
+  // initial request list on the listing page.
+  (function () {
+    function load(pre) {
+      var url = pre.getAttribute('data-src');
+      if (!url) return;
+      pre.removeAttribute('data-src');          // never fetch the same entry twice
+      fetch(url)
+        .then(function (r) { return r.ok ? r.text() : Promise.reject(r.status); })
+        .then(function (text) { pre.textContent = text.trim(); })
+        .catch(function () { pre.textContent = 'Could not load this BibTeX entry.'; });
+    }
+
+    function selectContents(pre) {
+      var range = document.createRange();
+      range.selectNodeContents(pre);
+      var selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+
+    document.querySelectorAll('pre.bib-text[data-src]').forEach(function (pre) {
+      if (pre.offsetParent !== null) load(pre);   // visible, so it is wanted now
+    });
+
+    document.addEventListener('show.bs.collapse', function (e) {
+      e.target.querySelectorAll('pre.bib-text[data-src]').forEach(load);
+    });
+
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('.btn-copy');
+      if (!btn) return;
+      var pre = btn.parentNode.querySelector('pre.bib-text');
+      if (!pre) return;
+      var say = function (msg) {
+        btn.textContent = msg;
+        setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+      };
+      // clipboard needs a secure context; fall back to selecting the text
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(pre.textContent).then(
+          function () { say('Copied'); },
+          function () { selectContents(pre); say('Press ⌘C'); });
+      } else {
+        selectContents(pre);
+        say('Press ⌘C');
+      }
+    });
+  }());
+</script>

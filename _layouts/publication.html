@@ -32,8 +32,10 @@ layout: gridlay
     {% endif %}
 
     <div class="well-bib">
-     <iframe loading="lazy" src='{{site.url}}{{site.baseurl}}/p/{{page.pdf}}.txt' scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
+     <button class="btn-copy" type="button">Copy</button>
+     <pre class="bib-text" data-src="{{site.baseurl}}/p/{{page.pdf}}.txt"></pre>
     </div>
+    {% include bibtex.html %}
 
     {% if page.pdf %}
       <object data="{{ pdffile }}#view=FitH" width="100%" height="700" type="application/pdf"></object>
