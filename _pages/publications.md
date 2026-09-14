@@ -292,6 +292,32 @@ el = el.nextElementSibling;
 h2.style.display = hasPaper ? '' : 'none';
 });
 }
+// The address bar mirrors the current view, so a filtered or searched page can
+// be shared or bookmarked. Filter names are unique across the four groups, so
+// one tags= list is enough to restore them.
+function syncUrl() {
+var tags = [];
+activeFilters.forEach(function (set) { set.forEach(function (f) { tags.push(f); }); });
+var params = new URLSearchParams();
+if (search.value.trim()) params.set('q', search.value.trim());
+if (tags.length) params.set('tags', tags.join(','));
+var query = params.toString();
+// replace rather than push: typing must not bury the previous page in history
+history.replaceState(null, '', query ? location.pathname + '?' + query : location.pathname);
+}
+function readUrl() {
+var params = new URLSearchParams(location.search);
+search.value = params.get('q') || '';
+var wanted = (params.get('tags') || '').split(',').filter(Boolean);
+wanted.forEach(function (f) {
+var btn = document.querySelector('.filter-btn[data-filter="' + CSS.escape(f) + '"]');
+if (!btn) return;                       // a filter that no longer exists is ignored
+var group = btn.closest('.filter-group');
+activeFilters[Array.prototype.indexOf.call(groups, group)].add(f);
+btn.classList.add('active');
+});
+groups.forEach(function (group, i) { syncAllBtn(group, activeFilters[i]); });
+}
 function syncAllBtn(group, set) {
 var allBtn = group.querySelector('.filter-btn[data-filter="all"]');
 if (allBtn) allBtn.classList.toggle('active', set.size === 0);
@@ -314,11 +340,12 @@ btn.classList.add('active');
 }
 }
 syncAllBtn(group, set);
+syncUrl();
 applyFilters();
 });
 });
 });
-search.addEventListener('input', applyFilters);
+search.addEventListener('input', function () { syncUrl(); applyFilters(); });
 document.getElementById('reset-filters').addEventListener('click', function () {
 search.value = '';
 groups.forEach(function (group, i) {
@@ -327,8 +354,10 @@ group.querySelectorAll('.filter-btn[data-filter]').forEach(function (btn) {
 btn.classList.toggle('active', btn.getAttribute('data-filter') === 'all');
 });
 });
+syncUrl();
 applyFilters();
 });
+readUrl();
 applyFilters();
 })();
 
