@@ -63,11 +63,9 @@ def write_stubs(root):
     for name in names:
         with open(os.path.join(out, name + '.html'), 'w', encoding='utf-8') as f:
             f.write(stub_for(name))
-    # someone who trims /p/<name> back to /p/ should land on the listing
-    index = os.path.join(root, 'p')
-    os.makedirs(index, exist_ok=True)
-    with open(os.path.join(index, 'index.html'), 'w', encoding='utf-8') as f:
-        f.write(TEMPLATE.format(target='/publications/', marker=MARKER))
+    # the listing moved to /p/ too, so the old directory needs its own forward
+    with open(os.path.join(out, 'index.html'), 'w', encoding='utf-8') as f:
+        f.write(TEMPLATE.format(target=NEW_PREFIX, marker=MARKER))
     return len(names)
 
 

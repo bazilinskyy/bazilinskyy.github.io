@@ -38,6 +38,7 @@ contact: >
 nav_pages:
   - name: about
   - name: publications
+    url: p            # label stays "Publications", link is the short URL
   - name: talks
   - name: research
   - name: education
@@ -50,10 +51,6 @@ group_pub_by_year: true
 defaults:
   - scope:
       path: "publications"
-    values:
-      sitemap: false
-  - scope:
-      path: "p"
     values:
       sitemap: false
 
