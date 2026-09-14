@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Sonifying the location of an object: A comparison of three methods"
-description: "Auditory displays are promising for informing operators about hazards or objects in the environment. However, it remains to be investigated how to map distance…"
+description: "Auditory displays are promising for informing operators about hazards or objects in the environment. However, it remains to be investigated how to map…"
 authors: Bazilinskyy, P., Van Haarlem, W., Quraishi, H., Berssenbrugge, C., Binda, J., De Winter, J. C. F.
 pdf: bazilinskyy2016sonifying
 image: bazilinskyy2016sonifying.jpg

@@ -1,0 +1,23 @@
+#!/bin/sh
+# Keep files derived from _publications/ in step with their sources.
+#
+#   bazilinskyy.bib  <- every _publications/*.txt
+#   description:     <- the abstract: of each publication and workshop
+#
+# Enable once per clone with:  git config core.hooksPath .githooks
+set -e
+root=$(git rev-parse --show-toplevel)
+
+if ! command -v python3 > /dev/null; then
+    echo "pre-commit: python3 not found, leaving derived files alone" >&2
+    exit 0
+fi
+
+python3 "$root/scripts/make_bib_bibliography.py" > /dev/null
+git add -- "$root/_publications/bazilinskyy.bib"
+
+# stage only the files this actually rewrote, never whatever else is dirty
+python3 "$root/scripts/make_descriptions.py" --print-changed \
+    | while read -r f; do [ -n "$f" ] && git add -- "$f" && echo "pre-commit: described $(basename "$f")"; done
+
+exit 0

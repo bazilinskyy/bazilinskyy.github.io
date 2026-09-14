@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Trust in automated mobility as a social process: Behavioural and conversational evidence from shared rides"
-description: "Trust is a critical determinant of public acceptance of automated vehicles, particularly in shared mobility contexts where passengers co-experience automation…"
+description: "Trust is a critical determinant of public acceptance of automated vehicles, particularly in shared mobility contexts where passengers co-experience…"
 authors: Morkute, U. A., Bazilinskyy, P., Drieben, J., Walker, F.
 pdf: morkute2026trust
 image: morkute2026trust.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Blind driving by means of a steering-based predictor algorithm"
-description: "The aim of this work was to develop and empirically test different algorithms of a lane-keeping assistance system that supports drivers by means of a tone when…"
+description: "The aim of this work was to develop and empirically test different algorithms of a lane-keeping assistance system that supports drivers by means of a tone…"
 authors: Bazilinskyy, P., Beaumont, C. J. A. M., Van der Geest, X. O. S., De Jonge, R. F., Van der Kroft, K., De Winter, J. C. F. 
 pdf: bazilinskyy2017blind
 image: bazilinskyy2017blind.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Holistic HMI design for automated vehicles: Bridging in-vehicle and external communication"
-description: "As the field of automated vehicles (AVs) advances, it has become increasingly critical to develop human-machine interfaces (HMI) for both internal and external…"
+description: "As the field of automated vehicles (AVs) advances, it has become increasingly critical to develop human-machine interfaces (HMI) for both internal and…"
 authors: Dong, H., Tran, T., Bazilinskyy, P., Hoggenmueller, M., Dey, D., Cazacu, S., Franssen, M., Gao, R.
 pdf: dong2023holistic
 image: dong2023holistic.jpg

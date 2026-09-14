@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Quo-vadis multi-agent automotive research? Insights from a participatory workshop and questionnaire"
-description: "The transition to mixed-traffic environments that involve automated vehicles, manually operated vehicles, and vulnerable road users presents new challenges for…"
+description: "The transition to mixed-traffic environments that involve automated vehicles, manually operated vehicles, and vulnerable road users presents new challenges…"
 authors: Bazilinskyy, P., Walker, F., Dey, D., Tran, T., Park, H., Kim, H., Kang, H., Ebel, P.
 pdf: bazilinskyy2025quo
 image: bazilinskyy2025quo.jpg
