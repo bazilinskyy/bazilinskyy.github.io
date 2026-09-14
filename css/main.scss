@@ -630,6 +630,56 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   visibility: hidden;
 }
 
+/* CV */
+.cv-head { margin: 0 0 1.4em; }
+
+.cv-name {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.cv-role { margin: 0.1em 0 0.4em; font-style: italic; }
+
+.cv-links { font-size: 0.9em; margin: 0; }
+
+.cv-list ol { margin-bottom: 0; }
+
+.cv-list li { margin-bottom: 0.35em; }
+
+/* printed, this should read as a CV and not as a web page */
+@media print {
+    .navbar, #footer, #theme-toggle, .anchor-prefix, .octicon { display: none !important; }
+
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        padding-top: 0 !important;
+        font-size: 10pt;
+    }
+
+    a { color: #000 !important; text-decoration: none; }
+
+    h1, h2, .cv-name { color: #000 !important; }
+
+    h2 {
+        border-bottom: 1px solid #999;
+        padding-bottom: 2pt;
+        margin-top: 14pt;
+        page-break-after: avoid;
+    }
+
+    .rowl1, .cv-list, .well, .well-sm {
+        background: none !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    li { page-break-inside: avoid; }
+}
+
 /* Output per year */
 /* the chart keeps its drawn size and the wrapper scrolls, so bars and labels
    stay the same whatever the viewport or however many years accumulate */
