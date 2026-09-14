@@ -2,12 +2,12 @@
     <!-- Items -->
     <div class="carousel-inner" markdown="0">
         <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ site.data.slider.first.name }}" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ site.data.slider.first.name }}" alt="" />
         </div>
         {% for myimg in site.data.slider %}
         {% if site.data.slider.first == myimg %}{%else%}
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ myimg.name }}" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ myimg.name }}" alt="" />
         </div>
         {% endif %}
         {% endfor %}

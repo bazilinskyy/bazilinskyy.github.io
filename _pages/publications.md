@@ -113,7 +113,7 @@ permalink: /publications/
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" class="img-responsive"/>
+<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" alt="" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">
@@ -184,7 +184,7 @@ permalink: /publications/
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" class="img-responsive"/>
+<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" alt="" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">

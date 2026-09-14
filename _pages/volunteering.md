@@ -7,7 +7,7 @@ permalink: /volunteering/
 
 # Volunteering and organisation of events
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/tudelft-defence.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img alt="Receiving the PhD diploma from a professor in academic robes at the TU Delft defence ceremony" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/tudelft-defence.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Academia
 
@@ -18,7 +18,7 @@ At TU Delft, during 2014–2018 I was a member of the 3mE PhD council. Within th
 </div>
 
 <div class="rowl1">
-  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/rmi-berlin.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img alt="Poster for the Marie Curie Alumni “Researchers Meet Innovators” event at TU Berlin, 11–12 July 2019" loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/rmi-berlin.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Marie Curie Alumni Association (MCAA)
 
@@ -33,7 +33,7 @@ Since 2022, I have been a treasurer (and a member of the excom) of MCAA. In reco
 </div>
 
 <div class="rowl1">
-  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/ema-board.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img alt="Group photo of the Erasmus Mundus Association board" loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/ema-board.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Erasmus Mundus Association (EMA)
 
@@ -44,7 +44,7 @@ Since 2022, I have been a treasurer (and a member of the excom) of MCAA. In reco
 </div>
 
 <div class="rowl1">
-  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/opendata-4tu.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img alt="Two supplementary datasets published on 4TU.ResearchData" loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/opendata-4tu.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Open science
 
@@ -55,7 +55,7 @@ As an avid supporter of open science, since 2019, I have been a participant in O
 </div>
 
 <div class="rowl1">
-  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img alt="Donated supplies packed for transport: sleeping bags, boots, tools and boxed equipment" loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Ukraine 🇺🇦
 

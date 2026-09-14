@@ -16,7 +16,7 @@ permalink: /team/
 {% for member in site.data.pi %}
 
 <div class="row">
-  {% if member.photo %}<img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" class="img-responsive" width="18%" style="float: left" />{% endif %}
+  {% if member.photo-small %}<img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo-small }}" alt="{{ member.name }}" class="img-responsive" width="18%" style="float: left" />{% endif %}
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }}</i><br>
 
@@ -52,7 +52,7 @@ permalink: /team/
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  {% if member.photo %}<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />{% endif %}
+  {% if member.photo %}<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive" width="25%" style="float: left" />{% endif %}
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }}<br></i>
 
@@ -124,7 +124,7 @@ permalink: /team/
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  {% if member.photo %}<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />{% endif %}
+  {% if member.photo %}<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive" width="25%" style="float: left" />{% endif %}
   <h4>{{ member.name }}</h4>
   <i>{{ member.duration }} <br> Role: {{ member.info }}</i>
   <ul style="overflow: hidden">

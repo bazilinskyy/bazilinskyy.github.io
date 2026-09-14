@@ -8,7 +8,7 @@ permalink: /research/
 # Research
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/research/multi_user_communication.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img alt="Simulated night-time street where a car displays a DON’T WALK message to a pedestrian at a crossing" src="{{ site.url }}{{ site.baseurl }}/images/research/multi_user_communication.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Multi-user communication in traffic
   
@@ -46,7 +46,7 @@ The interactions between future cars and pedestrians should be designed to be un
 </div>
 
 <div class="rowl1">
-  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/alam2025cross.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img alt="Illustration of a group of people wearing t-shirts branded with different large language models" loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/alam2025cross.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Do we need human participants for human factors research?
 
@@ -68,7 +68,7 @@ During my work at SD-Insights, I developed a portable sensor to collect informat
 </div>
 
 <div class="rowl1">
-  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/research/auditory_feedback_ad.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img alt="Illustration of a car whose auditory display replaces truck noise with birdsong" loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/research/auditory_feedback_ad.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Auditory feedback for automated driving
   

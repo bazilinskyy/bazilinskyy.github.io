@@ -1,8 +1,12 @@
 - image: ec-logo.png
+  name: European Commission
   url: https://ec.europa.eu/info/index_en
 - image: msca-logo.png
+  name: Marie Skłodowska-Curie Actions
   url: https://ec.europa.eu/research/mariecurieactions/about-marie-sklodowska-curie-actions
 - image: nwo-logo.png
+  name: Dutch Research Council (NWO)
   url: https://www.nwo.nl
 - image: 4tu-logo.png
+  name: 4TU.Federation
   url: https://www.4tu.nl

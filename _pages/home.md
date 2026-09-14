@@ -40,6 +40,6 @@ I am currently engaged in research on communication between multiple automated v
 <div class="well-md">
   <h3>Funding</h3>
   <div style='display:block; text-align:center; margin-left:auto; margin-right:auto;'>
-   {% for funder in site.data.funders %}{% if funder.url %}<a href="{{funder.url}}" target="_blank"><img loading="lazy" src='/images/logos/{{ funder.image }}' style='max-height: 70px; max-width: 170px;'/></a>{% else %}<img src='/images/logos/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 170px;'/>{% endif %}   {% endfor %}
+   {% for funder in site.data.funders %}{% if funder.url %}<a href="{{funder.url}}" target="_blank"><img loading="lazy" src='/images/logos/{{ funder.image }}' alt='{{ funder.name }}' style='max-height: 70px; max-width: 170px;'/></a>{% else %}<img src='/images/logos/{{ funder.image }}' alt='{{ funder.name }}' class='mycenter' style='max-height: 70px; max-width: 170px;'/>{% endif %}   {% endfor %}
   </div>
 </div>
