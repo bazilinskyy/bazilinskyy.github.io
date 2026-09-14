@@ -24,8 +24,8 @@ it appears here too. Nothing on this page is written twice.
     {% if member.github %} · <a href="{{ member.github }}" target="_blank">GitHub</a>{% endif %}
     {% if member.linkedin %} · <a href="{{ member.linkedin }}" target="_blank">LinkedIn</a>{% endif %}
     {% if member.researchgate %} · <a href="{{ member.researchgate }}" target="_blank">ResearchGate</a>{% endif %}
-    {% if member.cv %} · <a href="{{ member.cv }}" target="_blank">PDF version</a>{% endif %}
   </p>
+  {% if member.cv %}<p class="cv-pdf"><a href="{{ site.url }}{{ site.baseurl }}{{ member.cv }}" target="_blank">Download this CV as a PDF</a></p>{% endif %}
 </div>
 
 ## Positions and education

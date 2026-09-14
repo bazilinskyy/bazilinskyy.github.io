@@ -43,8 +43,6 @@ nav_pages:
   - name: research
   - name: education
   - name: volunteering
-  - name: cv
-    label: CV
 
 # Do you want to group your publications by year? {true/false}
 group_pub_by_year: true
