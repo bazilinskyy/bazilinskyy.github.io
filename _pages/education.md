@@ -67,7 +67,7 @@ status: false
       {% if student.project_url contains '://' %}
         {% assign pdffile = student.project_url %}
       {% else %}
-        {% assign pdffile = "/publications/students/" | append:  student.project_url  | append: ".pdf" %}
+        {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
       {% endif %}
   {% endif %}
 
@@ -91,7 +91,7 @@ status: false
       {% if student.project_url contains '://' %}
         {% assign pdffile = student.project_url %}
       {% else %}
-        {% assign pdffile = "/publications/students/" | append:  student.project_url  | append: ".pdf" %}
+        {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
       {% endif %}
   {% endif %}
 
@@ -115,7 +115,7 @@ status: false
       {% if student.project_url contains '://' %}
         {% assign pdffile = student.project_url %}
       {% else %}
-        {% assign pdffile = "/publications/students/" | append:  student.project_url  | append: ".pdf" %}
+        {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
       {% endif %}
   {% endif %}
 
@@ -139,7 +139,7 @@ status: false
       {% if student.project_url contains '://' %}
         {% assign pdffile = student.project_url %}
       {% else %}
-        {% assign pdffile = "/publications/students/" | append:  student.project_url  | append: ".pdf" %}
+        {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
       {% endif %}
   {% endif %}
 

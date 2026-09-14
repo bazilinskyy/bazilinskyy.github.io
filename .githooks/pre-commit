@@ -2,6 +2,8 @@
 # Keep files derived from _publications/ in step with their sources.
 #
 #   bazilinskyy.bib  <- every _publications/*.txt
+#   publications/   <- a /publications/<name> redirect stub per publication
+#   p/index.html    <- sends a trimmed /p/ to the listing
 #   description:     <- the abstract: of each publication and workshop
 #
 # Enable once per clone with:  git config core.hooksPath .githooks
@@ -15,6 +17,9 @@ fi
 
 python3 "$root/scripts/make_bib_bibliography.py" > /dev/null
 git add -- "$root/_publications/bazilinskyy.bib"
+
+python3 "$root/scripts/make_redirect_stubs.py" > /dev/null
+git add -- "$root/publications" "$root/p"
 
 # stage only the files this actually rewrote, never whatever else is dirty
 python3 "$root/scripts/make_descriptions.py" --print-changed \

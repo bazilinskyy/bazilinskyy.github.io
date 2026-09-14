@@ -10,7 +10,7 @@ layout: gridlay
 <h1> {{ page.title }} </h1>
 <div class="rowl1">
     <div style="float: left">
-      <img src="{{ site.url }}{{ site.baseurl }}/publications/{{ page.image }}" alt="" class="img-responsive" style="border-radius: 5px; width: 280px;" />
+      <img src="{{ site.url }}{{ site.baseurl }}/p/{{ page.image }}" alt="" class="img-responsive" style="border-radius: 5px; width: 280px;" />
       <div style="max-width: 280px">
         {% if pdfpresent == true %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
         {% if page.doi %}<a href="https://doi.org/{{ page.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
@@ -32,7 +32,7 @@ layout: gridlay
     {% endif %}
 
     <div class="well-bib">
-     <iframe loading="lazy" src='{{site.url}}{{site.baseurl}}/publications/{{page.pdf}}.txt' scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
+     <iframe loading="lazy" src='{{site.url}}{{site.baseurl}}/p/{{page.pdf}}.txt' scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
     </div>
 
     {% if page.pdf %}

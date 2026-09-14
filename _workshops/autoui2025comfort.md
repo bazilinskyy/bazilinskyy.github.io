@@ -9,7 +9,7 @@ place: Brisbane, QLD, Australia
 display: Eploring good practices, challenges, and opportunities in measuring passenger comfort and perceived safety in AVs through subjective, objective, and model-based methods.
 year: 2025
 website: https://autoui25workshop-comfort-safety.ilovefuturemobility.org/
-publication: /publications/peng2025measuring
+publication: /p/peng2025measuring
 online: false
 abstract: "Passenger comfort and perceived safety, as two psychological states, are crucial for user acceptance of automated driving. The accurate measurement of these passenger states contributes to human-centred designs for automated vehicles and developing predictive models for providing personalised settings. However, practical challenges and best practices are rarely discussed in the literature. This workshop aims to address this gap by creating a forum to synthesise current practices and explore novel, effective measurement approaches. The session includes expert talks on subjective, objective, and model-based measurement methodologies, and interactive breakout sessions. Participants will critically evaluate existing methodologies and design future multi-modal strategies, including incorporating artificial intelligence (AI). The workshop will produce numerous outcomes, including the collaborative development of a research outlook and a methodological paper for knowledge sharing."
 ---

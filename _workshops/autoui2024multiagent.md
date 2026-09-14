@@ -9,7 +9,7 @@ place: Stanford, CA, USA
 display: Discussing whether time has come to conduce multi-agent reseach in automotive
 year: 2024
 website: https://multiagent-workshop.github.io
-publication: /publications/bazilinskyy2024always
+publication: /p/bazilinskyy2024always
 online: false
 abstract: "In the future, roads will host a complex mix of automated and manually operated vehicles, along with vulnerable road users. However, most automotive user interfaces and human factors research focus on single-agent studies, where one human interacts with one vehicle. Only a few studies incorporate multi-agent setups. This workshop aims to (1) examine the current state of multi-agent research in the automotive domain, (2) serve as a platform for discussion toward more realistic multi-agent setups, and (3) discuss methods and practices to conduct such multi-agent research. The goal is to synthesize the insights from the AutoUI community, creating the foundation for advancing multi-agent traffic interaction research."
 ---
