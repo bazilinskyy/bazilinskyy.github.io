@@ -40,6 +40,7 @@ $phone-width: 480px;
     --reset-hover-border:     #2e3f4d;
     --pub-count-color:        #4d6070;
     --chart-bar:              #33566e;
+    --chart-bar-wd:           #2b3f4d;
     --chart-bar-hover:        #4a7ea3;
     --mark-bg:                #4d431c;
     --mark-text:              #ffdf80;
@@ -153,6 +154,7 @@ $phone-width: 480px;
     --reset-hover-border:     #78909C;
     --pub-count-color:        #78909C;
     --chart-bar:              #9db9cd;
+    --chart-bar-wd:           #c4d2dc;
     --chart-bar-hover:        #5b8fb3;
     --mark-bg:                #fff3b8;
     --mark-text:              #4a3c00;
@@ -645,6 +647,9 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 
 .pub-chart-hit { fill: transparent; }
 
+/* undated work: same size as a year, muted so the timeline still reads left to right */
+.pub-chart-wd { fill: var(--chart-bar-wd); }
+
 .pub-chart a:hover .pub-chart-bar,
 .pub-chart a:focus .pub-chart-bar { fill: var(--chart-bar-hover); }
 
@@ -661,7 +666,8 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 /* the viewBox scales the text down with the chart, so thin out the labels
    rather than render them at ~6px */
 @media (max-width: 600px) {
-    .pub-chart a:not(:nth-of-type(3n + 1)) .pub-chart-y { display: none; }
+    /* :last-of-type keeps the working-documents label whatever the bar count */
+    .pub-chart a:not(:nth-of-type(3n + 1)):not(:last-of-type) .pub-chart-y { display: none; }
     .pub-chart-n { display: none; }
 }
 
