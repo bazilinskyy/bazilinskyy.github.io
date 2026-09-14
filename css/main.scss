@@ -631,12 +631,18 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 }
 
 /* Output per year */
+/* the chart keeps its drawn size and the wrapper scrolls, so bars and labels
+   stay the same whatever the viewport or however many years accumulate */
+.pub-chart-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0.2em 0 1.2em;
+    padding-bottom: 4px;
+}
+
 .pub-chart {
     display: block;
-    width: 100%;
-    max-width: 560px;
-    height: auto;
-    margin: 0.2em 0 1.2em;
+    height: 118px;
     overflow: visible;
 }
 
@@ -663,13 +669,6 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 .pub-chart a:hover .pub-chart-n,
 .pub-chart a:focus .pub-chart-n { fill: var(--body-text); }
 
-/* the viewBox scales the text down with the chart, so thin out the labels
-   rather than render them at ~6px */
-@media (max-width: 600px) {
-    /* :last-of-type keeps the working-documents label whatever the bar count */
-    .pub-chart a:not(:nth-of-type(3n + 1)):not(:last-of-type) .pub-chart-y { display: none; }
-    .pub-chart-n { display: none; }
-}
 
 /* Publication tag filters */
 #pub-filters {

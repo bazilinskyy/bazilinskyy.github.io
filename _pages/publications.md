@@ -32,9 +32,11 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 
 # Publications
 
-<svg markdown="0" class="pub-chart" viewBox="0 0 {{ chartw }} 118" role="img" aria-label="Publications per year, peaking at {{ peak }}">
+<div markdown="0" class="pub-chart-wrap">
+<svg markdown="0" class="pub-chart" width="{{ chartw }}" height="118" viewBox="0 0 {{ chartw }} 118" role="img" aria-label="Publications per year, peaking at {{ peak }}">
 {% assign i = 0 %}{% for y in ordered %}{% assign n = site.publications | where: "year", y.year | size %}{% if n > 0 %}{% assign h = n | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#{{ y.year }}"><title>{{ y.year }}: {{ n }} publication{% if n != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ n }}</text><rect class="pub-chart-bar" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">{{ y.year }}</text></a>{% assign i = i | plus: 1 %}{% endif %}{% endfor %}{% if undated > 0 %}{% assign h = undated | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#working-documents"><title>Working documents: {{ undated }} publication{% if undated != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ undated }}</text><rect class="pub-chart-bar pub-chart-wd" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">n/a</text></a>{% endif %}
 </svg>
+</div>
 
 <div id="pub-filters">
 <div class="filter-group">
