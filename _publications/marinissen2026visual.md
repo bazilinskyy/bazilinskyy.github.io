@@ -7,7 +7,7 @@ pdf: marinissen2026visual
 image: marinissen2026visual.jpg
 display: "Proceedings of the 9th International Conference on Human Intelligent Systems Integration (IHSI). Florence, Italy"
 year: 2026
-doi: 10.54941/AHFE-Paper-0013
+doi: 10.54941/ahfe1007132
 tags: [ihmi, conference, driver, visual]
 code: https://cloud.protopie.io/p/4dfbded4fb1d4793a626cf6c
 suppmat: https://doi.org/10.4121/608d5a43-47a1-4f12-ba8e-994767218ee5

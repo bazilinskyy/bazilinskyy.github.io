@@ -13,7 +13,7 @@ layout: gridlay
       <img src="{{ site.url }}{{ site.baseurl }}/publications/{{ page.image }}" class="img-responsive" style="border-radius: 5px; width: 280px;" />
       <div style="max-width: 280px">
         {% if pdfpresent == true %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
-        {% if page.doi %}<a href="http://doi.org/{{ page.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
+        {% if page.doi %}<a href="https://doi.org/{{ page.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
         {% if page.arxiv %}<a href="https://arxiv.org/abs/{{ page.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
         {% if page.code %}<a href="{{ page.code }}" target="_blank"><button class="btn-code">CODE</button></a> {% endif %}
         {% if page.suppmat %}<a href="{{ page.suppmat }}" target="_blank"><button class="btn-suppmat">SUPPLEMENT</button></a> {% endif %}

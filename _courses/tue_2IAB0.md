@@ -3,7 +3,7 @@ title: "2IAB0: Data analytics for engineers"
 layout: course
 sitemap: false
 name: Data analytics for engineers
-name_url: https://educationguide.tue.nl/programs/bachelor-college/basic-courses/data-analytics-for-engineers/?L=2
+name_url: https://tue.osiris-student.nl/#/onderwijscatalogus/extern/cursus?cursuscode=2IAB0&collegejaar=2023
 year_start: 2023
 year_end:  2024
 institution: TU/e

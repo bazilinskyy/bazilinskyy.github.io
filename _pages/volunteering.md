@@ -11,7 +11,7 @@ permalink: /volunteering/
 
 #### Academia
 
-At TU Delft, during 2014–2018 I was a member of the 3mE PhD council. Within this position, I co-organised many lunch lectures on topics related to academia and industry, as well as well-being (for example, a finisher of the 3100-mile running race [Pradeep Hoogakker](https://3100.srichinmoyraces.org/rtl-nieuws-does-story-pradeep-5000-kilometer-rondjes-rennen?page=2) gave a talk on the importance of mental health). During my PhD, I was also a member of the Research Council of [HFAuto](http://hf-auto.eu), where I served as a link between early-stage researchers and managers of the project. To contribute to the academic mobility and career development of academics in the EU, I became a member of the advisory board of the EURAXESS project [TOP IV](https://euraxess-top.eu/top-iv/the-basics).
+At TU Delft, during 2014–2018 I was a member of the 3mE PhD council. Within this position, I co-organised many lunch lectures on topics related to academia and industry, as well as well-being (for example, a finisher of the 3100-mile running race [Pradeep Hoogakker](https://3100.srichinmoyraces.org/rtl-nieuws-does-story-pradeep-5000-kilometer-rondjes-rennen?page=2) gave a talk on the importance of mental health). During my PhD, I was also a member of the Research Council of HFAuto, where I served as a link between early-stage researchers and managers of the project. To contribute to the academic mobility and career development of academics in the EU, I became a member of the advisory board of the EURAXESS project TOP IV.
 
   <ul style="overflow: hidden">
   </ul>
@@ -48,7 +48,7 @@ Since 2022, I have been a treasurer (and a member of the excom) of MCAA. In reco
 
 #### Open science
 
-As an avid supporter of open science, since 2019, I have been a participant in [Open Cloud for Research Environments (OCRE)](https://www.ocre-project.eu). I was involved in the workshop to discuss the structure of [European Open Science Cloud (EOSC)](https://www.eosc.eu). I strongly believe that all anonymised output of all research must be accessible by the public by default (after all, we are doing science for the people). I publish all my articles in open access. Whenever possible, I keep datasets to all of my publications in open access at the [4TU.ResearchData](https://data.4tu.nl/authors/00f5980d-ac77-4392-a6e2-e1c3304566b2) data repository. At TU/e, I am one of the of the leaders of [OSC/e](https://sites.google.com/view/osceindhoven) (Open Science Community Eindhoven), where I serve with 0.1 FTE.
+As an avid supporter of open science, since 2019, I have been a participant in Open Cloud for Research Environments (OCRE). I was involved in the workshop to discuss the structure of [European Open Science Cloud (EOSC)](https://www.eosc.eu). I strongly believe that all anonymised output of all research must be accessible by the public by default (after all, we are doing science for the people). I publish all my articles in open access. Whenever possible, I keep datasets to all of my publications in open access at the [4TU.ResearchData](https://data.4tu.nl/authors/00f5980d-ac77-4392-a6e2-e1c3304566b2) data repository. At TU/e, I am one of the of the leaders of [OSC/e](https://sites.google.com/view/osceindhoven) (Open Science Community Eindhoven), where I serve with 0.1 FTE.
 
   <ul style="overflow: hidden">
   </ul>

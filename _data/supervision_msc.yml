@@ -173,7 +173,7 @@
 - name: Thomas van Heuvelen
   name_url: https://www.linkedin.com/in/thomas-van-heuvelen-6385271bb
   project: Accident avoidance for motorcyclists
-  project_url: https://mobility-squad.com/motoGuardian
+  project_url: https://mobility-squad.com/moto-guardian
   year: 2024
   status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
@@ -181,7 +181,7 @@
 - name: Xingjian Zeng
   name_url: https://www.linkedin.com/in/xingjian-zeng-596a29213
   project: In-vehicle agent that shows emotions
-  project_url: https://bazilinskyy.github.io/publications/zeng2025like
+  project_url: https://bazilinskyy.github.io/publications/zeng2026enhancing
   year: 2024
   status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
@@ -197,7 +197,7 @@
 - name: Haoyu Liu
   name_url: https://www.linkedin.com/in/haoyu-liu-ab22732b8
   project: An inter-vehicle communication interaction enhancing manual driver’s perception to calibrate trust in AVs
-  project_url: https://mobility-squad.com/interVehicle
+  project_url: https://mobility-squad.com/inter-vehicle
   year: 2024
   status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
@@ -228,7 +228,7 @@
 - name: Xingjian Zeng
   name_url: https://www.linkedin.com/in/xingjian-zeng-596a29213
   project: In-vehicle animal-inspired agent
-  project_url: https://bazilinskyy.github.io/publications/zeng2025robot
+  project_url: https://bazilinskyy.github.io/publications/zeng2026enhancing
   year: 2024
   status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
@@ -370,14 +370,12 @@
   status: completed
 
 - name: Vishal Onkhar
-  name_url: https://www.tudelft.nl/staff/v.onkhar
   project: Algorithmic detection of eye contact in driver-pedestrian interactions
   project_url: https://repository.tudelft.nl/islandora/object/uuid%3Ab14b48ac-6df0-4a87-bb8d-5763b2697694
   year: 2020
   status: completed
 
 - name: Tom Driessen
-  name_url: https://www.tudelft.nl/staff/t.driessen
   project: "Feeling uncertain: Effects of encoding uncertainty in the tactile communication of a spatiotemporal feature"
   project_url: https://repository.tudelft.nl/islandora/object/uuid%3Aea30f1c8-70d6-493c-948b-3b6e0c398c3a
   year: 2019
