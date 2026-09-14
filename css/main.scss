@@ -39,6 +39,8 @@ $phone-width: 480px;
     --reset-hover-color:      #8899a6;
     --reset-hover-border:     #2e3f4d;
     --pub-count-color:        #4d6070;
+    --chart-bar:              #33566e;
+    --chart-bar-hover:        #4a7ea3;
     --mark-bg:                #4d431c;
     --mark-text:              #ffdf80;
     --pub-tag-bg:             #1a2633;
@@ -150,6 +152,8 @@ $phone-width: 480px;
     --reset-hover-color:      #455A64;
     --reset-hover-border:     #78909C;
     --pub-count-color:        #78909C;
+    --chart-bar:              #9db9cd;
+    --chart-bar-hover:        #5b8fb3;
     --mark-bg:                #fff3b8;
     --mark-text:              #4a3c00;
     --pub-tag-bg:             rgba(0, 0, 0, 0.07);
@@ -622,6 +626,43 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
   height: 55px;
   margin-top: -55px;
   visibility: hidden;
+}
+
+/* Output per year */
+.pub-chart {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 0.2em 0 1.2em;
+    overflow: visible;
+}
+
+.pub-chart-bar {
+    fill: var(--chart-bar);
+    transition: fill 0.15s ease;
+}
+
+.pub-chart-hit { fill: transparent; }
+
+.pub-chart a:hover .pub-chart-bar,
+.pub-chart a:focus .pub-chart-bar { fill: var(--chart-bar-hover); }
+
+.pub-chart-y,
+.pub-chart-n {
+    fill: var(--filter-label);
+    font-size: 9px;
+    text-anchor: middle;
+}
+
+.pub-chart a:hover .pub-chart-n,
+.pub-chart a:focus .pub-chart-n { fill: var(--body-text); }
+
+/* the viewBox scales the text down with the chart, so thin out the labels
+   rather than render them at ~6px */
+@media (max-width: 600px) {
+    .pub-chart a:not(:nth-of-type(3n + 1)) .pub-chart-y { display: none; }
+    .pub-chart-n { display: none; }
 }
 
 /* Publication tag filters */
