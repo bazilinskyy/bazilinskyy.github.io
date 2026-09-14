@@ -6,12 +6,18 @@
   (function () {
     function load(pre) {
       var url = pre.getAttribute('data-src');
-      if (!url) return;
+      if (!url) return pre._loading || Promise.resolve();
       pre.removeAttribute('data-src');          // never fetch the same entry twice
-      fetch(url)
+      pre._loading = fetch(url)
         .then(function (r) { return r.ok ? r.text() : Promise.reject(r.status); })
         .then(function (text) { pre.textContent = text.trim(); })
         .catch(function () { pre.textContent = 'Could not load this BibTeX entry.'; });
+      return pre._loading;
+    }
+
+    function panelFor(link) {
+      var href = link.getAttribute('href') || '';
+      return href.charAt(0) === '#' ? document.querySelector(href) : null;
     }
 
     function selectContents(pre) {
@@ -24,6 +30,17 @@
 
     document.querySelectorAll('pre.bib-text[data-src]').forEach(function (pre) {
       if (pre.offsetParent !== null) load(pre);   // visible, so it is wanted now
+    });
+
+    // Bootstrap measures the panel's scrollHeight the moment it starts opening.
+    // An entry that arrives after that leaves the panel animating to the wrong
+    // height and snapping when it lands, so fetch before letting it open.
+    ['mouseenter', 'touchstart', 'focus'].forEach(function (evt) {
+      document.addEventListener(evt, function (e) {
+        var link = e.target.closest && e.target.closest('a.btn-bib');
+        var panel = link && panelFor(link);
+        if (panel) panel.querySelectorAll('pre.bib-text[data-src]').forEach(load);
+      }, true);
     });
 
     document.addEventListener('show.bs.collapse', function (e) {
