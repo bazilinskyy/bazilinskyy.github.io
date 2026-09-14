@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "External Human-Machine Interfaces: Which of 729 colors is best for signaling ‘Please (do not) Cross’?"
+description: "Future automated vehicles may be equipped with external human-machine interfaces (eHMIs) capable of signaling to pedestrians whether or not they can cross the…"
 authors: Bazilinskyy, P., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2020external
 image: bazilinskyy2020external.jpg

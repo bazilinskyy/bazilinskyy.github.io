@@ -1,7 +1,7 @@
 ---
 title: "Publications"
+description: "Searchable list of peer-reviewed papers, preprints and theses on automated driving, eHMI design, human factors and multi-agent traffic interaction."
 layout: gridlay
-sitemap: false
 permalink: /publications/
 ---
 

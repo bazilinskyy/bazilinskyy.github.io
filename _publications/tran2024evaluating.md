@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Evaluating autonomous vehicle external communication using a multi-pedestrian VR simulator"
+description: "With the rise of autonomous vehicles (AVs) in transportation, a pressing concern is their seamless integration into daily life. In multi-pedestrian settings…"
 authors: Tran, T., Parker, C., Yu, X., Dey, D., Martens, M. H., Bazilinskyy, P., Tomitsch, M.
 pdf: tran2024evaluating
 image: tran2024evaluating.jpg

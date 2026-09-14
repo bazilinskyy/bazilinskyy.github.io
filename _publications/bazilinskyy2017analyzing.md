@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Analyzing crowdsourced ratings of speech-based take-over requests for automated driving"
+description: "Take-over requests in automated driving should fit the urgency of the traffic situation. The robustness of various published research findings on the…"
 authors: Bazilinskyy, P., De Winter, J. C. F.
 pdf: bazilinskyy2017analyzing
 image: bazilinskyy2017analyzing.jpg

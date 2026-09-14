@@ -1,7 +1,7 @@
 ---
 layout: workshop
-sitemap: false
 title: "Multi-agent research in automotive"
+description: "In the future, roads will host a complex mix of automated and manually operated vehicles, along with vulnerable road users. However, most automotive user…"
 authors: Bazilinskyy, P., Ebel, P., Walker, F., Dey, D., Tran, T.
 image: autoui2024multiagent.jpg
 conf: AutomotiveUI (AutoUI)

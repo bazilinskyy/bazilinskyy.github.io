@@ -1,7 +1,6 @@
 ---
 title: "DBM140: Embodying intelligent behavior in social context"
 layout: course
-sitemap: false
 name: Embodying intelligent behavior in social context
 name_url: https://research.tue.nl/en/courses/embodying-intelligent-behavior-in-social-context-3
 year_start: 2024

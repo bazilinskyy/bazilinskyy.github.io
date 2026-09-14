@@ -1,7 +1,7 @@
 ---
 title: "Help Ukraine in its fight for freedom"
+description: "Ways to support Ukraine: verified fundraisers, equipment needs and donation channels."
 layout: gridlay
-sitemap: false
 permalink: /ua/
 ---
 

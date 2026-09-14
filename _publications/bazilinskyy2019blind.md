@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Blind driving by means of the track angle error"
+description: "This study is the third iteration in a series of studies aimed to develop a system that allows driving blindfolded. We used a sonification approach, where the…"
 authors: Bazilinskyy, P., Bijker, L., Dielissen, T., French, S., Mooijman, T., Peters, L., De Winter, J. C. F.
 pdf: bazilinskyy2019blind
 image: bazilinskyy2019blind.jpg

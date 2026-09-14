@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Survey on eHMI concepts: The effect of text, color, and perspective"
+description: "The automotive industry has presented a variety of external human-machine interfaces (eHMIs) for automated vehicles (AVs). However, there appears to be no…"
 authors: Bazilinskyy, P., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2019survey
 image: bazilinskyy2019survey.jpg

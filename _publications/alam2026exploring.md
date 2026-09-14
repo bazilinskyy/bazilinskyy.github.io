@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Exploring Veo 3's capabilities for generating urban traffic scenes in 76 cities worldwide"
+description: "This study explores the potential of Google Veo 3, a generative video model, to synthesise 8-second dashcam-style urban traffic scenes solely based on text…"
 authors: Alam, M. S., Wang, Z., Zhang, L., Bazilinskyy, P.
 pdf: alam2026exploring
 image: alam2026exploring.jpg

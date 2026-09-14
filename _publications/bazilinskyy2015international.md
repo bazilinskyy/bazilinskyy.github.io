@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "An international crowdsourcing study into people’s statements on fully automated driving"
+description: "Fully automated driving can potentially provide enormous benefits to society. However, it has been unclear whether people will appreciate such far-reaching…"
 authors: Bazilinskyy, P., Kyriakidis, M., De Winter, J. C. F.
 pdf: bazilinskyy2015international
 image: bazilinskyy2015international.jpg

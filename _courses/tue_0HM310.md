@@ -1,7 +1,6 @@
 ---
 title: "0HM310: Automotive societal factors"
 layout: course
-sitemap: false
 name: Automotive societal factors
 name_url: https://research.tue.nl/en/courses/automotive-societal-factors
 year_start: 2022

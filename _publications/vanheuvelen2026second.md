@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "A second pair of eyes: Evaluating a helmet-integrated multimodal HMI for proactive urban motorcyclist safety"
+description: "Motorcyclists are highly vulnerable in complex traffic, where hazards are often detected too late for a timely response. We evaluated MOTEX, a…"
 authors: Van Heuvelen, T., Bazilinskyy, P.
 pdf: vanheuvelen2026second
 image: vanheuvelen2026second.jpg

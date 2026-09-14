@@ -1,7 +1,6 @@
 ---
 title: "DCM100: Constructive design research"
 layout: course
-sitemap: false
 name: Constructive design research
 name_url: https://studiegids.tue.nl/opleidingen/graduate-school/masters-programs/industrial-design/curriculum/specialization-master-tracks/constructive-design-research-cdr
 year_start: 2024

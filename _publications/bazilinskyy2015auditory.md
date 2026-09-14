@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Auditory interfaces in automated driving: An international survey"
+description: "This study investigated peoples’ opinion on auditory interfaces in contemporary cars and their willingness to be exposed to auditory feedback in automated…"
 authors: Bazilinskyy, P., De Winter, J. C. F.
 pdf: bazilinskyy2015auditory
 image: bazilinskyy2015auditory.jpg

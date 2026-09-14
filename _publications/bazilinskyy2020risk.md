@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Risk perception: A study using dashcam videos and participants from different world regions."
+description: "Objective: Research has shown that perceived risk is a vital variable in the understanding of road traffic safety. Having experience in a particular traffic…"
 authors: Bazilinskyy, P., Eisma, Y. B., Dodou, D., De Winter, J. C. F. 
 pdf: bazilinskyy2020risk
 image: bazilinskyy2020risk.jpg

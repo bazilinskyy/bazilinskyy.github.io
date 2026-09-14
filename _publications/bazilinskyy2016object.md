@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Object-alignment performance in a head-mounted display versus a monitor"
+description: "Head-mounted displays (HMDs) offer immersion and binocular disparity. This study investigated whether an HMD yields better object-alignment performance than a…"
 authors: Bazilinskyy, P., Kovácsová, N., Al Jawahiri, A., Kapel, P., Mulckhuyse, J., Wagenaar, S., De Winter, J. C. F.
 pdf: bazilinskyy2016object
 image: bazilinskyy2016object.jpg

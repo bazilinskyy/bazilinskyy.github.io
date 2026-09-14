@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "What can public traffic cameras reveal? A short horizon privacy audit using open source vehicle tracking"
+description: "Public traffic cameras are often treated as low risk because they rarely expose clear faces or licence plates. We study a different leakage channel: the…"
 authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2026public
 image: alam2026public.jpg

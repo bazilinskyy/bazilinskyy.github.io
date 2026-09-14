@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "LLM-assisted systematic review of inaccurate mental models for driving automation systems: Constructs, KPIs and measurements"
+description: "Research on the interaction between users and driving automation systems (DAS) is growing rapidly. To support safe interaction, researchers have examined how…"
 authors: Fang, Y., Bazilinskyy, P., Martens, M. H.
 pdf: fang2026llm
 image: fang2026llm.jpg

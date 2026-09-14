@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Pedestrian planet: What YouTube driving from 233 countries and territories teaches us about the world"
+description: "Pedestrian crossing behaviour varies globally. This study analyses dashcam footage from the CROWD dataset, covering 233 countries and territories, to examine…"
 authors: Alam, M. S., Martens, M. H., Bazilinskyy, P.
 pdf: alam2025pedestrian
 image: alam2025pedestrian.jpg

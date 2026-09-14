@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Combining internal and external communication: The design of a holistic Human-Machine Interface for automated vehicles"
+description: "In this paper, we explore the field of holistic Human-Machine Interfaces (hHMIs). Currently, internal and external Human-Machine Interfaces are being…"
 authors: Verstegen, R., Gao, R., Bernhaupt, R., Bazilinskyy, P., Martens, M. H.
 pdf: verstegen2024combining
 image: verstegen2024combining.jpg

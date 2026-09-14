@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Report on the in-vehicle auditory interactions workshop: Taxonomy, challenges, and approaches"
+description: "As driving is mainly a visual task, auditory displays play a critical role for in-vehicle interactions.To improve in-vehicle auditory interactions to the…"
 authors: Jeon, M., Bazilinskyy, P., Hammerschmidt, J., Hermann, T., Landry, S., Wolf, K. E.
 pdf: jeon2015report
 image: jeon2015report.jpg

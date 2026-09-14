@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Visual attention of pedestrians in traffic scenes: A crowdsourcing experiment"
+description: "In a crowdsourced experiment, the effects of distance and type of the approaching vehicle, traffic density, and visual clutter on pedestrians’ attention…"
 authors: Bazilinskyy, P., Kyriakidis, M., De Winter, J. C. F.
 pdf: bazilinskyy2021visual
 image: bazilinskyy2021visual.jpg

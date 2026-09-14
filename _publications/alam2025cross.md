@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Cross or nah? LLMs get in the mindset of a pedestrian in front of automated car with an eHMI"
+description: "This study examines the effectiveness of using large language model-based personas to evaluate external Human-Machine Interfaces (eHMIs) in automated vehicles…"
 authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2025cross
 image: alam2025cross.jpg

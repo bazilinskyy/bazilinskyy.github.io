@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Sound design process for automotive industry"
+description: "The automotive industry is recognised as a challenging arena for sound design, because the presented information needs to not only comply with safety…"
 authors: Bazilinskyy, P., Cieler, S., De Winter, J. C. F.
 pdf: bazilinskyy2018sound
 image: bazilinskyy2018sound.jpg

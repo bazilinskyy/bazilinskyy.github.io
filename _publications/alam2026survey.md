@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "A survey of day-night illumination domain translation for outdoor vision: Methods, datasets, and evaluation protocols"
+description: "Day-night appearance shift degrades vision for driving and surveillance. Low illumination, mixed lighting, glare, and sensor noise weaken cues for detection…"
 authors: Alam, M. S., Singh, P., Bazilinskyy, P.
 pdf: alam2026survey
 image: alam2026survey.jpg

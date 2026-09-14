@@ -1,7 +1,7 @@
 ---
 title: "About"
+description: "Biography, awards and academic background of Pavlo Bazilinskyy, assistant professor in Computational Design Systems at TU Eindhoven."
 layout: gridlay
-sitemap: false
 permalink: /about/
 ---
 

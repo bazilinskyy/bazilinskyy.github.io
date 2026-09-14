@@ -1,7 +1,7 @@
 ---
 title: "Research"
+description: "Research on multi-user communication in traffic, external HMIs, crowdsourced road-user behaviour and auditory interfaces for automated driving."
 layout: gridlay
-sitemap: false
 permalink: /research/
 ---
 

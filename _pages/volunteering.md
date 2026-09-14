@@ -1,7 +1,7 @@
 ---
 title: "Volunteering"
+description: "Volunteering and service roles, including the Marie Curie Alumni Association and the Erasmus Mundus Association."
 layout: gridlay
-sitemap: false
 permalink: /volunteering/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Designing multi-modal communication for merge negotiation with automated vehicles: Insights from a design exploration with prototypes"
+description: "Deciding whether to allow an automated vehicle (AV) to merge in front can present a complex negotiation for human drivers. To address this, we explored the…"
 authors: Gao, R., Liu, H., Bazilinskyy, P., Martens, M. H.
 pdf: gao2025designing
 image: gao2025designing.jpg

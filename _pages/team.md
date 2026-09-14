@@ -1,7 +1,7 @@
 ---
 title: "Team"
+description: "Research team and open positions for PhD students, postdocs and master students at TU Eindhoven."
 layout: gridlay
-sitemap: false
 permalink: /team/
 ---
 

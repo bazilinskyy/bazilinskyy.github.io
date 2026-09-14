@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Identifying lane changes automatically using the GPS sensors of portable devices"
+description: "Mobile applications that provide GPS-based route navigation advice or driver diagnostics are gaining popularity. However, these applications currently do not…"
 authors: Driessen, T., Prasad, L., Bazilinskyy, P., De Winter, J. C. F.
 pdf: driessen2022identifying
 image: driessen2022identifying.jpg

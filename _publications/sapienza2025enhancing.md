@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Enhancing cyclist safety in the EU: A study on lateral overtaking distance across seven scenarios using lab and crowdsourced methods"
+description: "Cyclists face significant risks from vehicles that overtake too closely. Through crowdsourcing (N = 200) and driving simulator (N = 20) experiments, this study…"
 authors: Sapienza, G., Bazilinskyy, P.
 pdf: sapienza2025enhancing
 image: sapienza2025enhancing.jpg

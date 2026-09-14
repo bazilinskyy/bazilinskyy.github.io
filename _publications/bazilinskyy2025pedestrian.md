@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Pedestrian crossing behaviour in front of electric vehicles emitting synthetic sounds: A virtual reality experiment"
+description: "The increasing adoption of electric vehicles (EVs), which operate more quietly than internal combustion engine vehicles, raises concerns about their…"
 authors: Bazilinskyy, P., Alam, M. S., Merino-Martınez, R.
 pdf: bazilinskyy2025pedestrian
 image: bazilinskyy2025pedestrian.jpg

@@ -1,7 +1,7 @@
 ---
 title: "Education"
+description: "Courses taught at TU Eindhoven and supervised PhD, MSc, BSc and internship projects."
 layout: gridlay
-sitemap: false
 permalink: /education/
 status: false
 ---

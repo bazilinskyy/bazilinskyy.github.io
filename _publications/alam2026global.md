@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "A global dataset of continuous urban dashcam driving"
+description: "We introduce CROWD (City Road Observations With Dashcams), a manually curated dataset of ordinary, variable duration, temporally contiguous, unedited, front…"
 authors: Alam, M. S., Bazilinska, O., Bazilinskyy, P.
 pdf: alam2026global
 image: alam2026global.jpg

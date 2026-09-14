@@ -3,7 +3,21 @@ title: Dr. Pavlo Bazilinskyy
 email: p.bazilinskyy@tue.nl
 description: Personal webpage of Dr. Pavlo Bazilinskyy
 baseurl: ""
-url: ""
+url: "https://bazilinskyy.github.io"
+
+# jekyll-seo-tag: og/twitter/schema.org metadata
+author:
+  name: Pavlo Bazilinskyy
+  email: p.bazilinskyy@tue.nl
+social:
+  name: Pavlo Bazilinskyy
+  links:
+    - https://orcid.org/0000-0001-9565-8240
+    - https://scholar.google.com/citations?user=_1df9yAAAAAJ
+    - https://github.com/bazilinskyy
+    - https://www.linkedin.com/in/bazilinskyy
+    - https://www.researchgate.net/profile/Pavlo_Bazilinskyy
+image: /images/team/bazilinskyy-mcaa.jpg
 affiliation: I am part of the <a href="https://www.tue.nl/en/research/research-groups/computational-design-systems" target="_blank">Computational Design Systems</a> cluster at TU Eindhoven.
 
 # Google analytics ID
@@ -31,6 +45,10 @@ nav_pages:
 
 # Do you want to group your publications by year? {true/false}
 group_pub_by_year: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
   courses:

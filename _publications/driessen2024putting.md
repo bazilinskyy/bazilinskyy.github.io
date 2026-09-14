@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Putting ChatGPT vision (GPT-4V) to the test: Risk perception in traffic images"
+description: "Vision-language models are of interest in various domains, including automated driving, where computer vision techniques can accurately detect road users, but…"
 authors: Driessen, T., Dodou, D., Bazilinskyy, P., De Winter, J. C. F.
 pdf: driessen2024putting
 image: driessen2024putting.jpg

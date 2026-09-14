@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "How should external Human-Machine Interfaces behave? Examining the effects of colour, position, message, activation distance, vehicle yielding, and visual distraction among 1,434 participants"
+description: "External human-machine interfaces (eHMIs) may be useful for communicating the intention of an automated vehicle (AV) to a pedestrian, but it is unclear which…"
 authors: Bazilinskyy, P., Kooijman, L., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2021should
 image: bazilinskyy2021should.jpg

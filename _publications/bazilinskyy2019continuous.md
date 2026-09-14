@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Continuous auditory feedback on the status of adaptive cruise control, lane deviation, and time headway: An acceptable support for truck drivers?"
+description: "The number of trucks that are equipped with driver assistance systems is increasing. These driver assistance systems typically offer binary auditory warnings…"
 authors: Bazilinskyy, P., Larsson, P., Johansson, E., De Winter, J. C. F.
 pdf: bazilinskyy2019continuous
 image: bazilinskyy2019continuous.jpg

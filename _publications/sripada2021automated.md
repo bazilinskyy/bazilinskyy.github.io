@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Automated vehicles that communicate implicitly: Examining the use of lateral position within the lane"
+description: "It may be necessary to introduce new modes of communication between automated vehicles (AVs) and pedestrians. This research proposes using the AV’s lateral…"
 authors: Sripada, A., Bazilinskyy, P., De Winter, J. C. F.
 pdf: sripada2021automated
 image: sripada2021automated.jpg

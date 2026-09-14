@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Thumbs up or pointing? Guiding a delivery drone under uncertainty in public space"
+description: "Drones will soon deliver packages to recipients in public spaces, where drones may encounter difficulties identifying safe drop-off locations. Such…"
 authors: Lingam, N., Woziwodski, J., Obaid, M., Martens, M. H., Bazilinskyy, P.
 pdf: lingam2025thumbs
 image: lingam2025thumbs.jpg

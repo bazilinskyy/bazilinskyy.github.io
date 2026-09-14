@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Interviewing silicon experts: A persona-based LLM interview pipeline in automated driving"
+description: "Conventional human expert interviews are valuable but hampered by slow recruitment, scarce expert availability, and network-based sampling by researchers that…"
 authors: Fang, Y., Bazilinskyy, P., Martens, M. H.
 pdf: fang2026interviewing
 image: fang2026interviewing.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Take-over requests in highly automated driving: A crowdsourcing survey on auditory, vibrotactile, and visual displays"
+description: "An important research question in the domain of highly automated driving is how to aid drivers in transitions between manual and automated control. Until…"
 authors: Bazilinskyy, P., Petermeijer, S. M., Petrovych, V., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2018take
 image: bazilinskyy2018take.jpg

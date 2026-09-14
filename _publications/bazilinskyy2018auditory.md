@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "An auditory dataset of passing vehicles recorded with a smartphone"
+description: "The increase of smartphones over the past decade has contributed to distraction in traffic. However, smartphones could potentially be turned into an advantage…"
 authors: Bazilinskyy, P., Van der Aa, A., Schoustra, M., Spruit, J., Staats, L., Van der Vlist, K. J., De Winter, J. C. F.
 pdf: bazilinskyy2018auditory
 image: bazilinskyy2018auditory.jpg

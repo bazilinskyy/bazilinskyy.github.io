@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Vibe coding in practice: Building a driving simulator without expert programming skills"
+description: "The emergence of Large Language Models has introduced new opportunities in software development, particularly through a revolutionary paradigm known as vibe…"
 authors: Fortes-Ferreira, M., Alam, M. S., Bazilinskyy, P.
 pdf: ferreira2025vibe
 image: ferreira2025vibe.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Beyond beeps: Evaluating soundscapes for take-over situations in automated vehicles"
+description: "In automated vehicles, beeps are widely used as alarms and feedback. However, as automation advances, there is a need to explore subtler, contextually…"
 authors: Kim, S., Bazilinskyy, P., Liang, K., Van Egmond, R., Happee, R.
 pdf: kim2025beyond
 image: kim2025beyond.jpg

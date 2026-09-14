@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Get out of the way! Examining eHMIs in critical driver-pedestrian encounters in a coupled simulator"
+description: "Past research suggests that displays on the exterior of the car, known as eHMIs, can be effective in helping pedestrians to make safe crossing decisions. This…"
 authors: Bazilinskyy, P., Kooijman, L., Dodou, D., Mallant, K. P. T., Roosens, V. E. R., Middelweerd, M. D. L. M., Overbeek, L. D., De Winter, J. C. F.
 pdf: bazilinskyy2022get
 image: bazilinskyy2022get.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Slideo: Using bicycle-to-vehicle communication to intuitively share intentions to automated vehicles"
+description: "In urban environments, cycling is an important method of transportation due to being sustainable, healthy and less space-intensive than motorised traffic. Most…"
 authors: Verstegen, J., Bazilinskyy, P.
 pdf: verstegen2024slideo
 image: verstegen2024slideo.jpg

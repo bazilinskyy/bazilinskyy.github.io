@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Graded auditory feedback based on headway: An on-road pilot study"
+description: "Auditory feedback produced by driver assistance systems can benefit safety. However, auditory feedback is often regarded as annoying, which may result in…"
 authors: Bazilinskyy, P., Stapel, J., De Koning, C., Lingmont, H., De Lint, T., Van der Sijs, T., Van den Ouden, F., Anema, F., De Winter, J. C. F.
 pdf: bazilinskyy2018graded
 image: bazilinskyy2018graded.jpg

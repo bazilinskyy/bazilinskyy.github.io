@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Learning a simple directional eHMI: A VR study of AV-pedestrian interaction"
+description: "External Human-Machine Interfaces (eHMIs) for automated vehicles must remain quickly interpretable if they are to scale to realistic traffic. This study…"
 authors: Janssen, C., Alam, M. S., Bazilinskyy, P., Dou, F., Zhang, L.
 pdf: janssen2026learning
 image: janssen2026learning.jpg

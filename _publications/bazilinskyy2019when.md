@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "When will most cars drive fully automatically? An analysis of international surveys"
+description: "When fully automated cars will be widespread is a question that has attracted considerable attention from futurists, car manufacturers, and academics. This…"
 authors: Bazilinskyy, P., Kyriakidis, M., De Winter, J. C. F.
 pdf: bazilinskyy2019when
 image: bazilinskyy2019when.jpg

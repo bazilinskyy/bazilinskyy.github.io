@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Collision patterns and reporting blind spots in 971 California autonomous vehicle crash reports"
+description: "Autonomous vehicle collision reports offer a rare view of how autonomous driving systems perform in mixed traffic, but they are difficult to analyse at scale…"
 authors: Alam, M. S., Zhang, L., Li, J., Dou, F., Bazilinskyy, P.
 pdf: alam2026collision
 image: alam2026collision.jpg

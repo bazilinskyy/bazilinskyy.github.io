@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Teaching multimodal interaction in cars to first-time users"
+description: "This study explores three variations of a proactive method to teach multimodal gaze and gesture interactions to first-time users in the scenario of an SAE…"
 authors: Marinissen, T., Glimmann, J., Bazilinskyy, P.
 pdf: marinissen2026teaching
 image: marinissen2026teaching.jpg

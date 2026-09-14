@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Exploring holistic HMI design for automated vehicles: Insights from participatory workshop to bridge in-vehicle and external communication"
+description: "Human-Machine Interfaces (HMIs) for automated vehicles (AVs) are typically divided into two categories: internal HMIs for interactions within the vehicle, and…"
 authors: Dong, H., Tran, T., Verstegen, R., Cazacu, S., Gao, R., Hoggenmüller, M., Dey, D., Franssen, M., Sasalovici, M., Bazilinskyy, P., Martens, M. H.
 pdf: dong2024exploring
 image: dong2024exploring.jpg

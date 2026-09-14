@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Coupled simulator for research on the interaction between pedestrians and (automated) vehicles"
+description: "Driving simulators are regarded as valuable tools for human factors research on automated driving and traffic safety. However, simulators that enable the study…"
 authors: Bazilinskyy, P., Kooijman, L.*, De Winter, J. C. F.
 pdf: bazilinskyy2020coupled
 image: bazilinskyy2020coupled.jpg

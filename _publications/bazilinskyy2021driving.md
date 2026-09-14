@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "What driving style makes pedestrians think a passing vehicle is driving automatically?"
+description: "An important question in the development of automated vehicles (AVs) is which driving style AVs should adopt and how other road users perceive them. The…"
 authors: Bazilinskyy, P., Sakuma, T., De Winter, J. C. F.
 pdf: bazilinskyy2021driving
 image: bazilinskyy2021driving.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "From A to B with ease: User-centric interfaces for shuttle buses"
+description: "User interfaces are crucial for easy travel. To understand user preferences for travel information during automated shuttle rides, we conducted an online…"
 authors: Alam, M. S., Subramanian, T., Remlinger, W., Martens, M. H., Bazilinskyy, P.
 pdf: alam2024from
 image: alam2024from.jpg

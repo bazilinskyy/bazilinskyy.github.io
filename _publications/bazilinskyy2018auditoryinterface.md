@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Auditory interface for automated driving"
+description: "Automated driving may be a key to solving a number of problems that humanity faces today: large numbers of fatalities in traffic, traffic congestions, and…"
 authors: Bazilinskyy, P.
 pdf: bazilinskyy2018auditoryinterface
 image: bazilinskyy2018auditoryinterface.jpg

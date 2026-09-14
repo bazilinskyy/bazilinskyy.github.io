@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Crowdsourced assessment of 227 text-based eHMIs for a crossing scenario"
+description: "Future automated vehicles may be equipped with external human-machine interfaces (eHMIs) capable of signaling whether pedestrians can cross the road. Industry…"
 authors: Bazilinskyy, P., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2022crowdsourced
 image: bazilinskyy2022crowdsourced.jpg

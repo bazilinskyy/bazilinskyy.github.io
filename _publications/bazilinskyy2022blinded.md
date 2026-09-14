@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Blinded windows and empty driver seats: The effects of automated vehicle characteristics on cyclist decision-making"
+description: "Automated vehicles (AVs) may feature blinded (i.e., blacked-out) windows and external Human-Machine Interfaces (eHMIs), and the driver may be inattentive or…"
 authors: Bazilinskyy, P., Dodou, D., Eisma, Y. B., Vlakveld, W. V., De Winter, J. C. F.
 pdf: bazilinskyy2022blinded
 image: bazilinskyy2022blinded.jpg

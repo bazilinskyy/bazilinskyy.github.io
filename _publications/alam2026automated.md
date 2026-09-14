@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Automated construction of living mobility datasets from public video: A YouTube case study"
+description: "Public video contains naturalistic mobility footage, but transforming it into reusable research data requires more than a search and download. We present an…"
 authors: Alam, M. S., Hoggenmueller, M., Bazilinskyy, P.
 pdf: alam2026automated
 image: alam2026automated.jpg

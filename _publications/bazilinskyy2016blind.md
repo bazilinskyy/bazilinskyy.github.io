@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Blind driving by means of auditory feedback"
+description: "Driving is a safety-critical task that predominantly relies on vision. However, visual information from the environment is sometimes degraded or absent. In…"
 authors: Bazilinskyy, P., Geest, L. Van Der, Van Leeuwen, S., Numan, B., Pijnacker, J., De Winter, J. C. F.
 pdf: bazilinskyy2016blind
 image: bazilinskyy2016blind.jpg

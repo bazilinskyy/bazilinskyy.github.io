@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Psychological uncertainty in human experience and behavior: A systematic review on measurements, induction and effects"
+description: "Uncertainty influences our experiences, emotions, and interactions and can play a role in the adoption of automated technologies. However, the concept of…"
 authors: Franssen, M., Verstegen, R., Bazilinskyy, P., Van der Spek, E. D., Martens M. H.
 pdf: franssen2026psychological
 image: franssen2026psychological.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Nineteen years of ASMR on YouTube: A multilingual, theme-level analysis of 52,002 videos"
+description: "Autonomous sensory meridian response (ASMR) videos use whispered speech, gentle sounds, and close-up attention to promote relaxation, yet longitudinal…"
 authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2026nineteen
 image: alam2026nineteen.jpg

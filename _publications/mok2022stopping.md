@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Stopping by looking: A driver-pedestrian interaction study in a coupled simulator using head-mounted displays with eye-tracking"
+description: "Automated vehicles (AVs) can perform low-level control tasks but are not always capable of proper decision-making. This paper presents a concept of eye-based…"
 authors: Mok, C. S., Bazilinskyy, P., De Winter, J. C. F.
 pdf: mok2022stopping
 image: mok2022stopping.jpg

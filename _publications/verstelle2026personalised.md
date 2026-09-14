@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Personalised electric vehicle acoustics with generative AI: Dynamic sonification and user acceptance study"
+description: "Electric vehicles (EVs) reduce powertrain noise, creating safety challenges and opportunities for sound design. This paper examines whether generative audio…"
 authors: Verstelle, W., Alam, M. S., Bazilinskyy, P.
 pdf: verstelle2026personalised
 image: verstelle2026personalised.jpg

@@ -1,7 +1,7 @@
 ---
 title: "Home"
+description: "Assistant professor at TU Eindhoven working on AI-driven interaction between automated vehicles, their occupants and other road users."
 layout: homelay
-sitemap: false
 permalink: /
 ---
 

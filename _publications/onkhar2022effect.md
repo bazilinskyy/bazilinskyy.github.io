@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "The effect of drivers’ eye contact on pedestrians’ perceived safety"
+description: "Many fatal accidents that involve pedestrians occur at road crossings, and are attributed to a breakdown of communication between pedestrians and drivers…"
 authors: Onkhar, V., Bazilinskyy, P., Dodou, D., De Winter, J. C. F.
 pdf: onkhar2022effect
 image: onkhar2022effect.jpg

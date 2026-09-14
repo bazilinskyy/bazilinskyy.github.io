@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Exterior sounds for electric and automated vehicles: Loud is effective"
+description: "Exterior vehicle sounds have been introduced in electric vehicles and as external human–machine interfaces for automated vehicles. While previous research has…"
 authors: Bazilinskyy, P., Merino-Martınez, R., Vieirac, E. O., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2023exterior
 image: bazilinskyy2023exterior.jpg

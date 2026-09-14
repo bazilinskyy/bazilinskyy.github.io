@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "How should drivers’ use of Automated Lane Keeping Systems (ALKS) be assessed? A study with experienced driving assessors in a Wizard of Oz vehicle"
+description: "This study aims to contribute to guidelines for driver licensing organizations on assessing driver competence in using Level 3 Automated Lane Keeping Systems…"
 authors: Bazilinskyy, P., Heikoop, D., Verstegen, R., Martens, M. H., De Winter, J. C. F.
 pdf: bazilinskyy2026how
 image: bazilinskyy2026how.jpg

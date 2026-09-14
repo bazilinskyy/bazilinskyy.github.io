@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Understanding global pedestrian behaviour in 4965 cities with dashcam videos on YouTube"
+description: "The interactions between cars and pedestrians should be designed to be understandable and safe worldwide. Although previous research has studied…"
 authors: Alam, M. S., Martens, M. H., Bazilinska, O., Bazilinskyy, P.
 pdf: alam2026understanding
 image: alam2026understanding.jpg

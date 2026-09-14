@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Enhancing driver experience in SAE level 3 automated vehicles through multimodal and emotion-aware in-vehicle agents"
+description: "In-vehicle agents (IVAs) are emerging as transformative innovations in intelligent transportation systems, particularly in automated driving contexts. This…"
 authors: Zeng, X., Alam, M. S., Bazilinskyy, P.
 pdf: zeng2026enhancing
 image: zeng2026enhancing.jpg

@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Measuring passengers’ comfort and perceived safety in automated driving: Good practices, challenges, and opportunities"
+description: "Passenger comfort and perceived safety, as two psychological states, are crucial for user acceptance of automated driving. The accurate measurement of these…"
 authors: Peng, C., Bazilinskyy, P., Yu, Y., Merat, N.
 pdf: peng2025measuring
 image: peng2025measuring.jpg

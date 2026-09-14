@@ -1,7 +1,7 @@
 ---
 title: "Talks"
+description: "Invited talks, conference presentations and conference chairing duties, including AutoUI and IEEE RO-MAN sessions."
 layout: gridlay
-sitemap: false
 permalink: /talks/
 ---
 

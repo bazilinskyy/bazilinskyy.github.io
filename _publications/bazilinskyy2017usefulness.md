@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Usefulness and satisfaction of take-over requests for highly automated driving"
+description: "This paper summarizes our results from survey research and driving simulator experiments on auditory, vibrotactile, and visual take-over requests in highly…"
 authors: Bazilinskyy, P., Eriksson, A., Petermeijer, S. M., De Winter, J. C. F.
 pdf: bazilinskyy2017usefulness
 image: bazilinskyy2017usefulness.jpg

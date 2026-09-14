@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Towards the detection of driver–pedestrian eye contact"
+description: "Non-verbal communication, such as eye contact between drivers and pedestrians, has been regarded as one way to reduce accident risk. So far, studies have…"
 authors: Onkhar, V., Bazilinskyy, P., Stapel, J. C. J., Dodou, D., Gavrila, D., De Winter, J. C. F.
 pdf: onkhar2021towards
 image: onkhar2021towards.jpg

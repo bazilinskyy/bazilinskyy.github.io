@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "It is not always just one road user: Workshop on multi-agent automotive research"
+description: "In the future, roads will host a complex mix of automated and manually operated vehicles, along with vulnerable road users. However, most automotive user…"
 authors: Bazilinskyy, P., Ebel, P., Walker, F., Dey, D., Tran, T.
 pdf: bazilinskyy2024always
 image: bazilinskyy2024always.jpg

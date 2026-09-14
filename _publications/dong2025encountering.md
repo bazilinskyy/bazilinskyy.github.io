@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Encountering automation surprise in everyday automated driving: An exploratory phenomenological inspired study using a Wizard‐of‐Oz vehicle on real motorways"
+description: "Automation Surprise (AS) has traditionally been studied as a system‐ or user‐induced failure in high‐risk or safety‐critical domains. However, as automated…"
 authors: Dong, H., Yuanzi, W., Bazilinskyy, P., Bruns, M., Martens, M. H.
 pdf: dong2025encountering
 image: dong2025encountering.jpg

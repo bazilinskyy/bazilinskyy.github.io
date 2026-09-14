@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Entanglements and unintended consequences of automated vehicles: An instance-based discussion for generative uncertainty"
+description: "Automated vehicles (AVs) are moving from speculation to real-world implementation, revealing the true effects of this technology beyond theoretical…"
 authors: Verstegen, R., Gao, R., Dong, H., Bazilinskyy, P., Martens, M. H.
 pdf: verstegen2026entanglements
 image: verstegen2026entanglements.jpg

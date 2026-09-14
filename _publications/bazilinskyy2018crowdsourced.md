@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Crowdsourced measurement of reaction times to audiovisual stimuli with various degrees of asynchrony"
+description: "Objective: This study aimed to replicate past research concerning reaction times to audiovisual stimuli with different stimulus onset asynchrony (SOA), using a…"
 authors: Bazilinskyy, P., De Winter, J. C. F.
 pdf: bazilinskyy2018crowdsourced
 image: bazilinskyy2018crowdsourced.jpg

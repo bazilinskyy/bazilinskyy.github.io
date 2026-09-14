@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "MRDrive: An open source mixed reality driving simulator for automotive user research"
+description: "Designing and evaluating in-vehicle interfaces requires experimental platforms that combine ecological validity with experimental control. Driving simulators…"
 authors: Ebel, P., Miazga, M. P., Lorenz, M., Getselev, T., Bazilinskyy, P., Conzen, C.
 pdf: ebel2026mrdrive
 image: ebel2026mrdrive.jpg

@@ -1,7 +1,7 @@
 ---
 layout: workshop
-sitemap: false
 title: "Breaking barriers: Workshop on open data practices in AutoUI research"
+description: "While the benefits of open science and open data practices are well understood, experimental data sharing is still uncommon in the AutoUI community. The goal…"
 authors: Ebel, P., Bazilinskyy, P., Hwang, A., Ju, W., Sandhaus, H., Srinivasan, A., Yang, Q., Wintersberger, P.
 image: autoui2023breaking.jpg
 conf: AutomotiveUI (AutoUI)

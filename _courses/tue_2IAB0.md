@@ -1,7 +1,6 @@
 ---
 title: "2IAB0: Data analytics for engineers"
 layout: course
-sitemap: false
 name: Data analytics for engineers
 name_url: https://tue.osiris-student.nl/#/onderwijscatalogus/extern/cursus?cursuscode=2IAB0&collegejaar=2023
 year_start: 2023

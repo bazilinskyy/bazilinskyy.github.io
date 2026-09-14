@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Predicting perceived risk of traffic scenes using computer vision"
+description: "Perceived risk, or subjective risk, is an important concept in the field of traffic psychology and automated driving. In this paper, we investigate whether…"
 authors: De Winter, J. C. F., Hoogmoed, J., Stapel, J., Dodou, D., Bazilinskyy, P.
 pdf: dewinter2023predicting
 image: dewinter2023predicting.jpg

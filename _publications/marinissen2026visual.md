@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Visual feedback for in-car voice assistants"
+description: "This study presents ambient visual feedback for automotive voice assistants to enhance driver interaction and safety through peripheral visual cues. A user…"
 authors: Marinissen, T., Bazilinskyy, P.
 pdf: marinissen2026visual
 image: marinissen2026visual.jpg

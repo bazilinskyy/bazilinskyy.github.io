@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Changing lanes toward open science: Openness and transparency in automotive user research"
+description: "We review the state of open science and the perspectives on open data sharing within the automotive user research community. Openness and transparency are…"
 authors: Ebel, P., Bazilinskyy, P., Colley, M., Goodridge, C. M. , Hock, P., Janssen, C., Sandhaus, H., Srinivasan, A. R., Wintersberger, P.
 pdf: ebel2024changing
 image: ebel2024changing.jpg

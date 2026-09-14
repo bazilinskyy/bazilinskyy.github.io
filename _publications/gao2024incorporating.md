@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Incorporating multiple users' perspectives in HMI design for automated vehicles: Exploration of a role-switching approach"
+description: "Human-machine interfaces (HMIs) are important for the introduction of automated vehicles (AVs). Even though interactions can involve multiple users and modes…"
 authors: Gao, R., Verstegen, R., Dong, H., Bazilinskyy, P., Martens, M. H.
 pdf: gao2024incorporating
 image: gao2024incorporating.jpg

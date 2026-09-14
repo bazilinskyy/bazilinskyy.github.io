@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Take-over again: Investigating multimodal and directional TORs to get the driver back into the loop"
+description: "When a highly automated car reaches its operational limits, it needs to provide a takeover request (TOR) in order for the driver to resume control. The aim of…"
 authors: Petermeijer, S. M., Bazilinskyy, P.*, Bengler, K., De Winter, J. C. F.
 pdf: petermeijer2017take
 image: petermeijer2017take.jpg

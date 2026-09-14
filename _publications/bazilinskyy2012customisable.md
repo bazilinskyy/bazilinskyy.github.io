@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: Customisable multitenant web form with JSF and MySQL
+description: "There is a tendency in Computer Science, nowadays, to move from single-user instances of application to web-based programs. With improvements in Information…"
 authors: Bazilinskyy, P.
 pdf: bazilinskyy2012customisable
 image: bazilinskyy2012customisable.jpg

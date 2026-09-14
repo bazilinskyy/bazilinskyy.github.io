@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Exploring the correlation between emotions and uncertainty in daily travel"
+description: "Our mental state influences how we behave in and interact with the everyday world. Both uncertainty and emotions can alter our mental state and, thus, our…"
 authors: Franssen, M., Verstegen, R.*, Bazilinskyy, P., Martens, M. H.
 pdf: franssen2024exploring
 image: franssen2024exploring.jpg

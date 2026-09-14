@@ -1,7 +1,6 @@
 ---
 title: "2IAB1: Foundations of data analytics"
 layout: course
-sitemap: false
 name: Foundations of data analytics
 name_url: https://research.tue.nl/en/courses/foundations-of-data-analytics
 year_start: 2024

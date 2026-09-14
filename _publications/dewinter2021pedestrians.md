@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "How do pedestrians distribute their visual attention when walking through a parking garage? An eye-tracking study"
+description: "We examined what pedestrians look at when walking through a parking garage. Thirty-six participants walked a short route in a floor of a parking garage while…"
 authors: De Winter, J. C. F., Bazilinskyy, P., Wesdorp, D., De Vlam, V., Hopmans, B., Visscher, J., Dodou, D.
 pdf: dewinter2021pedestrians
 image: dewinter2021pedestrians.jpg

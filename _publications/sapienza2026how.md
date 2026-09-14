@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "How sustainable materials are judged in motion: Designing and testing a hybrid carbon–flax composite gravel bicycle frame"
+description: "High-performance bicycle frames are predominantly manufactured from carbon-fibre composites due to their favourable stiffness-to-weight ratio. However, carbon…"
 authors: Sapienza, G., Bazilinskyy, P.
 pdf: sapienza2026how
 image: sapienza2026how.jpg

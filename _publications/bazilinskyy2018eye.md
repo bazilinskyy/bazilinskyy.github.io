@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Eye movements while cycling in GTA V"
+description: "A common limitation in human factors research is that vehicle simulators often lack perceptual fidelity. Video games, on the other hand, are becoming…"
 authors: Bazilinskyy, P., Heisterkamp, N., Luik, P., Klevering, S., Haddou, A., Zult, M., Dialynas, G., Dodou, D., De Winter, J. C. F.
 pdf: bazilinskyy2018eye
 image: bazilinskyy2018eye.jpg

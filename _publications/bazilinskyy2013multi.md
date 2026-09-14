@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Multi-core Insense"
+description: "This project set out to investigate the benefits of using private heaps for memory management and static thread placement for optimising performance and cache…"
 authors: Bazilinskyy, P.
 pdf: bazilinskyy2013multi
 image: bazilinskyy2013multi.jpg

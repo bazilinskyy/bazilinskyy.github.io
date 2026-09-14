@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Impact of cache on data-sharing in multi-threaded programmes"
+description: "This thesis answers the question whether a scheduler needs to take into account where communicating threads in multi-threaded applications are executed. The…"
 authors: Bazilinskyy, P.
 pdf: bazilinskyy2014impact
 image: bazilinskyy2014impact.jpg

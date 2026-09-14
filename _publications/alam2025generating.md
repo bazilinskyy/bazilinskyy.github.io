@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Generating realistic traffic scenarios: A deep learning approach using generative adversarial networks (GANs)"
+description: "Traffic simulations are crucial for testing systems and human behaviour in transportation research. This study investigates the potential efficacy of…"
 authors: Alam, M. S., Martens, M. H., Bazilinskyy, P.
 pdf: alam2025generating
 image: alam2025generating.jpg

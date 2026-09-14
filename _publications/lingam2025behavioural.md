@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Behavioural effects of a delivery drone on feelings of uncertainty: A virtual reality experiment"
+description: "The use of drones is expected to increase for delivering groceries or medical equipment to individuals. Understanding how people perceive drone behavior…"
 authors: Lingam, S. N., Petermeijer, S. M., Torre, I., Bazilinskyy, P., Ljungblad, S., Martens, M. H.
 pdf: lingam2025behavioural
 image: lingam2025behavioural.jpg

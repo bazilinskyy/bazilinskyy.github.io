@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Psychoacoustic assessment of synthetic sounds for electric vehicles in a virtual reality experiment"
+description: "The growing adoption of electric vehicles, known for their quieter operation compared to internal combustion engine vehicles, raises concerns about their…"
 authors: Bazilinskyy, P., Alam, M. S., Merino-Martınez, R.
 pdf: bazilinskyy2025psychoacoustic
 image: bazilinskyy2025psychoacoustic.jpg

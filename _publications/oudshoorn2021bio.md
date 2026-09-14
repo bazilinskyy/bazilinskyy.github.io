@@ -1,7 +1,7 @@
 ---
 layout: publication
-sitemap: false
 title: "Bio-inspired intent communication for automated vehicles"
+description: "Various external human-machine interfaces (eHMIs) have been proposed that communicate the intent of automated vehicles (AVs) to vulnerable road users. However…"
 authors: Oudshoorn, M. P. J., De Winter, J. C. F., Bazilinskyy, P., Dodou, D.
 pdf: oudshoorn2021bio
 image: oudshoorn2021bio.jpg
