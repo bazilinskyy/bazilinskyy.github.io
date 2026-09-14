@@ -15,7 +15,7 @@ permalink: /research/
 I am currently engaged in research on communication between multiple automated vehicles and multiple vulnerable road users. Most of the experiments in current research feature 1, maybe 2, human participants. But, think about driving around a town in real life. Traffic situations are very complicated. Being able to perform experiments with 3, 4, ..., 16 participants is essential for understanding the mechanics of communication of situation awareness/collaborative decision making/collaboration in both modern and future traffic. To enable such research, I present [an open-source simulator](https://github.com/bazilinskyy/coupled-sim) supporting a virtually unlimited number of human participants and fine-tuned for high precision data logging. It is aimed at, but not limited to, academic research.
 
   <div class="row" style="text-align:center; margin-bottom: 0px;">
-  <iframe style="display:inline-block; border-radius: 5px; border:0px solid #FFF; width: 97%; height: 358px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+  <iframe loading="lazy" style="display:inline-block; border-radius: 5px; border:0px solid #FFF; width: 97%; height: 358px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
   
 Demo of [coupled simulator](https://github.com/bazilinskyy/coupled-sim) with 3 agents in the same traffic scene. One agent is wearing a motion suit and one has a head-mounted display.
   </div>
@@ -24,7 +24,7 @@ Demo of [coupled simulator](https://github.com/bazilinskyy/coupled-sim) with 3 a
 </div>
 
 <div class="rowl1">
-  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe src="https://www.youtube.com/embed/ZroKe9dKQvs?playlist=ZroKe9dKQvs&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
+  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe loading="lazy" src="https://www.youtube.com/embed/ZroKe9dKQvs?playlist=ZroKe9dKQvs&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
 
 #### Crowdsourced human factors experiments
   
@@ -35,7 +35,7 @@ During my PhD on human factors, I was astonished to realise that the majority of
 </div>
 
 <div class="rowl1">
-  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe src="https://www.youtube.com/embed/NipvoDg0Nyk?playlist=NipvoDg0Nyk&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
+  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe loading="lazy" src="https://www.youtube.com/embed/NipvoDg0Nyk?playlist=NipvoDg0Nyk&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
 
 #### YouTube as the data source for research on global traffic behaviour
 
@@ -46,7 +46,7 @@ The interactions between future cars and pedestrians should be designed to be un
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/publications/alam2025cross.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/alam2025cross.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Do we need human participants for human factors research?
 
@@ -57,7 +57,7 @@ The logical next step is to question whether we even need human participants to 
 </div>
 
 <div class="rowl1">
-  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe src="https://www.youtube.com/embed/isjbqXs2g7k?playlist=isjbqXs2g7k&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
+  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe loading="lazy" src="https://www.youtube.com/embed/isjbqXs2g7k?playlist=isjbqXs2g7k&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
 
 #### Portable sensor to collect information on the state of the traffic environment
 
@@ -68,7 +68,7 @@ During my work at SD-Insights, I developed a portable sensor to collect informat
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/research/auditory_feedback_ad.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/research/auditory_feedback_ad.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Auditory feedback for automated driving
   

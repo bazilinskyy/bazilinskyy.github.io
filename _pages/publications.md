@@ -108,7 +108,7 @@ permalink: /publications/
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" class="img-responsive"/>
+<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">
@@ -129,7 +129,7 @@ permalink: /publications/
 {% endif %}
 {% if bibpresent == true %}
 <div class="collapse" id="{{publi.pdf}}2"><div class="well-bib">
-<iframe src='{{site.url}}{{site.baseurl}}/publications/{{publi.pdf}}.txt' scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
+<iframe data-src='{{site.url}}{{site.baseurl}}/publications/{{publi.pdf}}.txt' scrolling="yes" width="100%" height="210" frameborder="0"></iframe>
 </div></div>
 {% endif %}
 </li>
@@ -178,7 +178,7 @@ permalink: /publications/
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" class="img-responsive"/>
+<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/publications/{{ publi.image }}" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">
@@ -200,7 +200,7 @@ permalink: /publications/
 {% endif %}
 {% if bibpresent == true %}
 <div class="collapse" id="{{publi.image | remove: '.jpg'}}2"><div class="well-bib">
-<iframe src="{{site.url}}{{site.baseurl}}/publications/{{publi.image | remove: '.jpg'}}.txt" scrolling="yes" width="100%" height="210" frameborder="0" allowtransparency="true"></iframe>
+<iframe data-src="{{site.url}}{{site.baseurl}}/publications/{{publi.image | remove: '.jpg'}}.txt" scrolling="yes" width="100%" height="210" frameborder="0" allowtransparency="true"></iframe>
 </div></div>
 {% endif %}
 </li>
@@ -280,6 +280,14 @@ applyFilters();
 });
 applyFilters();
 })();
+
+// BibTeX frames start without a src; load one the first time its panel is opened
+document.addEventListener('show.bs.collapse', function (e) {
+  e.target.querySelectorAll('iframe[data-src]').forEach(function (f) {
+    f.src = f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  });
+});
 
 document.querySelectorAll('.well-bib iframe').forEach(function(iframe) {
     iframe.addEventListener('load', function() {

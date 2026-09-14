@@ -18,7 +18,7 @@ At TU Delft, during 2014–2018 I was a member of the 3mE PhD council. Within th
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/rmi-berlin.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/rmi-berlin.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Marie Curie Alumni Association (MCAA)
 
@@ -33,7 +33,7 @@ Since 2022, I have been a treasurer (and a member of the excom) of MCAA. In reco
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/ema-board.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/ema-board.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Erasmus Mundus Association (EMA)
 
@@ -44,7 +44,7 @@ Since 2022, I have been a treasurer (and a member of the excom) of MCAA. In reco
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/opendata-4tu.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/volunteering/opendata-4tu.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Open science
 
@@ -55,7 +55,7 @@ As an avid supporter of open science, since 2019, I have been a participant in O
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Ukraine 🇺🇦
 

@@ -21,7 +21,7 @@ I like to be active and engage in interesting projects. During 2018–2021, I wa
 I am currently engaged in research on communication between multiple automated vehicles and multiple vulnerable road users. Most of the experiments in current research feature 1, maybe 2, human participants. But, think about driving around a town in real life. Traffic situations are very complicated. Being able to perform experiments with 3, 4, ..., 16 participants is essential for understanding the mechanics of communication of situation awareness/collaborative decision making/collaboration in both modern and future traffic. To enable such research, I present [an open-source simulator](https://github.com/bazilinskyy/coupled-sim). It supports a virtually unlimited number of human participants and fine-tunes for high-precision data logging. It is aimed at, but not limited to, academic research.
 
 <div class="row" style="text-align:center">
-  <iframe style="display:inline-block; border-radius: 5px; border:0px solid #FFF; width: 95%; height: 246px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+  <iframe loading="lazy" style="display:inline-block; border-radius: 5px; border:0px solid #FFF; width: 95%; height: 246px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
 
   Demo of [coupled simulator](https://github.com/bazilinskyy/coupled-sim) with 3 agents in the same traffic scene.
 </div>
@@ -40,6 +40,6 @@ I am currently engaged in research on communication between multiple automated v
 <div class="well-md">
   <h3>Funding</h3>
   <div style='display:block; text-align:center; margin-left:auto; margin-right:auto;'>
-   {% for funder in site.data.funders %}{% if funder.url %}<a href="{{funder.url}}" target="_blank"><img src='/images/logos/{{ funder.image }}' style='max-height: 70px; max-width: 170px;'/></a>{% else %}<img src='/images/logos/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 170px;'/>{% endif %}   {% endfor %}
+   {% for funder in site.data.funders %}{% if funder.url %}<a href="{{funder.url}}" target="_blank"><img loading="lazy" src='/images/logos/{{ funder.image }}' style='max-height: 70px; max-width: 170px;'/></a>{% else %}<img src='/images/logos/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 170px;'/>{% endif %}   {% endfor %}
   </div>
 </div>

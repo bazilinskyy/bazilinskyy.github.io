@@ -21,7 +21,7 @@ permalink: /ua/
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
   <h4>How to donate 🙏</h4>
   Thank you very much for your support and solidarity with Ukraine. Ukrainians are standing strong, but every day we are losing children, women, and men in this horrific war that was imposed on us. We all want the russian destruction to <strong>STOP</strong>. I emphatically call upon you to help us to stop it. Every dollar or euro you donate helps us to help those who were hit the hardest by the war. Please, donate using the options below:<br><br><br><br>
 
@@ -40,13 +40,12 @@ permalink: /ua/
         <form action="https://www.paypal.com/donate" method="post" target="_top">
         <input type="hidden" name="hosted_button_id" value="HAVMMJT77E4D8" />
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_NL/i/scr/pixel.gif" width="1" height="1" />
         </form>
         Paypal email: pavlo.bazilinskyy@gmail.com
       </div>
 <!--       <div class="col-sm-4">
         <strong>Tikkie 🇳🇱</strong><br>
-        <img src="{{ site.url }}{{ site.baseurl }}/images/ua/tikkie.jpg" class="img-responsive" style="width: 200px; margin-top: 0px;" />
+        <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/tikkie.jpg" class="img-responsive" style="width: 200px; margin-top: 0px;" />
       </div> -->
     </div>
   </div>
@@ -56,7 +55,7 @@ permalink: /ua/
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/ua/vest.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/vest.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
   <h4>Plates for bulletproof vests</h4>
    We are searching for level III protection plates for bulletproof vests ([example](https://uarmprotection.com/product/sa3u-level-iii-uhmwpe)). If you know where we could order them, or are able to donate a few, please contact me at [pavlo.bazilinskyy@gmail.com](mailto:pavlo.bazilinskyy@gmail.com).
    <ul style="overflow: hidden">
@@ -64,7 +63,7 @@ permalink: /ua/
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/ua/drone.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/drone.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
   <h4>Drones</h4>
   The local defenders desperately need drones for surveillance. The drones are vital to understand the next move of the Russian occupying forces and to protect the civilian population in the heavily bombarded Ukrainian cities. If you or you contacts have a drone that you wish do donate, please contact me at [pavlo.bazilinskyy@gmail.com](mailto:pavlo.bazilinskyy@gmail.com).
 
@@ -74,7 +73,7 @@ permalink: /ua/
 
 <div class="rowl1">
   <!-- <div class="img-responsive" style="margin-top: 5px; margin-right: 19px; float: left"><iframe src="https://www.youtube.com/embed/XPWJLU8vb2c?playlist=XPWJLU8vb2c&loop=1&autoplay=1&mute=1" style="width: 166px; height: 300px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div> -->
-  <img src="{{ site.url }}{{ site.baseurl }}/images/ua/fire.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/fire.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
   <!-- <div class="img-responsive" style="margin-top: 5px; margin-right: 19px; float: left"><video width="320" height="240" autoplay loop muted><source src="{{ site.url }}{{ site.baseurl }}/images/ua/chernihiv.mp4" type="video/mp4" />Your browser does not support the video tag.</video></div> -->
   <h4>Sleeping bags</h4>
   Hundreds of innocent civilians are now homeless. They are sleeping on bare soil/concrete floor of a basement in freezing temperatures. Maybe you can donate your old sleeping bag or are in contact with an organisation that could spare some (scouting, campsite, sports society etc.), please contact me at [pavlo.bazilinskyy@gmail.com](mailto:pavlo.bazilinskyy@gmail.com). 
@@ -83,7 +82,7 @@ permalink: /ua/
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/ua/grandma.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/images/ua/grandma.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
   <h4>Send directly to us</h4>
   Also, we are collecting supplies and donations in Radom, Poland from where they are being transported to the hotspots in Ukraine. Please contact me at [pavlo.bazilinskyy@gmail.com](mailto:pavlo.bazilinskyy@gmail.com) and I will share the exact address. Normal postal service (not DHL or any private parcel service) is good and we can also reimburse the shipment costs.
    <ul style="overflow: hidden">

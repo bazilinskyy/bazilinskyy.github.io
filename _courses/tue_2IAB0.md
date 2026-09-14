@@ -28,7 +28,7 @@ The course Data Analytics for Engineers is a mandatory generic engineering cours
 - **L5**. Students obtain basic knowledge of statistical concepts and techniques and develop skills to apply them in practice. 
 - **L6**. Students learn to implement their solutions for data analytics problems in a programming language (Python), and apply a structured and systematic approach to data processing.
 
-<img src="{{ site.url }}{{ site.baseurl }}/courses/tue_2IAB0-structure.jpg" class="img-responsive"/>
+<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/courses/tue_2IAB0-structure.jpg" class="img-responsive"/>
 
 #### Students learn
 - To use basic statistical concepts and techniques (like the mean, median, mode, percentile, range, variance, confidence intervals, p-value, correlation, and t-test).
