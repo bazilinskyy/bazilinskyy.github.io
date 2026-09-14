@@ -39,6 +39,8 @@ $phone-width: 480px;
     --reset-hover-color:      #8899a6;
     --reset-hover-border:     #2e3f4d;
     --pub-count-color:        #4d6070;
+    --mark-bg:                #4d431c;
+    --mark-text:              #ffdf80;
     --pub-tag-bg:             #1a2633;
     --pub-tag-text:           #66757f;
     --toggle-border:          rgba(255, 255, 255, 0.3);
@@ -148,6 +150,8 @@ $phone-width: 480px;
     --reset-hover-color:      #455A64;
     --reset-hover-border:     #78909C;
     --pub-count-color:        #78909C;
+    --mark-bg:                #fff3b8;
+    --mark-text:              #4a3c00;
     --pub-tag-bg:             rgba(0, 0, 0, 0.07);
     --pub-tag-text:           #455A64;
     --toggle-border:          rgba(255, 255, 255, 0.35);
@@ -659,6 +663,34 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
     background: rgba(0, 0, 0, 0.05);
     color: var(--reset-hover-color);
   }
+}
+
+#pub-search {
+  padding: 0.2em 0.6em;
+  border: 1px solid var(--filter-border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--body-text);
+  font-size: 0.8em;
+  min-width: 16em;
+  margin-bottom: 0.2em;
+
+  &::placeholder { color: var(--filter-label); }
+
+  &:focus {
+    outline: none;
+    border-color: var(--filter-hover-border);
+  }
+}
+
+/* abstract opened by a search hit; Bootstrap's own collapse state is left alone */
+.collapse.search-expanded { display: block; }
+
+.well-abstract mark {
+  background: var(--mark-bg);
+  color: var(--mark-text);
+  padding: 0 0.12em;
+  border-radius: 2px;
 }
 
 #pub-count {

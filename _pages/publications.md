@@ -9,6 +9,10 @@ permalink: /publications/
 
 <div id="pub-filters">
 <div class="filter-group">
+  <span class="filter-label">Search</span>
+  <input type="search" id="pub-search" placeholder="title, author, venue, year…" aria-label="Search publications" autocomplete="off" />
+</div>
+<div class="filter-group">
   <span class="filter-label">Type</span>
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="conference">Conference</button>
@@ -103,8 +107,9 @@ permalink: /publications/
 {% endif %}
 
 {% assign tag_string = publi.tags | join: " " | downcase %}
+{% assign search_string = publi.title | append: " " | append: publi.authors | append: " " | append: publi.display | append: " " | append: publi.year | append: " " | append: tag_string | downcase %}
 
-<div class="well-sm publication-entry" data-tags="{{ tag_string }}">
+<div class="well-sm publication-entry" data-tags="{{ tag_string }}" data-search="{{ search_string | escape }}">
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
@@ -173,8 +178,9 @@ permalink: /publications/
 {% endif %}
 
 {% assign tag_string = publi.tags | join: " " | downcase %}
+{% assign search_string = publi.title | append: " " | append: publi.authors | append: " " | append: publi.display | append: " " | append: publi.year | append: " " | append: tag_string | downcase %}
 
-<div class="well-sm publication-entry" data-tags="{{ tag_string }}">
+<div class="well-sm publication-entry" data-tags="{{ tag_string }}" data-search="{{ search_string | escape }}">
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
@@ -218,16 +224,51 @@ Download all papers in bib file <a href="{{ site.url }}{{ site.baseurl }}/public
 <script>
 (function () {
 var groups = document.querySelectorAll('.filter-group');
+var search = document.getElementById('pub-search');
+
+// Abstracts are already in the page inside each entry, so searching them costs no extra
+// bytes. Cache the plain text once so a keystroke never has to walk the DOM.
+var abstracts = new Map();
+document.querySelectorAll('.publication-entry').forEach(function (entry) {
+var el = entry.querySelector('.well-abstract');
+if (el) abstracts.set(entry, { el: el, text: el.textContent, lower: el.textContent.toLowerCase(), sig: '' });
+});
+function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+function escapeHtml(s) { return s.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+function markAbstract(a, terms) {
+var sig = terms.join('\u0000');
+if (a.sig === sig) return;              // nothing changed for this entry
+a.sig = sig;
+if (!terms.length) { a.el.textContent = a.text; return; }
+var re = new RegExp('(' + terms.map(escapeRe).join('|') + ')', 'gi');
+a.el.innerHTML = escapeHtml(a.text).replace(re, '<mark>$1</mark>');
+}
 // each group holds a Set of active filters; empty Set = "all"
 var activeFilters = Array.from(groups).map(function () { return new Set(); });
 function applyFilters() {
 var required = [];
 activeFilters.forEach(function (set) { set.forEach(function (f) { required.push(f); }); });
+var terms = (search.value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
 var entries = document.querySelectorAll('.publication-entry');
 var visible = 0;
 entries.forEach(function (entry) {
 var tags = (entry.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
 var match = required.every(function (f) { return tags.indexOf(f) !== -1; });
+var a = abstracts.get(entry);
+var fromAbstract = false;
+if (match && terms.length) {
+var haystack = entry.getAttribute('data-search') || '';
+var abstract = a ? a.lower : '';
+// all terms must appear, so "bazilinskyy ehmi" narrows rather than widens
+match = terms.every(function (t) { return haystack.indexOf(t) !== -1 || abstract.indexOf(t) !== -1; });
+// a term that only hit the abstract leaves no visible reason for the row,
+// so open that abstract and mark the words
+fromAbstract = match && terms.some(function (t) { return haystack.indexOf(t) === -1; });
+}
+if (a) {
+markAbstract(a, fromAbstract ? terms : []);
+a.el.parentNode.classList.toggle('search-expanded', fromAbstract);
+}
 entry.classList.toggle('hidden', !match);
 if (match) visible++;
 });
@@ -269,7 +310,9 @@ applyFilters();
 });
 });
 });
+search.addEventListener('input', applyFilters);
 document.getElementById('reset-filters').addEventListener('click', function () {
+search.value = '';
 groups.forEach(function (group, i) {
 activeFilters[i].clear();
 group.querySelectorAll('.filter-btn[data-filter]').forEach(function (btn) {
