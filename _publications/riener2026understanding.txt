@@ -1,0 +1,7 @@
+@inproceedings{riener2026understanding,
+  title={Understanding motion comfort in automated driving: Bridging vehicle dynamics, driving style, and human-machine interaction},
+  author={Riener, Andreas and Pretto, Paolo and Sodnik, Jaka and Stojmenova Pe{\v{c}}e{\v{c}}nik, Kristina and Papaioannou, Georgios and Bazilinskyy, Pavlo and Meschtscherjakov, Alexander},
+  booktitle={Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  address={Gothenburg, Sweden},
+  year={2026}
+}
