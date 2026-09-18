@@ -1,0 +1,8 @@
+@inproceedings{rouchitsas2026love,
+  title={Love in traffic: Physical and digital design against consensual sexual activity inside public and shared automated vehicles},
+  author={Rouchitsas, Alexandros and Alvarez, Ignacio and Kim, Soyeon and Peng, Chen and Bazilinskyy, Pavlo},
+  booktitle={Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  address={Gothenburg, Sweden},
+  year={2026},
+  doi={10.1145/3828158.3834785}
+}
