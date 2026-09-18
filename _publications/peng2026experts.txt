@@ -1,0 +1,8 @@
+@inproceedings{peng2026experts,
+  title={Experts’ and community insights on measuring comfort and perceived safety in automated driving: Synthesis of a participatory workshop},
+  author={Peng, Chen and Bazilinskyy, Pavlo and Yu, Yueteng and Martens, Marieke and Happee, Riender and Akash, Kumar and Merat, Natasha},
+  booktitle={Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  address={Gothenburg, Sweden},
+  year={2026},
+  doi={10.1145/3828158.3838256}
+}
