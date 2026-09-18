@@ -1,4 +1,4 @@
-@inproceedings{ferreira2025,
+@inproceedings{ferreira2025vibe,
   title={Vibe coding in practice: Building a driving simulator without expert programming skills}, 
   author={Fortes-Ferreira, Margarida and Alam, Md Shadab and Bazilinskyy, Pavlo},
   booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},

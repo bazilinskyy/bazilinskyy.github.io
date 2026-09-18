@@ -3,5 +3,6 @@
   author={Driessen, Tom and Prasad, Lokin and Bazilinskyy, Pavlo and De Winter, J. C. F.},
   booktitle={Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)},
   year={2022},
-  address={New York, NY, USA}
+  address={New York, NY, USA},
+  doi={10.54941/ahfe1002433}
 }

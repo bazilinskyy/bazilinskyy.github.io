@@ -1,7 +1,7 @@
 @inproceedings{fang2026interviewing,
   title={Interviewing silicon experts: A persona-based LLM interview pipeline in automated driving},
   author={Fang, Ying and Bazilinskyy, Pavlo and Martens, Marieke H.},
-  booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  booktitle={Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   address={Gothenburg, Sweden},
   year={2026},
   doi={10.1145/3828158.3838221}

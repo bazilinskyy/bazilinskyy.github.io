@@ -2,5 +2,6 @@
   title={Auditory interface for automated driving},
   author={Bazilinskyy, Pavlo},
   year={2018},
-  school={Delft University of Technology}
+  school={Delft University of Technology},
+  doi={10.4233/uuid:51dbba63-ba7c-4958-ab7d-d6dc182ec5b5}
 }

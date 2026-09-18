@@ -3,5 +3,6 @@
   author={Marinissen, Thomas and Glimmann, Jonas and Bazilinskyy, Pavlo},
   year={2026},
   booktitle={Proceedings of the 16th International Conference on Human Interaction & Emerging Technologies (IHIET-AI)},
-  address={Valencia, Spain}
+  address={Valencia, Spain},
+  doi={10.54941/ahfe1007155}
 }

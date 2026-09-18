@@ -1,8 +1,7 @@
 @inproceedings{verstelle2026personalised,
   title={Personalised electric vehicle acoustics with generative AI: Dynamic sonification and user acceptance study},
   author={Verstelle, Wessel and Alam, Md Shadab and Bazilinskyy, Pavlo},
-  booktitle={Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
+  booktitle={Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)},
   address={Gothenburg, Sweden},
-  year={2026},
-  doi={}
+  year={2026}
 }

@@ -3,5 +3,6 @@
   author={Verstegen, Jochem and Bazilinskyy, Pavlo},
   booktitle={Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)},
   year={2024},
-  address={Nice, France}
+  address={Nice, France},
+  doi={10.54941/ahfe1005210}
 }

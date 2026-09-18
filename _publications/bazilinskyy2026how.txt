@@ -4,5 +4,6 @@
   year={2026},
   journal={Accident Analysis & Prevention},
   volume={234},
-  pages={108592}
+  pages={108592},
+  doi={10.1016/j.aap.2026.108592}
 }
