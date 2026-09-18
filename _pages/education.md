@@ -64,7 +64,7 @@ status: false
 {% for student in students %}
   {% assign pdffile = false %}
   {% if student.project_url %}
-      {% if student.project_url contains '://' %}
+      {% if student.project_url contains '/' %}
         {% assign pdffile = student.project_url %}
       {% else %}
         {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
@@ -88,7 +88,7 @@ status: false
 {% for student in students %}
   {% assign pdffile = false %}
   {% if student.project_url %}
-      {% if student.project_url contains '://' %}
+      {% if student.project_url contains '/' %}
         {% assign pdffile = student.project_url %}
       {% else %}
         {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
@@ -112,7 +112,7 @@ status: false
 {% for student in students %}
   {% assign pdffile = false %}
   {% if student.project_url %}
-      {% if student.project_url contains '://' %}
+      {% if student.project_url contains '/' %}
         {% assign pdffile = student.project_url %}
       {% else %}
         {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
@@ -136,7 +136,7 @@ status: false
 {% for student in students %}
   {% assign pdffile = false %}
   {% if student.project_url %}
-      {% if student.project_url contains '://' %}
+      {% if student.project_url contains '/' %}
         {% assign pdffile = student.project_url %}
       {% else %}
         {% assign pdffile = "/p/students/" | append:  student.project_url  | append: ".pdf" %}
