@@ -1,0 +1,5 @@
+@techreport{alam2026influence,
+  title={Influence of rudder action resolution on autonomous ship path following},
+  author={Alam, Md Shadab and Bazilinskyy, Pavlo},
+  year={2026}
+}
