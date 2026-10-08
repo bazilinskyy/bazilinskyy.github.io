@@ -1,23 +1,54 @@
 - name: Wessel Verstelle
   name_url: https://www.linkedin.com/in/wessel-verstelle
-  project: Generative AI approaches to car sound design and analysis
+  project: AI-based manual for cars
   year: 2026
   status: inprogress
+  comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Dionísio Pereira, T., Gallico, A., Ge, S.
+  name_url: 
+  project: Car dealership experience
+  project_url:
+  year: 2026
+  status: inprogress
+  comment: M1.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Dirk Knapen
+  name_url: https://www.linkedin.com/in/dirk-knapen-271772271
+  project: Assisted race cycling experience
+  project_url:
+  year: 2026
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Hemai Zhang
+  # name_url:
+  project: Designing an AI-assisted research probe for understanding human repair in AV breakdowns
+  project_url:
+  year: 2026
+  status: inprogress
+  comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Max Crutzen
+  name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
+  project: Manual for configurable furniture
+  year: 2026
+  status: inprogress
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Wessel Verstelle
+  name_url: https://www.linkedin.com/in/wessel-verstelle
+  project: Generative AI approaches to car sound design and analysis
+  year: 2026
+  status: completed
   comment: M1.2 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Matin Maskitou
   name_url: https://www.linkedin.com/in/matin-maskitou-6931831b7
   project: YOLO-based mitigation of distration during driving
   year: 2026
-  status: inprogress
+  status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
-
-# - name: Max Crutzen
-#   name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
-#   project: TBD
-#   year: 2026
-#   status: inprogress
-#   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Sharavan Saai Govindaraj
   name_url: https://www.linkedin.com/in/saai-sharavan
@@ -40,7 +71,7 @@
   project: Dynamic external Human-Machine Interface for pedestrians
   project_url:
   year: 2025
-  status: inprogress
+  status: completed
   comment: Co-supervision with IE&IS department
 
 - name: Haoyu Liu
@@ -63,7 +94,7 @@
   name_url: https://www.linkedin.com/in/max-crutzen-b6369322a
   project: Configurable furniture
   year: 2025
-  status: inprogress
+  status: completed
   comment: M2.1 project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Xinyue Liu
@@ -140,12 +171,12 @@
   status: completed
   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
-# - name: Alexandra van Dijk
-#   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
-#   project: TODO
-#   year: 2025
-#   status: inprogress
-#   comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+- name: Alexandra van Dijk
+  name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233
+  project: Design project STEER; a tool to increase self-awareness and prevent a potential burnout
+  year: 2025
+  status: completed
+  comment: FMP project within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Alexandra van Dijk
   name_url: https://www.linkedin.com/in/alexandra-van-dijk-7aa5a3233

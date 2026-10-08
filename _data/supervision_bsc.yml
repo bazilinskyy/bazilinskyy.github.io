@@ -1,18 +1,3 @@
-- name: Chen, Y.-Y., Gupta, A., Lazar, R., Tan, L. S., Tonkinwise, E.
-  project: External communication of an automated vehicle
-  project_url: 
-  year: 2026
-  status: inprogress
-  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
-
-- name: Meike Ybema
-  name_url: https://www.linkedin.com/in/meike-ybema
-  project: Device for drone detection
-  project_url: 
-  year: 2026
-  status: inprogress
-  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
-
 - name: Robert Braun
   # name_url:
   project: Design of a drone for logistics
@@ -21,12 +6,43 @@
   status: inprogress
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
+- name: Meis Vermeulen
+  # name_url:
+  project: How can a scenario-based pre-drive training experience be designed to support drivers in developing an accurate mental model of the capabilities, limitations, and driver responsibilities of a Level 2/DCAS system?
+  project_url: 
+  year: 2026
+  status: inprogress
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Chen, Y.-Y., Gupta, A., Lazar, R., Tan, L. S., Tonkinwise, E.
+  project: External communication of an automated vehicle
+  project_url: 
+  year: 2026
+  status: completed
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Meike Ybema
+  name_url: https://www.linkedin.com/in/meike-ybema
+  project: Device for drone detection
+  project_url: 
+  year: 2026
+  status: completed
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
+- name: Robert Braun
+  # name_url:
+  project: Design of a drone for logistics
+  project_url: 
+  year: 2026
+  status: fail
+  comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
+
 - name: Adam Bodor
   name_url: https://www.linkedin.com/in/adam-bodor
   project: Gesture-based communication with a drone
   project_url: 
   year: 2026
-  status: inprogress
+  status: completed
   comment: within <a href="https://mobility-squad.com" target="_blank">Future Mobility squad</a>
 
 - name: Balaton, G., Van den Brink, W., Cuciuc, F., Geerts, S., Knapen, J., Korevaar, B., Van Ling, M., Shishkov, K., Szabolcs, M., Verhagen, T.
