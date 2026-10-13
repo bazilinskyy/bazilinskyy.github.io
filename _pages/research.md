@@ -43,8 +43,8 @@ The interactions between future cars and pedestrians should be designed to be un
 
 <div class="row" markdown="0" style="clear: both; margin-top: 15px; margin-bottom: 0">
 <figure class="col-sm-6" style="margin: 0">
-<a href="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/mapbox_map_all.png" target="_blank"><img alt="Map of the world with a dot for each town and city with footage in the dataset, coloured by continent" loading="lazy" src="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/mapbox_map_all.png" class="img-responsive" style="width: 100%; border-radius: 5px" /></a>
-<figcaption style="font-size: 90%; text-align: center; margin-top: 5px">Towns and cities with footage, by continent.</figcaption>
+<a href="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_localities_footage.png" target="_blank"><img alt="Map of the world with a dot for each town and city with footage in the dataset, sized by its hours of footage and coloured by continent" loading="lazy" src="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_localities_footage.png" class="img-responsive" style="width: 100%; border-radius: 5px" /></a>
+<figcaption style="font-size: 90%; text-align: center; margin-top: 5px">Towns and cities with footage, sized by hours of footage.</figcaption>
 </figure>
 <figure class="col-sm-6" style="margin: 0">
 <a href="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_footage_per_capita.png" target="_blank"><img alt="World map of the hours of footage per million inhabitants of each country" loading="lazy" src="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_footage_per_capita.png" class="img-responsive" style="width: 100%; border-radius: 5px" /></a>

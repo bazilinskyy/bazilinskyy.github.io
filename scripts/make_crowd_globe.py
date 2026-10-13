@@ -96,6 +96,6 @@ if __name__ == '__main__':
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
     with open(TOTALS, 'w', encoding='utf-8') as f:
-        json.dump({k: data[k] for k in ('built', 'localities', 'countries', 'hours', 'videos')}, f, indent=2)
+        json.dump({k: f'{data[k]:,}' for k in ('localities', 'countries', 'hours', 'videos')} | {'built': data['built']}, f, indent=2)  # 34,738
     print(f"{OUT}: {data['localities']} localities, {data['videos']} videos, {data['hours']} h, +{totals['week']} segments in a week, "
           f"+{totals['month']} in a month")
