@@ -5,7 +5,7 @@
 # no dates per segment, so "added" compares mapping.csv on main now with main as it
 # was then (its commit history). A segment is a (video, start) pair, compared across
 # all localities: their ids get renumbered.
-# Run nightly by .github/workflows/crowd-globe.yml; by hand:
+# Run nightly by .github/workflows/nightly.yml; by hand:
 #   python3 scripts/make_crowd_globe.py
 import csv
 import io
@@ -38,7 +38,7 @@ def mapping(ago_s=0):
 
 
 def segments(text):
-    """{locality id: (lat, lon, name, hours, {(video, start), ...})} of a mapping.csv's text."""
+    """{locality id: (lat, lon, name, hours, {(video, start): seconds, ...})} of a mapping.csv's text."""
     csv.field_size_limit(sys.maxsize)
     out = {}
     for row in csv.DictReader(io.StringIO(text)):
@@ -47,10 +47,10 @@ def segments(text):
         except ValueError:
             continue
         videos = [v.strip() for v in row['videos'].strip('[]').split(',') if v.strip()]
-        segs, hours = set(), 0.0
+        segs, hours = {}, 0.0
         for v, ss, es in zip(videos, json.loads(row['start_time'] or '[]'), json.loads(row['end_time'] or '[]')):
             for s, e in zip(ss, es):
-                segs.add((v, s))
+                segs[(v, s)] = max(0, e - s)
                 hours += max(0, e - s) / 3600
         state = f", {row['state']}" if row.get('state') and row['country'] == 'United States' else ''
         out[row['id']] = (lat, lon, f"{row['locality']}{state}, {row['country']}", hours, segs)
@@ -58,17 +58,19 @@ def segments(text):
 
 
 def compare(now, week, month):
-    """Points [lat, lon, hours, videos, segments new in a month, segments new in a week, name] and totals."""
+    """Points [lat, lon, hours, videos, segments new in a month, segments new in a week, name, video, start] and
+    totals. The video and start are of the locality's longest segment: clicking a place on the globe opens it."""
     points, totals = [], dict(month=0, week=0, month_places=0, week_places=0)
     week, month = ({seg for v in old.values() for seg in v[4]} for old in (week, month))
     for lat, lon, name, hours, segs in now.values():
-        m = len(segs - month) if month else 0
-        w = len(segs - week) if week else 0
+        m = len(segs.keys() - month) if month else 0
+        w = len(segs.keys() - week) if week else 0
         totals['month'] += m
         totals['week'] += w
         totals['month_places'] += m > 0
         totals['week_places'] += w > 0
-        points.append([round(lat, 2), round(lon, 2), round(hours, 1), len({v for v, _ in segs}), m, w, name])
+        video, start = max(segs, key=segs.get) if segs else ('', 0)
+        points.append([round(lat, 2), round(lon, 2), round(hours, 1), len({v for v, _ in segs}), m, w, name, video, int(start)])
     return points, totals
 
 
@@ -79,7 +81,7 @@ def _check():
     new = new.replace('"[[0],[10,50]]","[[30],[20,60]]"', '"[[0],[10,50,70]]","[[30],[20,60,80]]"')
     pts, tot = compare(segments(new), segments(old), segments(old))
     assert {p[6]: (p[4], p[5]) for p in pts} == {'Delft, Netherlands': (1, 1), 'Gouda, Netherlands': (1, 1)}, pts
-    assert tot == dict(month=2, week=2, month_places=2, week_places=2) and pts[0][:4] == [52.01, 4.36, 0.0, 2], (tot, pts)
+    assert tot == dict(month=2, week=2, month_places=2, week_places=2) and pts[0][:4] == [52.01, 4.36, 0.0, 2] and pts[0][7:] == ['a', 0], (tot, pts)
     assert compare(segments(new), {}, {})[1]['month'] == 0  # no history: nothing is called new
     renumbered = old.replace('\n1,Delft', '\n9,Delft')
     assert compare(segments(old), segments(renumbered), {})[1]['week'] == 0  # same segments under a new id: not new

@@ -1,7 +1,8 @@
-# Rebuilds js/crowd-globe.json (the globe on the home page) and _data/crowd.json (the
-# numbers on the research page) from the mapping of
-# github.com/crowd-dataset/crowd every night and asks GitHub Pages to rebuild the site.
-name: CROWD globe
+# Every night: rebuilds js/crowd-globe.json (the globe on the home page) and _data/crowd.json
+# (the numbers on the research page) from the mapping of github.com/crowd-dataset/crowd, and
+# _data/citations.json (the citation counts on the publication pages) from OpenAlex, then
+# asks GitHub Pages to rebuild the site.
+name: Nightly data
 
 on:
   schedule:
@@ -13,17 +14,19 @@ permissions:
   pages: write
 
 jobs:
-  globe:
+  data:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: python3 scripts/make_crowd_globe.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: python3 scripts/make_citations.py
+        continue-on-error: true  # OpenAlex being down must not stop the globe
       - run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update the CROWD globe' js/crowd-globe.json _data/crowd.json
+          git commit -m 'Update the nightly data' js/crowd-globe.json _data/crowd.json _data/citations.json
           git push
           gh api -X POST repos/${{ github.repository }}/pages/builds
         env:

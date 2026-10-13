@@ -1,0 +1,43 @@
+# Every night: builds the site and checks its links with lychee. Broken ones are listed in an
+# issue labelled broken-links (opened, updated, and closed again once they all work).
+name: Link check
+
+on:
+  schedule:
+    - cron: '30 3 * * *'  # 03:30 UTC, after the nightly data
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - run: bundle exec jekyll build
+      - uses: lycheeverse/lychee-action@v2
+        id: lychee
+        with:
+          # 403/429/999: sites that refuse bots (publishers, LinkedIn) but work in a browser.
+          # publications/ only holds redirect stubs to /p/.
+          args: >-
+            --root-dir ${{ github.workspace }}/_site --accept 200..=299,403,429,999 --max-retries 2
+            --timeout 30 --exclude-path _site/publications --no-progress '_site/**/*.html'
+          output: lychee/out.md
+          fail: false
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          n=$(gh issue list --label broken-links --state open --json number --jq '.[0].number')
+          if [ "${{ steps.lychee.outputs.exit_code }}" != 0 ]; then
+            if [ -n "$n" ]; then gh issue edit "$n" --body-file lychee/out.md
+            else gh label create broken-links --color d73a4a --force
+                 gh issue create --title 'Broken links' --label broken-links --body-file lychee/out.md; fi
+          elif [ -n "$n" ]; then gh issue close "$n" --comment 'All links work again.'; fi

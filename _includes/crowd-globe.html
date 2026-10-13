@@ -6,7 +6,7 @@
 #crowd-globe canvas:active { cursor:grabbing }
 #crowd-globe-tip { position:fixed; pointer-events:none; display:none; background:var(--tipbg); border:1px solid var(--tipline); border-radius:6px;
   padding:4px 7px; font-size:12px; text-align:left; box-shadow:0 2px 10px rgba(0,0,0,.25); max-width:240px; z-index:10 }
-#crowd-globe-tip .r { color:var(--recent) } #crowd-globe-tip .d { color:var(--day) }
+#crowd-globe-tip .r { color:var(--recent) } #crowd-globe-tip .m { opacity:.7 } #crowd-globe-tip .d { color:var(--day) }
 #crowd-globe-leg { display:flex; flex-wrap:wrap; justify-content:center; gap:2px 12px; font-size:90% }
 #crowd-globe-leg i { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:4px }
 </style>
@@ -99,9 +99,9 @@
       draw();
     }).catch(() => {});
     data = await (await fetch('/js/crowd-globe.json', {cache: 'no-cache'})).json();
-    for (const [lat, lon, h, videos, month, week, name] of data.points)
+    for (const [lat, lon, h, videos, month, week, name, video, start] of data.points)
       tiers[week ? 2 : month ? 1 : 0].push({lon: lon * Math.PI / 180, s: Math.sin(lat * Math.PI / 180),
-        k: Math.cos(lat * Math.PI / 180), r: 0.6 + Math.min(1.9, Math.sqrt(h) / 10), h, videos, month, week, name});
+        k: Math.cos(lat * Math.PI / 180), r: 0.6 + Math.min(1.9, Math.sqrt(h) / 10), h, videos, month, week, name, video, start});
     document.getElementById('crowd-globe-leg').innerHTML =
       `<span><i style="background:var(--day)"></i>last week: +${fmt(data.week)} segments in ${fmt(data.week_places)} places</span>` +
       `<span><i style="background:var(--recent)"></i>last month: +${fmt(data.month)} in ${fmt(data.month_places)} places</span>` +
@@ -116,17 +116,27 @@
     }));
   }
 
-  cv.addEventListener('mousemove', e => {
+  function nearest(e) {  // the place within 8 px of the pointer; ties: the newer (drawn later)
     const b = cv.getBoundingClientRect(), mx = e.clientX - b.left, my = e.clientY - b.top;
     let best = null, bd = 64;
     for (const [x, y, p] of shown) { const d = (x - mx) ** 2 + (y - my) ** 2; if (d <= bd) { bd = d; best = p; } }
+    return best;
+  }
+  cv.addEventListener('click', e => {  // d3.drag swallows the click that ends a drag
+    const p = nearest(e);
+    if (p && p.video) open(`https://www.youtube.com/watch?v=${encodeURIComponent(p.video)}&t=${p.start}s`, '_blank', 'noopener');
+  });
+  cv.addEventListener('mousemove', e => {
+    const best = nearest(e);
     hover = true;
+    cv.style.cursor = best && best.video ? 'pointer' : '';
     if (!best) { tip.style.display = 'none'; return; }
     const line = (cls, text) => Object.assign(document.createElement('div'), {className: cls, textContent: text});
     tip.replaceChildren(line('', best.name), line('', `${fmt(best.h)} h of footage in ${fmt(best.videos)} videos`));
     tip.firstChild.style.fontWeight = 'bold';
     if (best.month) tip.append(line('r', `+${fmt(best.month)} segments in the last month`));
     if (best.week) tip.append(line('d', `+${fmt(best.week)} in the last week`));
+    if (best.video) tip.append(line('m', 'Click to watch its footage on YouTube'));
     tip.style.display = 'block';
     tip.style.left = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 4) + 'px';
     tip.style.top = Math.min(e.clientY + 12, innerHeight - tip.offsetHeight - 4) + 'px';
