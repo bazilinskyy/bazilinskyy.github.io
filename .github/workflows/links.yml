@@ -24,10 +24,13 @@ jobs:
       - uses: lycheeverse/lychee-action@v2
         id: lychee
         with:
-          # 403/429/999: sites that refuse bots (publishers, LinkedIn) but work in a browser.
+          # 403/429/999: sites that refuse bots (publishers, LinkedIn) but work in a browser;
+          # 502/503: server errors, nearly always temporary (doi.org, 4TU, TU Delft repository).
+          # --fallback-extensions: GitHub Pages serves /p/name from p/name.html.
           # publications/ only holds redirect stubs to /p/.
           args: >-
-            --root-dir ${{ github.workspace }}/_site --accept 200..=299,403,429,999 --max-retries 2
+            --root-dir ${{ github.workspace }}/_site --fallback-extensions html
+            --accept 200..=299,403,429,502,503,999 --max-retries 3 --retry-wait-time 10
             --timeout 30 --exclude-path _site/publications --no-progress '_site/**/*.html'
           output: lychee/out.md
           fail: false
