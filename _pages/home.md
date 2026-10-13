@@ -25,11 +25,10 @@ How do pedestrians cross the road in Lagos, Hanoi or Eindhoven? With the [City R
 ### Multi-user communication in traffic
 I am currently engaged in research on communication between multiple automated vehicles and multiple vulnerable road users. Most of the experiments in current research feature 1, maybe 2, human participants. But, think about driving around a town in real life. Traffic situations are very complicated. Being able to perform experiments with 3, 4, ..., 16 participants is essential for understanding the mechanics of communication of situation awareness/collaborative decision making/collaboration in both modern and future traffic. To enable such research, I present [an open-source simulator](https://github.com/bazilinskyy/coupled-sim). It supports a virtually unlimited number of human participants and fine-tunes for high-precision data logging. It is aimed at, but not limited to, academic research.
 
-<div class="row" style="text-align:center">
-  <iframe loading="lazy" style="display:inline-block; border-radius: 5px; border:0px solid #FFF; width: 95%; height: 246px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-
-  Demo of [coupled simulator](https://github.com/bazilinskyy/coupled-sim) with 3 agents in the same traffic scene.
-</div>
+<figure markdown="0" style="margin: 0 0 8px">
+<iframe loading="lazy" style="display:block; margin: 0 auto; border-radius: 5px; border:0px solid #FFF; width: 95%; height: 246px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+<figcaption style="font-size: 90%; text-align: center; margin: 4px 0 0">Demo of <a href="https://github.com/bazilinskyy/coupled-sim" target="_blank">coupled simulator</a> with 3 agents in the same traffic scene.</figcaption>
+</figure>
 
 <!-- ### Free time
 * 🏃‍♂🚴‍♂️🏊‍♂️ Running, [cycling](https://www.wielervrienden.nl/profiel/pavlo-7126007), swimming, cross-country skiing, hiking. Like, [a lot of it](https://www.strava.com/athletes/bazilinskyy).

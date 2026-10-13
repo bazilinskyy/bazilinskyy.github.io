@@ -36,11 +36,10 @@ The interactions between future cars and pedestrians should be designed to be un
   
 I am currently engaged in research on communication between multiple automated vehicles and multiple vulnerable road users. Most of the experiments in current research feature 1, maybe 2, human participants. But, think about driving around a town in real life. Traffic situations are very complicated. Being able to perform experiments with 3, 4, ..., 16 participants is essential for understanding the mechanics of communication of situation awareness/collaborative decision making/collaboration in both modern and future traffic. To enable such research, I present [an open-source simulator](https://github.com/bazilinskyy/coupled-sim) supporting a virtually unlimited number of human participants and fine-tuned for high precision data logging. It is aimed at, but not limited to, academic research.
 
-  <div class="row" style="text-align:center; margin-bottom: 0px;">
-  <iframe loading="lazy" style="display:inline-block; border-radius: 5px; border:0px solid #FFF; width: 97%; height: 358px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-  
-Demo of [coupled simulator](https://github.com/bazilinskyy/coupled-sim) with 3 agents in the same traffic scene. One agent is wearing a motion suit and one has a head-mounted display.
-  </div>
+<figure markdown="0" style="margin: 0 0 8px">
+<iframe loading="lazy" style="display:block; margin: 0 auto; border-radius: 5px; border:0px solid #FFF; width: 97%; height: 358px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+<figcaption style="font-size: 90%; text-align: center; margin: 4px 0 0">Demo of <a href="https://github.com/bazilinskyy/coupled-sim" target="_blank">coupled simulator</a> with 3 agents in the same traffic scene. One agent is wearing a motion suit and one has a head-mounted display.</figcaption>
+</figure>
   <ul style="overflow: hidden">
   </ul>
 </div>
