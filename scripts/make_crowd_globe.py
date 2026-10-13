@@ -1,5 +1,5 @@
 # by Pavlo Bazilinskyy <pavlo.bazilinskyy@gmail.com>
-# Builds js/crowd-globe.json for the globe on the home page: the localities of the
+# Builds js/crowd-globe.json for the globe on the home page (and the totals in _data/crowd.json): the localities of the
 # CROWD dataset (mapping.csv of github.com/crowd-dataset/crowd) with their hours of
 # footage and the segments added in the last week and month. The mapping has
 # no dates per segment, so "added" compares mapping.csv on main now with main as it
@@ -18,6 +18,7 @@ import urllib.request
 REPO = 'crowd-dataset/crowd'
 WEEK, MONTH = 7 * 86400, 30 * 86400  # seconds
 OUT = 'js/crowd-globe.json'
+TOTALS = '_data/crowd.json'  # the numbers in the text of the research page (site.data.crowd)
 
 
 def get(url):
@@ -94,5 +95,7 @@ if __name__ == '__main__':
                 **totals, points=points)
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+    with open(TOTALS, 'w', encoding='utf-8') as f:
+        json.dump({k: data[k] for k in ('built', 'localities', 'countries', 'hours', 'videos')}, f, indent=2)
     print(f"{OUT}: {data['localities']} localities, {data['videos']} videos, {data['hours']} h, +{totals['week']} segments in a week, "
           f"+{totals['month']} in a month")

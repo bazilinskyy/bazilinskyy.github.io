@@ -1,4 +1,5 @@
-# Rebuilds js/crowd-globe.json (the globe on the home page) from the mapping of
+# Rebuilds js/crowd-globe.json (the globe on the home page) and _data/crowd.json (the
+# numbers on the research page) from the mapping of
 # github.com/crowd-dataset/crowd every night and asks GitHub Pages to rebuild the site.
 name: CROWD globe
 
@@ -22,7 +23,7 @@ jobs:
       - run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update the CROWD globe' js/crowd-globe.json
+          git commit -m 'Update the CROWD globe' js/crowd-globe.json _data/crowd.json
           git push
           gh api -X POST repos/${{ github.repository }}/pages/builds
         env:
