@@ -14,14 +14,14 @@ permalink: /research/
 
 The interactions between future cars and pedestrians should be designed to be understandable and safe worldwide. Crowdsourcing helps to go beyond WEIRD (Western, educated, industrialised, rich, developed) studies. But we can go beyond that and cover the whole world to have a true understanding of how people behave around the globe and get a better grasp of how future cars and transportation infrastructure should be designed. We live in the 21st century, where the internet has become ubiquitous and universally adopted. Accessibility to technology created a phenomenon of ASMR driving videos. I established work on the population of the “City Road Observations With Dashcams” (CROWD) [dataset](https://github.com/crowd-dataset/crowd), which includes {{ site.data.crowd.hours }} hand-picked hours of day and night urban dashcam footage from {{ site.data.crowd.localities }} towns and cities in {{ site.data.crowd.countries }} sovereign states and dependent territories, collected from {{ site.data.crowd.videos }} videos (updated every night). Using YOLO, we analysed aggregated pedestrian behaviour both on the [city](/p/alam2026understanding) and [country](/p/alam2025pedestrian) levels. And we are investing in going beyond YOLO to have a more precise and complete understanding of what exactly happens on the streets of cities on all continents.
 
-<div class="row" markdown="0" style="clear: both; margin-top: 15px; margin-bottom: 0">
-<figure class="col-sm-6" style="margin: 0">
-<a href="https://htmlpreview.github.io/?https://github.com/crowd-dataset/crowd/blob/main/figures/map_localities_footage.html" target="_blank"><img alt="Map of the world with a dot for each town and city with footage in the dataset, sized by its hours of footage and coloured by continent" loading="lazy" src="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_localities_footage.png" class="img-responsive" style="width: 100%; border-radius: 5px" /></a>
-<figcaption style="font-size: 90%; text-align: center; margin-top: 5px">Towns and cities, sized by hours of footage.</figcaption>
+<div class="row" markdown="0" style="clear: both; margin: 0 -15px">
+<figure class="col-sm-6" style="margin: 0 0 8px">
+<a href="https://htmlpreview.github.io/?https://github.com/crowd-dataset/crowd/blob/main/figures/map_localities_footage.html" target="_blank"><img alt="Map of the world with a dot for each town and city with footage in the dataset, sized by its hours of footage and coloured by continent" loading="lazy" src="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_localities_footage.png" class="img-responsive" style="width: 100%; border-radius: 5px; margin: 0" /></a>
+<figcaption style="font-size: 90%; text-align: center; margin: 4px 0 0">Towns and cities, sized by hours of footage.</figcaption>
 </figure>
-<figure class="col-sm-6" style="margin: 0">
-<a href="https://htmlpreview.github.io/?https://github.com/crowd-dataset/crowd/blob/main/figures/map_footage_per_capita.html" target="_blank"><img alt="World map of the hours of footage per million inhabitants of each country" loading="lazy" src="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_footage_per_capita.png" class="img-responsive" style="width: 100%; border-radius: 5px" /></a>
-<figcaption style="font-size: 90%; text-align: center; margin-top: 5px">Hours of footage per million inhabitants.</figcaption>
+<figure class="col-sm-6" style="margin: 0 0 8px">
+<a href="https://htmlpreview.github.io/?https://github.com/crowd-dataset/crowd/blob/main/figures/map_footage_per_capita.html" target="_blank"><img alt="World map of the hours of footage per million inhabitants of each country" loading="lazy" src="https://raw.githubusercontent.com/crowd-dataset/crowd/main/figures/map_footage_per_capita.png" class="img-responsive" style="width: 100%; border-radius: 5px; margin: 0" /></a>
+<figcaption style="font-size: 90%; text-align: center; margin: 4px 0 0">Hours of footage per million inhabitants.</figcaption>
 </figure>
 </div>
 
