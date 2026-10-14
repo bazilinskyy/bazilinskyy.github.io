@@ -1,0 +1,74 @@
+[
+  {
+    "name": "coupled-sim",
+    "url": "https://github.com/bazilinskyy/coupled-sim",
+    "description": "Coupled simulator for research on driver-pedestrian interactions made in Unity3D.",
+    "language": "C#",
+    "stars": 46,
+    "forks": 34,
+    "pushed": "2024-09-23"
+  },
+  {
+    "name": "crowd-dataset/crowd",
+    "url": "https://github.com/crowd-dataset/crowd",
+    "description": "This repository contains code that extracts YouTube videos based on a mapping.csv file and performs object detection using YOLOv11. The primary objective of this work is to evaluate pedestrian behaviour in a cross-country or cross-cultural context using freely available YouTube videos.",
+    "language": "PostScript",
+    "stars": 13,
+    "forks": 4,
+    "pushed": "2026-10-13"
+  },
+  {
+    "name": "multiped",
+    "url": "https://github.com/bazilinskyy/multiped",
+    "description": "Framework for the analysis of crossing behaviour in the interaction between multiple pedestrians and an automated vehicle, from the perspective of one of the pedestrians using a crowdsourcing approach.",
+    "language": "HTML",
+    "stars": 3,
+    "forks": 3,
+    "pushed": "2026-09-25"
+  },
+  {
+    "name": "trust-crowdsourced",
+    "url": "https://github.com/bazilinskyy/trust-crowdsourced",
+    "description": "A framework for the analysis of trust in the interaction between pedestrians and vehicle (manual and automated), from the perspective of the driver of a manual or an automated vehicle, using a crowdsourcing approach.",
+    "language": "HTML",
+    "stars": 1,
+    "forks": 2,
+    "pushed": "2025-10-27"
+  },
+  {
+    "name": "crossing-crowdsourcing",
+    "url": "https://github.com/bazilinskyy/crossing-crowdsourcing",
+    "description": "A framework for the analysis of perceived risk in the interaction between pedestrian and vehicle, from the perspective of the driver using a crowdsourcing approach.",
+    "language": "HTML",
+    "stars": 1,
+    "forks": 1,
+    "pushed": "2024-04-04"
+  },
+  {
+    "name": "eye-contact-crowdsourcing",
+    "url": "https://github.com/bazilinskyy/eye-contact-crowdsourcing",
+    "description": "Exploration of eye contact between a pedestrian and a driver of a car by means of crowdsourcing.",
+    "language": "JavaScript",
+    "stars": 1,
+    "forks": 2,
+    "pushed": "2023-02-07"
+  },
+  {
+    "name": "truck-driver-profile",
+    "url": "https://github.com/bazilinskyy/truck-driver-profile",
+    "description": "Modeling the profile of a truck driver based on big data.",
+    "language": "Jupyter Notebook",
+    "stars": 1,
+    "forks": 1,
+    "pushed": "2022-12-08"
+  },
+  {
+    "name": "multicore-insense-compiler",
+    "url": "https://github.com/bazilinskyy/multicore-insense-compiler",
+    "description": "Compiler for the multi-core version of Insense language.",
+    "language": "Java",
+    "stars": 1,
+    "forks": 0,
+    "pushed": "2021-12-02"
+  }
+]

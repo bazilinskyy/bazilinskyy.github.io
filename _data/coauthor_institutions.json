@@ -1,0 +1,855 @@
+[
+  {
+    "name": "Delft University of Technology",
+    "city": "Delft",
+    "country": "The Netherlands",
+    "lat": 52.007,
+    "lon": 4.356,
+    "works": 40,
+    "people": [
+      "Amir Al Jawahiri",
+      "Anirudh Sripada",
+      "Bart Numan",
+      "Belle C. Hopmans",
+      "C.L.A. de Koning",
+      "Charles Beaumont",
+      "Chun Sang Mok",
+      "Coen Berssenbrugge",
+      "Dale Wesdorp",
+      "Dariu M. Gavrila",
+      "Dimitra Dodou",
+      "Elif Özcan",
+      "F.C. van den Ouden",
+      "H. Lingmont",
+      "Hashim A. Quraishi",
+      "Jasper Binda",
+      "Jim Hoogmoed",
+      "Joost de Winter",
+      "Joppe Mulckhuyse",
+      "Joris Pijnacker",
+      "Jork Stapel",
+      "Just Visscher",
+      "Kexin Liang",
+      "Kirsten Mallant",
+      "Koen van der Kroft",
+      "Lars Kooijman",
+      "Lars van der Geest",
+      "Lucas Overbeek",
+      "Marloes Middelweerd",
+      "Max Oudshoorn",
+      "Miltos Kyriakidis",
+      "N. Kovácsová",
+      "Pieter Kapel",
+      "Reinier de Jonge",
+      "René van Egmond",
+      "Riender Happee",
+      "Roberto Merino-Martínez",
+      "Sebastiaan Martinus Petermeijer",
+      "Sjors Wagenaar",
+      "Soyeon Kim",
+      "Stefan van Leeuwen",
+      "T.C. van der Sijs",
+      "T.S. de Lint",
+      "Tom Driessen",
+      "V. Onkhar",
+      "Valerie de Vlam",
+      "Victor Roosens",
+      "Wessel van Haarlem",
+      "Xander van der Geest",
+      "Yke Bauke Eisma",
+      "Ömer Can Akgun",
+      "Γεώργιος Παπαϊωάννου"
+    ]
+  },
+  {
+    "name": "Eindhoven University of Technology",
+    "city": "Eindhoven",
+    "country": "The Netherlands",
+    "lat": 51.441,
+    "lon": 5.478,
+    "works": 27,
+    "people": [
+      "Christian Janssen",
+      "Debargha Dey",
+      "Erik D. van der Spek",
+      "Giovanni Sapienza",
+      "Haoyu Dong",
+      "Haoyu Liu",
+      "Jakub Woziwodzki",
+      "Linghan Zhang",
+      "M.H. Martens",
+      "Marieke H. Martens",
+      "Marieke Martens",
+      "Md Shadab Alam",
+      "Mervyn Franssen",
+      "Miguel Bruns",
+      "Ruolin Gao",
+      "Rutger Verstegen",
+      "Shiva Nischal Lingam",
+      "Wessel Verstelle",
+      "Y. Wang",
+      "Ying Fang"
+    ]
+  },
+  {
+    "name": "Netherlands Organisation for Applied Scientific Research",
+    "city": "Delft",
+    "country": "The Netherlands",
+    "lat": 52.007,
+    "lon": 4.356,
+    "works": 8,
+    "people": [
+      "M.H. Martens",
+      "Marieke H. Martens",
+      "Marieke Martens"
+    ]
+  },
+  {
+    "name": "Center for Scalable Data Analytics and Artificial Intelligence",
+    "city": "Dresden",
+    "country": "Germany",
+    "lat": 51.051,
+    "lon": 13.738,
+    "works": 5,
+    "people": [
+      "Celine Conzen",
+      "Martin Lorenz",
+      "Michał Patryk Miazga",
+      "Patrick Ebel"
+    ]
+  },
+  {
+    "name": "Cornell Tech",
+    "city": "New York",
+    "country": "United States",
+    "lat": 40.714,
+    "lon": -74.006,
+    "works": 5,
+    "people": [
+      "Debargha Dey",
+      "Wendy G. Ju"
+    ]
+  },
+  {
+    "name": "Leiden University",
+    "city": "Leiden",
+    "country": "The Netherlands",
+    "lat": 52.158,
+    "lon": 4.493,
+    "works": 5,
+    "people": [
+      "Francesco Walker",
+      "Gareth O'Neill",
+      "Jom Dieben",
+      "Margarida Fortes-Ferreira"
+    ]
+  },
+  {
+    "name": "Leipzig University",
+    "city": "Leipzig",
+    "country": "Germany",
+    "lat": 51.34,
+    "lon": 12.371,
+    "works": 5,
+    "people": [
+      "Celine Conzen",
+      "Martin Lorenz",
+      "Michał Patryk Miazga",
+      "Patrick Ebel",
+      "Timur Getselev"
+    ]
+  },
+  {
+    "name": "The University of Sydney",
+    "city": "Sydney",
+    "country": "Australia",
+    "lat": -33.868,
+    "lon": 151.207,
+    "works": 5,
+    "people": [
+      "Callum Parker",
+      "Marius Hoggenmüeller",
+      "Tram Thi Minh Tran",
+      "Xinyan Yu"
+    ]
+  },
+  {
+    "name": "University of Leeds",
+    "city": "Leeds",
+    "country": "United Kingdom",
+    "lat": 53.796,
+    "lon": -1.548,
+    "works": 4,
+    "people": [
+      "Aravinda Ramakrishnan Srinivasan",
+      "Chen Peng",
+      "Courtney Michael Goodridge",
+      "Natasha Merat"
+    ]
+  },
+  {
+    "name": "Technische Hochschule Ingolstadt",
+    "city": "Ingolstadt",
+    "country": "Germany",
+    "lat": 48.765,
+    "lon": 11.424,
+    "works": 3,
+    "people": [
+      "Andreas Riener",
+      "Ignacio Álvarez"
+    ]
+  },
+  {
+    "name": "University of Salzburg",
+    "city": "Salzburg",
+    "country": "Austria",
+    "lat": 47.799,
+    "lon": 13.044,
+    "works": 3,
+    "people": [
+      "Alexander Meschtscherjakov",
+      "Sandra Trösterer"
+    ]
+  },
+  {
+    "name": "Chalmers University of Technology",
+    "city": "Gothenburg",
+    "country": "Sweden",
+    "lat": 57.707,
+    "lon": 11.967,
+    "works": 2,
+    "people": [
+      "Ilaria Torre",
+      "Mohammad Obaid",
+      "Sara Ljungblad"
+    ]
+  },
+  {
+    "name": "Cornell University",
+    "city": "Ithaca",
+    "country": "United States",
+    "lat": 42.441,
+    "lon": -76.497,
+    "works": 2,
+    "people": [
+      "Angel Hsing‐Chi Hwang",
+      "Hauke Sandhaus",
+      "Qian Yang"
+    ]
+  },
+  {
+    "name": "Johannes Kepler University of Linz",
+    "city": "Linz",
+    "country": "Austria",
+    "lat": 48.306,
+    "lon": 14.286,
+    "works": 2,
+    "people": [
+      "Andreas Riener",
+      "Mohammad Rezaei"
+    ]
+  },
+  {
+    "name": "KU Leuven",
+    "city": "Leuven",
+    "country": "Belgium",
+    "lat": 50.88,
+    "lon": 4.701,
+    "works": 2,
+    "people": [
+      "Silvia Cazacu"
+    ]
+  },
+  {
+    "name": "Loughborough University",
+    "city": "Loughborough",
+    "country": "United Kingdom",
+    "lat": 52.767,
+    "lon": -1.2,
+    "works": 2,
+    "people": [
+      "Chen Peng"
+    ]
+  },
+  {
+    "name": "Queensland University of Technology",
+    "city": "Brisbane",
+    "country": "Australia",
+    "lat": -27.468,
+    "lon": 153.028,
+    "works": 2,
+    "people": [
+      "Yueteng Yu"
+    ]
+  },
+  {
+    "name": "TU Wien",
+    "city": "Vienna",
+    "country": "Austria",
+    "lat": 48.208,
+    "lon": 16.372,
+    "works": 2,
+    "people": [
+      "Andreas Rauber",
+      "Barbara Sánchez Solís",
+      "Bernd Saurugger",
+      "Juliana Giroletti",
+      "Katharina Flicker",
+      "Paolo Budroni",
+      "Philipp Wintersberger"
+    ]
+  },
+  {
+    "name": "Technical University of Munich",
+    "city": "Munich",
+    "country": "Germany",
+    "lat": 48.137,
+    "lon": 11.575,
+    "works": 2,
+    "people": [
+      "Klaus J. Bengler",
+      "Sebastiaan Martinus Petermeijer"
+    ]
+  },
+  {
+    "name": "University of Applied Sciences Upper Austria",
+    "city": "Wels",
+    "country": "Austria",
+    "lat": 48.167,
+    "lon": 14.033,
+    "works": 2,
+    "people": [
+      "Philipp Wintersberger"
+    ]
+  },
+  {
+    "name": "University of Gothenburg",
+    "city": "Gothenburg",
+    "country": "Sweden",
+    "lat": 57.707,
+    "lon": 11.967,
+    "works": 2,
+    "people": [
+      "Mohammad Obaid",
+      "Sara Ljungblad"
+    ]
+  },
+  {
+    "name": "University of Ljubljana",
+    "city": "Ljubljana",
+    "country": "Slovenia",
+    "lat": 46.051,
+    "lon": 14.505,
+    "works": 2,
+    "people": [
+      "Jaka Sodnik",
+      "Kristina Stojmenova"
+    ]
+  },
+  {
+    "name": "Universität Ulm",
+    "city": "Ulm",
+    "country": "Germany",
+    "lat": 48.398,
+    "lon": 9.992,
+    "works": 2,
+    "people": [
+      "Mark Colley",
+      "Markus Sasalovici"
+    ]
+  },
+  {
+    "name": "Virtual Vehicle Research GmbH (Austria)",
+    "city": "Graz",
+    "country": "Austria",
+    "lat": 47.067,
+    "lon": 15.45,
+    "works": 2,
+    "people": [
+      "Paolo Pretto"
+    ]
+  },
+  {
+    "name": "Adolphe Merkle Institute",
+    "city": "Fribourg",
+    "country": "Switzerland",
+    "lat": 46.793,
+    "lon": 7.155,
+    "works": 1,
+    "people": [
+      "Ullrich Steiner"
+    ]
+  },
+  {
+    "name": "Amazon (United States)",
+    "city": "Seattle",
+    "country": "United States",
+    "lat": 47.606,
+    "lon": -122.332,
+    "works": 1,
+    "people": [
+      "Sagar Hitendra Parmar"
+    ]
+  },
+  {
+    "name": "Augusta University",
+    "city": "Augusta",
+    "country": "United States",
+    "lat": 33.471,
+    "lon": -81.975,
+    "works": 1,
+    "people": [
+      "Zi Wang"
+    ]
+  },
+  {
+    "name": "Bielefeld University",
+    "city": "Bielefeld",
+    "country": "Germany",
+    "lat": 52.033,
+    "lon": 8.533,
+    "works": 1,
+    "people": [
+      "Jan Hammerschmidt",
+      "René Tünnermann",
+      "Thomas M. Hermann"
+    ]
+  },
+  {
+    "name": "Clemson University",
+    "city": "Clemson",
+    "country": "United States",
+    "lat": 34.683,
+    "lon": -82.837,
+    "works": 1,
+    "people": [
+      "Ignacio Álvarez"
+    ]
+  },
+  {
+    "name": "Dr. B.C. Roy Engineering College",
+    "city": "Durgapur",
+    "country": "India",
+    "lat": 23.516,
+    "lon": 87.308,
+    "works": 1,
+    "people": [
+      "Priyanshu Singh"
+    ]
+  },
+  {
+    "name": "ETH Zurich",
+    "city": "Zurich",
+    "country": "Switzerland",
+    "lat": 47.367,
+    "lon": 8.55,
+    "works": 1,
+    "people": [
+      "Miltos Kyriakidis"
+    ]
+  },
+  {
+    "name": "Fachhochschule Salzburg",
+    "city": "Salzburg",
+    "country": "Austria",
+    "lat": 47.799,
+    "lon": 13.044,
+    "works": 1,
+    "people": [
+      "Alexander Meschtscherjakov"
+    ]
+  },
+  {
+    "name": "Georgia Institute of Technology",
+    "city": "Atlanta",
+    "country": "United States",
+    "lat": 33.749,
+    "lon": -84.388,
+    "works": 1,
+    "people": [
+      "Bruce N. Walker",
+      "Thomas M. Gable"
+    ]
+  },
+  {
+    "name": "Honda Research Institute, USA",
+    "city": "San Jose",
+    "country": "United States",
+    "lat": 37.339,
+    "lon": -121.895,
+    "works": 1,
+    "people": [
+      "Kumar Akash"
+    ]
+  },
+  {
+    "name": "Indian Institute of Technology Madras",
+    "city": "Chennai",
+    "country": "India",
+    "lat": 13.088,
+    "lon": 80.278,
+    "works": 1,
+    "people": [
+      "Md Shadab Alam"
+    ]
+  },
+  {
+    "name": "Institució Catalana de Recerca i Estudis Avançats",
+    "city": "Barcelona",
+    "country": "Spain",
+    "lat": 41.389,
+    "lon": 2.159,
+    "works": 1,
+    "people": [
+      "Licia Verde"
+    ]
+  },
+  {
+    "name": "Institut für Höhere Studien - Institute for Advanced Studies (IHS)",
+    "city": "Vienna",
+    "country": "Austria",
+    "lat": 48.208,
+    "lon": 16.372,
+    "works": 1,
+    "people": [
+      "Dagmar Rychnovská"
+    ]
+  },
+  {
+    "name": "Istituto di Scienza e Tecnologie dell'Informazione \"Alessandro Faedo\"",
+    "city": "Pisa",
+    "country": "Italy",
+    "lat": 43.709,
+    "lon": 10.404,
+    "works": 1,
+    "people": [
+      "Valerio Grossi"
+    ]
+  },
+  {
+    "name": "Lafayette College",
+    "city": "Easton",
+    "country": "United States",
+    "lat": 40.688,
+    "lon": -75.221,
+    "works": 1,
+    "people": [
+      "Michael A. Nees"
+    ]
+  },
+  {
+    "name": "Linköping University",
+    "city": "Linköping",
+    "country": "Sweden",
+    "lat": 58.411,
+    "lon": 15.622,
+    "works": 1,
+    "people": [
+      "Philipp Höck"
+    ]
+  },
+  {
+    "name": "Michigan Technological University",
+    "city": "Houghton",
+    "country": "United States",
+    "lat": 47.122,
+    "lon": -88.569,
+    "works": 1,
+    "people": [
+      "Myounghoon Jeon",
+      "Steven J. Landry"
+    ]
+  },
+  {
+    "name": "Netherlands Aerospace Centre",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.374,
+    "lon": 4.89,
+    "works": 1,
+    "people": [
+      "Sebastiaan Martinus Petermeijer",
+      "Shiva Nischal Lingam"
+    ]
+  },
+  {
+    "name": "Netherlands Institute for Neuroscience",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.374,
+    "lon": 4.89,
+    "works": 1,
+    "people": [
+      "Valeria Gazzola"
+    ]
+  },
+  {
+    "name": "New York University",
+    "city": "New York",
+    "country": "United States",
+    "lat": 40.714,
+    "lon": -74.006,
+    "works": 1,
+    "people": [
+      "Ugne Aleksandra Morkute"
+    ]
+  },
+  {
+    "name": "Nissan (Japan)",
+    "city": "Yokohama",
+    "country": "Japan",
+    "lat": 35.46,
+    "lon": 139.619,
+    "works": 1,
+    "people": [
+      "Tsuyoshi Sakuma"
+    ]
+  },
+  {
+    "name": "Pädagogische Hochschule Salzburg",
+    "city": "Salzburg",
+    "country": "Austria",
+    "lat": 47.799,
+    "lon": 13.044,
+    "works": 1,
+    "people": [
+      "Alexander Meschtscherjakov"
+    ]
+  },
+  {
+    "name": "Singapore-ETH Centre",
+    "city": "Singapore",
+    "country": "Singapore",
+    "lat": 1.29,
+    "lon": 103.85,
+    "works": 1,
+    "people": [
+      "Miltos Kyriakidis"
+    ]
+  },
+  {
+    "name": "Stanford University",
+    "city": "Stanford",
+    "country": "United States",
+    "lat": 37.424,
+    "lon": -122.166,
+    "works": 1,
+    "people": [
+      "Hyo Chang Kim",
+      "Hyungchai Park",
+      "Hyunmin Kang"
+    ]
+  },
+  {
+    "name": "Stichting Wetenschappelijk Onderzoek Verkeersveiligheid",
+    "city": "The Hague",
+    "country": "The Netherlands",
+    "lat": 52.077,
+    "lon": 4.299,
+    "works": 1,
+    "people": [
+      "Willem P. Vlakveld"
+    ]
+  },
+  {
+    "name": "Swedish National Road and Transport Research Institute",
+    "city": "Linköping",
+    "country": "Sweden",
+    "lat": 58.411,
+    "lon": 15.622,
+    "works": 1,
+    "people": [
+      "Veronika Petrovych"
+    ]
+  },
+  {
+    "name": "Technische Informationsbibliothek (TIB)",
+    "city": "Hanover",
+    "country": "Germany",
+    "lat": 52.371,
+    "lon": 9.733,
+    "works": 1,
+    "people": [
+      "Markus Stocker"
+    ]
+  },
+  {
+    "name": "UCLouvain",
+    "city": "Louvain-la-Neuve",
+    "country": "Belgium",
+    "lat": 50.668,
+    "lon": 4.614,
+    "works": 1,
+    "people": [
+      "Demoulin, Baptiste"
+    ]
+  },
+  {
+    "name": "University College Dublin",
+    "city": "Dublin",
+    "country": "Ireland",
+    "lat": 53.333,
+    "lon": -6.249,
+    "works": 1,
+    "people": [
+      "Frédéric Dias A"
+    ]
+  },
+  {
+    "name": "University of Bayreuth",
+    "city": "Bayreuth",
+    "country": "Germany",
+    "lat": 49.948,
+    "lon": 11.579,
+    "works": 1,
+    "people": [
+      "Linn Leppert"
+    ]
+  },
+  {
+    "name": "University of Bern",
+    "city": "Bern",
+    "country": "Switzerland",
+    "lat": 46.948,
+    "lon": 7.447,
+    "works": 1,
+    "people": [
+      "Sebastian A. Leidel"
+    ]
+  },
+  {
+    "name": "University of Georgia",
+    "city": "Athens",
+    "country": "United States",
+    "lat": 33.961,
+    "lon": -83.378,
+    "works": 1,
+    "people": [
+      "Fei Dou"
+    ]
+  },
+  {
+    "name": "University of Music and Performing Arts Graz",
+    "city": "Graz",
+    "country": "Austria",
+    "lat": 47.067,
+    "lon": 15.45,
+    "works": 1,
+    "people": [
+      "Alois Sontacchi",
+      "Robert Höldrich"
+    ]
+  },
+  {
+    "name": "University of Oxford",
+    "city": "Oxford",
+    "country": "United Kingdom",
+    "lat": 51.752,
+    "lon": -1.256,
+    "works": 1,
+    "people": [
+      "Ju-Hwan Lee"
+    ]
+  },
+  {
+    "name": "University of Stuttgart",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.782,
+    "lon": 9.177,
+    "works": 1,
+    "people": [
+      "Thirumanikandan Subramanian",
+      "Wolfram Remlinger"
+    ]
+  },
+  {
+    "name": "University of Sussex",
+    "city": "Brighton",
+    "country": "United Kingdom",
+    "lat": 50.828,
+    "lon": -0.139,
+    "works": 1,
+    "people": [
+      "Husam A. Ramadan"
+    ]
+  },
+  {
+    "name": "University of Technology Sydney",
+    "city": "Sydney",
+    "country": "Australia",
+    "lat": -33.868,
+    "lon": 151.207,
+    "works": 1,
+    "people": [
+      "Martin Tomitsch"
+    ]
+  },
+  {
+    "name": "University of Vienna",
+    "city": "Vienna",
+    "country": "Austria",
+    "lat": 48.208,
+    "lon": 16.372,
+    "works": 1,
+    "people": [
+      "Toma Susi"
+    ]
+  },
+  {
+    "name": "University of Warwick",
+    "city": "Coventry",
+    "country": "United Kingdom",
+    "lat": 52.407,
+    "lon": -1.512,
+    "works": 1,
+    "people": [
+      "Soyeon Kim"
+    ]
+  },
+  {
+    "name": "Université Paris-Sud",
+    "city": "Orsay",
+    "country": "France",
+    "lat": 48.696,
+    "lon": 2.187,
+    "works": 1,
+    "people": [
+      "Murat Günes"
+    ]
+  },
+  {
+    "name": "Utrecht University",
+    "city": "Utrecht",
+    "country": "The Netherlands",
+    "lat": 52.091,
+    "lon": 5.122,
+    "works": 1,
+    "people": [
+      "Christian P. Janssen"
+    ]
+  },
+  {
+    "name": "Volvo (Sweden)",
+    "city": "Gothenburg",
+    "country": "Sweden",
+    "lat": 57.707,
+    "lon": 11.967,
+    "works": 1,
+    "people": [
+      "Emma Johansson",
+      "Pontus Larsson"
+    ]
+  },
+  {
+    "name": "École Normale Supérieure - PSL",
+    "city": "Paris",
+    "country": "France",
+    "lat": 48.853,
+    "lon": 2.349,
+    "works": 1,
+    "people": [
+      "Juliette Mangeney"
+    ]
+  }
+]

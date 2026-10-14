@@ -32,10 +32,28 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 
 # Publications
 
-<div markdown="0" class="pub-chart-wrap">
-<svg markdown="0" class="pub-chart" width="{{ chartw }}" height="118" viewBox="0 0 {{ chartw }} 118" role="img" aria-label="Publications per year, peaking at {{ peak }}">
+<div markdown="0" class="pub-charts">
+<div>
+<div class="pub-chart-label">Publications per year</div>
+<div class="pub-chart-wrap">
+<svg class="pub-chart" width="{{ chartw }}" height="118" viewBox="0 0 {{ chartw }} 118" role="img" aria-label="Publications per year, peaking at {{ peak }}">
 {% assign i = 0 %}{% for y in ordered %}{% assign n = site.publications | where: "year", y.year | size %}{% if n > 0 %}{% assign h = n | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#{{ y.year }}"><title>{{ y.year }}: {{ n }} publication{% if n != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ n }}</text><rect class="pub-chart-bar" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">{{ y.year }}</text></a>{% assign i = i | plus: 1 %}{% endif %}{% endfor %}{% if undated > 0 %}{% assign h = undated | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#working-documents"><title>Working documents: {{ undated }} publication{% if undated != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ undated }}</text><rect class="pub-chart-bar pub-chart-wd" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">n/a</text></a>{% endif %}
 </svg>
+</div>
+</div>
+{%- assign cy = site.data.citations_per_year -%}
+{%- assign cpeak = 1 -%}{%- assign ctotal = 0 -%}
+{%- for y in cy -%}{%- if y.count > cpeak -%}{%- assign cpeak = y.count -%}{%- endif -%}{%- assign ctotal = ctotal | plus: y.count -%}{%- endfor -%}
+{%- assign cw = cy | size | times: step -%}
+{%- assign thisyear = 'now' | date: '%Y' | plus: 0 -%}
+<div>
+<div class="pub-chart-label">Citations per year ({{ ctotal }} in total, <a href="https://openalex.org/works?filter=author.orcid:0000-0001-9565-8240" target="_blank">OpenAlex</a>)</div>
+<div class="pub-chart-wrap">
+<svg class="pub-chart" width="{{ cw }}" height="118" viewBox="0 0 {{ cw }} 118" role="img" aria-label="Citations per year, peaking at {{ cpeak }}">
+{% assign i = 0 %}{% for y in cy %}{% assign h = y.count | times: 88 | divided_by: cpeak %}{% assign x = i | times: step %}<g><title>{{ y.year }}{% if y.year == thisyear %} so far{% endif %}: {{ y.count }} citation{% if y.count != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ y.count }}</text><rect class="pub-chart-bar{% if y.year == thisyear %} pub-chart-wd{% endif %}" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">{{ y.year }}</text></g>{% assign i = i | plus: 1 %}{% endfor %}
+</svg>
+</div>
+</div>
 </div>
 
 <div id="pub-filters">

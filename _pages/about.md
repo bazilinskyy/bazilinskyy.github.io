@@ -72,7 +72,7 @@ permalink: /about/
 ## Short biography
 
 <div class="short-bio">
-  Pavlo Bazilinskyy is an assistant professor at TU Eindhoven, focusing on AI-driven interaction between automated vehicles and other road users. He finished his PhD at TU Delft in auditory feedback for automated driving as a Marie Curie Fellow, where he also worked as a postdoc. He was the head of data research at NEXTdriver. Pavlo was the treasurer of the Marie Curie Alumni Association (MCAA) until August 2026 and a director of the Research and Innovation unit of the Erasmus Mundus Association (EMA).
+  Pavlo Bazilinskyy is an assistant professor at TU Eindhoven, focusing on AI-driven interaction between automated vehicles and other road users. He finished his PhD at TU Delft in auditory feedback for automated driving as a Marie Curie Fellow, where he also worked as a postdoc. He was the head of data research at NEXTdriver. Pavlo was the treasurer of the Marie Curie Alumni Association (MCAA) during 2022–2026 and a director of the Research and Innovation unit of the Erasmus Mundus Association (EMA).
 </div>
 
 {% if site.data.awards %}
@@ -98,6 +98,8 @@ permalink: /about/
 {% if site.data.collaborators %}
 ## Collaborations
 <div class="rowl1" style="padding-top: 10px;">
+
+{% include collab-map.html %}
 
 {% for collaborator in site.data.collaborators %}
 {{ forloop.index }}. {% if collaborator.name_url %}<a href="{{ collaborator.name_url }}" target="_blank">{% endif %}<strong>{{ collaborator.name }}</strong>{% if collaborator.name_url %}</a>{% endif %} ({{ collaborator.field }}, {% if collaborator.institution_url %}<a href="{{ collaborator.institution_url }}" target="_blank">{% endif %}{{ collaborator.institution }}{% if collaborator.institution_url %}</a>{% endif %}).

@@ -692,6 +692,20 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
     padding-bottom: 4px;
 }
 
+/* publications and citations per year side by side, wrapping on narrow screens */
+.pub-charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2em;
+}
+
+.pub-charts > div { min-width: 0; max-width: 100%; }
+
+.pub-chart-label {
+    font-size: 11px;
+    color: var(--filter-label);
+}
+
 .pub-chart {
     display: block;
     height: 118px;
@@ -1053,3 +1067,32 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 
 [data-theme="light"] #label-dark  { opacity: 1; visibility: visible; }
 [data-theme="light"] #label-light { opacity: 0; visibility: hidden; }
+
+/* Open-source cards on the research page (_data/repos.json, refreshed nightly) */
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin: 8px 0 11px;
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 10px;
+    background: var(--well-sm-bg);
+    border: 1px solid var(--well-sm-border);
+    border-radius: 5px;
+    color: var(--body-text);
+    text-decoration: none;
+}
+
+.repo-card:hover,
+.repo-card:focus { border-color: var(--filter-hover-border); color: var(--body-text); text-decoration: none; }
+
+.repo-name { color: var(--link-color); font-weight: 600; }
+
+.repo-desc { font-size: 90%; flex: 1; }
+
+.repo-meta { font-size: 80%; color: var(--filter-label); }

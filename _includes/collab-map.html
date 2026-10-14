@@ -1,0 +1,53 @@
+<style>
+#collab-map { --sea:#dfeaf6; --land:#f8fafc; --border:#cbd5e1; --dot:#2563eb; --home:#e11d48; --arc:rgba(37,99,235,.28);
+  margin: 4px 0 12px; position: relative }
+[data-theme="dark"] #collab-map { --sea:#0d1a2b; --land:#1f2a3a; --border:#2f3e55; --dot:#5b8def; --home:#fb3b63; --arc:rgba(91,141,239,.3) }
+#collab-map svg { display:block; width:100%; height:auto; border-radius:5px }
+#collab-map circle { cursor:default }
+#collab-map-note { font-size:90%; text-align:center; margin-top:4px }
+</style>
+<div id="collab-map" markdown="0">
+  <svg viewBox="0 0 960 470" role="img" aria-label="Map of the institutions of my co-authors"></svg>
+  <div id="collab-map-note"></div>
+</div>
+<script>
+(function () {
+  const data = {{ site.data.coauthor_institutions | jsonify }};
+  const HOME = [5.49, 51.45];  // TU Eindhoven
+  const box = document.getElementById('collab-map'), svg = box.querySelector('svg'), NS = 'http://www.w3.org/2000/svg';
+  const el = (name, attrs, parent) => {
+    const e = document.createElementNS(NS, name);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    return parent.appendChild(e);
+  };
+  const countries = new Set(data.map(d => d.country)).size;
+  document.getElementById('collab-map-note').textContent =
+    `Institutions of my co-authors: ${data.length} in ${countries} countries, sized by joint publications (OpenAlex, updated every night).`;
+
+  const script = src => new Promise((ok, fail) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
+  async function draw() {
+    if (!window.d3) await script('https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js');
+    if (!window.topojson) await script('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js');
+    const w = await (await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json')).json();
+    const proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [954, 464]], {type: 'Sphere'}), path = d3.geoPath(proj);
+    el('path', {d: path({type: 'Sphere'}), fill: 'var(--sea)'}, svg);
+    el('path', {d: path(topojson.feature(w, w.objects.land)), fill: 'var(--land)'}, svg);
+    el('path', {d: path(topojson.mesh(w, w.objects.countries, (a, b) => a !== b)), fill: 'none', stroke: 'var(--border)', 'stroke-width': 0.5}, svg);
+    for (const d of data)  // great-circle arcs from Eindhoven
+      el('path', {d: path({type: 'LineString', coordinates: [HOME, [d.lon, d.lat]]}), fill: 'none', stroke: 'var(--arc)', 'stroke-width': 1}, svg);
+    for (const d of data.slice().reverse()) {  // most joint works last, so on top
+      const [x, y] = proj([d.lon, d.lat]);
+      const c = el('circle', {cx: x, cy: y, r: 2.5 + 2 * Math.sqrt(d.works), fill: 'var(--dot)', 'fill-opacity': 0.75, stroke: 'var(--land)', 'stroke-width': 0.8}, svg);
+      const names = d.people.length > 6 ? d.people.slice(0, 6).join(', ') + ` and ${d.people.length - 6} more` : d.people.join(', ');
+      el('title', {}, c).textContent = `${d.name} (${d.city}, ${d.country})\n${d.works} joint publication${d.works > 1 ? 's' : ''}: ${names}`;
+    }
+    const [hx, hy] = proj(HOME);
+    el('title', {}, el('circle', {cx: hx, cy: hy, r: 4, fill: 'var(--home)', stroke: 'var(--land)', 'stroke-width': 1}, svg)).textContent = 'TU Eindhoven';
+  }
+
+  let started = false;  // the libraries and the map load only once it scrolls into view
+  new IntersectionObserver(([en], obs) => {
+    if (en.isIntersecting && !started) { started = true; obs.disconnect(); draw().catch(e => console.error('collaboration map:', e)); }
+  }).observe(box);
+})();
+</script>
