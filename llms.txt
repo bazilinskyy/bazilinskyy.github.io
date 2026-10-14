@@ -1,0 +1,24 @@
+---
+layout: null
+sitemap: false
+permalink: /llms.txt
+---
+# Dr. Pavlo Bazilinskyy
+
+> Assistant professor in the Computational Design Systems cluster, Department of Industrial Design, Eindhoven University of Technology (TU/e), the Netherlands. Works on AI-driven interaction between automated vehicles, their occupants and other road users (pedestrians, cyclists): external human-machine interfaces (eHMI), crowdsourced and YouTube-based studies of traffic behaviour, driving simulators, virtual reality and auditory interfaces for automated driving. PhD in human factors of automated driving (TU Delft, 2018).
+
+Contact: {{ site.author.email }}. ORCID: 0000-0001-9565-8240.
+
+## Pages
+
+{% assign names = "about,research,p,talks,education,team,cv" | split: "," %}{% for name in names %}{% assign link = "/" | append: name | append: "/" %}{% assign pg = site.pages | where: "permalink", link | first %}{% if pg %}- [{{ pg.title }}]({{ pg.url | absolute_url }}): {{ pg.description }}
+{% endif %}{% endfor %}- [CV (PDF)]({{ "/cv/CV-PavloBazilinskyy.pdf" | absolute_url }})
+
+## Profiles
+
+{% for link in site.social.links %}- {{ link }}
+{% endfor %}
+## Publications
+
+{% assign pubs = site.publications | sort: "year", "last" | reverse %}{% for pub in pubs %}- [{{ pub.title }}]({{ pub.url | absolute_url }}){% if pub.year %} ({{ pub.year }}){% endif %}. {{ pub.authors | remove: "*" }} {{ pub.display }}{% if pub.doi %} https://doi.org/{{ pub.doi }}{% endif %}
+{% endfor %}

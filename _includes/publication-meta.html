@@ -1,0 +1,29 @@
+{% comment %}Google Scholar (Highwire Press) tags and schema.org ScholarlyArticle for a publication page.
+authors: is "Last, I., Last, I." with * marking equal contribution, so names come in pairs.{% endcomment %}
+{% assign parts = page.authors | remove: '*' | split: ', ' %}
+{% assign last_idx = parts.size | minus: 1 %}
+<meta name="citation_title" content="{{ page.title | escape }}">
+{% for i in (0..last_idx) %}{% assign odd = i | modulo: 2 %}{% if odd == 0 %}{% assign j = i | plus: 1 %}<meta name="citation_author" content="{{ parts[i] | strip | escape }}{% if parts[j] %}, {{ parts[j] | strip | escape }}{% endif %}">
+{% endif %}{% endfor %}
+{% if page.year %}<meta name="citation_publication_date" content="{{ page.year }}">{% endif %}
+{% if page.tags contains 'journal' %}<meta name="citation_journal_title" content="{{ page.display | escape }}">{% elsif page.tags contains 'conference' %}<meta name="citation_conference_title" content="{{ page.display | escape }}">{% endif %}
+{% if page.doi %}<meta name="citation_doi" content="{{ page.doi }}">{% endif %}
+{% if page.pdf %}<meta name="citation_pdf_url" content="{{ site.url }}/p/{{ page.pdf }}.pdf">{% endif %}
+<meta name="citation_abstract_html_url" content="{{ page.url | absolute_url }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ page.title | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "author": [{% for i in (0..last_idx) %}{% assign odd = i | modulo: 2 %}{% if odd == 0 %}{% assign j = i | plus: 1 %}{% assign name = parts[j] | append: ' ' | append: parts[i] | strip %}{% unless i == 0 %}, {% endunless %}{"@type": "Person", "name": {{ name | jsonify }}{% if parts[i] == 'Bazilinskyy' %}, "url": {{ site.url | append: '/' | jsonify }}, "sameAs": {{ site.social.links | jsonify }}{% endif %}}{% endif %}{% endfor %}],
+  {% if page.year %}"datePublished": "{{ page.year }}",{% endif %}
+  {% if page.display %}"isPartOf": {{ page.display | jsonify }},{% endif %}
+  {% if page.abstract %}"abstract": {{ page.abstract | strip_html | jsonify }},{% endif %}
+  {% if page_img %}"image": {{ page_img | jsonify }},{% endif %}
+  {% if page.doi %}"sameAs": "https://doi.org/{{ page.doi }}",{% endif %}
+  {% if page.pdf %}"encoding": {"@type": "MediaObject", "contentUrl": "{{ site.url }}/p/{{ page.pdf }}.pdf", "encodingFormat": "application/pdf"},{% endif %}
+  "keywords": {{ page.tags | jsonify }}
+}
+</script>

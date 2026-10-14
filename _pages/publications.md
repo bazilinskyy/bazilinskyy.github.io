@@ -144,7 +144,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/p/{{ publi.image }}" alt="" class="img-responsive"/>
+<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">
@@ -216,7 +216,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/p/{{ publi.image }}" alt="" class="img-responsive"/>
+<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">

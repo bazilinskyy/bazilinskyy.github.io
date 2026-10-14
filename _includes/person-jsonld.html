@@ -1,0 +1,38 @@
+{% comment %}schema.org ProfilePage for the home page: who the site is about, for search engines and AI assistants{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": {{ site.url | append: '/' | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ site.url | append: '/#person' | jsonify }},
+    "name": {{ site.author.name | jsonify }},
+    "honorificPrefix": "Dr.",
+    "url": {{ site.url | append: '/' | jsonify }},
+    "image": {{ site.image | absolute_url | jsonify }},
+    "email": "mailto:{{ site.author.email }}",
+    "description": {{ page.description | jsonify }},
+    "jobTitle": "Assistant Professor",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Eindhoven University of Technology",
+      "alternateName": "TU/e",
+      "url": "https://www.tue.nl",
+      "department": {"@type": "Organization", "name": "Department of Industrial Design, Computational Design Systems"}
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Delft University of Technology", "url": "https://www.tudelft.nl"},
+      {"@type": "CollegeOrUniversity", "name": "University of St Andrews", "url": "https://www.st-andrews.ac.uk"},
+      {"@type": "CollegeOrUniversity", "name": "Maynooth University", "url": "https://www.maynoothuniversity.ie"},
+      {"@type": "CollegeOrUniversity", "name": "Mikkeli University of Applied Sciences", "url": "https://www.xamk.fi"}
+    ],
+    "knowsAbout": [
+      "automated driving", "human factors", "human-machine interaction", "external human-machine interfaces (eHMI)",
+      "pedestrian and cyclist behaviour", "crowdsourcing", "driving simulators", "virtual reality",
+      "auditory displays", "computer vision", "artificial intelligence", "open science"
+    ],
+    "sameAs": {{ site.social.links | jsonify }}
+  }
+}
+</script>

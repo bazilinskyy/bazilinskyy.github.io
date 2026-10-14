@@ -5,11 +5,30 @@
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   {% comment %}title=false keeps the site's own "Page - Site" format; seo adds description,
   canonical, Open Graph, Twitter cards and schema.org JSON-LD{% endcomment %}
-  {% seo title=false %}
+  {% capture seo_tags %}{% seo title=false %}{% endcapture %}
+  {% comment %}collection images sit next to their page (/p/x.jpg, /workshops/x.jpg) but seo
+  resolves them against the site root{% endcomment %}
+  {% if page.collection and page.image %}{% unless page.image contains '/' %}
+    {% if page.collection == 'publications' %}{% assign img_dir = '/p/' %}{% else %}{% assign img_dir = '/' | append: page.collection | append: '/' %}{% endif %}
+    {% assign img_wrong = site.url | append: '/' | append: page.image %}
+    {% assign page_img = site.url | append: img_dir | append: page.image %}
+    {% assign seo_tags = seo_tags | replace: img_wrong, page_img %}
+  {% endunless %}{% endif %}
+  {% comment %}publications and the home page get their own JSON-LD (ScholarlyArticle, Person)
+  instead of seo's BlogPosting/WebSite; publications also drop the build time posing as
+  publication date{% endcomment %}
+  {% if page.collection == 'publications' or page.url == '/' %}
+    {% assign build_date = page.date | date_to_xmlschema %}
+    {% assign date_tag = '<meta property="article:published_time" content="' | append: build_date | append: '" />' %}
+    {{ seo_tags | split: '<script type="application/ld+json">' | first | remove: date_tag }}
+    {% if page.collection == 'publications' %}{% include publication-meta.html %}{% else %}{% include person-jsonld.html %}{% endif %}
+  {% else %}
+    {{ seo_tags }}
+  {% endif %}
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url}}">
 <link rel="shortcut icon" type ="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
