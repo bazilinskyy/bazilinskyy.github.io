@@ -27,10 +27,6 @@ NAMES = {
     'Angel Hsing‐Chi Hwang': 'Angel Hsing-Chi Hwang',
     'Md Shadab Alam': 'Shadab Alam',
 }
-# co-authors OpenAlex also puts at institutions they were not at for our papers -> their one institution
-PLACE = {
-    'Shadab Alam': 'Eindhoven University of Technology',
-}
 
 
 def get(path, **params):
@@ -114,6 +110,17 @@ def link(name, orcid, author, manual):
     return author
 
 
+def primary(authorship):
+    """Where a co-author was for a paper: the first affiliation they listed on it (people with two list
+    their main one first), so a second affiliation does not put them on the map twice."""
+    by_id = {i['id']: i for i in authorship['institutions']}
+    for aff in authorship.get('affiliations') or []:
+        for iid in aff['institution_ids']:
+            if iid in by_id:
+                return [by_id[iid]]
+    return authorship['institutions'][:1]
+
+
 def collaborators(works, url=None):
     """[{name, city, country, lat, lon, works, people: [{name, url}]}] of my co-authors' institutions, most joint
     works first. url(name, orcid, openalex author) gives the link of a person (link() with manual_urls() by default)."""
@@ -128,9 +135,7 @@ def collaborators(works, url=None):
             name = NAMES.get(a['author']['display_name'], a['author']['display_name'])
             if not who.get(name, (None,))[0]:  # of the spellings of one person, the one with an ORCID
                 who[name] = (a['author'].get('orcid'), a['author'].get('id'))
-            for inst in a['institutions']:
-                if PLACE.get(name, inst['display_name']) != inst['display_name']:
-                    continue
+            for inst in primary(a):
                 joint[inst['id']].add(work['id'])
                 people[inst['id']].add(name)
                 names[inst['id']] = inst['display_name']
@@ -157,18 +162,19 @@ def _check():
     assert best_url([('LinkedIn', 'l'), ('Delft University of Technology profile page', 's')]) == 's' and best_url([]) is None
     me, other = {'orcid': f'https://orcid.org/{ORCID}', 'display_name': 'Me'}, {'orcid': None, 'display_name': 'Ann'}
     other2 = {'orcid': None, 'display_name': 'M.H. Martens'}  # two spellings of one person count once
-    shadab = {'orcid': None, 'display_name': 'Md Shadab Alam'}  # only at the institution in PLACE
+    shadab = {'orcid': None, 'display_name': 'Md Shadab Alam'}  # two affiliations: only the first counts
     inst = [{'id': 'I1', 'display_name': 'Uni'}]
     works = [{'id': 'W1',
               'authorships': [{'author': me, 'institutions': inst}, {'author': other, 'institutions': inst},
                               {'author': other2, 'institutions': inst}, {'author': dict(other2, display_name='Marieke Martens'), 'institutions': inst},
-                              {'author': shadab, 'institutions': [{'id': 'I3', 'display_name': 'Elsewhere'}]}]},
+                              {'author': shadab, 'institutions': [{'id': 'I3', 'display_name': 'Elsewhere'}, inst[0]],
+                               'affiliations': [{'institution_ids': ['I1']}, {'institution_ids': ['I3']}]}]},
              {'id': 'W2',
               'authorships': [{'author': me, 'institutions': [{'id': 'I2', 'display_name': 'Mine'}]}]}]
     global get
     real, get = get, lambda path, **p: {'results': [{'id': 'I1', 'geo': {'city': 'C', 'country': 'X', 'latitude': 1.0, 'longitude': 2.0}}]}
     try:  # only the co-author's institution counts, not mine
-        people = [dict(name='Ann', url='u:Ann'), dict(name='Marieke H. Martens', url='u:Marieke H. Martens')]
+        people = [dict(name='Ann', url='u:Ann'), dict(name='Marieke H. Martens', url='u:Marieke H. Martens'), dict(name='Shadab Alam', url='u:Shadab Alam')]
         assert collaborators(works, url=lambda n, o, a: f'u:{n}') == [dict(name='Uni', city='C', country='X', lat=1.0, lon=2.0, works=1, people=people)]
     finally:
         get = real

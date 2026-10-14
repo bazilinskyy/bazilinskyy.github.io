@@ -223,7 +223,7 @@
     "country": "The Netherlands",
     "lat": 51.441,
     "lon": 5.478,
-    "works": 27,
+    "works": 25,
     "people": [
       {
         "name": "Christian P. Janssen",
@@ -305,7 +305,7 @@
     "country": "The Netherlands",
     "lat": 52.007,
     "lon": 4.356,
-    "works": 8,
+    "works": 6,
     "people": [
       {
         "name": "Marieke H. Martens",
@@ -380,36 +380,6 @@
       {
         "name": "Margarida Fortes-Ferreira",
         "url": "http://linkedin.com/in/margaridaff"
-      }
-    ]
-  },
-  {
-    "name": "Leipzig University",
-    "city": "Leipzig",
-    "country": "Germany",
-    "lat": 51.34,
-    "lon": 12.371,
-    "works": 5,
-    "people": [
-      {
-        "name": "Celine Conzen",
-        "url": "https://orcid.org/0009-0004-2835-9848"
-      },
-      {
-        "name": "Martin Lorenz",
-        "url": "https://orcid.org/0009-0003-3517-5839"
-      },
-      {
-        "name": "Michał Patryk Miazga",
-        "url": "https://orcid.org/0009-0003-5579-3036"
-      },
-      {
-        "name": "Patrick Ebel",
-        "url": "https://ciao-group.github.io/"
-      },
-      {
-        "name": "Timur Getselev",
-        "url": "https://orcid.org/0009-0001-2116-6590"
       }
     ]
   },
@@ -662,38 +632,6 @@
     ]
   },
   {
-    "name": "University of Applied Sciences Upper Austria",
-    "city": "Wels",
-    "country": "Austria",
-    "lat": 48.167,
-    "lon": 14.033,
-    "works": 2,
-    "people": [
-      {
-        "name": "Philipp Wintersberger",
-        "url": "https://orcid.org/0000-0001-9287-3770"
-      }
-    ]
-  },
-  {
-    "name": "University of Gothenburg",
-    "city": "Gothenburg",
-    "country": "Sweden",
-    "lat": 57.707,
-    "lon": 11.967,
-    "works": 2,
-    "people": [
-      {
-        "name": "Mohammad Obaid",
-        "url": "https://orcid.org/0000-0003-2351-0604"
-      },
-      {
-        "name": "Sara Ljungblad",
-        "url": "https://orcid.org/0000-0002-2751-9801"
-      }
-    ]
-  },
-  {
     "name": "University of Ljubljana",
     "city": "Ljubljana",
     "country": "Slovenia",
@@ -836,34 +774,6 @@
     ]
   },
   {
-    "name": "ETH Zurich",
-    "city": "Zurich",
-    "country": "Switzerland",
-    "lat": 47.367,
-    "lon": 8.55,
-    "works": 1,
-    "people": [
-      {
-        "name": "Miltos Kyriakidis",
-        "url": "https://orcid.org/0000-0002-0597-0634"
-      }
-    ]
-  },
-  {
-    "name": "Fachhochschule Salzburg",
-    "city": "Salzburg",
-    "country": "Austria",
-    "lat": 47.799,
-    "lon": 13.044,
-    "works": 1,
-    "people": [
-      {
-        "name": "Alexander Meschtscherjakov",
-        "url": "https://meschtscherjakov.wordpress.com/"
-      }
-    ]
-  },
-  {
     "name": "Georgia Institute of Technology",
     "city": "Atlanta",
     "country": "United States",
@@ -948,6 +858,20 @@
       {
         "name": "Michael A. Nees",
         "url": "https://orcid.org/0000-0003-2313-2295"
+      }
+    ]
+  },
+  {
+    "name": "Leipzig University",
+    "city": "Leipzig",
+    "country": "Germany",
+    "lat": 51.34,
+    "lon": 12.371,
+    "works": 1,
+    "people": [
+      {
+        "name": "Timur Getselev",
+        "url": "https://orcid.org/0009-0001-2116-6590"
       }
     ]
   },
@@ -1044,34 +968,6 @@
     ]
   },
   {
-    "name": "Pädagogische Hochschule Salzburg",
-    "city": "Salzburg",
-    "country": "Austria",
-    "lat": 47.799,
-    "lon": 13.044,
-    "works": 1,
-    "people": [
-      {
-        "name": "Alexander Meschtscherjakov",
-        "url": "https://meschtscherjakov.wordpress.com/"
-      }
-    ]
-  },
-  {
-    "name": "Singapore-ETH Centre",
-    "city": "Singapore",
-    "country": "Singapore",
-    "lat": 1.29,
-    "lon": 103.85,
-    "works": 1,
-    "people": [
-      {
-        "name": "Miltos Kyriakidis",
-        "url": "https://orcid.org/0000-0002-0597-0634"
-      }
-    ]
-  },
-  {
     "name": "Stanford University",
     "city": "Stanford",
     "country": "United States",
@@ -1160,6 +1056,20 @@
       {
         "name": "Frédéric Dias A",
         "url": "https://orcid.org/0000-0002-5123-4929"
+      }
+    ]
+  },
+  {
+    "name": "University of Applied Sciences Upper Austria",
+    "city": "Wels",
+    "country": "Austria",
+    "lat": 48.167,
+    "lon": 14.033,
+    "works": 1,
+    "people": [
+      {
+        "name": "Philipp Wintersberger",
+        "url": "https://orcid.org/0000-0001-9287-3770"
       }
     ]
   },
