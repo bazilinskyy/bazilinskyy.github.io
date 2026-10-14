@@ -7,58 +7,214 @@
     "lon": 4.356,
     "works": 40,
     "people": [
-      "Amir Al Jawahiri",
-      "Anirudh Sripada",
-      "Bart Numan",
-      "Belle C. Hopmans",
-      "C.L.A. de Koning",
-      "Charles Beaumont",
-      "Chun Sang Mok",
-      "Coen Berssenbrugge",
-      "Dale Wesdorp",
-      "Dariu M. Gavrila",
-      "Dimitra Dodou",
-      "Elif Özcan",
-      "F.C. van den Ouden",
-      "Georgios Papaioannou",
-      "H. Lingmont",
-      "Hashim A. Quraishi",
-      "Jasper Binda",
-      "Jim Hoogmoed",
-      "Joost de Winter",
-      "Joppe Mulckhuyse",
-      "Joris Pijnacker",
-      "Jork Stapel",
-      "Just Visscher",
-      "Kexin Liang",
-      "Kirsten Mallant",
-      "Koen van der Kroft",
-      "Lars Kooijman",
-      "Lars van der Geest",
-      "Lucas Overbeek",
-      "Marloes Middelweerd",
-      "Max Oudshoorn",
-      "Miltos Kyriakidis",
-      "N. Kovácsová",
-      "Pieter Kapel",
-      "Reinier de Jonge",
-      "René van Egmond",
-      "Riender Happee",
-      "Roberto Merino-Martínez",
-      "Sebastiaan Martinus Petermeijer",
-      "Sjors Wagenaar",
-      "Soyeon Kim",
-      "Stefan van Leeuwen",
-      "T.C. van der Sijs",
-      "T.S. de Lint",
-      "Tom Driessen",
-      "Valerie de Vlam",
-      "Victor Roosens",
-      "Vishal Onkhar",
-      "Wessel van Haarlem",
-      "Xander van der Geest",
-      "Yke Bauke Eisma",
-      "Ömer Can Akgun"
+      {
+        "name": "Amir Al Jawahiri",
+        "url": "https://openalex.org/A5061452169"
+      },
+      {
+        "name": "Anirudh Sripada",
+        "url": "https://openalex.org/A5043396239"
+      },
+      {
+        "name": "Bart Numan",
+        "url": "https://openalex.org/A5000195189"
+      },
+      {
+        "name": "Belle C. Hopmans",
+        "url": "https://orcid.org/0000-0002-5069-2696"
+      },
+      {
+        "name": "C.L.A. de Koning",
+        "url": "https://openalex.org/A5038668888"
+      },
+      {
+        "name": "Charles Beaumont",
+        "url": null
+      },
+      {
+        "name": "Chun Sang Mok",
+        "url": "https://orcid.org/0000-0001-8179-871X"
+      },
+      {
+        "name": "Coen Berssenbrugge",
+        "url": "https://openalex.org/A5076529334"
+      },
+      {
+        "name": "Dale Wesdorp",
+        "url": "https://orcid.org/0000-0002-3089-4127"
+      },
+      {
+        "name": "Dariu M. Gavrila",
+        "url": "https://orcid.org/0000-0002-1810-4196"
+      },
+      {
+        "name": "Dimitra Dodou",
+        "url": "https://sites.google.com/site/dimdodou"
+      },
+      {
+        "name": "Elif Özcan",
+        "url": "http://www.delftdesignlabs.org/criticalalarmslab"
+      },
+      {
+        "name": "F.C. van den Ouden",
+        "url": "https://openalex.org/A5088529131"
+      },
+      {
+        "name": "Georgios Papaioannou",
+        "url": "https://orcid.org/0000-0002-5233-637X"
+      },
+      {
+        "name": "H. Lingmont",
+        "url": "https://openalex.org/A5016493716"
+      },
+      {
+        "name": "Hashim A. Quraishi",
+        "url": "https://openalex.org/A5030559092"
+      },
+      {
+        "name": "Jasper Binda",
+        "url": "https://openalex.org/A5073964776"
+      },
+      {
+        "name": "Jim Hoogmoed",
+        "url": "https://openalex.org/A5048186643"
+      },
+      {
+        "name": "Joost de Winter",
+        "url": "https://sites.google.com/site/jcfdewinter"
+      },
+      {
+        "name": "Joppe Mulckhuyse",
+        "url": "https://openalex.org/A5066128403"
+      },
+      {
+        "name": "Joris Pijnacker",
+        "url": "https://openalex.org/A5030696154"
+      },
+      {
+        "name": "Jork Stapel",
+        "url": "https://orcid.org/0000-0002-8445-1014"
+      },
+      {
+        "name": "Just Visscher",
+        "url": "https://orcid.org/0000-0002-9086-2274"
+      },
+      {
+        "name": "Kexin Liang",
+        "url": "https://orcid.org/0000-0002-8417-3974"
+      },
+      {
+        "name": "Kirsten Mallant",
+        "url": "https://openalex.org/A5020449584"
+      },
+      {
+        "name": "Koen van der Kroft",
+        "url": "https://openalex.org/A5089238321"
+      },
+      {
+        "name": "Lars Kooijman",
+        "url": "https://scholar.google.com/citations?user=3x7s_F8AAAAJ"
+      },
+      {
+        "name": "Lars van der Geest",
+        "url": "https://openalex.org/A5001162330"
+      },
+      {
+        "name": "Lucas Overbeek",
+        "url": "https://openalex.org/A5020219842"
+      },
+      {
+        "name": "Marloes Middelweerd",
+        "url": "https://openalex.org/A5061964598"
+      },
+      {
+        "name": "Max Oudshoorn",
+        "url": "https://openalex.org/A5014130490"
+      },
+      {
+        "name": "Miltos Kyriakidis",
+        "url": "https://orcid.org/0000-0002-0597-0634"
+      },
+      {
+        "name": "N. Kovácsová",
+        "url": "https://orcid.org/0000-0001-6948-817X"
+      },
+      {
+        "name": "Pieter Kapel",
+        "url": "https://openalex.org/A5010004275"
+      },
+      {
+        "name": "Reinier de Jonge",
+        "url": "https://openalex.org/A5014733140"
+      },
+      {
+        "name": "René van Egmond",
+        "url": "https://research.tudelft.nl/en/persons/9d5e3ca1-4258-4d65-a347-47c1f2bf02e2"
+      },
+      {
+        "name": "Riender Happee",
+        "url": "https://www.tudelft.nl/citg/over-faculteit/afdelingen/transport-planning/staff/persoonlijke-paginas/happee-r"
+      },
+      {
+        "name": "Roberto Merino-Martínez",
+        "url": "https://orcid.org/0000-0003-2261-9595"
+      },
+      {
+        "name": "Sebastiaan Martinus Petermeijer",
+        "url": "https://orcid.org/0000-0002-8961-2884"
+      },
+      {
+        "name": "Sjors Wagenaar",
+        "url": "https://openalex.org/A5001101500"
+      },
+      {
+        "name": "Soyeon Kim",
+        "url": "https://orcid.org/0000-0002-7028-6978"
+      },
+      {
+        "name": "Stefan van Leeuwen",
+        "url": "https://openalex.org/A5107869870"
+      },
+      {
+        "name": "T.C. van der Sijs",
+        "url": "https://openalex.org/A5028067239"
+      },
+      {
+        "name": "T.S. de Lint",
+        "url": "https://openalex.org/A5025256361"
+      },
+      {
+        "name": "Tom Driessen",
+        "url": "https://orcid.org/0000-0003-1053-6020"
+      },
+      {
+        "name": "Valerie de Vlam",
+        "url": "https://openalex.org/A5077297062"
+      },
+      {
+        "name": "Victor Roosens",
+        "url": "https://openalex.org/A5007586116"
+      },
+      {
+        "name": "Vishal Onkhar",
+        "url": "https://www.tudelft.nl/en/staff/v.onkhar/"
+      },
+      {
+        "name": "Wessel van Haarlem",
+        "url": "https://openalex.org/A5002911334"
+      },
+      {
+        "name": "Xander van der Geest",
+        "url": "https://openalex.org/A5051390033"
+      },
+      {
+        "name": "Yke Bauke Eisma",
+        "url": "https://orcid.org/0000-0003-3437-2761"
+      },
+      {
+        "name": "Ömer Can Akgun",
+        "url": "https://ocakgun.com"
+      }
     ]
   },
   {
@@ -69,24 +225,78 @@
     "lon": 5.478,
     "works": 27,
     "people": [
-      "Christian P. Janssen",
-      "Debargha Dey",
-      "Erik D. van der Spek",
-      "Giovanni Sapienza",
-      "Haoyu Dong",
-      "Haoyu Liu",
-      "Jakub Woziwodzki",
-      "Linghan Zhang",
-      "Marieke H. Martens",
-      "Md Shadab Alam",
-      "Mervyn Franssen",
-      "Miguel Bruns",
-      "Ruolin Gao",
-      "Rutger Verstegen",
-      "Shiva Nischal Lingam",
-      "Wessel Verstelle",
-      "Y. Wang",
-      "Ying Fang"
+      {
+        "name": "Christian P. Janssen",
+        "url": "http://www.cpjanssen.nl"
+      },
+      {
+        "name": "Debargha Dey",
+        "url": "https://research.tue.nl/en/persons/debargha-dave-dey"
+      },
+      {
+        "name": "Erik D. van der Spek",
+        "url": "https://research.tue.nl/en/persons/a0b07537-e49d-41c0-bc2f-407b31986892"
+      },
+      {
+        "name": "Giovanni Sapienza",
+        "url": "https://orcid.org/0009-0005-0958-836X"
+      },
+      {
+        "name": "Haoyu Dong",
+        "url": "http://www.haoyud.com"
+      },
+      {
+        "name": "Haoyu Liu",
+        "url": "https://orcid.org/0009-0007-9054-3760"
+      },
+      {
+        "name": "Jakub Woziwodzki",
+        "url": "https://orcid.org/0009-0006-2013-5481"
+      },
+      {
+        "name": "Linghan Zhang",
+        "url": "https://research.tue.nl/en/persons/c4616b4d-7ad5-47c1-b6b1-598906c93f9e"
+      },
+      {
+        "name": "Marieke H. Martens",
+        "url": "https://research.tue.nl/en/persons/marieke-h-martens"
+      },
+      {
+        "name": "Md Shadab Alam",
+        "url": "https://research.tue.nl/en/persons/aae77095-d6fa-464d-9857-437c20ae4590"
+      },
+      {
+        "name": "Mervyn Franssen",
+        "url": "https://research.tue.nl/en/persons/31fd01df-21fd-4cdc-b4bd-2699fc303349"
+      },
+      {
+        "name": "Miguel Bruns",
+        "url": "https://orcid.org/0000-0002-9172-0323"
+      },
+      {
+        "name": "Ruolin Gao",
+        "url": "https://orcid.org/0009-0003-8898-5093"
+      },
+      {
+        "name": "Rutger Verstegen",
+        "url": "https://research.tue.nl/en/persons/9b54c959-7402-41e4-8b1d-c28d165b82c4"
+      },
+      {
+        "name": "Shiva Nischal Lingam",
+        "url": "https://orcid.org/0000-0002-9173-3642"
+      },
+      {
+        "name": "Wessel Verstelle",
+        "url": "https://orcid.org/0009-0003-8411-600X"
+      },
+      {
+        "name": "Y. Wang",
+        "url": "https://orcid.org/0000-0002-9408-2267"
+      },
+      {
+        "name": "Ying Fang",
+        "url": "https://orcid.org/0000-0001-6266-1021"
+      }
     ]
   },
   {
@@ -97,7 +307,10 @@
     "lon": 4.356,
     "works": 8,
     "people": [
-      "Marieke H. Martens"
+      {
+        "name": "Marieke H. Martens",
+        "url": "https://research.tue.nl/en/persons/marieke-h-martens"
+      }
     ]
   },
   {
@@ -108,10 +321,22 @@
     "lon": 13.738,
     "works": 5,
     "people": [
-      "Celine Conzen",
-      "Martin Lorenz",
-      "Michał Patryk Miazga",
-      "Patrick Ebel"
+      {
+        "name": "Celine Conzen",
+        "url": "https://orcid.org/0009-0004-2835-9848"
+      },
+      {
+        "name": "Martin Lorenz",
+        "url": "https://orcid.org/0009-0003-3517-5839"
+      },
+      {
+        "name": "Michał Patryk Miazga",
+        "url": "https://orcid.org/0009-0003-5579-3036"
+      },
+      {
+        "name": "Patrick Ebel",
+        "url": "https://ciao-group.github.io/"
+      }
     ]
   },
   {
@@ -122,8 +347,14 @@
     "lon": -74.006,
     "works": 5,
     "people": [
-      "Debargha Dey",
-      "Wendy G. Ju"
+      {
+        "name": "Debargha Dey",
+        "url": "https://research.tue.nl/en/persons/debargha-dave-dey"
+      },
+      {
+        "name": "Wendy G. Ju",
+        "url": "https://wendyju.com"
+      }
     ]
   },
   {
@@ -134,10 +365,22 @@
     "lon": 4.493,
     "works": 5,
     "people": [
-      "Francesco Walker",
-      "Gareth O'Neill",
-      "Jom Dieben",
-      "Margarida Fortes-Ferreira"
+      {
+        "name": "Francesco Walker",
+        "url": "https://www.universiteitleiden.nl/en/staffmembers/francesco-walker"
+      },
+      {
+        "name": "Gareth O'Neill",
+        "url": "https://openalex.org/A5113971832"
+      },
+      {
+        "name": "Jom Dieben",
+        "url": "https://openalex.org/A5150158518"
+      },
+      {
+        "name": "Margarida Fortes-Ferreira",
+        "url": "http://linkedin.com/in/margaridaff"
+      }
     ]
   },
   {
@@ -148,11 +391,26 @@
     "lon": 12.371,
     "works": 5,
     "people": [
-      "Celine Conzen",
-      "Martin Lorenz",
-      "Michał Patryk Miazga",
-      "Patrick Ebel",
-      "Timur Getselev"
+      {
+        "name": "Celine Conzen",
+        "url": "https://orcid.org/0009-0004-2835-9848"
+      },
+      {
+        "name": "Martin Lorenz",
+        "url": "https://orcid.org/0009-0003-3517-5839"
+      },
+      {
+        "name": "Michał Patryk Miazga",
+        "url": "https://orcid.org/0009-0003-5579-3036"
+      },
+      {
+        "name": "Patrick Ebel",
+        "url": "https://ciao-group.github.io/"
+      },
+      {
+        "name": "Timur Getselev",
+        "url": "https://orcid.org/0009-0001-2116-6590"
+      }
     ]
   },
   {
@@ -163,10 +421,22 @@
     "lon": 151.207,
     "works": 5,
     "people": [
-      "Callum Parker",
-      "Marius Hoggenmüeller",
-      "Tram Thi Minh Tran",
-      "Xinyan Yu"
+      {
+        "name": "Callum Parker",
+        "url": "http://www.callumparker.com"
+      },
+      {
+        "name": "Marius Hoggenmüeller",
+        "url": "http://www.marius.hoggenmueller.com"
+      },
+      {
+        "name": "Tram Thi Minh Tran",
+        "url": "https://tramtranx.com/"
+      },
+      {
+        "name": "Xinyan Yu",
+        "url": "https://orcid.org/0000-0001-8299-3381"
+      }
     ]
   },
   {
@@ -177,10 +447,22 @@
     "lon": -1.548,
     "works": 4,
     "people": [
-      "Aravinda Ramakrishnan Srinivasan",
-      "Chen Peng",
-      "Courtney Michael Goodridge",
-      "Natasha Merat"
+      {
+        "name": "Aravinda Ramakrishnan Srinivasan",
+        "url": "https://scholar.google.com/citations?hl=en&user=xw0pt5IAAAAJ"
+      },
+      {
+        "name": "Chen Peng",
+        "url": "https://orcid.org/0000-0001-7285-3123"
+      },
+      {
+        "name": "Courtney Michael Goodridge",
+        "url": "https://orcid.org/0009-0002-3383-2789"
+      },
+      {
+        "name": "Natasha Merat",
+        "url": "https://orcid.org/0000-0003-4140-9948"
+      }
     ]
   },
   {
@@ -191,8 +473,14 @@
     "lon": 11.424,
     "works": 3,
     "people": [
-      "Andreas Riener",
-      "Ignacio Álvarez"
+      {
+        "name": "Andreas Riener",
+        "url": "https://orcid.org/0000-0002-9174-8895"
+      },
+      {
+        "name": "Ignacio Álvarez",
+        "url": "https://orcid.org/0000-0002-2788-3523"
+      }
     ]
   },
   {
@@ -203,8 +491,14 @@
     "lon": 13.044,
     "works": 3,
     "people": [
-      "Alexander Meschtscherjakov",
-      "Sandra Trösterer"
+      {
+        "name": "Alexander Meschtscherjakov",
+        "url": "https://meschtscherjakov.wordpress.com/"
+      },
+      {
+        "name": "Sandra Trösterer",
+        "url": "https://openalex.org/A5025566925"
+      }
     ]
   },
   {
@@ -215,9 +509,18 @@
     "lon": 11.967,
     "works": 2,
     "people": [
-      "Ilaria Torre",
-      "Mohammad Obaid",
-      "Sara Ljungblad"
+      {
+        "name": "Ilaria Torre",
+        "url": "https://edge-research.eu/fellows/ilaria-torre/"
+      },
+      {
+        "name": "Mohammad Obaid",
+        "url": "https://orcid.org/0000-0003-2351-0604"
+      },
+      {
+        "name": "Sara Ljungblad",
+        "url": "https://orcid.org/0000-0002-2751-9801"
+      }
     ]
   },
   {
@@ -228,9 +531,18 @@
     "lon": -76.497,
     "works": 2,
     "people": [
-      "Angel Hsing-Chi Hwang",
-      "Hauke Sandhaus",
-      "Qian Yang"
+      {
+        "name": "Angel Hsing-Chi Hwang",
+        "url": "https://angelhwang.github.io/"
+      },
+      {
+        "name": "Hauke Sandhaus",
+        "url": "http://haukesand.github.io/"
+      },
+      {
+        "name": "Qian Yang",
+        "url": "https://orcid.org/0000-0002-3548-2535"
+      }
     ]
   },
   {
@@ -241,8 +553,14 @@
     "lon": 14.286,
     "works": 2,
     "people": [
-      "Andreas Riener",
-      "Mohammad Rezaei"
+      {
+        "name": "Andreas Riener",
+        "url": "https://orcid.org/0000-0002-9174-8895"
+      },
+      {
+        "name": "Mohammad Rezaei",
+        "url": "https://openalex.org/A5101143613"
+      }
     ]
   },
   {
@@ -253,7 +571,10 @@
     "lon": 4.701,
     "works": 2,
     "people": [
-      "Silvia Cazacu"
+      {
+        "name": "Silvia Cazacu",
+        "url": "https://orcid.org/0000-0002-7952-0919"
+      }
     ]
   },
   {
@@ -264,7 +585,10 @@
     "lon": -1.2,
     "works": 2,
     "people": [
-      "Chen Peng"
+      {
+        "name": "Chen Peng",
+        "url": "https://orcid.org/0000-0001-7285-3123"
+      }
     ]
   },
   {
@@ -275,7 +599,10 @@
     "lon": 153.028,
     "works": 2,
     "people": [
-      "Yueteng Yu"
+      {
+        "name": "Yueteng Yu",
+        "url": "https://orcid.org/0009-0001-3213-3276"
+      }
     ]
   },
   {
@@ -286,13 +613,34 @@
     "lon": 16.372,
     "works": 2,
     "people": [
-      "Andreas Rauber",
-      "Barbara Sánchez Solís",
-      "Bernd Saurugger",
-      "Juliana Giroletti",
-      "Katharina Flicker",
-      "Paolo Budroni",
-      "Philipp Wintersberger"
+      {
+        "name": "Andreas Rauber",
+        "url": "https://orcid.org/0000-0002-9272-6225"
+      },
+      {
+        "name": "Barbara Sánchez Solís",
+        "url": "https://www.tuwien.at/en/research/rti-support/research-data"
+      },
+      {
+        "name": "Bernd Saurugger",
+        "url": "https://www.linkedin.com/in/bernd-saurugger-b38912165/"
+      },
+      {
+        "name": "Juliana Giroletti",
+        "url": "https://orcid.org/0000-0002-1111-2548"
+      },
+      {
+        "name": "Katharina Flicker",
+        "url": "https://orcid.org/0000-0001-6040-2798"
+      },
+      {
+        "name": "Paolo Budroni",
+        "url": "https://orcid.org/0000-0001-7490-5716"
+      },
+      {
+        "name": "Philipp Wintersberger",
+        "url": "https://orcid.org/0000-0001-9287-3770"
+      }
     ]
   },
   {
@@ -303,8 +651,14 @@
     "lon": 11.575,
     "works": 2,
     "people": [
-      "Klaus J. Bengler",
-      "Sebastiaan Martinus Petermeijer"
+      {
+        "name": "Klaus J. Bengler",
+        "url": "https://orcid.org/0000-0003-3906-6093"
+      },
+      {
+        "name": "Sebastiaan Martinus Petermeijer",
+        "url": "https://orcid.org/0000-0002-8961-2884"
+      }
     ]
   },
   {
@@ -315,7 +669,10 @@
     "lon": 14.033,
     "works": 2,
     "people": [
-      "Philipp Wintersberger"
+      {
+        "name": "Philipp Wintersberger",
+        "url": "https://orcid.org/0000-0001-9287-3770"
+      }
     ]
   },
   {
@@ -326,8 +683,14 @@
     "lon": 11.967,
     "works": 2,
     "people": [
-      "Mohammad Obaid",
-      "Sara Ljungblad"
+      {
+        "name": "Mohammad Obaid",
+        "url": "https://orcid.org/0000-0003-2351-0604"
+      },
+      {
+        "name": "Sara Ljungblad",
+        "url": "https://orcid.org/0000-0002-2751-9801"
+      }
     ]
   },
   {
@@ -338,8 +701,14 @@
     "lon": 14.505,
     "works": 2,
     "people": [
-      "Jaka Sodnik",
-      "Kristina Stojmenova"
+      {
+        "name": "Jaka Sodnik",
+        "url": "http://scholar.google.si/citations?user=Q_pCAxwAAAAJ&hl=en"
+      },
+      {
+        "name": "Kristina Stojmenova",
+        "url": "https://orcid.org/0000-0001-6584-7147"
+      }
     ]
   },
   {
@@ -350,8 +719,14 @@
     "lon": 9.992,
     "works": 2,
     "people": [
-      "Mark Colley",
-      "Markus Sasalovici"
+      {
+        "name": "Mark Colley",
+        "url": "https://m-colley.github.io/"
+      },
+      {
+        "name": "Markus Sasalovici",
+        "url": "https://www.uni-ulm.de/in/mi/institut/personal/markus-sasalovici/"
+      }
     ]
   },
   {
@@ -362,7 +737,10 @@
     "lon": 15.45,
     "works": 2,
     "people": [
-      "Paolo Pretto"
+      {
+        "name": "Paolo Pretto",
+        "url": "https://orcid.org/0000-0003-3922-3108"
+      }
     ]
   },
   {
@@ -373,7 +751,10 @@
     "lon": 7.155,
     "works": 1,
     "people": [
-      "Ullrich Steiner"
+      {
+        "name": "Ullrich Steiner",
+        "url": "http://ami.swiss/physics"
+      }
     ]
   },
   {
@@ -384,7 +765,10 @@
     "lon": -122.332,
     "works": 1,
     "people": [
-      "Sagar Hitendra Parmar"
+      {
+        "name": "Sagar Hitendra Parmar",
+        "url": "https://orcid.org/0009-0008-1326-6525"
+      }
     ]
   },
   {
@@ -395,7 +779,10 @@
     "lon": -81.975,
     "works": 1,
     "people": [
-      "Zi Wang"
+      {
+        "name": "Zi Wang",
+        "url": "https://orcid.org/0000-0002-8162-3482"
+      }
     ]
   },
   {
@@ -406,9 +793,18 @@
     "lon": 8.533,
     "works": 1,
     "people": [
-      "Jan Hammerschmidt",
-      "René Tünnermann",
-      "Thomas M. Hermann"
+      {
+        "name": "Jan Hammerschmidt",
+        "url": "https://openalex.org/A5030767443"
+      },
+      {
+        "name": "René Tünnermann",
+        "url": "https://openalex.org/A5025881895"
+      },
+      {
+        "name": "Thomas M. Hermann",
+        "url": "https://orcid.org/0000-0001-7975-4363"
+      }
     ]
   },
   {
@@ -419,7 +815,10 @@
     "lon": -82.837,
     "works": 1,
     "people": [
-      "Ignacio Álvarez"
+      {
+        "name": "Ignacio Álvarez",
+        "url": "https://orcid.org/0000-0002-2788-3523"
+      }
     ]
   },
   {
@@ -430,7 +829,10 @@
     "lon": 87.308,
     "works": 1,
     "people": [
-      "Priyanshu Singh"
+      {
+        "name": "Priyanshu Singh",
+        "url": "https://openalex.org/A5124809806"
+      }
     ]
   },
   {
@@ -441,7 +843,10 @@
     "lon": 8.55,
     "works": 1,
     "people": [
-      "Miltos Kyriakidis"
+      {
+        "name": "Miltos Kyriakidis",
+        "url": "https://orcid.org/0000-0002-0597-0634"
+      }
     ]
   },
   {
@@ -452,7 +857,10 @@
     "lon": 13.044,
     "works": 1,
     "people": [
-      "Alexander Meschtscherjakov"
+      {
+        "name": "Alexander Meschtscherjakov",
+        "url": "https://meschtscherjakov.wordpress.com/"
+      }
     ]
   },
   {
@@ -463,8 +871,14 @@
     "lon": -84.388,
     "works": 1,
     "people": [
-      "Bruce N. Walker",
-      "Thomas M. Gable"
+      {
+        "name": "Bruce N. Walker",
+        "url": "http://sonify.psych.gatech.edu"
+      },
+      {
+        "name": "Thomas M. Gable",
+        "url": "https://orcid.org/0000-0002-3033-3565"
+      }
     ]
   },
   {
@@ -475,7 +889,10 @@
     "lon": -121.895,
     "works": 1,
     "people": [
-      "Kumar Akash"
+      {
+        "name": "Kumar Akash",
+        "url": "https://kakash-hri.github.io/"
+      }
     ]
   },
   {
@@ -486,7 +903,10 @@
     "lon": 80.278,
     "works": 1,
     "people": [
-      "Md Shadab Alam"
+      {
+        "name": "Md Shadab Alam",
+        "url": "https://research.tue.nl/en/persons/aae77095-d6fa-464d-9857-437c20ae4590"
+      }
     ]
   },
   {
@@ -497,7 +917,10 @@
     "lon": 2.159,
     "works": 1,
     "people": [
-      "Licia Verde"
+      {
+        "name": "Licia Verde",
+        "url": "http://icc.ub.edu/~liciaverde"
+      }
     ]
   },
   {
@@ -508,7 +931,10 @@
     "lon": 16.372,
     "works": 1,
     "people": [
-      "Dagmar Rychnovská"
+      {
+        "name": "Dagmar Rychnovská",
+        "url": "https://openalex.org/A5108283620"
+      }
     ]
   },
   {
@@ -519,7 +945,10 @@
     "lon": 10.404,
     "works": 1,
     "people": [
-      "Valerio Grossi"
+      {
+        "name": "Valerio Grossi",
+        "url": "https://orcid.org/0000-0002-8735-5394"
+      }
     ]
   },
   {
@@ -530,7 +959,10 @@
     "lon": -75.221,
     "works": 1,
     "people": [
-      "Michael A. Nees"
+      {
+        "name": "Michael A. Nees",
+        "url": "https://orcid.org/0000-0003-2313-2295"
+      }
     ]
   },
   {
@@ -541,7 +973,10 @@
     "lon": 15.622,
     "works": 1,
     "people": [
-      "Philipp Höck"
+      {
+        "name": "Philipp Höck",
+        "url": "https://orcid.org/0000-0002-9831-9241"
+      }
     ]
   },
   {
@@ -552,8 +987,14 @@
     "lon": -88.569,
     "works": 1,
     "people": [
-      "Myounghoon Jeon",
-      "Steven J. Landry"
+      {
+        "name": "Myounghoon Jeon",
+        "url": "https://www.ise.vt.edu/people/faculty/jeon.html"
+      },
+      {
+        "name": "Steven J. Landry",
+        "url": "https://orcid.org/0000-0003-1924-4788"
+      }
     ]
   },
   {
@@ -564,8 +1005,14 @@
     "lon": 4.89,
     "works": 1,
     "people": [
-      "Sebastiaan Martinus Petermeijer",
-      "Shiva Nischal Lingam"
+      {
+        "name": "Sebastiaan Martinus Petermeijer",
+        "url": "https://orcid.org/0000-0002-8961-2884"
+      },
+      {
+        "name": "Shiva Nischal Lingam",
+        "url": "https://orcid.org/0000-0002-9173-3642"
+      }
     ]
   },
   {
@@ -576,7 +1023,10 @@
     "lon": 4.89,
     "works": 1,
     "people": [
-      "Valeria Gazzola"
+      {
+        "name": "Valeria Gazzola",
+        "url": "https://orcid.org/0000-0003-0324-0619"
+      }
     ]
   },
   {
@@ -587,7 +1037,10 @@
     "lon": -74.006,
     "works": 1,
     "people": [
-      "Ugne Aleksandra Morkute"
+      {
+        "name": "Ugne Aleksandra Morkute",
+        "url": "https://github.com/UgneMo"
+      }
     ]
   },
   {
@@ -598,7 +1051,10 @@
     "lon": 139.619,
     "works": 1,
     "people": [
-      "Tsuyoshi Sakuma"
+      {
+        "name": "Tsuyoshi Sakuma",
+        "url": "https://www.researchgate.net/scientific-contributions/Tsuyoshi-Sakuma-2179312685"
+      }
     ]
   },
   {
@@ -609,7 +1065,10 @@
     "lon": 13.044,
     "works": 1,
     "people": [
-      "Alexander Meschtscherjakov"
+      {
+        "name": "Alexander Meschtscherjakov",
+        "url": "https://meschtscherjakov.wordpress.com/"
+      }
     ]
   },
   {
@@ -620,7 +1079,10 @@
     "lon": 103.85,
     "works": 1,
     "people": [
-      "Miltos Kyriakidis"
+      {
+        "name": "Miltos Kyriakidis",
+        "url": "https://orcid.org/0000-0002-0597-0634"
+      }
     ]
   },
   {
@@ -631,9 +1093,18 @@
     "lon": -122.166,
     "works": 1,
     "people": [
-      "Hyo Chang Kim",
-      "Hyungchai Park",
-      "Hyunmin Kang"
+      {
+        "name": "Hyo Chang Kim",
+        "url": "https://orcid.org/0000-0002-4279-6620"
+      },
+      {
+        "name": "Hyungchai Park",
+        "url": "https://orcid.org/0000-0002-7048-6363"
+      },
+      {
+        "name": "Hyunmin Kang",
+        "url": "https://orcid.org/0000-0003-2558-7744"
+      }
     ]
   },
   {
@@ -644,7 +1115,10 @@
     "lon": 4.299,
     "works": 1,
     "people": [
-      "Willem P. Vlakveld"
+      {
+        "name": "Willem P. Vlakveld",
+        "url": "https://orcid.org/0000-0001-8524-0879"
+      }
     ]
   },
   {
@@ -655,7 +1129,10 @@
     "lon": 15.622,
     "works": 1,
     "people": [
-      "Veronika Petrovych"
+      {
+        "name": "Veronika Petrovych",
+        "url": "https://www.linkedin.com/in/veronika-petrovych-02897823"
+      }
     ]
   },
   {
@@ -666,7 +1143,10 @@
     "lon": 9.733,
     "works": 1,
     "people": [
-      "Markus Stocker"
+      {
+        "name": "Markus Stocker",
+        "url": "http://markusstocker.com"
+      }
     ]
   },
   {
@@ -677,7 +1157,10 @@
     "lon": 4.614,
     "works": 1,
     "people": [
-      "Demoulin, Baptiste"
+      {
+        "name": "Demoulin, Baptiste",
+        "url": "http://www.deduveinstitute.be/receptors"
+      }
     ]
   },
   {
@@ -688,7 +1171,10 @@
     "lon": -6.249,
     "works": 1,
     "people": [
-      "Frédéric Dias A"
+      {
+        "name": "Frédéric Dias A",
+        "url": "https://orcid.org/0000-0002-5123-4929"
+      }
     ]
   },
   {
@@ -699,7 +1185,10 @@
     "lon": 11.579,
     "works": 1,
     "people": [
-      "Linn Leppert"
+      {
+        "name": "Linn Leppert",
+        "url": "http://www.leppertlab.com"
+      }
     ]
   },
   {
@@ -710,7 +1199,10 @@
     "lon": 7.447,
     "works": 1,
     "people": [
-      "Sebastian A. Leidel"
+      {
+        "name": "Sebastian A. Leidel",
+        "url": "https://leidel.dcb.unibe.ch/"
+      }
     ]
   },
   {
@@ -721,7 +1213,10 @@
     "lon": -83.378,
     "works": 1,
     "people": [
-      "Fei Dou"
+      {
+        "name": "Fei Dou",
+        "url": "https://fayedou.github.io/"
+      }
     ]
   },
   {
@@ -732,8 +1227,14 @@
     "lon": 15.45,
     "works": 1,
     "people": [
-      "Alois Sontacchi",
-      "Robert Höldrich"
+      {
+        "name": "Alois Sontacchi",
+        "url": "https://orcid.org/0009-0008-9205-209X"
+      },
+      {
+        "name": "Robert Höldrich",
+        "url": "https://orcid.org/0000-0002-6887-6637"
+      }
     ]
   },
   {
@@ -744,7 +1245,10 @@
     "lon": -1.256,
     "works": 1,
     "people": [
-      "Ju-Hwan Lee"
+      {
+        "name": "Ju-Hwan Lee",
+        "url": "https://orcid.org/0000-0002-9368-3220"
+      }
     ]
   },
   {
@@ -755,8 +1259,14 @@
     "lon": 9.177,
     "works": 1,
     "people": [
-      "Thirumanikandan Subramanian",
-      "Wolfram Remlinger"
+      {
+        "name": "Thirumanikandan Subramanian",
+        "url": "https://orcid.org/0009-0009-7265-4349"
+      },
+      {
+        "name": "Wolfram Remlinger",
+        "url": "https://www.iktd.uni-stuttgart.de/institut/ide/"
+      }
     ]
   },
   {
@@ -767,7 +1277,10 @@
     "lon": -0.139,
     "works": 1,
     "people": [
-      "Husam A. Ramadan"
+      {
+        "name": "Husam A. Ramadan",
+        "url": "https://orcid.org/0000-0002-7865-2207"
+      }
     ]
   },
   {
@@ -778,7 +1291,10 @@
     "lon": 151.207,
     "works": 1,
     "people": [
-      "Martin Tomitsch"
+      {
+        "name": "Martin Tomitsch",
+        "url": "https://orcid.org/0000-0003-1998-2975"
+      }
     ]
   },
   {
@@ -789,7 +1305,10 @@
     "lon": 16.372,
     "works": 1,
     "people": [
-      "Toma Susi"
+      {
+        "name": "Toma Susi",
+        "url": "http://mostlyphysics.net"
+      }
     ]
   },
   {
@@ -800,7 +1319,10 @@
     "lon": -1.512,
     "works": 1,
     "people": [
-      "Soyeon Kim"
+      {
+        "name": "Soyeon Kim",
+        "url": "https://orcid.org/0000-0002-7028-6978"
+      }
     ]
   },
   {
@@ -811,7 +1333,10 @@
     "lon": 2.187,
     "works": 1,
     "people": [
-      "Murat Günes"
+      {
+        "name": "Murat Günes",
+        "url": "https://openalex.org/A5043591241"
+      }
     ]
   },
   {
@@ -822,7 +1347,10 @@
     "lon": 5.122,
     "works": 1,
     "people": [
-      "Christian P. Janssen"
+      {
+        "name": "Christian P. Janssen",
+        "url": "http://www.cpjanssen.nl"
+      }
     ]
   },
   {
@@ -833,8 +1361,14 @@
     "lon": 11.967,
     "works": 1,
     "people": [
-      "Emma Johansson",
-      "Pontus Larsson"
+      {
+        "name": "Emma Johansson",
+        "url": "https://www.linkedin.com/in/emma-johansson-5315b72"
+      },
+      {
+        "name": "Pontus Larsson",
+        "url": "https://www.linkedin.com/in/pontus-larsson-0b478a19"
+      }
     ]
   },
   {
@@ -845,7 +1379,10 @@
     "lon": 2.349,
     "works": 1,
     "people": [
-      "Juliette Mangeney"
+      {
+        "name": "Juliette Mangeney",
+        "url": "https://orcid.org/0000-0002-4354-4257"
+      }
     ]
   }
 ]

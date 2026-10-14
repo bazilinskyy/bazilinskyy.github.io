@@ -4,16 +4,18 @@
 [data-theme="dark"] #collab-map { --sea:#0d1a2b; --land:#1f2a3a; --border:#2f3e55; --dot:#5b8def; --home:#fb3b63; --arc:rgba(91,141,239,.3); --frame:#8899a6 }
 #collab-map svg { display:block; width:100%; height:auto; border-radius:5px }
 #collab-map-note { font-size:90%; text-align:center; margin-top:4px }
-.collab-list { columns: 2 300px; column-gap: 2em; font-size: 85%; margin: 6px 0 14px }
-.collab-list p { margin: 0 0 5px; break-inside: avoid }
+#collab-map circle.inst { cursor:pointer }
+#collab-pop { position:absolute; display:none; z-index:5; max-width:300px; max-height:260px; overflow:auto; padding:8px 26px 8px 10px;
+  background:var(--well-bg, #192734); border:1px solid var(--well-border, #2e3f4d); border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,.35);
+  font-size:13px; text-align:left }
+#collab-pop b { display:block; margin-bottom:2px } #collab-pop small { display:block; opacity:.75; margin-bottom:4px }
+#collab-pop ul { margin:0; padding-left:16px } #collab-pop button { position:absolute; top:2px; right:4px; border:0; background:none; color:inherit; font-size:16px; cursor:pointer }
 </style>
 <div id="collab-map" markdown="0">
   <svg viewBox="0 0 960 470" role="img" aria-label="Map of the institutions of my co-authors, with Europe enlarged"></svg>
   <div id="collab-map-note"></div>
+  <div id="collab-pop" role="dialog" aria-label="Co-authors at this institution"></div>
 </div>
-<div class="collab-list" markdown="0">
-{% for c in site.data.coauthor_institutions %}<p><strong>{{ c.name }}</strong> ({{ c.city }}, {{ c.country }}; {{ c.works }} joint publication{% if c.works > 1 %}s{% endif %}): {{ c.people | join: ", " }}</p>
-{% endfor %}</div>
 <script>
 (function () {
   const data = {{ site.data.coauthor_institutions | jsonify }};
@@ -27,7 +29,7 @@
   };
   const countries = new Set(data.map(d => d.country)).size;
   document.getElementById('collab-map-note').textContent =
-    `Institutions of my co-authors: ${data.length} in ${countries} countries, sized by joint publications. Hover over one to see the people.`;
+    `Institutions of my co-authors: ${data.length} in ${countries} countries, sized by joint publications. Click one to see the people.`;
   const ring = () => {  // the Europe box as a line of lon/lat points, so it curves with the projection
     const [[w, s], [e, n]] = EUROPE, pts = [];
     for (let x = w; x <= e; x += 2) pts.push([x, s]);
@@ -42,14 +44,37 @@
     for (const d of data) el('path', {d: path({type: 'LineString', coordinates: [HOME, [d.lon, d.lat]]}), fill: 'none', stroke: 'var(--arc)', 'stroke-width': 1}, g);
     for (const d of data.slice().reverse()) {  // most joint works last, so on top
       const [x, y] = proj([d.lon, d.lat]);
-      const c = el('circle', {cx: x, cy: y, r: scale * (2.5 + 2 * Math.sqrt(d.works)), fill: 'var(--dot)', 'fill-opacity': 0.75, stroke: 'var(--land)', 'stroke-width': 0.8}, g);
-      const names = d.people.length > 6 ? d.people.slice(0, 6).join(', ') + ` and ${d.people.length - 6} more` : d.people.join(', ');
-      el('title', {}, c).textContent = `${d.name} (${d.city}, ${d.country})\n${d.works} joint publication${d.works > 1 ? 's' : ''}: ${names}`;
+      const c = el('circle', {class: 'inst', cx: x, cy: y, r: scale * (2.5 + 2 * Math.sqrt(d.works)), fill: 'var(--dot)', 'fill-opacity': 0.75,
+        stroke: 'var(--land)', 'stroke-width': 0.8, tabindex: 0, role: 'button', 'aria-label': `${d.name}: show the co-authors`}, g);
+      el('title', {}, c).textContent = d.name;
+      c.addEventListener('click', e => { e.stopPropagation(); show(d, e); });
+      c.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(d, e); } });
     }
     const [hx, hy] = proj(HOME);
-    el('title', {}, el('circle', {cx: hx, cy: hy, r: 4, fill: 'var(--home)', stroke: 'var(--land)', 'stroke-width': 1}, g)).textContent = 'TU Eindhoven';
+    el('title', {}, el('circle', {cx: hx, cy: hy, r: 4, fill: 'var(--home)', stroke: 'var(--land)', 'stroke-width': 1, 'pointer-events': 'none'}, g)).textContent = 'TU Eindhoven';
     return path;
   }
+
+  const pop = document.getElementById('collab-pop');
+  function show(d, e) {  // the institution and its people, each linked to their website
+    const close = Object.assign(document.createElement('button'), {type: 'button', textContent: '×', title: 'Close'});
+    close.addEventListener('click', () => { pop.style.display = 'none'; });
+    const list = document.createElement('ul');
+    for (const p of d.people) {
+      const li = list.appendChild(document.createElement('li'));
+      if (p.url && /^https?:\/\//.test(p.url)) li.appendChild(Object.assign(document.createElement('a'), {href: p.url, target: '_blank', rel: 'noopener', textContent: p.name}));
+      else li.textContent = p.name;
+    }
+    pop.replaceChildren(close, Object.assign(document.createElement('b'), {textContent: d.name}),
+      Object.assign(document.createElement('small'), {textContent: `${d.city}, ${d.country} · ${d.works} joint publication${d.works > 1 ? 's' : ''}`}), list);
+    pop.style.display = 'block';
+    const b = box.getBoundingClientRect(), r = (e.target.getBoundingClientRect ? e.target : svg).getBoundingClientRect();
+    const x = (e.clientX || r.left + r.width / 2) - b.left, y = (e.clientY || r.top + r.height / 2) - b.top;
+    pop.style.left = Math.max(0, Math.min(x + 10, b.width - pop.offsetWidth)) + 'px';
+    pop.style.top = Math.max(0, Math.min(y + 10, b.height - pop.offsetHeight)) + 'px';
+  }
+  document.addEventListener('click', e => { if (!pop.contains(e.target)) pop.style.display = 'none'; });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') pop.style.display = 'none'; });
 
   const script = src => new Promise((ok, fail) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
   async function draw() {

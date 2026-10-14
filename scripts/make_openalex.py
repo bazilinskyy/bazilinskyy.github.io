@@ -5,7 +5,7 @@
 # - _data/citations.json: citation count of each _publications/*.md, looked up by its doi:
 #   (publication pages)
 # - _data/coauthor_institutions.json: the institutions of my co-authors with their location, number
-#   of joint works and names (map on the about page)
+#   of joint works and the people, each linked to their website (map on the about page)
 import collections
 import glob
 import json
@@ -70,25 +70,72 @@ def my_works():
     return works
 
 
-def collaborators(works):
-    """[{name, city, country, lat, lon, works, people}] of my co-authors' institutions, most joint works first."""
-    joint, people, names = collections.defaultdict(set), collections.defaultdict(set), {}
+def best_url(urls):
+    """The most personal of a researcher's ORCID links [(label, url)]: own site, then a staff page, then the rest."""
+    def rank(item):
+        text = ' '.join(item).lower()
+        if any(w in text for w in ('linkedin', 'researchgate', 'twitter', 'x.com', 'facebook', 'scholar.google')):
+            return 3
+        if any(w in text for w in ('personal', 'homepage', 'home page', 'website', 'portfolio', 'github.io')):
+            return 0
+        return 1 if any(w in text for w in ('profile', 'staff', 'university', 'research.')) else 2
+    return min(urls, key=rank)[1] if urls else None
+
+
+def manual_urls():
+    """{name: url} of the hand-written _data/collaborators.yml (titles dropped), which win over ORCID."""
+    out, name = {}, None
+    for line in open('_data/collaborators.yml', encoding='utf-8'):
+        if m := re.match(r'-\s*name:\s*(.+)', line):
+            name = re.sub(r'^(Dr\.|Prof\.|Dr|Prof)\s+', '', m.group(1).strip().strip('"\''))
+            name = NAMES.get(name, name)  # as the map spells it
+        elif (m := re.match(r'\s+name_url:\s*(\S+)', line)) and name:
+            out[name] = m.group(1).strip('"\'')
+    return out
+
+
+def link(name, orcid, author, manual):
+    """Where a co-author's name links to: my own list, their ORCID website, their ORCID page, their OpenAlex page."""
+    if name in manual:
+        return manual[name]
+    if orcid:
+        try:
+            req = urllib.request.Request(f'https://pub.orcid.org/v3.0/{short(orcid)}/researcher-urls', headers={'Accept': 'application/json'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                urls = [(u.get('url-name') or '', u['url']['value']) for u in json.load(r).get('researcher-url') or []]
+            return best_url(urls) or orcid
+        except (OSError, ValueError, KeyError):
+            return orcid
+    return author
+
+
+def collaborators(works, url=None):
+    """[{name, city, country, lat, lon, works, people: [{name, url}]}] of my co-authors' institutions, most joint
+    works first. url(name, orcid, openalex author) gives the link of a person (link() with manual_urls() by default)."""
+    if url is None:
+        manual = manual_urls()
+        url = lambda name, orcid, author: link(name, orcid, author, manual)
+    joint, people, names, who = collections.defaultdict(set), collections.defaultdict(set), {}, {}
     for work in works:
         for a in work['authorships']:
             if (a['author'].get('orcid') or '').endswith(ORCID):
                 continue  # my own affiliations
+            name = NAMES.get(a['author']['display_name'], a['author']['display_name'])
+            if not who.get(name, (None,))[0]:  # of the spellings of one person, the one with an ORCID
+                who[name] = (a['author'].get('orcid'), a['author'].get('id'))
             for inst in a['institutions']:
                 joint[inst['id']].add(work['id'])
-                name = a['author']['display_name']
-                people[inst['id']].add(NAMES.get(name, name))
+                people[inst['id']].add(name)
                 names[inst['id']] = inst['display_name']
     ids, geo = list(joint), {}
     for i in range(0, len(ids), BATCH):
         for inst in get('institutions', filter='openalex:' + '|'.join(short(x) for x in ids[i:i + BATCH]),
                         **{'per-page': BATCH}, select='id,geo')['results']:
             geo[inst['id']] = inst['geo']
+    links = {n: url(n, *who[n]) for n in who}
     out = [dict(name=names[i], city=geo[i]['city'], country=geo[i]['country'], lat=round(geo[i]['latitude'], 3),
-                lon=round(geo[i]['longitude'], 3), works=len(joint[i]), people=sorted(people[i]))
+                lon=round(geo[i]['longitude'], 3), works=len(joint[i]),
+                people=[dict(name=n, url=links[n]) for n in sorted(people[i])])
            for i in ids if geo.get(i) and geo[i].get('latitude') is not None]
     return sorted(out, key=lambda c: (-c['works'], c['name']))
 
@@ -99,6 +146,8 @@ def write(path, data):
 
 
 def _check():
+    assert best_url([('LinkedIn', 'l'), ('TU Delft staff page', 's'), ('Personal Website', 'p')]) == 'p'
+    assert best_url([('LinkedIn', 'l'), ('Delft University of Technology profile page', 's')]) == 's' and best_url([]) is None
     me, other = {'orcid': f'https://orcid.org/{ORCID}', 'display_name': 'Me'}, {'orcid': None, 'display_name': 'Ann'}
     other2 = {'orcid': None, 'display_name': 'M.H. Martens'}  # two spellings of one person count once
     inst = [{'id': 'I1', 'display_name': 'Uni'}]
@@ -110,7 +159,8 @@ def _check():
     global get
     real, get = get, lambda path, **p: {'results': [{'id': 'I1', 'geo': {'city': 'C', 'country': 'X', 'latitude': 1.0, 'longitude': 2.0}}]}
     try:  # only the co-author's institution counts, not mine
-        assert collaborators(works) == [dict(name='Uni', city='C', country='X', lat=1.0, lon=2.0, works=1, people=['Ann', 'Marieke H. Martens'])]
+        people = [dict(name='Ann', url='u:Ann'), dict(name='Marieke H. Martens', url='u:Marieke H. Martens')]
+        assert collaborators(works, url=lambda n, o, a: f'u:{n}') == [dict(name='Uni', city='C', country='X', lat=1.0, lon=2.0, works=1, people=people)]
     finally:
         get = real
 
