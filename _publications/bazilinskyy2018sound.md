@@ -7,6 +7,7 @@ pdf: bazilinskyy2018sound
 image: bazilinskyy2018sound.jpg
 display: Preprint
 year: 2018
+working: false
 tags: [preprint, sound, design, interview]
 code: https://github.com/bazilinskyy/wordsforsound
 suppmat: https://www.dropbox.com/sh/u41zopx1220x97x/AAAr3j0abXrYOeezfKWut5F1a
