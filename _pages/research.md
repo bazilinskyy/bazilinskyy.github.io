@@ -93,7 +93,7 @@ My intrinsic motivation to do a PhD stemmed from the fact that automated vehicle
 
 #### Open-source code
 
-The code of my experiments, simulators and analyses is open on GitHub. The most starred repositories (updated every night):
+The code of my experiments, simulators and analyses is open on GitHub. The most starred repositories:
 
 <div markdown="0" class="repo-grid">
 {% for r in site.data.repos %}<a class="repo-card" href="{{ r.url }}" target="_blank"><span class="repo-name">{{ r.name }}</span><span class="repo-desc">{{ r.description }}</span><span class="repo-meta">★ {{ r.stars }} · forks {{ r.forks }}{% if r.language %} · {{ r.language }}{% endif %} · updated {{ r.pushed | date: "%-d %b %Y" }}</span></a>

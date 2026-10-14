@@ -4,9 +4,6 @@
 #   python3 scripts/make_openalex.py
 # - _data/citations.json: citation count of each _publications/*.md, looked up by its doi:
 #   (publication pages)
-# - _data/citations_per_year.json: citations received per year by all works with my ORCID,
-#   summed from each work's counts_by_year (publications page). Not the author's own
-#   counts_by_year: OpenAlex fills that by year of publication, not of citation.
 # - _data/coauthor_institutions.json: the institutions of my co-authors with their location, number
 #   of joint works and names (map on the about page)
 import collections
@@ -20,6 +17,15 @@ import urllib.request
 ORCID = '0000-0001-9565-8240'
 API = 'https://api.openalex.org'
 BATCH = 50  # OpenAlex takes up to 50 values in one filter
+# co-author names as OpenAlex spells them -> as the map lists them (variants, scripts, initials)
+NAMES = {
+    'Christian Janssen': 'Christian P. Janssen',
+    'M.H. Martens': 'Marieke H. Martens',
+    'Marieke Martens': 'Marieke H. Martens',
+    'Γεώργιος Παπαϊωάννου': 'Georgios Papaioannou',
+    'V. Onkhar': 'Vishal Onkhar',
+    'Angel Hsing‐Chi Hwang': 'Angel Hsing-Chi Hwang',
+}
 
 
 def get(path, **params):
@@ -54,23 +60,14 @@ def citations(by_doi):
 
 
 def my_works():
-    """All works with my ORCID (id, counts_by_year, authorships)."""
+    """All works with my ORCID (id, authorships)."""
     works, cursor = [], '*'
     while cursor:
         page = get('works', filter=f'author.orcid:{ORCID}', **{'per-page': 200}, cursor=cursor,
-                   select='id,counts_by_year,authorships')
+                   select='id,authorships')
         works += page['results']
         cursor = page['meta'].get('next_cursor') if page['results'] else None
     return works
-
-
-def per_year(works):
-    """[{year, count}] of the citations received per year."""
-    years = collections.Counter()
-    for work in works:
-        for y in work['counts_by_year']:
-            years[y['year']] += y['cited_by_count']
-    return [dict(year=y, count=n) for y, n in sorted(years.items())]
 
 
 def collaborators(works):
@@ -82,7 +79,8 @@ def collaborators(works):
                 continue  # my own affiliations
             for inst in a['institutions']:
                 joint[inst['id']].add(work['id'])
-                people[inst['id']].add(a['author']['display_name'])
+                name = a['author']['display_name']
+                people[inst['id']].add(NAMES.get(name, name))
                 names[inst['id']] = inst['display_name']
     ids, geo = list(joint), {}
     for i in range(0, len(ids), BATCH):
@@ -102,16 +100,17 @@ def write(path, data):
 
 def _check():
     me, other = {'orcid': f'https://orcid.org/{ORCID}', 'display_name': 'Me'}, {'orcid': None, 'display_name': 'Ann'}
+    other2 = {'orcid': None, 'display_name': 'M.H. Martens'}  # two spellings of one person count once
     inst = [{'id': 'I1', 'display_name': 'Uni'}]
-    works = [{'id': 'W1', 'counts_by_year': [{'year': 2024, 'cited_by_count': 2}],
-              'authorships': [{'author': me, 'institutions': inst}, {'author': other, 'institutions': inst}]},
-             {'id': 'W2', 'counts_by_year': [{'year': 2024, 'cited_by_count': 1}, {'year': 2025, 'cited_by_count': 4}],
+    works = [{'id': 'W1',
+              'authorships': [{'author': me, 'institutions': inst}, {'author': other, 'institutions': inst},
+                              {'author': other2, 'institutions': inst}, {'author': dict(other2, display_name='Marieke Martens'), 'institutions': inst}]},
+             {'id': 'W2',
               'authorships': [{'author': me, 'institutions': [{'id': 'I2', 'display_name': 'Mine'}]}]}]
-    assert per_year(works) == [{'year': 2024, 'count': 3}, {'year': 2025, 'count': 4}]
     global get
     real, get = get, lambda path, **p: {'results': [{'id': 'I1', 'geo': {'city': 'C', 'country': 'X', 'latitude': 1.0, 'longitude': 2.0}}]}
     try:  # only the co-author's institution counts, not mine
-        assert collaborators(works) == [dict(name='Uni', city='C', country='X', lat=1.0, lon=2.0, works=1, people=['Ann'])]
+        assert collaborators(works) == [dict(name='Uni', city='C', country='X', lat=1.0, lon=2.0, works=1, people=['Ann', 'Marieke H. Martens'])]
     finally:
         get = real
 
@@ -122,9 +121,7 @@ if __name__ == '__main__':
     cites = citations(by_doi)
     write('_data/citations.json', cites)
     works = my_works()
-    years = per_year(works)
-    write('_data/citations_per_year.json', years)
     collab = collaborators(works)
     write('_data/coauthor_institutions.json', collab)
     print(f'citations: {len(cites)} of {len(by_doi)} publications with a doi cited; {len(works)} works, '
-          f'{sum(y["count"] for y in years)} citations in {len(years)} years; {len(collab)} collaborating institutions')
+          f'{len(collab)} collaborating institutions')

@@ -1,6 +1,6 @@
 # Every night: rebuilds js/crowd-globe.json (the globe on the home page) and _data/crowd.json
 # (the numbers on the research page) from the mapping of github.com/crowd-dataset/crowd; the
-# citation counts, citations per year and co-author institutions from OpenAlex; and the
+# citation counts and co-author institutions from OpenAlex; and the
 # open-source cards from GitHub; then asks GitHub Pages to rebuild the site.
 name: Nightly data
 
@@ -31,7 +31,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Update the nightly data' js/crowd-globe.json _data/crowd.json _data/citations.json \
-            _data/citations_per_year.json _data/coauthor_institutions.json _data/repos.json
+            _data/coauthor_institutions.json _data/repos.json
           git push
           gh api -X POST repos/${{ github.repository }}/pages/builds
         env:

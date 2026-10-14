@@ -20,6 +20,7 @@
       "Dimitra Dodou",
       "Elif Özcan",
       "F.C. van den Ouden",
+      "Georgios Papaioannou",
       "H. Lingmont",
       "Hashim A. Quraishi",
       "Jasper Binda",
@@ -51,14 +52,13 @@
       "T.C. van der Sijs",
       "T.S. de Lint",
       "Tom Driessen",
-      "V. Onkhar",
       "Valerie de Vlam",
       "Victor Roosens",
+      "Vishal Onkhar",
       "Wessel van Haarlem",
       "Xander van der Geest",
       "Yke Bauke Eisma",
-      "Ömer Can Akgun",
-      "Γεώργιος Παπαϊωάννου"
+      "Ömer Can Akgun"
     ]
   },
   {
@@ -69,7 +69,7 @@
     "lon": 5.478,
     "works": 27,
     "people": [
-      "Christian Janssen",
+      "Christian P. Janssen",
       "Debargha Dey",
       "Erik D. van der Spek",
       "Giovanni Sapienza",
@@ -77,9 +77,7 @@
       "Haoyu Liu",
       "Jakub Woziwodzki",
       "Linghan Zhang",
-      "M.H. Martens",
       "Marieke H. Martens",
-      "Marieke Martens",
       "Md Shadab Alam",
       "Mervyn Franssen",
       "Miguel Bruns",
@@ -99,9 +97,7 @@
     "lon": 4.356,
     "works": 8,
     "people": [
-      "M.H. Martens",
-      "Marieke H. Martens",
-      "Marieke Martens"
+      "Marieke H. Martens"
     ]
   },
   {
@@ -232,7 +228,7 @@
     "lon": -76.497,
     "works": 2,
     "people": [
-      "Angel Hsing‐Chi Hwang",
+      "Angel Hsing-Chi Hwang",
       "Hauke Sandhaus",
       "Qian Yang"
     ]

@@ -21,7 +21,7 @@ layout: gridlay
     </div>
     <h4>{{ page.authors }}</h4>
     <h5><em>{{ page.display }}</em>{% if page.year %} ({{page.year}}){% endif %}</h5>
-    {% assign cites = site.data.citations[page.slug] %}{% if cites %}<p style="font-size: 90%">Cited by <a href="https://openalex.org/works?filter=cites:{{ cites.openalex }}" target="_blank">{{ cites.count }} {% if cites.count == 1 %}work{% else %}works{% endif %}</a> (OpenAlex, updated every night).</p>{% endif %}
+    {% assign cites = site.data.citations[page.slug] %}{% if cites %}<p style="font-size: 90%">Cited by <a href="https://openalex.org/works?filter=cites:{{ cites.openalex }}" target="_blank">{{ cites.count }} {% if cites.count == 1 %}work{% else %}works{% endif %}</a>.</p>{% endif %}
     {% if page.doi %}<div class="altmetric-embed" data-badge-type="donut" data-badge-details="right" data-doi="{{ page.doi }}" data-hide-no-mentions="true" data-link-target="_blank" style="margin-bottom: 10px"></div><script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>{% endif %}
     {% if page.abstract %}
       <a class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb; pointer-events: none;" role="button">ABSTRACT</a> {{ page.abstract }} {% if page.tags %}{% for tag in page.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}

@@ -9,10 +9,16 @@
 #crowd-globe-tip .r { color:var(--recent) } #crowd-globe-tip .m { opacity:.7 } #crowd-globe-tip .d { color:var(--day) }
 #crowd-globe-leg { display:flex; flex-wrap:wrap; justify-content:center; gap:2px 12px; font-size:90% }
 #crowd-globe-leg i { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:4px }
+#crowd-globe-go { margin:6px 0 8px } #crowd-globe-go[hidden] { display:none }  /* .btn-doi would show it before the data is in */
+#crowd-globe-video { max-width:560px; margin:0 auto 8px }
+#crowd-globe-video iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:5px }
+#crowd-globe-video div { font-size:90%; margin-top:4px }
 </style>
 <div id="crowd-globe">
   <canvas aria-label="Globe with the localities of the CROWD dataset" role="img"></canvas>
   <div id="crowd-globe-tip"></div>
+  <button id="crowd-globe-go" class="btn-doi" type="button" hidden>Take me somewhere</button>
+  <div id="crowd-globe-video"></div>
   <div id="crowd-globe-leg"></div>
   <div id="crowd-globe-date"></div>
 </div>
@@ -21,7 +27,9 @@
   const box = document.getElementById('crowd-globe'), cv = box.querySelector('canvas'), ctx = cv.getContext('2d');
   const tip = document.getElementById('crowd-globe-tip'), FPS = 20, SPEED = 6;  // frames per second, degrees per second
   const css = n => getComputedStyle(box).getPropertyValue(n).trim(), fmt = n => n.toLocaleString('en-US');
+  const videos = n => `${fmt(n)} video${n === 1 ? '' : 's'}`;
   let size, R, proj, path, land, borders, tiers = [[], [], []], data, shown = [], rot = [-10, -22], hover = false, held = 0, lastT = 0, visible = false, running = false;
+  let fly = null, picked = null;  // the flight to a random place and that place
 
   function setup() {
     size = Math.min(box.clientWidth, 420); R = size / 2 - 2;
@@ -73,13 +81,24 @@
       ctx.moveTo(xy[0] + r, xy[1]); ctx.arc(xy[0], xy[1], r, 0, 2 * Math.PI);
     }
     ctx.globalAlpha = 0.7 * (1 - pulse); ctx.strokeStyle = css('--day'); ctx.lineWidth = 1.2; ctx.stroke(); ctx.globalAlpha = 1;
+    const xy = picked && place(picked);  // the place "Take me somewhere" chose
+    if (xy) {
+      ctx.beginPath(); ctx.arc(xy[0], xy[1], 7, 0, 2 * Math.PI);
+      ctx.moveTo(xy[0] - 12, xy[1]); ctx.lineTo(xy[0] - 4, xy[1]); ctx.moveTo(xy[0] + 4, xy[1]); ctx.lineTo(xy[0] + 12, xy[1]);
+      ctx.moveTo(xy[0], xy[1] - 12); ctx.lineTo(xy[0], xy[1] - 4); ctx.moveTo(xy[0], xy[1] + 4); ctx.lineTo(xy[0], xy[1] + 12);
+      ctx.strokeStyle = css('--day'); ctx.lineWidth = 2; ctx.stroke();
+    }
   }
 
   function frame(t) {  // turns only while on screen
     if (!visible || document.hidden) { running = false; return; }
     requestAnimationFrame(frame);
     if (t - lastT < 1000 / FPS) return;
-    if (!hover && t > held) rot[0] += SPEED * Math.min(t - lastT, 250) / 1000;
+    if (fly) {  // eased turn to the chosen place, then it stays there a while
+      const k = Math.min(1, (t - fly.t0) / 1500), e = k < 0.5 ? 2 * k * k : 1 - (-2 * k + 2) ** 2 / 2;
+      rot = [fly.from[0] + e * fly.d[0], fly.from[1] + e * fly.d[1]];
+      if (k === 1) { fly = null; held = t + 20000; }
+    } else if (!hover && t > held) rot[0] += SPEED * Math.min(t - lastT, 250) / 1000;
     lastT = t;
     draw(t);
   }
@@ -101,7 +120,7 @@
     data = await (await fetch('/js/crowd-globe.json', {cache: 'no-cache'})).json();
     for (const [lat, lon, h, videos, month, week, name, video, start] of data.points)
       tiers[week ? 2 : month ? 1 : 0].push({lon: lon * Math.PI / 180, s: Math.sin(lat * Math.PI / 180),
-        k: Math.cos(lat * Math.PI / 180), r: 0.6 + Math.min(1.9, Math.sqrt(h) / 10), h, videos, month, week, name, video, start});
+        k: Math.cos(lat * Math.PI / 180), r: 0.6 + Math.min(1.9, Math.sqrt(h) / 10), h, videos, month, week, name, video, start, lat, lng: lon});
     document.getElementById('crowd-globe-leg').innerHTML =
       `<span><i style="background:var(--day)"></i>last week: +${fmt(data.week)} segments in ${fmt(data.week_places)} places</span>` +
       `<span><i style="background:var(--recent)"></i>last month: +${fmt(data.month)} in ${fmt(data.month_places)} places</span>` +
@@ -112,8 +131,24 @@
     addEventListener('resize', () => { setup(); draw(); });
     d3.select(cv).call(d3.drag().on('drag', e => {
       rot[0] += e.dx * 0.4; rot[1] = Math.max(-80, Math.min(80, rot[1] - e.dy * 0.4));
-      held = performance.now() + 4000; draw();
+      held = performance.now() + 4000; fly = null; draw();
     }));
+    const go = document.getElementById('crowd-globe-go'), all = tiers.flat().filter(p => p.video);
+    go.hidden = false;
+    go.addEventListener('click', () => {  // turn to a random place and play its longest segment
+      picked = all[Math.floor(Math.random() * all.length)];
+      const to = [-picked.lng, Math.max(-60, Math.min(60, -picked.lat))];
+      const d0 = ((to[0] - rot[0]) % 360 + 540) % 360 - 180;  // the short way round
+      fly = {t0: performance.now(), from: rot.slice(), d: [d0, to[1] - rot[1]]};
+      const v = document.getElementById('crowd-globe-video'), id = encodeURIComponent(picked.video);
+      const frame = Object.assign(document.createElement('iframe'), {title: `Dashcam footage from ${picked.name}`, allow: 'autoplay; encrypted-media; picture-in-picture', allowFullscreen: true,
+        src: `https://www.youtube-nocookie.com/embed/${id}?start=${picked.start}&autoplay=1&mute=1&rel=0`});
+      const cap = document.createElement('div'), link = Object.assign(document.createElement('a'), {href: `https://www.youtube.com/watch?v=${id}&t=${picked.start}s`, target: '_blank', textContent: 'open on YouTube'});
+      cap.append(`${picked.name}: ${fmt(picked.h)} h of footage in ${videos(picked.videos)} (`, link, ')');
+      v.replaceChildren(frame, cap);
+      go.textContent = 'Take me somewhere else';
+      start();
+    });
   }
 
   function nearest(e) {  // the place within 8 px of the pointer; ties: the newer (drawn later)
@@ -132,7 +167,7 @@
     cv.style.cursor = best && best.video ? 'pointer' : '';
     if (!best) { tip.style.display = 'none'; return; }
     const line = (cls, text) => Object.assign(document.createElement('div'), {className: cls, textContent: text});
-    tip.replaceChildren(line('', best.name), line('', `${fmt(best.h)} h of footage in ${fmt(best.videos)} videos`));
+    tip.replaceChildren(line('', best.name), line('', `${fmt(best.h)} h of footage in ${videos(best.videos)}`));
     tip.firstChild.style.fontWeight = 'bold';
     if (best.month) tip.append(line('r', `+${fmt(best.month)} segments in the last month`));
     if (best.week) tip.append(line('d', `+${fmt(best.week)} in the last week`));

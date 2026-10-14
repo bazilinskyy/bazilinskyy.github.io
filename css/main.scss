@@ -692,20 +692,6 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
     padding-bottom: 4px;
 }
 
-/* publications and citations per year side by side, wrapping on narrow screens */
-.pub-charts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 2em;
-}
-
-.pub-charts > div { min-width: 0; max-width: 100%; }
-
-.pub-chart-label {
-    font-size: 11px;
-    color: var(--filter-label);
-}
-
 .pub-chart {
     display: block;
     height: 118px;
