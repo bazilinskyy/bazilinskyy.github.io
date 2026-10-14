@@ -6,6 +6,7 @@ authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2026influence
 image: alam2026influence.jpg
 display: Submitted for publication.
+year: 2026
 # year: 
 # doi: 
 tags: [preprint, artificial-intelligence, robotics]

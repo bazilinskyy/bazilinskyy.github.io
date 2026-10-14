@@ -6,7 +6,7 @@ authors: Zeng, X., Alam, M. S., Bazilinskyy, P.
 pdf: zeng2026enhancing
 image: zeng2026enhancing.jpg
 display: Submitted for publication.
-year:
+year: 2026
 tags: [preprint, robotics, automated-driving, lab]
 suppmat: https://www.dropbox.com/scl/fo/962bbgpgdjerz7mpa0ik4/AFk-31Schu0wxc1kYgtgUfE?rlkey=h6h9hee11r90uc03xozvly8pk&st=0ju24wjq
 code: https://github.com/esse009/emotion-face

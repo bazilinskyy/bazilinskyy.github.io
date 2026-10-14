@@ -6,6 +6,7 @@ authors: Alam, M. S., Bazilinska, O., Bazilinskyy, P.
 pdf: alam2026global
 image: alam2026global.jpg
 display: Submitted for publication.
+year: 2026
 # year:
 # doi:
 tags: [preprint, artificial-intelligence, computer-vision, dashcam, dataset]

@@ -13,14 +13,16 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {%- assign shown = 0 -%}
 {%- assign dated = 0 -%}
 {%- for y in site.data.years -%}
-  {%- assign n = site.publications | where: "year", y.year | size -%}
+  {%- assign of_year = site.publications | where: "year", y.year -%}
+  {%- assign n_pre = of_year | where_exp: "p", "p.tags contains 'preprint'" | size -%}
+  {%- assign n = of_year | size | minus: n_pre -%}
   {%- if n > 0 -%}
     {%- assign shown = shown | plus: 1 -%}
     {%- assign dated = dated | plus: n -%}
     {%- if n > peak -%}{%- assign peak = n -%}{%- endif -%}
   {%- endif -%}
 {%- endfor -%}
-{%- comment -%}anything without a year is a working document{%- endcomment -%}
+{%- comment -%}preprints and anything without a year are working documents{%- endcomment -%}
 {%- assign undated = site.publications | size | minus: dated -%}
 {%- if undated > 0 -%}
   {%- assign shown = shown | plus: 1 -%}
@@ -34,7 +36,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 
 <div markdown="0" class="pub-chart-wrap">
 <svg markdown="0" class="pub-chart" width="{{ chartw }}" height="118" viewBox="0 0 {{ chartw }} 118" role="img" aria-label="Publications per year, peaking at {{ peak }}">
-{% assign i = 0 %}{% for y in ordered %}{% assign n = site.publications | where: "year", y.year | size %}{% if n > 0 %}{% assign h = n | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#{{ y.year }}"><title>{{ y.year }}: {{ n }} publication{% if n != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ n }}</text><rect class="pub-chart-bar" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">{{ y.year }}</text></a>{% assign i = i | plus: 1 %}{% endif %}{% endfor %}{% if undated > 0 %}{% assign h = undated | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#working-documents"><title>Working documents: {{ undated }} publication{% if undated != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ undated }}</text><rect class="pub-chart-bar pub-chart-wd" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">n/a</text></a>{% endif %}
+{% assign i = 0 %}{% for y in ordered %}{% assign of_year = site.publications | where: "year", y.year %}{% assign n_pre = of_year | where_exp: "p", "p.tags contains 'preprint'" | size %}{% assign n = of_year | size | minus: n_pre %}{% if n > 0 %}{% assign h = n | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#{{ y.year }}"><title>{{ y.year }}: {{ n }} publication{% if n != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ n }}</text><rect class="pub-chart-bar" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">{{ y.year }}</text></a>{% assign i = i | plus: 1 %}{% endif %}{% endfor %}{% if undated > 0 %}{% assign h = undated | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#working-documents"><title>Working documents: {{ undated }} publication{% if undated != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ undated }}</text><rect class="pub-chart-bar pub-chart-wd" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">n/a</text></a>{% endif %}
 </svg>
 </div>
 
@@ -111,14 +113,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 </div>
 </div>
 
-{% assign yeartest = true %}
-{% for publi in site.publications %}
-{% if publi.year %}{% else %}
-{% assign yeartest = false %}
-{% endif %}
-{% endfor %}
-
-{% if yeartest == false %}
+{% if undated > 0 %}
 ## Working documents
 {% endif %}
 
@@ -130,7 +125,8 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {% assign pdffile = publi.pdf | append: ".pdf" %}
 {% endif %}
 
-{% if publi.year %}{% else %}
+{% assign working = true %}{% if publi.year %}{% unless publi.tags contains 'preprint' %}{% assign working = false %}{% endunless %}{% endif %}
+{% if working %}
 {% assign bibpresent = false %}
 {% if publi.pdf %}
 {% assign bibpresent = true %}
@@ -150,7 +146,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 <li class="flex-item2">
 {% if publi.pdf %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ publi.pdf }}" target="_blank">{% endif %}<strong class="pub-title">{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br/>
 <span class="pub-authors">{{ publi.authors }}</span><br/>
-<em class="pub-venue">{{ publi.display }}</em><br/>
+<em class="pub-venue">{{ publi.display }}</em>{% if publi.year %} (<span class="pub-year">{{publi.year}}</span>){% endif %}<br/>
 {% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
 {% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">BIB</a>{% endif %}
 {% if pdfpresent == true %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
@@ -183,9 +179,9 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 
 {% assign yeartest = false %}
 {% for publi in site.publications %}
-{% if publi.year == myyear.year %}
+{% if publi.year == myyear.year %}{% unless publi.tags contains 'preprint' %}
 {% assign yeartest = true %}
-{% endif %}
+{% endunless %}{% endif %}
 {% endfor %}
 
 {% if site.group_pub_by_year == true %}
@@ -202,7 +198,8 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {% assign pdffile = publi.pdf | append: ".pdf" %}
 {% endif %}
 
-{% if publi.year == myyear.year %}
+{% assign in_year = false %}{% if publi.year == myyear.year %}{% unless publi.tags contains 'preprint' %}{% assign in_year = true %}{% endunless %}{% endif %}
+{% if in_year %}
 {% assign bibpresent = false %}
 {% if publi.pdf %}
 {% assign bibpresent = true %}

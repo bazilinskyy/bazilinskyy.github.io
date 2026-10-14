@@ -6,6 +6,7 @@ authors: Alam, M. S., Hoggenmueller, M., Bazilinskyy, P.
 pdf: alam2026automated
 image: alam2026automated.jpg
 display: Submitted for publication.
+year: 2026
 # year: 
 # doi: 
 tags: [preprint, artificial-intelligence, dashcam]

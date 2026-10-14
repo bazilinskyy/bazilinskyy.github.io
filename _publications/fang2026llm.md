@@ -6,6 +6,7 @@ authors: Fang, Y., Bazilinskyy, P., Martens, M. H.
 pdf: fang2026llm
 image: fang2026llm.jpg
 display: Submitted for publication
+year: 2026
 # year: 2026
 # doi: 
 code: https://github.com/FayeFang-creator/llm-expert-interview

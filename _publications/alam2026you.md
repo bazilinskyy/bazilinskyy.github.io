@@ -6,6 +6,7 @@ authors: Alam, M. S., Dey, D., Martens., M. H., Bazilinskyy, P.
 pdf: alam2026you
 image: alam2026you.jpg
 display: Submitted for publication.
+year: 2026
 # year:
 # doi:
 tags: [preprint, ehmi, pedestrian, virtual-reality, simulator, lab]

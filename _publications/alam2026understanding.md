@@ -6,6 +6,7 @@ authors: Alam, M. S., Martens, M. H., Bazilinska, O., Bazilinskyy, P.
 pdf: alam2026understanding
 image: alam2026understanding.jpg
 display: Submitted for publication.
+year: 2026
 # year: 
 tags: [preprint, artificial-intelligence, computer-vision, dashcam, pedestrian]
 # doi:

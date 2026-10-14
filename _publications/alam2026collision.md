@@ -6,6 +6,7 @@ authors: Alam, M. S., Zhang, L., Li, J., Dou, F., Bazilinskyy, P.
 pdf: alam2026collision
 image: alam2026collision.jpg
 display: Submitted for publication.
+year: 2026
 # year:
 # doi:
 tags: [preprint, artificial-intelligence, meta, automated-driving]

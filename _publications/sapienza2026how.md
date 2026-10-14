@@ -6,6 +6,7 @@ authors: Sapienza, G., Bazilinskyy, P.
 pdf: sapienza2026how
 image: sapienza2026how.jpg
 display: Submitted for publication.
+year: 2026
 # year:
 suppmat: https://drive.google.com/drive/folders/1t-zu1Ldfz2wg0s3kh91LO1v7o97LXnhS
 # doi:

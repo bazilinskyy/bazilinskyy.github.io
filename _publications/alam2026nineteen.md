@@ -6,6 +6,7 @@ authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2026nineteen
 image: alam2026nineteen.jpg
 display: Submitted for publication.
+year: 2026
 # year:
 # doi:
 tags: [preprint, artificial-intelligence, meta]
