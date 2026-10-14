@@ -25,6 +25,11 @@ NAMES = {
     'Γεώργιος Παπαϊωάννου': 'Georgios Papaioannou',
     'V. Onkhar': 'Vishal Onkhar',
     'Angel Hsing‐Chi Hwang': 'Angel Hsing-Chi Hwang',
+    'Md Shadab Alam': 'Shadab Alam',
+}
+# co-authors OpenAlex also puts at institutions they were not at for our papers -> their one institution
+PLACE = {
+    'Shadab Alam': 'Eindhoven University of Technology',
 }
 
 
@@ -124,6 +129,8 @@ def collaborators(works, url=None):
             if not who.get(name, (None,))[0]:  # of the spellings of one person, the one with an ORCID
                 who[name] = (a['author'].get('orcid'), a['author'].get('id'))
             for inst in a['institutions']:
+                if PLACE.get(name, inst['display_name']) != inst['display_name']:
+                    continue
                 joint[inst['id']].add(work['id'])
                 people[inst['id']].add(name)
                 names[inst['id']] = inst['display_name']
@@ -150,10 +157,12 @@ def _check():
     assert best_url([('LinkedIn', 'l'), ('Delft University of Technology profile page', 's')]) == 's' and best_url([]) is None
     me, other = {'orcid': f'https://orcid.org/{ORCID}', 'display_name': 'Me'}, {'orcid': None, 'display_name': 'Ann'}
     other2 = {'orcid': None, 'display_name': 'M.H. Martens'}  # two spellings of one person count once
+    shadab = {'orcid': None, 'display_name': 'Md Shadab Alam'}  # only at the institution in PLACE
     inst = [{'id': 'I1', 'display_name': 'Uni'}]
     works = [{'id': 'W1',
               'authorships': [{'author': me, 'institutions': inst}, {'author': other, 'institutions': inst},
-                              {'author': other2, 'institutions': inst}, {'author': dict(other2, display_name='Marieke Martens'), 'institutions': inst}]},
+                              {'author': other2, 'institutions': inst}, {'author': dict(other2, display_name='Marieke Martens'), 'institutions': inst},
+                              {'author': shadab, 'institutions': [{'id': 'I3', 'display_name': 'Elsewhere'}]}]},
              {'id': 'W2',
               'authorships': [{'author': me, 'institutions': [{'id': 'I2', 'display_name': 'Mine'}]}]}]
     global get

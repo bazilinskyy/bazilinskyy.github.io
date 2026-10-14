@@ -262,10 +262,6 @@
         "url": "https://research.tue.nl/en/persons/marieke-h-martens"
       },
       {
-        "name": "Md Shadab Alam",
-        "url": "https://research.tue.nl/en/persons/aae77095-d6fa-464d-9857-437c20ae4590"
-      },
-      {
         "name": "Mervyn Franssen",
         "url": "https://research.tue.nl/en/persons/31fd01df-21fd-4cdc-b4bd-2699fc303349"
       },
@@ -280,6 +276,10 @@
       {
         "name": "Rutger Verstegen",
         "url": "https://research.tue.nl/en/persons/9b54c959-7402-41e4-8b1d-c28d165b82c4"
+      },
+      {
+        "name": "Shadab Alam",
+        "url": "https://research.tue.nl/en/persons/aae77095-d6fa-464d-9857-437c20ae4590"
       },
       {
         "name": "Shiva Nischal Lingam",
@@ -892,20 +892,6 @@
       {
         "name": "Kumar Akash",
         "url": "https://kakash-hri.github.io/"
-      }
-    ]
-  },
-  {
-    "name": "Indian Institute of Technology Madras",
-    "city": "Chennai",
-    "country": "India",
-    "lat": 13.088,
-    "lon": 80.278,
-    "works": 1,
-    "people": [
-      {
-        "name": "Md Shadab Alam",
-        "url": "https://research.tue.nl/en/persons/aae77095-d6fa-464d-9857-437c20ae4590"
       }
     ]
   },
