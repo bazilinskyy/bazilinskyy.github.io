@@ -1,7 +1,8 @@
 # Every night: rebuilds js/crowd-globe.json (the globe on the home page) and _data/crowd.json
 # (the numbers on the research page) from the mapping of github.com/crowd-dataset/crowd; the
 # citation counts and co-author institutions from OpenAlex; and the
-# open-source cards from GitHub; then asks GitHub Pages to rebuild the site.
+# open-source cards from GitHub; the latest publications in the sidebar from the git history;
+# then asks GitHub Pages to rebuild the site.
 name: Nightly data
 
 on:
@@ -18,9 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0     # make_latest_publications.py dates papers by their first commit
+          filter: blob:none  # all commits, file contents only when needed
       - run: python3 scripts/make_crowd_globe.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: python3 scripts/make_latest_publications.py
       - run: python3 scripts/make_openalex.py
         continue-on-error: true  # OpenAlex or GitHub being down must not stop the rest
       - run: python3 scripts/make_github.py
@@ -31,7 +36,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Update the nightly data' js/crowd-globe.json _data/crowd.json _data/citations.json \
-            _data/coauthor_institutions.json _data/repos.json
+            _data/coauthor_institutions.json _data/repos.json _data/latest_publications.json
           git push
           gh api -X POST repos/${{ github.repository }}/pages/builds
         env:

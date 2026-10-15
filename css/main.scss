@@ -1082,3 +1082,31 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 .repo-desc { font-size: 90%; flex: 1; }
 
 .repo-meta { font-size: 80%; color: var(--filter-label); }
+
+/* Latest publications in the sidebar (_data/latest_publications.json, refreshed nightly) */
+.latest-pub {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    color: var(--body-text);
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+.latest-pub:hover,
+.latest-pub:focus { color: var(--link-hover); text-decoration: none; }
+
+.latest-pub img {
+    flex: none;
+    width: 64px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.latest-pub-venue {
+    margin: 3px 0 10px 72px;
+    font-size: 85%;
+    color: var(--filter-label);
+}
