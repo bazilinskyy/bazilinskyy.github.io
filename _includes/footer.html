@@ -18,7 +18,5 @@
 
 <script type="text/javascript">
   // Open links from outside of the website in a new tab
-  $(document.links).filter(function() {
-    return this.hostname != window.location.hostname;
-  }).attr('target', '_blank');
+  for (const a of document.links) if (a.hostname != location.hostname) a.target = '_blank';
 </script>

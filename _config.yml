@@ -75,6 +75,8 @@ include:
 
 sass:
   sass_dir: _sass
+  # Dart Sass (local Jekyll 4) warns about the old Bootstrap 3 Sass; the live build ignores this
+  silence_deprecations: [color-functions, global-builtin, if-function, import, slash-div]
 
 # Conversion
 markdown: kramdown
