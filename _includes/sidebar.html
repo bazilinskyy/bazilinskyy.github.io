@@ -68,7 +68,10 @@
 <a class="twitter-timeline" href="https://twitter.com/bazilinskyy?ref_src=twsrc%5Etfw">Tweets by bazilinskyy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div> -->
 
-{% if site.data.events %}
+{% comment %}the box only when at least one event has not ended yet{% endcomment %}
+{% assign now_s = 'now' | date: '%s' | plus: 0 %}{% assign upcoming = 0 %}
+{% for event in site.data.events %}{% assign end_s = event.date_end | date: '%s' | plus: 0 %}{% if end_s > now_s %}{% assign upcoming = upcoming | plus: 1 %}{% endif %}{% endfor %}
+{% if upcoming > 0 %}
 <div class="well" style="padding: 0px">
 <h4 style="padding-left: 10px">Upcoming events</h4>
   <div style="display: block; border-top: 1px solid rgba(145,165,180,.6); padding: 10px">
