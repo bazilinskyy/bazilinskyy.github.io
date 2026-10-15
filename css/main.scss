@@ -1110,3 +1110,40 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
     font-size: 85%;
     color: var(--filter-label);
 }
+
+/* Phones: boxes and publication cards centred in the column, and their pictures, videos and
+   thumbnails as wide as the box, with the same 10px above them as at the sides. On wider screens
+   these sit at a fixed width next to the text. */
+@media (max-width: $tablet-width) {
+    #homeid,
+    #newsid { padding-left: 16px; padding-right: 16px; }  /* home: 7px | 0 beside the sidebar on wider screens; sidebar: 26px */
+
+    #gridid .rowl1,
+    #gridid .rowl2 { margin-left: -8px; margin-right: -8px; }
+
+    #gridid .well-sm.publication-entry { margin-left: -8px; margin-right: -8px; padding-left: 10px; padding-right: 10px; }
+    .publication-entry .flex-item1 { padding: 0; }
+    .publication-entry .flex-item2 { padding-left: 0; padding-right: 0; }
+    #gridid .publication-entry .flex-item1 img { width: 100%; margin: 10px 0 6px; }
+
+    .rowl1 img.img-responsive[style*="float"],
+    .rowl1 div.img-responsive[style*="float"],
+    .rowl1 > div[style*="float: left"] {
+        float: none !important;
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+        margin: 10px 0 !important;
+    }
+
+    .rowl1 div.img-responsive[style*="float"] iframe,
+    .rowl1 > div[style*="float: left"] > img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+    .rowl1 div.img-responsive[style*="float"] iframe { aspect-ratio: 16 / 9; }
+
+    .rowl1 > div[style*="float: left"] > div { max-width: none !important; }
+}
