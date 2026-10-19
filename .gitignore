@@ -7,3 +7,7 @@ _site/*
 *.sublime-workspace
 *.sublime-project
 .sass-cache/*
+
+# Claude Code: scratch worktrees and personal overrides; launch.json is shared
+.claude/worktrees/
+.claude/settings.local.json
