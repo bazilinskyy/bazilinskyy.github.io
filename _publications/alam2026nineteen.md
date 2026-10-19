@@ -1,16 +1,15 @@
 ---
 layout: publication
-title: "Nineteen years of ASMR on YouTube: A multilingual, theme-level analysis of 52,002 videos"
-description: "Autonomous sensory meridian response (ASMR) videos use whispered speech, gentle sounds, and close-up attention to promote relaxation, yet longitudinal…"
+title: "Nineteen years of ASMR on YouTube: A multilingual, theme-level analysis of 89,241 videos"
+description: "Autonomous sensory meridian response (ASMR) videos are commonly framed around whispered speech, gentle sounds, close-up attention, relaxation, sleep, and…"
 authors: Alam, M. S., Bazilinskyy, P.
 pdf: alam2026nineteen
 image: alam2026nineteen.jpg
 display: Submitted for publication.
 year: 2026
-# year:
 # doi:
 tags: [preprint, artificial-intelligence, meta]
 code: https://github.com/Shaadalam9/ASMR-analysis
 suppmat: https://www.dropbox.com/scl/fo/7fyi4syvs059bctagj8ix/AOyIQjQrfQBCGgTpqONHQC4?rlkey=ro13uemf57ownq2gmparfoxw8&st=tj5jlorh
-abstract: Autonomous sensory meridian response (ASMR) videos use whispered speech, gentle sounds, and close-up attention to promote relaxation, yet longitudinal, large-scale descriptions are scarce. We analyse 52,002 ASMR YouTube videos (1 Jan 2008-6 Feb 2026; metadata updated 15 Feb 2026) from 11,529 channels in 36 languages. Using title/description text mining with duration, engagement, and growth metrics, we quantify long-term trends and content niches. Mean growth was 1,791 views/day (SD 22,271) and varied strongly by format and language. Short videos (under 10 min) grew fastest on average (3,432 views/day), mid-length videos (10-30 min) slower (917), and very long videos (over 180 min) rebounded (2,024), consistent with spe-cialised formats such as sleep streams. Common themes included drive (15.9%), sleep (16.3%), visual/hand triggers (14.8%), and role-play (13.0%), alongside whisper (10.0%) and binaural audio (7.5%). K-means clustering identified 11 content clus-ters, separating mainstream English mid-length ASMR from long-form sleep content and rapid-growth outliers.
+abstract: "Autonomous sensory meridian response (ASMR) videos are commonly framed around whispered speech, gentle sounds, close-up attention, relaxation, sleep, and comfort, yet longitudinal, large-scale descriptions of this labelled YouTube genre are scarce. We analyse 89,241 ASMR YouTube videos uploaded between 1 January 2008 and 31 July 2026, with metadata processed on 1 August 2026, from 18,024 channels across 81 language categories. Using title and description text mining with duration, engagement, growth, theme-label indicators, and exploratory clustering metrics, we provide a multilingual longitudinal map of explicitly labelled ASMR on YouTube. Mean growth was 1,125.41 views/day (SD 11,196.23). Among videos with known duration, those under 10 min grew fastest on average (2,075.55 views/day), videos between 10 and 30 min averaged 585.11 views/day, and videos over 180 min averaged 1,293.15 views/day. The most prevalent themes were sleep-related content (17.62%), whisper-focused content (15.49%), role-play (14.09%), mukbang or eating (7.08%), and visual triggers (6.85%); driving-related content accounted for 3.67%. An exploratory k-means solution grouped videos into 11 clusters, and a full-dataset UMAP projection visualised the resulting structure for all 89,241 videos without treating those groups as definitive ASMR subgenres."
 ---
