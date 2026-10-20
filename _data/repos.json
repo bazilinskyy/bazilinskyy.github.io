@@ -13,9 +13,9 @@
     "url": "https://github.com/crowd-dataset/crowd",
     "description": "This repository contains code that extracts YouTube videos based on a mapping.csv file and performs object detection using YOLOv11. The primary objective of this work is to evaluate pedestrian behaviour in a cross-country or cross-cultural context using freely available YouTube videos.",
     "language": "PostScript",
-    "stars": 13,
+    "stars": 14,
     "forks": 4,
-    "pushed": "2026-10-19"
+    "pushed": "2026-10-20"
   },
   {
     "name": "multiped",
