@@ -1,0 +1,5 @@
+@techreport{alam2026fixed,
+  title={Fixed or randomised trial order? A case study of pedestrian interaction with an automated vehicle},
+  author={Alam, Md Shadab and Martens, Marieke H. and Bazilinskyy, Pavlo},
+  year={2026}
+}
