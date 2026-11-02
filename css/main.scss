@@ -650,6 +650,13 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 
 .cv-list li { margin-bottom: 0.35em; }
 
+/* the same space around the text on every side; the indent fits two-digit numbers ("56.") */
+#gridid .rowl1.cv-list { padding: 12px; }
+#gridid .rowl1.cv-list ol { padding-left: 24px; }
+.cv-list > :last-child,
+.cv-list > ol > li:last-child,
+.cv-list > ol > li:last-child > p:last-child { margin-bottom: 0; }  /* items are paragraphs */
+
 /* printed, this should read as a CV and not as a web page */
 @media print {
     .navbar, #footer, #theme-toggle, .anchor-prefix, .octicon { display: none !important; }
