@@ -1,5 +1,13 @@
 [
   {
+    "name": "alam2026fixed",
+    "title": "Fixed or randomised trial order? A case study of pedestrian interaction with an automated vehicle",
+    "image": "alam2026fixed.jpg",
+    "venue": "Submitted for publication",
+    "year": "2026",
+    "added": "2026-11-02"
+  },
+  {
     "name": "rouchitsas2026love",
     "title": "Love in traffic: Physical and digital design against consensual sexual activity inside public and shared automated vehicles",
     "image": "rouchitsas2026love.jpg",
@@ -11,14 +19,6 @@
     "name": "riener2026understanding",
     "title": "Understanding motion comfort in automated driving: Bridging vehicle dynamics, driving style, and human-machine interaction",
     "image": "riener2026understanding.jpg",
-    "venue": "AutoUI",
-    "year": "2026",
-    "added": "2026-09-18"
-  },
-  {
-    "name": "peng2026experts",
-    "title": "Experts’ and community insights on measuring comfort and perceived safety in automated driving: Synthesis of a participatory workshop",
-    "image": "peng2026experts.jpg",
     "venue": "AutoUI",
     "year": "2026",
     "added": "2026-09-18"
