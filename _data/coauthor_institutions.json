@@ -5,7 +5,7 @@
     "country": "The Netherlands",
     "lat": 52.007,
     "lon": 4.356,
-    "works": 44,
+    "works": 42,
     "people": [
       {
         "name": "Amir Al Jawahiri",
@@ -436,42 +436,6 @@
     ]
   },
   {
-    "name": "Technische Hochschule Ingolstadt",
-    "city": "Ingolstadt",
-    "country": "Germany",
-    "lat": 48.765,
-    "lon": 11.424,
-    "works": 3,
-    "people": [
-      {
-        "name": "Andreas Riener",
-        "url": "https://orcid.org/0000-0002-9174-8895"
-      },
-      {
-        "name": "Ignacio Álvarez",
-        "url": "https://orcid.org/0000-0002-2788-3523"
-      }
-    ]
-  },
-  {
-    "name": "University of Salzburg",
-    "city": "Salzburg",
-    "country": "Austria",
-    "lat": 47.799,
-    "lon": 13.044,
-    "works": 3,
-    "people": [
-      {
-        "name": "Alexander Meschtscherjakov",
-        "url": "https://meschtscherjakov.wordpress.com/"
-      },
-      {
-        "name": "Sandra Trösterer",
-        "url": "https://openalex.org/A5025566925"
-      }
-    ]
-  },
-  {
     "name": "Chalmers University of Technology",
     "city": "Gothenburg",
     "country": "Sweden",
@@ -632,20 +596,38 @@
     ]
   },
   {
-    "name": "University of Ljubljana",
-    "city": "Ljubljana",
-    "country": "Slovenia",
-    "lat": 46.051,
-    "lon": 14.505,
+    "name": "Technische Hochschule Ingolstadt",
+    "city": "Ingolstadt",
+    "country": "Germany",
+    "lat": 48.765,
+    "lon": 11.424,
     "works": 2,
     "people": [
       {
-        "name": "Jaka Sodnik",
-        "url": "http://scholar.google.si/citations?user=Q_pCAxwAAAAJ&hl=en"
+        "name": "Andreas Riener",
+        "url": "https://orcid.org/0000-0002-9174-8895"
       },
       {
-        "name": "Kristina Stojmenova",
-        "url": "https://orcid.org/0000-0001-6584-7147"
+        "name": "Ignacio Álvarez",
+        "url": "https://orcid.org/0000-0002-2788-3523"
+      }
+    ]
+  },
+  {
+    "name": "University of Salzburg",
+    "city": "Salzburg",
+    "country": "Austria",
+    "lat": 47.799,
+    "lon": 13.044,
+    "works": 2,
+    "people": [
+      {
+        "name": "Alexander Meschtscherjakov",
+        "url": "https://meschtscherjakov.wordpress.com/"
+      },
+      {
+        "name": "Sandra Trösterer",
+        "url": "https://openalex.org/A5025566925"
       }
     ]
   },
@@ -664,20 +646,6 @@
       {
         "name": "Markus Sasalovici",
         "url": "https://www.uni-ulm.de/in/mi/institut/personal/markus-sasalovici/"
-      }
-    ]
-  },
-  {
-    "name": "Virtual Vehicle Research GmbH (Austria)",
-    "city": "Graz",
-    "country": "Austria",
-    "lat": 47.067,
-    "lon": 15.45,
-    "works": 2,
-    "people": [
-      {
-        "name": "Paolo Pretto",
-        "url": "https://orcid.org/0000-0003-3922-3108"
       }
     ]
   },
@@ -908,6 +876,20 @@
     ]
   },
   {
+    "name": "National University of Kyiv-Mohyla Academy",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "lat": 50.455,
+    "lon": 30.524,
+    "works": 1,
+    "people": [
+      {
+        "name": "Olena Bazilinska",
+        "url": "https://openalex.org/A5132793892"
+      }
+    ]
+  },
+  {
     "name": "Netherlands Aerospace Centre",
     "city": "Amsterdam",
     "country": "Netherlands",
@@ -1116,6 +1098,24 @@
     ]
   },
   {
+    "name": "University of Ljubljana",
+    "city": "Ljubljana",
+    "country": "Slovenia",
+    "lat": 46.051,
+    "lon": 14.505,
+    "works": 1,
+    "people": [
+      {
+        "name": "Jaka Sodnik",
+        "url": "http://scholar.google.si/citations?user=Q_pCAxwAAAAJ&hl=en"
+      },
+      {
+        "name": "Kristina Stojmenova",
+        "url": "https://orcid.org/0000-0001-6584-7147"
+      }
+    ]
+  },
+  {
     "name": "University of Music and Performing Arts Graz",
     "city": "Graz",
     "country": "Austria",
@@ -1246,6 +1246,20 @@
       {
         "name": "Christian P. Janssen",
         "url": "http://www.cpjanssen.nl"
+      }
+    ]
+  },
+  {
+    "name": "Virtual Vehicle Research GmbH (Austria)",
+    "city": "Graz",
+    "country": "Austria",
+    "lat": 47.067,
+    "lon": 15.45,
+    "works": 1,
+    "people": [
+      {
+        "name": "Paolo Pretto",
+        "url": "https://orcid.org/0000-0003-3922-3108"
       }
     ]
   },
