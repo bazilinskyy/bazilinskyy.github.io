@@ -16,7 +16,7 @@
     "openalex": "W4407669272"
   },
   "alam2025pedestrian": {
-    "count": 4,
+    "count": 6,
     "openalex": "W4414810930"
   },
   "alam2026exploring": {
@@ -24,23 +24,23 @@
     "openalex": "W7213590540"
   },
   "bazilinskyy2015auditory": {
-    "count": 83,
+    "count": 89,
     "openalex": "W1198252587"
   },
   "bazilinskyy2015international": {
-    "count": 102,
+    "count": 106,
     "openalex": "W3121799177"
   },
   "bazilinskyy2016blind": {
-    "count": 8,
+    "count": 9,
     "openalex": "W2551704751"
   },
   "bazilinskyy2016sonifying": {
-    "count": 7,
+    "count": 9,
     "openalex": "W2553353351"
   },
   "bazilinskyy2017analyzing": {
-    "count": 43,
+    "count": 48,
     "openalex": "W2617052221"
   },
   "bazilinskyy2017blind": {
@@ -52,39 +52,39 @@
     "openalex": "W2907835984"
   },
   "bazilinskyy2018crowdsourced": {
-    "count": 23,
+    "count": 26,
     "openalex": "W2883965713"
   },
   "bazilinskyy2018take": {
-    "count": 184,
+    "count": 199,
     "openalex": "W2799397126"
   },
   "bazilinskyy2019continuous": {
-    "count": 10,
+    "count": 11,
     "openalex": "W2987357205"
   },
   "bazilinskyy2019survey": {
-    "count": 198,
+    "count": 215,
     "openalex": "W2989183161"
   },
   "bazilinskyy2019when": {
-    "count": 39,
+    "count": 41,
     "openalex": "W2945742052"
   },
   "bazilinskyy2020external": {
-    "count": 46,
+    "count": 49,
     "openalex": "W3111667030"
   },
   "bazilinskyy2020risk": {
-    "count": 21,
+    "count": 23,
     "openalex": "W3025585028"
   },
   "bazilinskyy2021driving": {
-    "count": 24,
+    "count": 25,
     "openalex": "W3163930758"
   },
   "bazilinskyy2021should": {
-    "count": 80,
+    "count": 87,
     "openalex": "W3162289979"
   },
   "bazilinskyy2021visual": {
@@ -92,23 +92,23 @@
     "openalex": "W3176318646"
   },
   "bazilinskyy2022blinded": {
-    "count": 15,
+    "count": 18,
     "openalex": "W4304163290"
   },
   "bazilinskyy2022crowdsourced": {
-    "count": 9,
+    "count": 10,
     "openalex": "W4285197006"
   },
   "bazilinskyy2022get": {
-    "count": 25,
+    "count": 26,
     "openalex": "W4296306248"
   },
   "bazilinskyy2023exterior": {
-    "count": 13,
+    "count": 14,
     "openalex": "W4387427268"
   },
   "bazilinskyy2024always": {
-    "count": 6,
+    "count": 7,
     "openalex": "W4402575875"
   },
   "bazilinskyy2025pedestrian": {
@@ -124,19 +124,19 @@
     "openalex": "W4414786773"
   },
   "dewinter2021pedestrians": {
-    "count": 43,
+    "count": 46,
     "openalex": "W3112540180"
   },
   "dewinter2023predicting": {
-    "count": 27,
+    "count": 31,
     "openalex": "W4318570105"
   },
   "dong2023holistic": {
-    "count": 9,
+    "count": 11,
     "openalex": "W4386691169"
   },
   "dong2024exploring": {
-    "count": 6,
+    "count": 8,
     "openalex": "W4393335685"
   },
   "dong2025encountering": {
@@ -144,7 +144,7 @@
     "openalex": "W7138404747"
   },
   "driessen2024putting": {
-    "count": 36,
+    "count": 38,
     "openalex": "W4399142101"
   },
   "ebel2023breaking": {
@@ -152,11 +152,11 @@
     "openalex": "W4386691549"
   },
   "ebel2024changing": {
-    "count": 18,
+    "count": 22,
     "openalex": "W4402433400"
   },
   "ferreira2025vibe": {
-    "count": 11,
+    "count": 12,
     "openalex": "W4415000469"
   },
   "franssen2024exploring": {
@@ -168,7 +168,7 @@
     "openalex": "W7165054186"
   },
   "gao2024incorporating": {
-    "count": 4,
+    "count": 7,
     "openalex": "W4402575758"
   },
   "kim2025beyond": {
@@ -180,19 +180,19 @@
     "openalex": "W4409442831"
   },
   "mok2022stopping": {
-    "count": 22,
+    "count": 27,
     "openalex": "W4283650134"
   },
   "onkhar2021towards": {
-    "count": 15,
+    "count": 16,
     "openalex": "W3196141998"
   },
   "onkhar2022effect": {
-    "count": 46,
+    "count": 51,
     "openalex": "W4200107008"
   },
   "oudshoorn2021bio": {
-    "count": 28,
+    "count": 32,
     "openalex": "W3157482793"
   },
   "peng2025measuring": {
@@ -204,7 +204,7 @@
     "openalex": "W7213590440"
   },
   "petermeijer2017take": {
-    "count": 258,
+    "count": 276,
     "openalex": "W2596596865"
   },
   "sapienza2025enhancing": {
@@ -212,11 +212,11 @@
     "openalex": "W4414810817"
   },
   "sripada2021automated": {
-    "count": 32,
+    "count": 33,
     "openalex": "W3157852037"
   },
   "tran2024evaluating": {
-    "count": 24,
+    "count": 26,
     "openalex": "W4402350077"
   },
   "verstegen2024slideo": {
