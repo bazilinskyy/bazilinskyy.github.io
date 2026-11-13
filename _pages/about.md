@@ -85,16 +85,6 @@ permalink: /about/
 </div>
 {% endif %}
 
-{% if site.data.media %}
-## Media coverage
-<div class="rowl1" style="padding-top: 10px;">
-
-{% for item in site.data.media %}
-{{ forloop.index }}. {% if item.url %}<a href="{{ item.url }}" target="_blank"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}, {{ item.outlet }} ({{ item.year }}){% if item.file %} [<a href="{{ site.url }}{{ site.baseurl }}/media/{{ item.file }}" target="_blank">copy</a>]{% endif %}.
-{% endfor %}
-</div>
-{% endif %}
-
 {% if site.data.grants %}
 ## Grants
 <div class="rowl1" style="padding-top: 10px;">
@@ -134,6 +124,16 @@ permalink: /about/
 
 {% for invited_speaker in site.data.invited_speakers %}
 {{ forloop.index }}. {% if invited_speaker.name_url %}<a href="{{ invited_speaker.name_url }}" target="_blank">{% endif %}<strong>{{ invited_speaker.name }}</strong>{% if invited_speaker.name_url %}</a>{% endif %} ({{ invited_speaker.field }}, {% if invited_speaker.institution_url %}<a href="{{ invited_speaker.institution_url }}" target="_blank">{% endif %}{{ invited_speaker.institution }}{% if invited_speaker.institution_url %}</a>{% endif %}){% if invited_speaker.venue %} – at {{ invited_speaker.venue }}{% endif %}{% if invited_speaker.date %}, {{ invited_speaker.date }}{% endif %}.
+{% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.media %}
+## Media coverage
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for item in site.data.media %}
+{{ forloop.index }}. {% if item.url %}<a href="{{ item.url }}" target="_blank"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}, {{ item.outlet }} ({{ item.year }}){% if item.file %} [<a href="{{ site.url }}{{ site.baseurl }}/media/{{ item.file }}" target="_blank">copy</a>]{% endif %}.
 {% endfor %}
 </div>
 {% endif %}
