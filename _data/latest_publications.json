@@ -1,5 +1,13 @@
 [
   {
+    "name": "alam2027pedestrians",
+    "title": "What Pedestrians Lack Around the World: Auditing Street Infrastructure in Dashcam Video from 75 Cities with Vision-Language Models",
+    "image": "alam2027pedestrians.jpg",
+    "venue": "IHIET-AI",
+    "year": "2027",
+    "added": "2026-11-12"
+  },
+  {
     "name": "alam2026fixed",
     "title": "Fixed or randomised trial order? A case study of pedestrian interaction with an automated vehicle",
     "image": "alam2026fixed.jpg",
@@ -11,14 +19,6 @@
     "name": "rouchitsas2026love",
     "title": "Love in traffic: Physical and digital design against consensual sexual activity inside public and shared automated vehicles",
     "image": "rouchitsas2026love.jpg",
-    "venue": "AutoUI",
-    "year": "2026",
-    "added": "2026-09-18"
-  },
-  {
-    "name": "riener2026understanding",
-    "title": "Understanding motion comfort in automated driving: Bridging vehicle dynamics, driving style, and human-machine interaction",
-    "image": "riener2026understanding.jpg",
     "venue": "AutoUI",
     "year": "2026",
     "added": "2026-09-18"
