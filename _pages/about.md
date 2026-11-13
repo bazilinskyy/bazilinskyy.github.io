@@ -85,6 +85,16 @@ permalink: /about/
 </div>
 {% endif %}
 
+{% if site.data.media %}
+## Media coverage
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for item in site.data.media %}
+{{ forloop.index }}. <a href="{{ item.url }}" target="_blank"><strong>{{ item.title }}</strong></a>, {{ item.outlet }} ({{ item.year }}).
+{% endfor %}
+</div>
+{% endif %}
+
 {% if site.data.grants %}
 ## Grants
 <div class="rowl1" style="padding-top: 10px;">
