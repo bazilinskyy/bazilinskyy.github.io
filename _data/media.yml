@@ -1,11 +1,13 @@
 - title: "Who sets the rules when the driver disappears?"
   outlet: TU/e news
   url: https://www.tue.nl/en/news-and-events/news-overview/11-11-2026-who-sets-the-rules-when-the-driver-disappears
+  file: tue-news-2026.pdf
   year: 2026
 
 - title: "Grand Theft Auto lets gamers wreak vehicular mayhem. But researchers are using it to make roads safer"
   outlet: BBC Future
   url: https://www.bbc.com/future/article/20261110-grand-theft-auto-video-games-are-being-harnessed-to-make-real-roads-safer
+  file: bbc-future-2026.pdf
   year: 2026
 
 - title: "Interview on sex in robotaxis (Love In Traffic workshop)"
@@ -16,11 +18,13 @@
 - title: "AI tackles sex, drugs, and violence in the back seat"
   outlet: Cursor
   url: https://www.cursor.tue.nl/en/achtergrond/2026/oktober/week-2/ai-tackles-sex-drugs-and-violence-in-the-back-seat
+  file: cursor-2026.pdf
   year: 2026
 
 - title: "Meet the Academics Trying to Stop You From Having Sex in Robotaxis"
   outlet: WIRED
   url: https://www.wired.com/story/meet-the-academics-trying-to-stop-you-from-having-sex-in-robotaxis/
+  file: wired-2026.pdf
   year: 2026
 
 - title: "Driverless taxi passengers face bans for having sex"
@@ -31,11 +35,13 @@
 - title: "Can good design stop content creators from having sex in robotaxis?"
   outlet: Ars Technica
   url: https://arstechnica.com/cars/2026/10/can-good-design-stop-content-creators-from-having-sex-in-robotaxis/
+  file: ars-technica-2026.pdf
   year: 2026
 
 - title: "Academics want driverless taxis redesigned to put you off having sex in them"
   outlet: SEXTECHGUIDE
   url: https://sextechguide.com/safety/academics-want-driverless-taxis-redesigned-to-put-you-off-having-sex-in-them/
+  file: sextechguide-2026.pdf
   year: 2026
 
 - title: "Robotaxis haben ein Sex-Problem – die Lösung ist durchsichtig"
@@ -51,6 +57,7 @@
 - title: "Robotaxi, il problema che non ti aspetti: la gente ci fa le cosacce"
   outlet: Futuro Prossimo
   url: https://www.futuroprossimo.it/2026/10/robotaxi-il-problema-che-non-ti-aspetti-la-gente-ci-fa-le-cosacce/
+  file: futuro-prossimo-2026.pdf
   year: 2026
 
 - title: "Kialakítható-e olyan autonóm taxi, amiben a tartalomkészítők nem fognak szexelni?"
@@ -71,11 +78,13 @@
 - title: "Olá robotáxis. O sexo em transportes públicos subiu de nível"
   outlet: ZAP.aeiou
   url: https://zap.aeiou.pt/ola-robotaxis-o-sexo-em-transportes-publicos-subiu-de-nivel-765824
+  file: zap-2026.pdf
   year: 2026
 
 - title: "Akademikernas udda dilemma – hur man hindrar folk från att ha sex i robottaxis"
   outlet: BREAKIT
   url: https://www.breakit.se/artikel/47472/akademikernas-udda-dilemma-hur-man-hindrar-folk-fran-att-ha-sex-i-robottaxis
+  file: breakit-2026.pdf
   year: 2026
 
 - title: "Σεξ μέσα σε robotaxi; Ακαδημαϊκή μελέτη για την οικειότητα στα αυτόνομα οχήματα"
@@ -86,4 +95,25 @@
 - title: "EURAXESS for researchers at risk: an interview with Pavlo Bazilinskyy"
   outlet: EURAXESS
   url: https://euraxess.ec.europa.eu/euraxess/news/euraxess-researchers-risk-interview-pavlo-bazilinskyy
+  file: euraxess-2022.pdf
   year: 2022
+
+- title: "Interview on sex in robotaxis (Love In Traffic workshop)"
+  outlet: Sveriges Radio
+  file: sveriges-radio-2026.mp4
+  year: 2026
+
+- title: "El último de Valencia"
+  outlet: Corredor
+  file: corredor-2020.pdf
+  year: 2020
+
+- title: "Un ucraniano afincado en Países Bajos, el último en apuntarse"
+  outlet: Las Provincias
+  file: las-provincias-2020.jpg
+  year: 2020
+
+- title: "How videogames are being used for cycling safety research"
+  outlet: CyclingTips
+  file: cyclingtips-2017.pdf
+  year: 2017

@@ -90,7 +90,7 @@ permalink: /about/
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for item in site.data.media %}
-{{ forloop.index }}. <a href="{{ item.url }}" target="_blank"><strong>{{ item.title }}</strong></a>, {{ item.outlet }} ({{ item.year }}).
+{{ forloop.index }}. {% if item.url %}<a href="{{ item.url }}" target="_blank"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}, {{ item.outlet }} ({{ item.year }}){% if item.file %} [<a href="{{ site.url }}{{ site.baseurl }}/media/{{ item.file }}" target="_blank">copy</a>]{% endif %}.
 {% endfor %}
 </div>
 {% endif %}
