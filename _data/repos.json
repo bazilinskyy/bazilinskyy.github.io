@@ -5,8 +5,8 @@
     "description": "Coupled simulator for research on driver-pedestrian interactions made in Unity3D.",
     "language": "C#",
     "stars": 46,
-    "forks": 34,
-    "pushed": "2026-11-16"
+    "forks": 35,
+    "pushed": "2026-11-17"
   },
   {
     "name": "crowd-dataset/crowd",
@@ -15,7 +15,7 @@
     "language": "PostScript",
     "stars": 14,
     "forks": 4,
-    "pushed": "2026-11-16"
+    "pushed": "2026-11-17"
   },
   {
     "name": "multiped",
@@ -25,6 +25,15 @@
     "stars": 3,
     "forks": 3,
     "pushed": "2026-09-25"
+  },
+  {
+    "name": "coupled-carla",
+    "url": "https://github.com/bazilinskyy/coupled-carla",
+    "description": "Coupled CARLA: a human-factors driving simulator for real places. Any place on Earth from open data, SUMO traffic, drivers, pedestrians, cyclists, AV passengers and drone pilots in one world (successor of coupled-sim)",
+    "language": "Python",
+    "stars": 1,
+    "forks": 0,
+    "pushed": "2026-11-17"
   },
   {
     "name": "trust-crowdsourced",
@@ -61,14 +70,5 @@
     "stars": 1,
     "forks": 1,
     "pushed": "2022-12-08"
-  },
-  {
-    "name": "multicore-insense-compiler",
-    "url": "https://github.com/bazilinskyy/multicore-insense-compiler",
-    "description": "Compiler for the multi-core version of Insense language.",
-    "language": "Java",
-    "stars": 1,
-    "forks": 0,
-    "pushed": "2021-12-02"
   }
 ]
