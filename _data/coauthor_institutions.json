@@ -728,6 +728,20 @@
     ]
   },
   {
+    "name": "Clinical Insights",
+    "city": "Glen Burnie",
+    "country": "United States",
+    "lat": 39.172,
+    "lon": -76.621,
+    "works": 1,
+    "people": [
+      {
+        "name": "F.J.C. Anema",
+        "url": "https://openalex.org/A5017608859"
+      }
+    ]
+  },
+  {
     "name": "Dr. B.C. Roy Engineering College",
     "city": "Durgapur",
     "country": "India",
