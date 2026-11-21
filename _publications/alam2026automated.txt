@@ -1,5 +1,5 @@
 @techreport{alam2026automated,
-  title={Automated construction of living mobility datasets from public video: A YouTube case study},
+  title={Living mobility datasets from public video: A continuously running pipeline for crashes, near-collisions and pedestrian environments},
   author={Alam, Md Shadab and Hoggenmueller, Marius and Bazilinskyy, Pavlo},
   year={2026}
 }
