@@ -1,3 +1,11 @@
+- name: Joris Wijnands
+  degree: MSc
+  name_url:
+  project: "Developing a realistic longitudinal driver model based on logged vehicle data"
+  project_url: 
+  year: 2026
+  institution: TU Eindhoven
+
 - name: Kaixuan Chen
   degree: MSc
   name_url:
