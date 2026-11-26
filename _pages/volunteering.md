@@ -11,7 +11,7 @@ permalink: /volunteering/
 
 #### Academia
 
-At TU Delft, during 2014–2018 I was a member of the 3mE PhD council. Within this position, I co-organised many lunch lectures on topics related to academia and industry, as well as well-being (for example, a finisher of the 3100-mile running race [Pradeep Hoogakker](https://3100.srichinmoyraces.org/rtl-nieuws-does-story-pradeep-5000-kilometer-rondjes-rennen?page=2) gave a talk on the importance of mental health). During my PhD, I was also a member of the Research Council of HFAuto, where I served as a link between early-stage researchers and managers of the project. To contribute to the academic mobility and career development of academics in the EU, I became a member of the advisory board of the EURAXESS project TOP IV.
+At TU Delft, during 2014–2018 I was a member of the ME PhD council. Within this position, I co-organised many lunch lectures on topics related to academia and industry, as well as well-being (for example, a finisher of the 3100-mile running race [Pradeep Hoogakker](https://3100.srichinmoyraces.org/rtl-nieuws-does-story-pradeep-5000-kilometer-rondjes-rennen?page=2) gave a talk on the importance of mental health). During my PhD, I was also a member of the Research Council of HFAuto, where I served as a link between early-stage researchers and managers of the project. To contribute to the academic mobility and career development of academics in the EU, I became a member of the advisory board of the EURAXESS project TOP IV.
 
   <ul style="overflow: hidden">
   </ul>
