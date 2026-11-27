@@ -1,0 +1,1186 @@
+{
+ "alam2024from": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Subramanian, Thirumanikandan",
+   "Remlinger, Wolfram",
+   "Martens, Marieke H.",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "alam2025cross": {
+  "authors": [
+   "Alam, Md Shadab",
+   "and Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "alam2025deep": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Parmar, Sagar Hitendra",
+   "Martens, Marieke H.",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Proceedings of International Conference on Information and Computer Technologies (ICICT)",
+  "type": "inproceedings"
+ },
+ "alam2025generating": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Martens, Marieke H.",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Proceedings of International Conference on Human Interaction & Emerging Technologies: Artificial Intelligence & Future Applications (IHIET-AI)",
+  "type": "inproceedings"
+ },
+ "alam2025pedestrian": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Martens, Marieke H.",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "alam2026automated": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Hoggenmueller, Marius",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2026collision": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Zhang, Linghan",
+   "Li, Jiahui",
+   "Dou, Fei",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2026exploring": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Wang, Zi",
+   "Zhang, Linghan",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "alam2026fixed": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Martens, Marieke H.",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2026global": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Bazilinska, Olena",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2026influence": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2026nineteen": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2026public": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Companion of the 2026 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+  "type": "inproceedings"
+ },
+ "alam2026survey": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Singh, Priyanshu",
+   "Bazilinskyy, Pavlo"
+  ],
+  "firstpage": "97",
+  "journal": "Machine Vision and Applications",
+  "lastpage": "",
+  "pages": "97",
+  "type": "article",
+  "volume": "37"
+ },
+ "alam2026understanding": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Martens, Marieke H.",
+   "Bazilinska, Olena",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2026you": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Dey, Debargha",
+   "Martens, Marieke H.",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "alam2027pedestrians": {
+  "authors": [
+   "Alam, Md Shadab",
+   "Rouchitsas, Alexandros",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Human Interaction and Emerging Technologies (IHIET-AI 2027): Artificial Intelligence and Future Applications",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2012customisable": {
+  "authors": [
+   "Bazilinskyy, Pavlo"
+  ],
+  "school": "South-Eastern Finland University of Applied Sciences",
+  "type": "thesis"
+ },
+ "bazilinskyy2013multi": {
+  "authors": [
+   "Bazilinskyy, Pavlo"
+  ],
+  "school": "University of St Andrews",
+  "type": "mastersthesis"
+ },
+ "bazilinskyy2014impact": {
+  "authors": [
+   "Bazilinskyy, Pavlo"
+  ],
+  "school": "Maynooth University",
+  "type": "mastersthesis"
+ },
+ "bazilinskyy2015auditory": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "e13",
+  "journal": "PeerJ Computer Science",
+  "lastpage": "",
+  "pages": "e13",
+  "publisher": "PeerJ Inc.",
+  "type": "article",
+  "volume": "1"
+ },
+ "bazilinskyy2015international": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Kyriakidis, Miltos",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "2534",
+  "journal": "Procedia Manufacturing",
+  "lastpage": "2542",
+  "pages": "2534--2542",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "3"
+ },
+ "bazilinskyy2016blind": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Van der Geest, Lars",
+   "Van Leeuwen, Stefan",
+   "Numan, Bart",
+   "Pijnacker, Joris",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of 13th IFAC/IFIP/IFORS/IEA Symposium on Analysis, Design, and Evaluation of Human-Machine Systems",
+  "firstpage": "525",
+  "lastpage": "530",
+  "number": "19",
+  "pages": "525--530",
+  "publisher": "Elsevier",
+  "type": "inproceedings",
+  "volume": "49"
+ },
+ "bazilinskyy2016object": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Kovácsová, Natália",
+   "Al Jawahiri, Amir",
+   "Kapel, Pieter",
+   "Mulckhuyse, Joppe",
+   "Wagenaar, Sjors",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+  "firstpage": "000446",
+  "lastpage": "000451",
+  "pages": "000446--000451",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2016sonifying": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "van Haarlem, Wessel",
+   "Quraishi, Hashim",
+   "Berssenbrugge, Coen",
+   "Binda, Jasper",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of 13th IFAC/IFIP/IFORS/IEA Symposium on Analysis, Design, and Evaluation of Human-Machine Systems",
+  "firstpage": "531",
+  "lastpage": "536",
+  "number": "19",
+  "pages": "531--536",
+  "publisher": "Elsevier",
+  "type": "inproceedings",
+  "volume": "49"
+ },
+ "bazilinskyy2017analyzing": {
+  "authors": [
+   "Bazilinskyy, P",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "56",
+  "journal": "Applied Ergonomics",
+  "lastpage": "64",
+  "pages": "56--64",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "64"
+ },
+ "bazilinskyy2017blind": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Beaumont, Charles",
+   "van der Geest, Xander",
+   "de Jonge, Reinier",
+   "van der Kroft, Koen",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)",
+  "firstpage": "457",
+  "lastpage": "466",
+  "pages": "457--466",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2017usefulness": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Eriksson, Alexander",
+   "Petermeijer, S. M.",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of Road Safety and Simulation (RSS)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2018auditory": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "van der Aa, Arne",
+   "Schoustra, Michael",
+   "Spruit, John",
+   "Staats, Laurens",
+   "van der Vlist, Klaas Jan",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of Tools and Methods of Competitive Engineering (TMCE)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2018auditoryinterface": {
+  "authors": [
+   "Bazilinskyy, Pavlo"
+  ],
+  "school": "Delft University of Technology",
+  "type": "phdthesis"
+ },
+ "bazilinskyy2018crowdsourced": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "1192",
+  "journal": "Human factors",
+  "lastpage": "1206",
+  "number": "8",
+  "pages": "1192--1206",
+  "publisher": "Sage Publications Sage CA: Los Angeles, CA",
+  "type": "article",
+  "volume": "60"
+ },
+ "bazilinskyy2018eye": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Heisterkamp, Niels",
+   "Luik, Philine",
+   "Klevering, Stijn",
+   "Haddou, Assia",
+   "Zult, Michiel",
+   "Dialynas, George",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of Tools and Methods of Competitive Engineering (TMCE)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2018graded": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Stapel, Jork",
+   "De Koning, Coert",
+   "Lingmont, Hidde",
+   "De Lint, T. S.",
+   "Van der Sijs, T. C., Van den Ouden, F. C., Anema, Frank, De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of the Human Factors and Ergonomics Society Europe Chapter 2017 Annual Conference (HFES Europe)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2018sound": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Cieler, Stephan",
+   "Dodou, D",
+   "de Winter, J. C. F."
+  ],
+  "type": "article"
+ },
+ "bazilinskyy2018take": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Petermeijer, S. M.",
+   "Petrovych, Veronika",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "82",
+  "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+  "lastpage": "98",
+  "pages": "82--98",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "56"
+ },
+ "bazilinskyy2019blind": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Bijker, Laurens",
+   "Dielissen, Tim",
+   "French, Shin",
+   "Mooijman, Tom",
+   "Peters, Luka",
+   "Happee, Riender",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of International Congress on Sound and Vibration (ICSV)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2019continuous": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Larsson, Pontus",
+   "Johansson, Emma",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "382",
+  "journal": "Acoustical Science and Technology",
+  "lastpage": "390",
+  "number": "6",
+  "pages": "382--390",
+  "publisher": "Acoustical Society of Japan",
+  "type": "article",
+  "volume": "40"
+ },
+ "bazilinskyy2019survey": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "175",
+  "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+  "lastpage": "194",
+  "pages": "175--194",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "67"
+ },
+ "bazilinskyy2019when": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Kyriakidis, Miltos",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "184",
+  "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+  "lastpage": "195",
+  "pages": "184--195",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "64"
+ },
+ "bazilinskyy2020coupled": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Kooijman, Lars",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of Driving Simulation Conference (DSC)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2020external": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+  "firstpage": "3721",
+  "lastpage": "3728",
+  "pages": "3721--3728",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2020risk": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Eisma, Y. B.",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "347",
+  "journal": "Traffic Injury Prevention",
+  "lastpage": "353",
+  "number": "6",
+  "pages": "347--353",
+  "publisher": "Taylor & Francis",
+  "type": "article",
+  "volume": "21"
+ },
+ "bazilinskyy2021driving": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Sakuma, Tsuyoshi",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "103428",
+  "journal": "Applied Ergonomics",
+  "lastpage": "",
+  "pages": "103428",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "95"
+ },
+ "bazilinskyy2021should": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Kooijman, Lars",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "103450",
+  "journal": "Applied Ergonomics",
+  "lastpage": "",
+  "pages": "103450",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "95"
+ },
+ "bazilinskyy2021visual": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)",
+  "firstpage": "147",
+  "lastpage": "154",
+  "pages": "147--154",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2022blinded": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Dodou, Dimitra",
+   "Eisma, Y. B.",
+   "Vlakveld, W . V.",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "72",
+  "journal": "IET Intelligent Transportation Systems",
+  "lastpage": "84",
+  "pages": "72-84",
+  "type": "article",
+  "volume": "17"
+ },
+ "bazilinskyy2022crowdsourced": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2022get": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Kooijman, Lars",
+   "Mallant, K. P. T.",
+   "Roosens, V. E. R.",
+   "Middelweerd, M. D. L. M.",
+   "Overbeek, L. D., Dodou Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Adjunct Proceedings of the 14th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2023exterior": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Merino-Martınez, Roberto",
+   "Özcan, Elif",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "109673",
+  "journal": "Applied Acoustics",
+  "lastpage": "",
+  "pages": "109673",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "214"
+ },
+ "bazilinskyy2024always": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Ebel, Patrick",
+   "Walkder, Francesco",
+   "Debargha, Dey",
+   "Minh Tran, Tram Thi"
+  ],
+  "booktitle": "Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2025pedestrian": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Alam, Md Shadab",
+   "Merino-Martınez, Roberto"
+  ],
+  "booktitle": "Proceedings of 54th International Congress & Exposition on Noise Control Engineering (INTER-NOISE)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2025psychoacoustic": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Alam, Md Shadab",
+   "Merino-Martınez, Roberto"
+  ],
+  "booktitle": "Proceedings of 11th Convention of the European Acoustics Association (Euronoise)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2025quo": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Walker, Francesco",
+   "Dey, Debargha",
+   "Tran, Tram Thi Minh",
+   "Park, Hyungchai",
+   "Kim, Hyochang",
+   "Kang, Hyunmin",
+   "Ebel, Patrick"
+  ],
+  "booktitle": "Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "bazilinskyy2026how": {
+  "authors": [
+   "Bazilinskyy, Pavlo",
+   "Heikoop, Daniel",
+   "Verstegen, Rutger",
+   "Martens, Marieke H.",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "108592",
+  "journal": "Accident Analysis & Prevention",
+  "lastpage": "",
+  "pages": "108592",
+  "type": "article",
+  "volume": "234"
+ },
+ "dewinter2021pedestrians": {
+  "authors": [
+   "De Winter, J. C. F.",
+   "Bazilinskyy, Pavlo",
+   "Wesdorp, Dale",
+   "de Vlam, Valerie",
+   "Hopmans, Belle",
+   "Visscher, Just",
+   "Dodou, Dimitra"
+  ],
+  "firstpage": "793",
+  "journal": "Ergonomics",
+  "lastpage": "805",
+  "number": "6",
+  "pages": "793--805",
+  "publisher": "Taylor & Francis",
+  "type": "article",
+  "volume": "64"
+ },
+ "dewinter2023predicting": {
+  "authors": [
+   "De Winter, J. C. F.",
+   "Hoogmoed, Jim",
+   "Stapel, Jork",
+   "Dodou, Dimitra",
+   "Bazilinskyy, Pavlo"
+  ],
+  "firstpage": "235",
+  "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+  "lastpage": "247",
+  "pages": "235--247",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "93"
+ },
+ "dong2023holistic": {
+  "authors": [
+   "Dong, Haoyu",
+   "Tram, Thi Minh Tran",
+   "Bazilinskyy, Pavlo",
+   "Hoggenmueller, Marius",
+   "Dey, Debargha",
+   "Cazacu, Silvia",
+   "Franssen, Mervyn",
+   "Gao, Ruolin"
+  ],
+  "booktitle": "Adjunct Proceedings of the 15th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "firstpage": "237",
+  "lastpage": "240",
+  "pages": "237--240",
+  "type": "inproceedings"
+ },
+ "dong2024exploring": {
+  "authors": [
+   "Dong, Haoyu",
+   "Tram, Thi Minh Tran",
+   "Verstegen, Rutger",
+   "Cazacu, Silvia",
+   "Gao, Ruolin",
+   "Hoggenmüller, Marius",
+   "Dey, Debargha",
+   "Franssen, Mervyn",
+   "Sasalovici, Markus",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Extended Abstracts of the 2024 CHI Conference on Human Factors in Computing Systems",
+  "type": "inproceedings"
+ },
+ "dong2025encountering": {
+  "authors": [
+   "Dong, Haoyu",
+   "Yuanzi, Wang",
+   "Bazilinskyy, Pavlo",
+   "Bruns, Miguel",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Proceedings of International Association of Societies of Design Research Congress 2025",
+  "type": "inproceedings"
+ },
+ "driessen2022identifying": {
+  "authors": [
+   "Driessen, Tom",
+   "Prasad, Lokin",
+   "Bazilinskyy, Pavlo",
+   "De Winter, J. C. F."
+  ],
+  "booktitle": "Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)",
+  "type": "inproceedings"
+ },
+ "driessen2024putting": {
+  "authors": [
+   "Driessen, Tom",
+   "Dodou, Dimitra",
+   "Bazilinskyy, Pavlo",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "231676",
+  "journal": "Royal Society Open Science",
+  "lastpage": "",
+  "pages": "231676",
+  "publisher": "Royal Society",
+  "type": "article",
+  "volume": "11"
+ },
+ "ebel2023breaking": {
+  "authors": [
+   "Ebel, Patrick",
+   "Bazilinskyy, Pavlo",
+   "Hwang, Angel Hsing-Chi",
+   "Ju, Wendy",
+   "Sandhaus, Hauke",
+   "Srinivasan, Aravinda Ramakrishnan",
+   "Yang, Qian",
+   "Wintersberger, Philipp"
+  ],
+  "booktitle": "Adjunct Proceedings of the 15th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "firstpage": "227",
+  "lastpage": "230",
+  "pages": "227--230",
+  "type": "inproceedings"
+ },
+ "ebel2024changing": {
+  "authors": [
+   "Ebel, Patrick",
+   "Bazilinskyy, Pavlo",
+   "Colley, Mark",
+   "Goodridge, Courtney Michael",
+   "Hock, Philipp",
+   "Janssen, Christian P.",
+   "Sandhaus, Hauke",
+   "Srinivasan, Aravinda Ramakrishnan",
+   "Wintersberger, Philipp"
+  ],
+  "booktitle": "Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
+  "firstpage": "94",
+  "lastpage": "105",
+  "pages": "94–105",
+  "publisher": "Association for Computing Machinery",
+  "type": "inproceedings"
+ },
+ "ebel2026mrdrive": {
+  "authors": [
+   "Ebel, Patrick",
+   "Miazga, Michał Patryk",
+   "Lorenz, Martin",
+   "Getselev, Timur",
+   "Bazilinskyy, Pavlo",
+   "Conzen, Celine"
+  ],
+  "booktitle": "Extended abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)",
+  "type": "inproceedings"
+ },
+ "fang2026interviewing": {
+  "authors": [
+   "Fang, Ying",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "fang2026llm": {
+  "authors": [
+   "Fang, Ying",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "type": "techreport"
+ },
+ "ferreira2025vibe": {
+  "authors": [
+   "Fortes-Ferreira, Margarida",
+   "Alam, Md Shadab",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "franssen2024exploring": {
+  "authors": [
+   "Franssen, Mervyn",
+   "Verstegen, Rutger",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)",
+  "type": "inproceedings"
+ },
+ "franssen2026psychological": {
+  "authors": [
+   "Franssen, Mervyn",
+   "Verstegen, Rutger",
+   "Bazilinskyy, Pavlo",
+   "Van der Spek Erik H.",
+   "Martens, Marieke H."
+  ],
+  "firstpage": "1844980",
+  "journal": "Frontiers in Psychology",
+  "lastpage": "",
+  "pages": "1844980",
+  "type": "article",
+  "volume": "17"
+ },
+ "gao2024incorporating": {
+  "authors": [
+   "Gao, Ruolin",
+   "Verstegen, Rutger",
+   "Dong, Haoyu",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "gao2025designing": {
+  "authors": [
+   "Gao, Ruolin",
+   "Liu, Haoyu",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "janssen2026learning": {
+  "authors": [
+   "Janssen, Christian",
+   "Alam, Md Shadab",
+   "Bazilinskyy, Pavlo",
+   "Dou, Fei",
+   "Zhang, Linghan"
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "jeon2015report": {
+  "authors": [
+   "Jeon, Myounghoon",
+   "Hermann, Thomas",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 7th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings",
+  "volume": "15"
+ },
+ "kim2025beyond": {
+  "authors": [
+   "Kim, Soyeon",
+   "Bazilinskyy, Pavlo",
+   "Liang, Kexin",
+   "Van Egmond, René",
+   "Happee, Riender"
+  ],
+  "firstpage": "1",
+  "journal": "International Journal of Human–Computer Interaction",
+  "lastpage": "18",
+  "number": "0",
+  "pages": "1--18",
+  "type": "article",
+  "volume": "0"
+ },
+ "lingam2025behavioural": {
+  "authors": [
+   "Lingam, Shiva Nischal",
+   "Petermeijer, S. M.",
+   "Torre, Illaria",
+   "Bazilinskyy, Pavlo",
+   "Ljungblad, Sara",
+   "Martens, M. H."
+  ],
+  "journal": "ACM Transactions on Human-Robot Interaction",
+  "number": "4",
+  "publisher": "Association for Computing Machinery",
+  "type": "article",
+  "volume": "14"
+ },
+ "lingam2025thumbs": {
+  "authors": [
+   "Lingam, Shiva Nischal",
+   "Woziwodski, Jakub,",
+   "Obaid, Mohammad",
+   "Martens, M. H.",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Proceedings of the 13th International Conference on Human-Agent Interaction (HAI)",
+  "type": "inproceedings"
+ },
+ "marinissen2026teaching": {
+  "authors": [
+   "Marinissen, Thomas",
+   "Glimmann, Jonas",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Proceedings of the 16th International Conference on Human Interaction & Emerging Technologies (IHIET-AI)",
+  "type": "inproceedings"
+ },
+ "marinissen2026visual": {
+  "authors": [
+   "Marinissen, Thomas",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Proceedings of the 9th International Conference on Human Intelligent Systems Integration (IHSI)",
+  "type": "inproceedings"
+ },
+ "mok2022stopping": {
+  "authors": [
+   "Mok, C. S.",
+   "Bazilinskyy, Pavlo",
+   "De Winter, J. C. F."
+  ],
+  "journal": "Applied Ergonomics",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "105"
+ },
+ "morkute2026trust": {
+  "authors": [
+   "Ugnė Aleksandra Morkutė",
+   "Pavlo Bazilinskyy",
+   "Jom Dieben",
+   "Francesco Walker"
+  ],
+  "firstpage": "102223",
+  "journal": "Transportation Research Interdisciplinary Perspectives",
+  "lastpage": "",
+  "pages": "102223",
+  "type": "article",
+  "volume": "39"
+ },
+ "onkhar2021towards": {
+  "authors": [
+   "Onkhar, Vishal",
+   "Bazilinskyy, Pavlo",
+   "Stapel, J. C. J.",
+   "Dodou, Dimitra",
+   "Gavrila, Dariu",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "101455",
+  "journal": "Pervasive and Mobile Computing",
+  "lastpage": "",
+  "pages": "101455",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "76"
+ },
+ "onkhar2022effect": {
+  "authors": [
+   "Onkhar, Vishal",
+   "Bazilinskyy, Pavlo",
+   "Dodou, Dimitra",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "194",
+  "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+  "lastpage": "210",
+  "pages": "194--210",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "84"
+ },
+ "oudshoorn2021bio": {
+  "authors": [
+   "Oudshoorn, Max",
+   "De Winter, J. C. F.",
+   "Bazilinskyy, Pavlo",
+   "Dodou, Dimitra"
+  ],
+  "firstpage": "127",
+  "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+  "lastpage": "140",
+  "pages": "127--140",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "80"
+ },
+ "peng2025measuring": {
+  "authors": [
+   "Peng, Chen",
+   "Bazilinskyy, Pavlo",
+   "Yu, Yueteng",
+   "Merat, Natasha"
+  ],
+  "booktitle": "Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "peng2026experts": {
+  "authors": [
+   "Peng, Chen",
+   "Bazilinskyy, Pavlo",
+   "Yu, Yueteng",
+   "Martens, Marieke",
+   "Happee, Riender",
+   "Akash, Kumar",
+   "Merat, Natasha"
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "petermeijer2017take": {
+  "authors": [
+   "Petermeijer, S. M.",
+   "Bazilinskyy, Pavlo",
+   "Bengler, Klaus",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "204",
+  "journal": "Applied Ergonomics",
+  "lastpage": "215",
+  "pages": "204--215",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "62"
+ },
+ "riener2026understanding": {
+  "authors": [
+   "Riener, Andreas",
+   "Pretto, Paolo",
+   "Sodnik, Jaka",
+   "Stojmenova Pečečnik, Kristina",
+   "Papaioannou, Georgios",
+   "Bazilinskyy, Pavlo",
+   "Meschtscherjakov, Alexander"
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "rouchitsas2026love": {
+  "authors": [
+   "Rouchitsas, Alexandros",
+   "Alvarez, Ignacio",
+   "Kim, Soyeon",
+   "Peng, Chen",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "sapienza2025enhancing": {
+  "authors": [
+   "Sapienza, Giovanni",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "sapienza2026how": {
+  "authors": [
+   "Sapienza, Giovanni",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ },
+ "sripada2021automated": {
+  "authors": [
+   "Sripada, Anirudh",
+   "Bazilinskyy, Pavlo",
+   "De Winter, J. C. F."
+  ],
+  "firstpage": "1",
+  "journal": "Ergonomics",
+  "lastpage": "13",
+  "pages": "1--13",
+  "publisher": "Taylor & Francis",
+  "type": "article"
+ },
+ "tran2024evaluating": {
+  "authors": [
+   "Tran, Tram Thi Minh",
+   "Parker, Callum",
+   "Yu, Xinyan",
+   "Dey, Debargha",
+   "Martens, Marieke H.",
+   "Bazilinskyy, Pavlo",
+   "Tomitsch, Martin"
+  ],
+  "firstpage": "2",
+  "journal": "Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies",
+  "lastpage": "",
+  "pages": "2",
+  "type": "techreport",
+  "volume": "8"
+ },
+ "vanheuvelen2026second": {
+  "authors": [
+   "Van Heuvelen, Thomas",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "verstegen2024combining": {
+  "authors": [
+   "Verstegen, Rutger",
+   "Gao, Ruolin",
+   "Bernhaupt, Regina",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)",
+  "type": "inproceedings"
+ },
+ "verstegen2024slideo": {
+  "authors": [
+   "Verstegen, Jochem",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Proceedings of International Conference on Applied Human Factors and Ergonomics (AHFE)",
+  "type": "inproceedings"
+ },
+ "verstegen2026entanglements": {
+  "authors": [
+   "Verstegen, Rutger",
+   "Gao, Ruolin",
+   "Dong, Haoyu",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "booktitle": "Companion Publication of the 2026 ACM Designing Interactive Systems Conference",
+  "firstpage": "469",
+  "lastpage": "473",
+  "pages": "469--473",
+  "type": "inproceedings"
+ },
+ "verstegen2026exploring": {
+  "authors": [
+   "Verstegen, Rutger",
+   "Gao, Ruolin",
+   "Bazilinskyy, Pavlo",
+   "Martens, Marieke H."
+  ],
+  "firstpage": "100305",
+  "journal": "Journal of Urban Mobility",
+  "lastpage": "",
+  "pages": "100305",
+  "publisher": "Elsevier",
+  "type": "article",
+  "volume": "10"
+ },
+ "verstelle2026personalised": {
+  "authors": [
+   "Verstelle, Wessel",
+   "Alam, Md Shadab",
+   "Bazilinskyy, Pavlo"
+  ],
+  "booktitle": "Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI)",
+  "type": "inproceedings"
+ },
+ "zeng2026enhancing": {
+  "authors": [
+   "Zeng, Xingjian",
+   "Alam, Md Shadab",
+   "Bazilinskyy, Pavlo"
+  ],
+  "type": "techreport"
+ }
+}

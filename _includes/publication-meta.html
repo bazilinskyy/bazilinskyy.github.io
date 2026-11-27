@@ -2,11 +2,21 @@
 authors: is "Last, I., Last, I." with * marking equal contribution, so names come in pairs.{% endcomment %}
 {% assign parts = page.authors | remove: '*' | split: ', ' %}
 {% assign last_idx = parts.size | minus: 1 %}
+{% comment %}_data/bib.json (scripts/make_bib_data.py) holds what only the BibTeX has: full names,
+the venue without its place, volume, issue and pages{% endcomment %}
+{% assign bib = site.data.bib[page.slug] %}
 <meta name="citation_title" content="{{ page.title | escape }}">
-{% for i in (0..last_idx) %}{% assign odd = i | modulo: 2 %}{% if odd == 0 %}{% assign j = i | plus: 1 %}<meta name="citation_author" content="{{ parts[i] | strip | escape }}{% if parts[j] %}, {{ parts[j] | strip | escape }}{% endif %}">
-{% endif %}{% endfor %}
+{% if bib and bib.authors.size > 0 %}{% for a in bib.authors %}<meta name="citation_author" content="{{ a | escape }}">
+{% endfor %}{% else %}{% for i in (0..last_idx) %}{% assign odd = i | modulo: 2 %}{% if odd == 0 %}{% assign j = i | plus: 1 %}<meta name="citation_author" content="{{ parts[i] | strip | escape }}{% if parts[j] %}, {{ parts[j] | strip | escape }}{% endif %}">
+{% endif %}{% endfor %}{% endif %}
 {% if page.year %}<meta name="citation_publication_date" content="{{ page.year }}">{% endif %}
-{% if page.tags contains 'journal' %}<meta name="citation_journal_title" content="{{ page.display | escape }}">{% elsif page.tags contains 'conference' %}<meta name="citation_conference_title" content="{{ page.display | escape }}">{% endif %}
+{% if bib.journal %}<meta name="citation_journal_title" content="{{ bib.journal | escape }}">{% elsif bib.booktitle %}<meta name="citation_conference_title" content="{{ bib.booktitle | escape }}">{% elsif page.tags contains 'journal' %}<meta name="citation_journal_title" content="{{ page.display | escape }}">{% elsif page.tags contains 'conference' %}<meta name="citation_conference_title" content="{{ page.display | escape }}">{% endif %}
+{% if bib.volume %}<meta name="citation_volume" content="{{ bib.volume | escape }}">{% endif %}
+{% if bib.number %}<meta name="citation_issue" content="{{ bib.number | escape }}">{% endif %}
+{% if bib.firstpage %}<meta name="citation_firstpage" content="{{ bib.firstpage | escape }}">{% endif %}
+{% if bib.lastpage and bib.lastpage != "" %}<meta name="citation_lastpage" content="{{ bib.lastpage | escape }}">{% endif %}
+{% if bib.publisher %}<meta name="citation_publisher" content="{{ bib.publisher | escape }}">{% endif %}
+{% if bib.type == 'phdthesis' or bib.type == 'mastersthesis' or bib.type == 'thesis' %}{% assign school = bib.school | default: bib.institution %}{% if school %}<meta name="citation_dissertation_institution" content="{{ school | escape }}">{% endif %}{% endif %}
 {% if page.doi %}<meta name="citation_doi" content="{{ page.doi }}">{% endif %}
 {% if page.pdf %}<meta name="citation_pdf_url" content="{{ site.url }}/p/{{ page.pdf }}.pdf">{% endif %}
 <meta name="citation_abstract_html_url" content="{{ page.url | absolute_url }}">
