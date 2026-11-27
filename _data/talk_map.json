@@ -1,5 +1,37 @@
 [
   {
+    "place": "Brussels, Belgium",
+    "lat": 50.8467,
+    "lon": 4.3525,
+    "talks": [
+      {
+        "title": "Study Visit of the Polish National Representation of Doctoral Candidates \"Engaging with the EU Research & Innovation Ecosystem\"",
+        "kind": "Invited talk",
+        "year": 2026
+      },
+      {
+        "title": "Erasmus Mundus in the future–charting the way forward",
+        "kind": "Session chair",
+        "year": 2024
+      },
+      {
+        "title": "Falling Walls Marie Skłodowska-Curie Actions (MSCA)",
+        "kind": "Invited talk",
+        "year": 2024
+      },
+      {
+        "title": "University-businesss collaboration in the Netherlands",
+        "kind": "Invited talk",
+        "year": 2024
+      },
+      {
+        "title": "Gago Conference on European Science Policy",
+        "kind": "Invited talk",
+        "year": 2022
+      }
+    ]
+  },
+  {
     "place": "Brisbane, QLD, Australia",
     "lat": -27.469,
     "lon": 153.0235,
@@ -17,6 +49,40 @@
       {
         "title": "Sustainability chair",
         "kind": "AutoUI",
+        "year": 2025
+      }
+    ]
+  },
+  {
+    "place": "Istanbul, Turkey",
+    "lat": 41.0064,
+    "lon": 28.9759,
+    "talks": [
+      {
+        "title": "MSCA posrdoctoral fellowship hands-on training",
+        "kind": "Invited talk",
+        "year": 2024
+      },
+      {
+        "title": "MCAA Researchers Meet Innovators conference",
+        "kind": "Invited talk",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "place": "Krakow, Poland",
+    "lat": 50.0619,
+    "lon": 19.9369,
+    "talks": [
+      {
+        "title": "Crafting Your Experience: Mastering the Art of Showcasing Your Skills on Your CV",
+        "kind": "Session chair",
+        "year": 2025
+      },
+      {
+        "title": "MCAA Annual Conference",
+        "kind": "Invited talk",
         "year": 2025
       }
     ]
@@ -52,6 +118,23 @@
         "title": "Eye movements while cycling in GTA V",
         "kind": "Conference talk",
         "year": 2018
+      }
+    ]
+  },
+  {
+    "place": "Lisbon, Portugal",
+    "lat": 38.7078,
+    "lon": -9.1366,
+    "talks": [
+      {
+        "title": "How to be an entrepreneurial researcher",
+        "kind": "Session chair",
+        "year": 2022
+      },
+      {
+        "title": "MCAA Annual Conference",
+        "kind": "Invited talk",
+        "year": 2022
       }
     ]
   },
@@ -107,6 +190,18 @@
     ]
   },
   {
+    "place": "Ankara, Turkey",
+    "lat": 39.9208,
+    "lon": 32.854,
+    "talks": [
+      {
+        "title": "MSCA posrdoctoral fellowship hands-on training",
+        "kind": "Invited talk",
+        "year": 2024
+      }
+    ]
+  },
+  {
     "place": "Antibes, France",
     "lat": 43.5814,
     "lon": 7.1237,
@@ -119,6 +214,18 @@
     ]
   },
   {
+    "place": "Antwerp, Belgium",
+    "lat": 51.2211,
+    "lon": 4.3997,
+    "talks": [
+      {
+        "title": "YUFE stakeholders event",
+        "kind": "Invited talk",
+        "year": 2024
+      }
+    ]
+  },
+  {
     "place": "Berlin, Germany",
     "lat": 52.5174,
     "lon": 13.3951,
@@ -127,18 +234,6 @@
         "title": "Challenge your peers: What are the key considerations when designing an automotive HMI for multiple users?",
         "kind": "Session chair",
         "year": 2025
-      }
-    ]
-  },
-  {
-    "place": "Brussels, Belgium",
-    "lat": 50.8467,
-    "lon": 4.3525,
-    "talks": [
-      {
-        "title": "Erasmus Mundus in the future–charting the way forward",
-        "kind": "Session chair",
-        "year": 2024
       }
     ]
   },
@@ -215,14 +310,26 @@
     ]
   },
   {
-    "place": "Krakow, Poland",
-    "lat": 50.0619,
-    "lon": 19.9369,
+    "place": "Jaca, Spain",
+    "lat": 42.5693,
+    "lon": -0.5494,
     "talks": [
       {
-        "title": "Crafting Your Experience: Mastering the Art of Showcasing Your Skills on Your CV",
-        "kind": "Session chair",
-        "year": 2025
+        "title": "Campus Iberus postdoctoral days",
+        "kind": "Invited talk",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "place": "Kyiv, Ukraine",
+    "lat": 50.45,
+    "lon": 30.5241,
+    "talks": [
+      {
+        "title": "MCAA Researchers Meet Innovators conference",
+        "kind": "Invited talk",
+        "year": 2019
       }
     ]
   },
@@ -239,14 +346,26 @@
     ]
   },
   {
-    "place": "Lisbon, Portugal",
-    "lat": 38.7078,
-    "lon": -9.1366,
+    "place": "Leiden, The Netherlands",
+    "lat": 52.1518,
+    "lon": 4.4811,
     "talks": [
       {
-        "title": "How to be an entrepreneurial researcher",
-        "kind": "Session chair",
+        "title": "EuroScience Open Forum",
+        "kind": "Invited talk",
         "year": 2022
+      }
+    ]
+  },
+  {
+    "place": "Leipzig, Germany",
+    "lat": 51.3406,
+    "lon": 12.3747,
+    "talks": [
+      {
+        "title": "SCADS.AI Summer School 2024",
+        "kind": "Invited talk",
+        "year": 2024
       }
     ]
   },
@@ -271,6 +390,18 @@
         "title": "Blind driving by means of a steering-based predictor algorithm",
         "kind": "Conference talk",
         "year": 2017
+      }
+    ]
+  },
+  {
+    "place": "Madrid, Spain",
+    "lat": 40.4168,
+    "lon": -3.7035,
+    "talks": [
+      {
+        "title": "III URJC International Conference",
+        "kind": "Invited talk",
+        "year": 2023
       }
     ]
   },
@@ -323,6 +454,18 @@
     ]
   },
   {
+    "place": "Paris, France",
+    "lat": 48.8535,
+    "lon": 2.3484,
+    "talks": [
+      {
+        "title": "EMA Annual Conference",
+        "kind": "Invited talk",
+        "year": 2025
+      }
+    ]
+  },
+  {
     "place": "Seoul, South Korea",
     "lat": 37.5667,
     "lon": 126.9783,
@@ -342,6 +485,18 @@
       {
         "title": "Environmental impact of transportation on Europe: view of science and industry",
         "kind": "Session chair",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "place": "Vienna, Austria",
+    "lat": 48.2084,
+    "lon": 16.3725,
+    "talks": [
+      {
+        "title": "MCAA Annual Conference",
+        "kind": "Invited talk",
         "year": 2019
       }
     ]

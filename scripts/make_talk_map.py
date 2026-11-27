@@ -6,7 +6,8 @@
 # - _data/conference_talks.yml and _data/chairing_sessions.yml: the end of "conf", e.g.
 #   "... (AutoUI), Seoul, South Korea."
 # - _data/chairing_autoui.yml, _data/chairing_roman.yml and any entry with "location:", which
-#   overrides the above; invited talks appear once they have one
+#   overrides the above; invited talks appear once they have one. A talk given in several
+#   places lists them separated by ";", e.g. "Ankara, Turkey; Istanbul, Turkey"
 # Online talks are left out. Coordinates come from OpenStreetMap Nominatim, asked only for places
 # the previous file does not have yet (at most one request a second, as its policy asks).
 import json
@@ -43,17 +44,18 @@ def entries(path):
     return out
 
 
-def place_of(entry):
-    """'City, Country' of a talk, or None when it was online or names no place."""
+def places_of(entry):
+    """['City, Country', ...] of a talk; empty when it was online or names no place."""
     text = entry.get('location') or entry.get('conf') or ''
     if 'online' in text.lower() or 'hybrid' in text.lower():
-        return None
+        return []
+    if entry.get('location'):
+        return [p.strip() for p in text.split(';') if p.strip()]
     text = text.strip().rstrip('.').strip()
-    if not entry.get('location'):
-        # after the venue's acronym "(X)," or "(X).", else after the first comma
-        m = re.search(r'\)[.,]\s*([^()]+)$', text)
-        text = m.group(1) if m else (text.split(', ', 1)[1] if ', ' in text else '')
-    return text.strip() or None
+    # after the venue's acronym "(X)," or "(X).", else after the first comma
+    m = re.search(r'\)[.,]\s*([^()]+)$', text)
+    text = m.group(1) if m else (text.split(', ', 1)[1] if ', ' in text else '')
+    return [text.strip()] if text.strip() else []
 
 
 def geocode(place):
@@ -71,8 +73,7 @@ def build(known):
         if not os.path.exists(path):
             continue
         for e in entries(path):
-            place = place_of(e)
-            if place:
+            for place in places_of(e):
                 places.setdefault(place, []).append(dict(title=e.get('title', ''), kind=kind, year=int(e.get('year') or 0)))
     out = []
     for place, talks in places.items():
@@ -86,12 +87,13 @@ def build(known):
 
 
 def _check():
-    assert place_of({'conf': 'International ACM Conference on (AutoUI), Brisbane, QLD, Australia.'}) == 'Brisbane, QLD, Australia'
-    assert place_of({'conf': 'Conference (IHIET-AI). Valencia, Spain'}) == 'Valencia, Spain'
-    assert place_of({'conf': 'Car.HMI, Berlin, Germany'}) == 'Berlin, Germany'
-    assert place_of({'conf': 'SMC, Toronto, Canada (online)'}) is None
-    assert place_of({'conf': 'x', 'location': 'Gothenburg, Sweden'}) == 'Gothenburg, Sweden'
-    assert place_of({'title': 'no place'}) is None
+    assert places_of({'conf': 'International ACM Conference on (AutoUI), Brisbane, QLD, Australia.'}) == ['Brisbane, QLD, Australia']
+    assert places_of({'conf': 'Conference (IHIET-AI). Valencia, Spain'}) == ['Valencia, Spain']
+    assert places_of({'conf': 'Car.HMI, Berlin, Germany'}) == ['Berlin, Germany']
+    assert places_of({'conf': 'SMC, Toronto, Canada (online)'}) == []
+    assert places_of({'conf': 'x', 'location': 'Gothenburg, Sweden'}) == ['Gothenburg, Sweden']
+    assert places_of({'location': 'Ankara, Turkey; Istanbul, Turkey'}) == ['Ankara, Turkey', 'Istanbul, Turkey']
+    assert places_of({'title': 'no place'}) == []
 
 
 if __name__ == '__main__':
