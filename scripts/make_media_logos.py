@@ -30,8 +30,9 @@ SITE = {
 
 # outlets whose own site gives no usable icon, so their logo was picked by hand (2026-11-27):
 # WIRED from its YouTube avatar, BBC and Sveriges Radio from Google's favicon service (128 px),
-# CyclingTips from a 2018 Wayback copy of its site (it is now Velo). Never refetched.
-NONE = {'CyclingTips', 'WIRED', 'BBC Future', 'BBC Global News Podcast', 'Sveriges Radio'}
+# CyclingTips from a 2018 Wayback copy of its site (it is now Velo), Corredor (a print magazine,
+# so no link in media.yml) from the favicon of sportlife.es/soycorredor. Never refetched.
+NONE = {'CyclingTips', 'WIRED', 'BBC Future', 'BBC Global News Podcast', 'Sveriges Radio', 'Corredor'}
 
 
 def slug(outlet, url=''):
