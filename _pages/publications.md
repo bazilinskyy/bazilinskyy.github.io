@@ -136,22 +136,21 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {% endif %}
 
 {% assign tag_string = publi.tags | join: " " | downcase %}
-{% assign search_string = publi.title | append: " " | append: publi.authors | append: " " | append: publi.display | append: " " | append: publi.year | append: " " | append: tag_string | downcase %}
 
-<div class="well-sm publication-entry" data-tags="{{ tag_string }}" data-search="{{ search_string | escape }}">
+<div class="well-sm publication-entry" data-tags="{{ tag_string }}">
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
+<img loading="lazy" src="{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">
-{% if publi.pdf %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ publi.pdf }}" target="_blank">{% endif %}<strong class="pub-title">{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br/>
+{% if publi.pdf %}<a href="{{ site.baseurl }}/p/{{ publi.pdf }}" target="_blank">{% endif %}<strong class="pub-title">{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br/>
 <span class="pub-authors">{{ publi.authors }}</span><br/>
 <em class="pub-venue">{{ publi.display }}</em>{% if publi.year %} (<span class="pub-year">{{publi.year}}</span>){% endif %}<br/>
-{% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
-{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">CITE</a>{% endif %}
-{% if pdfpresent == true %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
+{% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
+{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">CITE</a>{% endif %}
+{% if pdfpresent == true %}<a href="{{ site.baseurl }}/p/{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
 {% if publi.doi %}<a href="https://doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a>{% endif %}
 {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a>{% endif %}
 {% if publi.code %}<a href="{{ publi.code }}" target="_blank"><button class="btn-code">CODE</button></a>{% endif %}
@@ -209,22 +208,21 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {% endif %}
 
 {% assign tag_string = publi.tags | join: " " | downcase %}
-{% assign search_string = publi.title | append: " " | append: publi.authors | append: " " | append: publi.display | append: " " | append: publi.year | append: " " | append: tag_string | downcase %}
 
-<div class="well-sm publication-entry" data-tags="{{ tag_string }}" data-search="{{ search_string | escape }}">
+<div class="well-sm publication-entry" data-tags="{{ tag_string }}">
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
+<img loading="lazy" src="{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
 {% endif %}
 </li>
 <li class="flex-item2">
-{% if publi.pdf %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ publi.pdf }}" target="_blank">{% endif %}<strong class="pub-title">{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br />
+{% if publi.pdf %}<a href="{{ site.baseurl }}/p/{{ publi.pdf }}" target="_blank">{% endif %}<strong class="pub-title">{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %} {% if publi.tags %}{% for tag in publi.tags %}<span class="pub-tag {{ tag | downcase }}">{{ tag }}</span>{% endfor %}{% endif %}<br />
 <span class="pub-authors">{{ publi.authors }}</span><br />
 <em class="pub-venue">{{ publi.display }}</em>{% if publi.year %} (<span class="pub-year">{{publi.year}}</span>){% endif %}<br/>
-{% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
-{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">CITE</a>{% endif %}
-{% if pdfpresent == true %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
+{% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
+{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">CITE</a>{% endif %}
+{% if pdfpresent == true %}<a href="{{ site.baseurl }}/p/{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
 {% if publi.doi %}<a href="https://doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a>{% endif %}
 {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a>{% endif %}
 {% if publi.code %}<a href="{{ publi.code }}" target="_blank"><button class="btn-code">CODE</button></a>{% endif %}
@@ -249,7 +247,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 
 {% endfor %}
 
-Download all papers in bib file <a href="{{ site.url }}{{ site.baseurl }}/p/bazilinskyy.bib">here</a>.
+Download all papers in bib file <a href="{{ site.baseurl }}/p/bazilinskyy.bib">here</a>.
 
 \* Joint first author.
 
@@ -265,7 +263,10 @@ var MARKABLE = '.pub-title, .pub-authors, .pub-venue, .pub-year, .pub-tag';
 var entryData = new Map();
 document.querySelectorAll('.publication-entry').forEach(function (entry) {
 var abstractEl = entry.querySelector('.well-abstract');
+var text = function (sel) { var el = entry.querySelector(sel); return el ? el.textContent : ''; };
 entryData.set(entry, {
+// what the search looks in: the visible title, authors, venue and year plus the tags
+search: [text('.pub-title'), text('.pub-authors'), text('.pub-venue'), text('.pub-year'), entry.getAttribute('data-tags') || ''].join(' ').toLowerCase(),
 fields: Array.prototype.map.call(entry.querySelectorAll(MARKABLE), field),
 abstract: abstractEl ? field(abstractEl) : null,
 abstractLower: abstractEl ? abstractEl.textContent.toLowerCase() : ''
@@ -296,7 +297,7 @@ var match = required.every(function (f) { return tags.indexOf(f) !== -1; });
 var data = entryData.get(entry);
 var fromAbstract = false;
 if (match && terms.length) {
-var haystack = entry.getAttribute('data-search') || '';
+var haystack = data.search;
 // all terms must appear, so "bazilinskyy ehmi" narrows rather than widens
 match = terms.every(function (t) { return haystack.indexOf(t) !== -1 || data.abstractLower.indexOf(t) !== -1; });
 // a term that only hit the abstract leaves no visible reason for the row,

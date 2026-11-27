@@ -524,6 +524,9 @@ h4 {
 }
 
 
+/* light text on their coloured badge in both themes (was an inline style on every entry) */
+a.btn-abstract, a.btn-bib { color: #ebebeb; }
+
 .btn-pdf     { color: var(--btn-pdf-color);     border-color: var(--btn-pdf-color);     }
 .btn-doi     { color: var(--btn-doi-color);     border-color: var(--btn-doi-color);     }
 .btn-arxiv   { color: var(--btn-arxiv-color);   border-color: var(--btn-arxiv-color);   }
