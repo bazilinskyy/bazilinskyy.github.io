@@ -4,14 +4,14 @@
   <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo-small }}" alt="{{ member.name }}" class="img-responsive" /></a>
   <center><h4>{{ member.name }}</h4>
 
-   {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
-   {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-    <a href="{{ site.url }}{{ site.baseurl }}/cv/"><i class="ai ai-cv-square ai-2x"></i></a> 
-   {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-2x"></i></a> {% endif %}
-   {% if member.linkedin %} <a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a> {% endif %}
-   {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
-   {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
-   {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
+   {% if member.website %}<a href="{{ member.website }}" target="_blank">{% include icon.html name="home" size=2 %}</a> {% endif %}
+   {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank">{% include icon.html name="email" size=2 %}</a> {% endif %}
+    <a href="{{ site.url }}{{ site.baseurl }}/cv/">{% include icon.html name="cv" size=2 %}</a> 
+   {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank">{% include icon.html name="orcid" size=2 %}</a> {% endif %}
+   {% if member.linkedin %} <a href="{{ member.linkedin }}" target="_blank">{% include icon.html name="linkedin" size=2 %}</a> {% endif %}
+   {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank">{% include icon.html name="scholar" size=2 %}</a> {% endif %}
+   {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank">{% include icon.html name="researchgate" size=2 %}</a> {% endif %}
+   {% if member.github %} <a href="{{ member.github }}" target="_blank">{% include icon.html name="github" size=2 %}</a> {% endif %}
   </center>
   <div style="overflow: hidden; padding-left: 13px; padding-right: 0px; padding-top: 5px; padding-bottom: 10px;">
   {% if member.number_educ == 1 %}

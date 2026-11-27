@@ -559,6 +559,16 @@ figcaption {
     border-radius: 5px;
 }
 
+/* inline SVG icons (_includes/icon.html), sized like the icon font they replace */
+.icon {
+    display: inline-block;
+    width: auto;
+    fill: currentColor;
+    vertical-align: middle;
+}
+.icon-2x { height: 2em; }
+.icon-3x { height: 3em; }
+
 #newsid .sidebar-info img {
     border-radius: 5px;
     margin-left: auto;

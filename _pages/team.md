@@ -20,12 +20,12 @@ permalink: /team/
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }}</i><br>
 
-  {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
-  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
-  <a href="{{ site.url }}{{ site.baseurl }}/cv/"><i class="ai ai-cv-square ai-2x"></i></a> 
-  {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
-  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
+  {% if member.website %}<a href="{{ member.website }}" target="_blank">{% include icon.html name="home" size=2 %}</a> {% endif %}
+  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank">{% include icon.html name="email" size=2 %}</a> {% endif %}
+  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank">{% include icon.html name="scholar" size=2 %}</a> {% endif %}
+  <a href="{{ site.url }}{{ site.baseurl }}/cv/">{% include icon.html name="cv" size=2 %}</a> 
+  {% if member.github %} <a href="{{ member.github }}" target="_blank">{% include icon.html name="github" size=2 %}</a> {% endif %}
+  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank">{% include icon.html name="researchgate" size=2 %}</a> {% endif %}
   <ul style="overflow: hidden">
 
   <li> {{ member.education1 }} </li>
@@ -56,12 +56,12 @@ permalink: /team/
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }}<br></i>
 
-  {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
-  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
-  {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %}
-  {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
-  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
+  {% if member.website %}<a href="{{ member.website }}" target="_blank">{% include icon.html name="home" size=2 %}</a> {% endif %}
+  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank">{% include icon.html name="email" size=2 %}</a> {% endif %}
+  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank">{% include icon.html name="scholar" size=2 %}</a> {% endif %}
+  {% if member.cv %} <a href="{{ member.cv }}" target="_blank">{% include icon.html name="cv" size=2 %}</a> {% endif %}
+  {% if member.github %} <a href="{{ member.github }}" target="_blank">{% include icon.html name="github" size=2 %}</a> {% endif %}
+  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank">{% include icon.html name="researchgate" size=2 %}</a> {% endif %}
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
