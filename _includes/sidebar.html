@@ -71,16 +71,6 @@
 </div>
 {% endif %}
 
-<!-- <div style="margin-bottom: 19px; ">
-  <a class="twitter-timeline" data-height="470" data-theme="dark" href="https://twitter.com/bazilinskyy?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <a class='twitter-timeline' data-handle='bazilinskyy' data-height='470' data-theme='dark' ></a>
-<script src='https://www.athabasca.dev/content/scripts/widget.js'></script>
-</div> -->
-
-<!-- <div style="margin-bottom: 19px; ">
-<a class="twitter-timeline" href="https://twitter.com/bazilinskyy?ref_src=twsrc%5Etfw">Tweets by bazilinskyy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div> -->
-
 {% comment %}the box only when at least one event has not ended yet{% endcomment %}
 {% assign now_s = 'now' | date: '%s' | plus: 0 %}{% assign upcoming = 0 %}
 {% for event in site.data.events %}{% assign end_s = event.date_end | date: '%s' | plus: 0 %}{% if end_s > now_s %}{% assign upcoming = upcoming | plus: 1 %}{% endif %}{% endfor %}
