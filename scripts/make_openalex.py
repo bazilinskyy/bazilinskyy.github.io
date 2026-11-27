@@ -6,6 +6,8 @@
 #   (publication pages)
 # - _data/coauthor_institutions.json: the institutions of my co-authors with their location, number
 #   of joint works and the people, each linked to their website (map on the about page)
+# - _data/citation_stats.json: my total citations, h-index and citations per year (chart on the
+#   about page)
 import collections
 import glob
 import json
@@ -152,6 +154,16 @@ def collaborators(works, url=None):
     return sorted(out, key=lambda c: (-c['works'], c['name']))
 
 
+def author_stats():
+    """My citation totals and citations received per year, from my OpenAlex author record."""
+    a = get(f'authors/orcid:{ORCID}', select='id,cited_by_count,summary_stats,counts_by_year')
+    years = sorted((y['year'], y['cited_by_count']) for y in a['counts_by_year'])
+    first = next((i for i, (_, n) in enumerate(years) if n), len(years))  # from the first cited year
+    return dict(total=a['cited_by_count'], h_index=a['summary_stats']['h_index'],
+                i10_index=a['summary_stats']['i10_index'], openalex=short(a['id']),
+                years=[dict(year=y, count=n) for y, n in years[first:]])
+
+
 def write(path, data):
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
@@ -185,6 +197,8 @@ if __name__ == '__main__':
     by_doi = dois()
     cites = citations(by_doi)
     write('_data/citations.json', cites)
+    stats = author_stats()
+    write('_data/citation_stats.json', stats)
     works = my_works()
     collab = collaborators(works)
     write('_data/coauthor_institutions.json', collab)

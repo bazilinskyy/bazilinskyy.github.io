@@ -1,0 +1,23 @@
+{%- comment -%}
+Citations received per year, from _data/citation_stats.json (OpenAlex, refreshed nightly by
+scripts/make_openalex.py). Drawn at build time in the style of the publications chart; the
+current year is still counting, so its bar is muted.
+{%- endcomment -%}
+{%- assign stats = site.data.citation_stats -%}
+{%- if stats and stats.years.size > 0 -%}
+{%- assign peak = 1 -%}
+{%- for y in stats.years -%}{%- if y.count > peak -%}{%- assign peak = y.count -%}{%- endif -%}{%- endfor -%}
+{%- assign this_year = 'now' | date: '%Y' | plus: 0 -%}
+{%- assign step = 34 -%}
+{%- assign chartw = stats.years.size | times: step -%}
+<p>{{ stats.total }} citations, h-index {{ stats.h_index }}, i10-index {{ stats.i10_index }} (<a href="https://openalex.org/authors/{{ stats.openalex }}" target="_blank">OpenAlex</a>; updated nightly).</p>
+<div class="pub-chart-wrap">
+<svg class="pub-chart" width="{{ chartw }}" height="118" viewBox="0 0 {{ chartw }} 118" role="img" aria-label="Citations per year, peaking at {{ peak }}">
+{%- for y in stats.years -%}
+{%- assign h = y.count | times: 88 | divided_by: peak -%}
+{%- assign x = forloop.index0 | times: step -%}
+<g><title>{{ y.year }}: {{ y.count }} citation{% if y.count != 1 %}s{% endif %}{% if y.year == this_year %} so far{% endif %}</title><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ y.count }}</text><rect class="pub-chart-bar{% if y.year == this_year %} pub-chart-wd{% endif %}" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">{{ y.year }}</text></g>
+{%- endfor -%}
+</svg>
+</div>
+{%- endif -%}

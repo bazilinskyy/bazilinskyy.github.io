@@ -1,0 +1,56 @@
+{
+  "total": 2068,
+  "h_index": 24,
+  "i10_index": 36,
+  "openalex": "A5068886540",
+  "years": [
+    {
+      "year": 2015,
+      "count": 4
+    },
+    {
+      "year": 2016,
+      "count": 10
+    },
+    {
+      "year": 2017,
+      "count": 32
+    },
+    {
+      "year": 2018,
+      "count": 72
+    },
+    {
+      "year": 2019,
+      "count": 114
+    },
+    {
+      "year": 2020,
+      "count": 139
+    },
+    {
+      "year": 2021,
+      "count": 188
+    },
+    {
+      "year": 2022,
+      "count": 230
+    },
+    {
+      "year": 2023,
+      "count": 254
+    },
+    {
+      "year": 2024,
+      "count": 287
+    },
+    {
+      "year": 2025,
+      "count": 372
+    },
+    {
+      "year": 2026,
+      "count": 366
+    }
+  ]
+}
