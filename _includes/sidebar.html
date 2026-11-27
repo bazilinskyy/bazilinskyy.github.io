@@ -71,6 +71,8 @@
 </div>
 {% endif %}
 
+{% include news-box.html %}
+
 {% comment %}the box only when at least one event has not ended yet{% endcomment %}
 {% assign now_s = 'now' | date: '%s' | plus: 0 %}{% assign upcoming = 0 %}
 {% for event in site.data.events %}{% assign end_s = event.date_end | date: '%s' | plus: 0 %}{% if end_s > now_s %}{% assign upcoming = upcoming | plus: 1 %}{% endif %}{% endfor %}

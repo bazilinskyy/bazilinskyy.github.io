@@ -1,0 +1,34 @@
+{%- comment -%}
+"In the news" box of the sidebar, from _data/media.yml (newest first): the latest items with
+their outlet's logo, then the logos of the other outlets, each linking to its piece. Logos are
+images/media/<slug>.png (scripts/make_media_logos.py); an outlet without one shows its
+"short:" text, else its first letter. A media item can name its logo file with "logo:".
+{%- endcomment -%}
+{%- if site.data.media.size > 0 -%}
+{%- assign logos = site.static_files | where_exp: "f", "f.path contains '/images/media/'" | map: "basename" -%}
+{%- assign shown = 3 -%}
+<div class="well" style="padding: 0px">
+<h4 style="padding-left: 10px">In the news</h4>
+  <div class="news-box">
+  {%- assign seen = "|" -%}
+  {%- for item in site.data.media -%}
+    {%- assign name = item.logo | default: item.outlet | slugify -%}
+    {%- if item.url -%}{%- assign link = item.url -%}{%- else -%}{%- capture link -%}{{ site.baseurl }}/media/{{ item.file }}{%- endcapture -%}{%- endif -%}
+    {%- capture badge -%}{%- if logos contains name -%}<img class="news-logo" src="{{ site.baseurl }}/images/media/{{ name }}.png" alt="" loading="lazy" width="28" height="28" />{%- else -%}<span class="news-logo news-badge" aria-hidden="true">{% if item.short %}{{ item.short }}{% else %}{{ item.outlet | slice: 0 | upcase }}{% endif %}</span>{%- endif -%}{%- endcapture -%}
+    {%- if forloop.index <= shown -%}
+    <a class="news-item" href="{{ link }}" target="_blank">{{ badge }}<span><small>{{ item.outlet }}, {{ item.year }}</small>{{ item.title }}</span></a>
+      {%- assign seen = seen | append: item.outlet | append: "|" -%}
+      {%- if forloop.index == shown and forloop.length > shown -%}<div class="news-strip" aria-label="More coverage">{%- endif -%}
+    {%- else -%}
+      {%- assign key = "|" | append: item.outlet | append: "|" -%}
+      {%- unless seen contains key -%}
+        <a href="{{ link }}" target="_blank" title="{{ item.outlet }}: {{ item.title | escape }}" aria-label="{{ item.outlet }}: {{ item.title | escape }}">{{ badge }}</a>
+        {%- assign seen = seen | append: item.outlet | append: "|" -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- if forloop.last and forloop.length > shown -%}</div>{%- endif -%}
+  {%- endfor %}
+    <a href="{{ site.baseurl }}/about/#media-coverage">All media coverage →</a>
+  </div>
+</div>
+{%- endif -%}
