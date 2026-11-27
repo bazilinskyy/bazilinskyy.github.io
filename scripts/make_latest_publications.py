@@ -1,5 +1,6 @@
 # by Pavlo Bazilinskyy <pavlo.bazilinskyy@gmail.com>
-# Builds _data/latest_publications.json, the newest publications in the sidebar of the home page.
+# Builds _data/latest_publications.json, the newest publications in the sidebar of the home page,
+# and _data/feed_publications.json, the newest FEED for the Atom feed (feed.xml).
 # Publications have a year but no date, so "newest" is the day each _publications/*.md was
 # first committed (git history), then the year. Run nightly by .github/workflows/nightly.yml
 # (which checks out the full history for it); by hand:
@@ -9,9 +10,12 @@ import json
 import os
 import re
 import subprocess
+import time
 
 SHOW = 3
+FEED = 30
 OUT = '_data/latest_publications.json'
+FEED_OUT = '_data/feed_publications.json'
 
 
 def field(text, name):
@@ -32,9 +36,9 @@ def added(path):
     return days[-1] if days else ''
 
 
-def latest(pubs):
-    """The SHOW newest of [{name, title, image, venue, year, added}]: last added first, then the later year."""
-    return sorted(pubs, key=lambda p: (p['added'], p['year'], p['name']), reverse=True)[:SHOW]
+def latest(pubs, n=SHOW):
+    """The n newest of [{name, title, image, venue, year, added}]: last added first, then the later year."""
+    return sorted(pubs, key=lambda p: (p['added'], p['year'], p['name']), reverse=True)[:n]
 
 
 def _check():
@@ -57,3 +61,8 @@ if __name__ == '__main__':
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"{OUT}: {', '.join(p['name'] for p in data)}")
+    # uncommitted files have no day yet: the feed dates them today, the nightly run fixes it
+    feed = [dict(name=p['name'], added=p['added'] or time.strftime('%Y-%m-%d')) for p in latest(pubs, FEED)]
+    with open(FEED_OUT, 'w', encoding='utf-8') as f:
+        json.dump(feed, f, ensure_ascii=False, indent=2)
+    print(f'{FEED_OUT}: {len(feed)} publications')

@@ -1,0 +1,40 @@
+---
+layout: null
+permalink: /feed.xml
+sitemap: false
+---
+{%- comment -%}
+Atom feed of the newest publications, for feed readers. The order and dates (the day each paper
+was added to the site) come from _data/feed_publications.json, refreshed nightly by
+scripts/make_latest_publications.py.
+{%- endcomment -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title | xml_escape }}: publications</title>
+  <subtitle>New papers, preprints and theses by {{ site.author.name | xml_escape }}</subtitle>
+  <link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/atom+xml"/>
+  <link href="{{ '/p/' | absolute_url }}" rel="alternate" type="text/html"/>
+  <id>{{ '/p/' | absolute_url }}</id>
+  <author><name>{{ site.author.name | xml_escape }}</name><uri>{{ '/' | absolute_url }}</uri></author>
+  <updated>{{ site.data.feed_publications[0].added | default: site.time | date_to_xmlschema }}</updated>
+  {%- for item in site.data.feed_publications %}
+  {%- assign p = site.publications | where: "slug", item.name | first %}
+  {%- if p %}
+  <entry>
+    <title>{{ p.title | xml_escape }}</title>
+    <link href="{{ p.url | absolute_url }}" rel="alternate" type="text/html"/>
+    <id>{{ p.url | absolute_url }}</id>
+    <published>{{ item.added | date_to_xmlschema }}</published>
+    <updated>{{ item.added | date_to_xmlschema }}</updated>
+    <author><name>{{ p.authors | remove: '*' | xml_escape }}</name></author>
+    <summary type="html">{{ p.authors | xml_escape }}{% if p.year %} ({{ p.year }}){% endif %}. &lt;em&gt;{{ p.display | xml_escape }}&lt;/em&gt;{% if p.abstract %} {{ p.abstract | strip_html | xml_escape }}{% endif %}</summary>
+    {%- if p.image %}
+    <link rel="enclosure" href="{{ '/p/' | append: p.image | absolute_url }}" type="image/jpeg"/>
+    {%- endif %}
+    {%- for tag in p.tags %}
+    <category term="{{ tag | xml_escape }}"/>
+    {%- endfor %}
+  </entry>
+  {%- endif %}
+  {%- endfor %}
+</feed>
