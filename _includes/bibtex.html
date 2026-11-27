@@ -6,7 +6,7 @@
   //
   // The same entry is offered as APA and RIS too, made here from the BibTeX, so the page
   // carries no extra bytes for them: tabs above the entry switch the format, Copy copies
-  // the one shown (APA with its italics where the browser allows), and RIS can be saved
+  // the one shown (APA with its italics where the browser allows), and BibTeX and RIS can be saved
   // as a file for Zotero, EndNote or Mendeley.
   (function () {
     var ACCENT = { "'": '́', '`': '̀', '^': '̂', '"': '̈', '~': '̃', '=': '̄', '.': '̇', 'u': '̆', 'v': '̌', 'H': '̋', 'c': '̧' };
@@ -122,16 +122,27 @@
           var v = formats[name]();
           pre.textContent = v[0]; pre._html = v[1] || null;
           bar.querySelectorAll('.cite-tab').forEach(function (x) { x.classList.toggle('active', x === b); x.setAttribute('aria-selected', x === b); });
-          save.hidden = name !== 'RIS';
+          show(name);
         });
         bar.appendChild(b);
       });
-      var save = document.createElement('a');
-      save.className = 'cite-save'; save.textContent = 'Save .ris'; save.hidden = true;
-      save.download = e.key + '.ris';
+      // a file to save for the formats reference managers import; APA is only copied
+      var files = {
+        BibTeX: { ext: 'bib', type: 'application/x-bibtex', text: function () { return pre._bib; } },
+        RIS: { ext: 'ris', type: 'application/x-research-info-systems', text: function () { return ris(e); } }
+      };
+      var save = document.createElement('a'), current = 'BibTeX';
+      save.className = 'cite-save';
+      function show(name) {
+        current = name;
+        save.hidden = !files[name];
+        if (files[name]) { save.textContent = 'Save .' + files[name].ext; save.download = e.key + '.' + files[name].ext; }
+      }
       save.addEventListener('click', function () {
-        save.href = URL.createObjectURL(new Blob([ris(e) + '\n'], { type: 'application/x-research-info-systems' }));
+        var f = files[current];
+        save.href = URL.createObjectURL(new Blob([f.text() + '\n'], { type: f.type }));
       });
+      show('BibTeX');
       bar.appendChild(save);
       // Copy joins the bar, so its changing label cannot narrow the bar and move its line
       var copy = well.querySelector('.btn-copy');
