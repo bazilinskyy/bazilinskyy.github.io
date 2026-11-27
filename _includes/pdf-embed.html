@@ -1,0 +1,24 @@
+{%- comment -%}
+The PDF viewer at the bottom of a publication or course page. An <object> downloads the whole
+file as the page opens (3.4 MB on average, up to 19 MB), so the viewer is only created once it
+is about to scroll into view. Usage: {% include pdf-embed.html file="name.pdf" %}
+{%- endcomment -%}
+<div class="pdf-embed" data-pdf="{{ include.file }}" style="min-height: 700px">
+  <a href="{{ include.file }}" target="_blank">Open the PDF</a>
+</div>
+<script>
+(function () {
+  var box = document.currentScript.previousElementSibling;
+  function show() {
+    var o = document.createElement('object');
+    o.data = box.getAttribute('data-pdf') + '#view=FitH';
+    o.type = 'application/pdf'; o.width = '100%'; o.height = '700';
+    o.appendChild(box.firstElementChild);   // the link stays as the fallback where PDFs cannot be shown inline
+    box.appendChild(o);
+  }
+  if (!('IntersectionObserver' in window)) return show();
+  new IntersectionObserver(function (entries, obs) {
+    if (entries[0].isIntersecting) { obs.disconnect(); show(); }
+  }).observe(box);
+}());
+</script>

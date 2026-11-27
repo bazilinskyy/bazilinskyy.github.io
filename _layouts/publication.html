@@ -40,6 +40,6 @@ layout: gridlay
     {% include bibtex.html %}
 
     {% if page.pdf %}
-      <object data="{{ pdffile }}#view=FitH" width="100%" height="700" type="application/pdf"></object>
+      {% include pdf-embed.html file=pdffile %}
     {% endif %} 
 </div>
