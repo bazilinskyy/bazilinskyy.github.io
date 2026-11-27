@@ -28,8 +28,9 @@ SITE = {
 }
 
 
-# outlets shown as text instead: their site shows another brand (CyclingTips became Velo), or
-# its icon is too small or unclear (WIRED, BBC, Sveriges Radio: "short:" in media.yml)
+# outlets whose own site gives no usable icon, so their logo was picked by hand (2026-11-27):
+# WIRED from its YouTube avatar, BBC and Sveriges Radio from Google's favicon service (128 px),
+# CyclingTips from a 2018 Wayback copy of its site (it is now Velo). Never refetched.
 NONE = {'CyclingTips', 'WIRED', 'BBC Future', 'BBC Global News Podcast', 'Sveriges Radio'}
 
 
@@ -88,11 +89,11 @@ if __name__ == '__main__':
             continue
         seen.add(outlet)
         name = slug(outlet, e.get('url', ''))
-        if not name or outlet in NONE:
-            print(f'first letter instead: {outlet}')
-            continue
         dest = f'{OUT}/{name}.png'
-        if os.path.exists(dest):
+        if name and os.path.exists(dest):
+            continue
+        if not name or outlet in NONE:
+            print(f'no logo, text badge instead: {outlet}')
             continue
         site = SITE.get(outlet) or ('{0.scheme}://{0.netloc}'.format(urllib.parse.urlparse(e['url'])) if e.get('url') else None)
         if not site:

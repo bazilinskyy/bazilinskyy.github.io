@@ -1245,6 +1245,7 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
     gap: 6px;
     margin: 2px 0 10px;
 
-    a { line-height: 0; border-radius: 6px; transition: transform 0.12s ease; }
+    a { display: block; line-height: 0; border-radius: 6px; transition: transform 0.12s ease; }
+    .news-logo { display: flex; }  /* logos and text badges on one line, not on the text baseline */
     a:hover, a:focus { transform: translateY(-2px); }
 }
