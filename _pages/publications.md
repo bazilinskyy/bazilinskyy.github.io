@@ -150,7 +150,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 <span class="pub-authors">{{ publi.authors }}</span><br/>
 <em class="pub-venue">{{ publi.display }}</em>{% if publi.year %} (<span class="pub-year">{{publi.year}}</span>){% endif %}<br/>
 {% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
-{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">BIB</a>{% endif %}
+{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">CITE</a>{% endif %}
 {% if pdfpresent == true %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
 {% if publi.doi %}<a href="https://doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a>{% endif %}
 {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a>{% endif %}
@@ -223,7 +223,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 <span class="pub-authors">{{ publi.authors }}</span><br />
 <em class="pub-venue">{{ publi.display }}</em>{% if publi.year %} (<span class="pub-year">{{publi.year}}</span>){% endif %}<br/>
 {% if publi.abstract %}<a data-bs-toggle="collapse" href="#{{publi.image | remove: '.jpg'}}" class="btn-abstract" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.image | remove: '.jpg'}}">ABSTRACT</a>{% endif %}
-{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">BIB</a>{% endif %}
+{% if bibpresent == true %}<a data-bs-toggle="collapse" href="#{{publi.pdf}}2" class="btn-bib" style="text-decoration:none;color:#ebebeb;" role="button" aria-expanded="false" aria-controls="{{publi.pdf}}2">CITE</a>{% endif %}
 {% if pdfpresent == true %}<a href="{{ site.url }}{{ site.baseurl }}/p/{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
 {% if publi.doi %}<a href="https://doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a>{% endif %}
 {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a>{% endif %}

@@ -465,6 +465,32 @@ h4 {
     word-break: break-word;
 }
 
+/* BibTeX / APA / RIS switch above an entry (made by _includes/bibtex.html) */
+.cite-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3em;
+    margin-bottom: 6px;
+}
+.cite-tab {
+    padding: 0.05em 0.6em;
+    border: 1px solid var(--filter-border);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--filter-text);
+    cursor: pointer;
+    font-size: 0.78em;
+
+    &:hover { border-color: var(--filter-hover-border); color: var(--body-text); }
+    &.active { border-color: var(--filter-hover-border); color: var(--body-text); font-weight: 600; }
+}
+.cite-save {
+    font-size: 0.78em;
+    margin-left: 0.4em;
+    cursor: pointer;
+}
+
 .btn-copy {
     float: right;
     margin-left: 8px;

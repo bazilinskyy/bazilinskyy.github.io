@@ -3,14 +3,146 @@
   // than inlined at build time. A panel that is already open loads at once; a
   // collapsed one waits until it is first shown, which keeps them off the
   // initial request list on the listing page.
+  //
+  // The same entry is offered as APA and RIS too, made here from the BibTeX, so the page
+  // carries no extra bytes for them: tabs above the entry switch the format, Copy copies
+  // the one shown (APA with its italics where the browser allows), and RIS can be saved
+  // as a file for Zotero, EndNote or Mendeley.
   (function () {
+    var ACCENT = { "'": '́', '`': '̀', '^': '̂', '"': '̈', '~': '̃', '=': '̄', '.': '̇', 'u': '̆', 'v': '̌', 'H': '̋', 'c': '̧' };
+    function delatex(s) {
+      return s
+        .replace(/\\([`'^"~=.]|[uvHc](?=[\s{]))\s*\{?\\?([a-zA-Z])\}?/g, function (m, a, c) { return (c + ACCENT[a]).normalize('NFC'); })
+        .replace(/\\(&|%|\$|_|#)/g, '$1')
+        .replace(/--/g, '–')
+        .replace(/[{}]/g, '')
+        .replace(/\s+/g, ' ').trim();
+    }
+    function parse(bib) {          // {type, key, fields} of one entry; values may hold nested braces
+      var head = /@(\w+)\s*\{\s*([^,\s]+)\s*,/.exec(bib);
+      if (!head) return null;
+      var fields = {}, re = /(\w+)\s*=\s*/g, m;
+      re.lastIndex = head.index + head[0].length;
+      while ((m = re.exec(bib))) {
+        var i = re.lastIndex, v = '';
+        if (bib[i] === '{') {
+          for (var depth = 0, j = i; j < bib.length; j++) {
+            if (bib[j] === '{') depth++;
+            else if (bib[j] === '}' && --depth === 0) break;
+          }
+          v = bib.slice(i + 1, j); re.lastIndex = j + 1;
+        } else if (bib[i] === '"') {
+          j = bib.indexOf('"', i + 1); v = bib.slice(i + 1, j); re.lastIndex = j + 1;
+        } else {
+          v = /^[^,}\s]*/.exec(bib.slice(i))[0]; re.lastIndex = i + v.length;
+        }
+        fields[m[1].toLowerCase()] = delatex(v);
+      }
+      return { type: head[1].toLowerCase(), key: head[2], f: fields };
+    }
+    function people(s) {           // [{last, first}] from "Last, First and First Last"
+      return (s || '').split(/\s+and\s+/).filter(Boolean).map(function (n) {
+        var p = n.split(',');
+        if (p.length > 1) return { last: p[0].trim(), first: p.slice(1).join(',').trim() };
+        var w = n.trim().split(' ');
+        return { last: w.pop(), first: w.join(' ') };
+      });
+    }
+    function initials(first) {     // "Md Shadab" -> "M. S.", "J. C. F." stays, "Jean-Paul" -> "J.-P."
+      return first.split(/\s+/).filter(Boolean).map(function (w) {
+        return w.split('-').map(function (h) { return h.charAt(0).toUpperCase() + '.'; }).join('-');
+      }).join(' ');
+    }
+    function apaAuthors(list) {
+      var a = list.map(function (p) { return p.first ? p.last + ', ' + initials(p.first) : p.last; });
+      if (a.length > 20) return a.slice(0, 19).join(', ') + ', … ' + a[a.length - 1];
+      if (a.length > 1) return a.slice(0, -1).join(', ') + ', & ' + a[a.length - 1];
+      return a[0] || '';
+    }
+    function end(s) { return /[.?!]$/.test(s) ? s : s + '.'; }
+    // [text, html]: the html copy keeps APA's italics
+    function apa(e) {
+      var f = e.f, t = [], h = [], doi = f.doi ? 'https://doi.org/' + f.doi : (f.url || '');
+      var push = function (plain, it) { t.push(plain); h.push(it ? '<i>' + plain + '</i>' : plain); };
+      push(end(apaAuthors(people(f.author))) + ' (' + (f.year || 'n.d.') + ').');
+      var thesis = /thesis/.test(e.type);
+      if (e.type === 'article') {
+        push(end(f.title || ''));
+        var src = f.journal || '', vol = f.volume ? ', ' + f.volume : '', iss = f.number ? '(' + f.number + ')' : '';
+        t.push(src + vol + iss + (f.pages ? ', ' + f.pages : '') + '.');
+        h.push('<i>' + src + vol + '</i>' + iss + (f.pages ? ', ' + f.pages : '') + '.');
+      } else if (e.type === 'inproceedings' || e.type === 'incollection') {
+        push(end(f.title || ''));
+        var bt = f.booktitle || '', pp = f.pages ? ' (pp. ' + f.pages + ')' : '';
+        t.push('In ' + bt + pp + '.'); h.push('In <i>' + bt + '</i>' + pp + '.');
+        if (f.publisher) push(end(f.publisher));
+      } else if (thesis) {
+        var kind = e.type === 'phdthesis' || /phd|doctor/i.test(f.type || '') ? 'Doctoral dissertation' : "Master's thesis";
+        var school = f.school || f.institution || '';
+        t.push(f.title + ' [' + kind + (school ? ', ' + school : '') + '].');
+        h.push('<i>' + f.title + '</i> [' + kind + (school ? ', ' + school : '') + '].');
+      } else if (!f.institution && !f.publisher && !doi) {   // a preprint the site lists as submitted
+        t.push(f.title + ' [Manuscript submitted for publication].');
+        h.push('<i>' + f.title + '</i> [Manuscript submitted for publication].');
+      } else {
+        push(end(f.title || ''), true);
+        if (f.institution || f.publisher) push(end(f.institution || f.publisher));
+      }
+      if (doi) push(doi);
+      return [t.join(' '), h.join(' ')];
+    }
+    function ris(e) {
+      var f = e.f, ty = { article: 'JOUR', inproceedings: 'CPAPER', incollection: 'CHAP', phdthesis: 'THES', mastersthesis: 'THES', thesis: 'THES', techreport: 'RPRT' }[e.type] || 'GEN';
+      var out = ['TY  - ' + ty];
+      people(f.author).forEach(function (p) { out.push('AU  - ' + p.last + (p.first ? ', ' + p.first : '')); });
+      var add = function (tag, v) { if (v) out.push(tag + '  - ' + v); };
+      add('TI', f.title); add('T2', f.journal || f.booktitle); add('PY', f.year);
+      add('VL', f.volume); add('IS', f.number);
+      if (f.pages) { var pg = f.pages.split(/\s*[–-]+\s*/); add('SP', pg[0]); add('EP', pg[1]); }
+      add('PB', f.publisher || f.school || f.institution); add('CY', f.address);
+      add('DO', f.doi); add('UR', f.doi ? 'https://doi.org/' + f.doi : f.url);
+      out.push('ER  - ');
+      return out.join('\n');
+    }
+
+    function tabs(pre) {           // BibTeX / APA / RIS switch, added once the entry is in
+      var well = pre.parentNode;
+      if (!pre._bib || well.querySelector('.cite-tabs')) return;
+      var e = parse(pre._bib);
+      if (!e) return;
+      var bar = document.createElement('div');
+      bar.className = 'cite-tabs';
+      bar.setAttribute('role', 'tablist');
+      var formats = { BibTeX: function () { return [pre._bib]; }, APA: function () { return apa(e); }, RIS: function () { return [ris(e)]; } };
+      Object.keys(formats).forEach(function (name, i) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.textContent = name; b.className = 'cite-tab' + (i ? '' : ' active');
+        b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', i ? 'false' : 'true');
+        b.addEventListener('click', function () {
+          var v = formats[name]();
+          pre.textContent = v[0]; pre._html = v[1] || null;
+          bar.querySelectorAll('.cite-tab').forEach(function (x) { x.classList.toggle('active', x === b); x.setAttribute('aria-selected', x === b); });
+          save.hidden = name !== 'RIS';
+        });
+        bar.appendChild(b);
+      });
+      var save = document.createElement('a');
+      save.className = 'cite-save'; save.textContent = 'Save .ris'; save.hidden = true;
+      save.download = e.key + '.ris';
+      save.addEventListener('click', function () {
+        save.href = URL.createObjectURL(new Blob([ris(e) + '\n'], { type: 'application/x-research-info-systems' }));
+      });
+      bar.appendChild(save);
+      well.insertBefore(bar, pre);
+    }
+
     function load(pre) {
       var url = pre.getAttribute('data-src');
       if (!url) return pre._loading || Promise.resolve();
       pre.removeAttribute('data-src');          // never fetch the same entry twice
       pre._loading = fetch(url)
         .then(function (r) { return r.ok ? r.text() : Promise.reject(r.status); })
-        .then(function (text) { pre.textContent = text.trim(); })
+        .then(function (text) { pre._bib = text.trim(); pre.textContent = pre._bib; tabs(pre); })
         .catch(function () { pre.textContent = 'Could not load this BibTeX entry.'; });
       return pre._loading;
     }
@@ -58,7 +190,10 @@
       };
       // clipboard needs a secure context; fall back to selecting the text
       if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(pre.textContent).then(
+        var html = pre._html && window.ClipboardItem;   // APA keeps its italics in Word and Docs
+        (html ? navigator.clipboard.write([new ClipboardItem({
+          'text/plain': new Blob([pre.textContent], { type: 'text/plain' }),
+          'text/html': new Blob([pre._html], { type: 'text/html' }) })]) : navigator.clipboard.writeText(pre.textContent)).then(
           function () { say('Copied'); },
           function () { selectContents(pre); say('Press ⌘C'); });
       } else {
