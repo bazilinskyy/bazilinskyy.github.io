@@ -488,6 +488,12 @@ h4 {
     &:hover { background: var(--chart-bar-wd); }
     &.active { background: var(--chart-bar); border-color: var(--chart-bar); color: var(--body-text); font-weight: 600; }
 }
+/* Copy at the right end of the bar, wide enough for "Press ⌘C" so the label never resizes it */
+.cite-tabs .btn-copy {
+    float: none;
+    margin-left: auto;
+    min-width: 6.5em;
+}
 .cite-save {
     font-size: 0.85em;
     margin-left: 0.4em;

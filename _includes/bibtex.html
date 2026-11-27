@@ -133,6 +133,9 @@
         save.href = URL.createObjectURL(new Blob([ris(e) + '\n'], { type: 'application/x-research-info-systems' }));
       });
       bar.appendChild(save);
+      // Copy joins the bar, so its changing label cannot narrow the bar and move its line
+      var copy = well.querySelector('.btn-copy');
+      if (copy) bar.appendChild(copy);
       well.insertBefore(bar, pre);
     }
 
@@ -182,7 +185,7 @@
     document.addEventListener('click', function (e) {
       var btn = e.target.closest('.btn-copy');
       if (!btn) return;
-      var pre = btn.parentNode.querySelector('pre.bib-text');
+      var pre = btn.closest('.well-bib').querySelector('pre.bib-text');
       if (!pre) return;
       var say = function (msg) {
         btn.textContent = msg;
