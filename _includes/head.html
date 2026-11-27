@@ -25,7 +25,9 @@
   {% else %}
     {{ seo_tags }}
   {% endif %}
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url}}">
+  {% comment %}?v= changes with every build, so browsers fetch the new CSS at once instead of
+  keeping the old one for GitHub Pages' 10-minute cache{% endcomment %}
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url}}?v={{ site.time | date: '%s' }}">
 <link rel="shortcut icon" type ="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 {% comment %}icons are inline SVG (_includes/icon.html), so no icon font is loaded{% endcomment %}

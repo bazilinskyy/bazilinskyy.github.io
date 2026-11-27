@@ -470,23 +470,26 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.3em;
-    margin-bottom: 6px;
+    gap: 0.35em;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--collapse-border);
 }
 .cite-tab {
-    padding: 0.05em 0.6em;
-    border: 1px solid var(--filter-border);
+    padding: 0.15em 0.75em;
+    border: 1px solid var(--filter-hover-border);
     border-radius: 4px;
     background: transparent;
-    color: var(--filter-text);
+    color: var(--body-text);
     cursor: pointer;
-    font-size: 0.78em;
+    font-size: 0.85em;
+    line-height: 1.5;
 
-    &:hover { border-color: var(--filter-hover-border); color: var(--body-text); }
-    &.active { border-color: var(--filter-hover-border); color: var(--body-text); font-weight: 600; }
+    &:hover { background: var(--chart-bar-wd); }
+    &.active { background: var(--chart-bar); border-color: var(--chart-bar); color: var(--body-text); font-weight: 600; }
 }
 .cite-save {
-    font-size: 0.78em;
+    font-size: 0.85em;
     margin-left: 0.4em;
     cursor: pointer;
 }
