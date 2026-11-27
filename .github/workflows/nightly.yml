@@ -1,7 +1,7 @@
 # Every night: rebuilds js/crowd-globe.json (the globe on the home page) and _data/crowd.json
 # (the numbers on the research page) from the mapping of github.com/crowd-dataset/crowd; the
 # citation counts and co-author institutions from OpenAlex; and the
-# open-source cards from GitHub; the latest publications in the sidebar from the git history;
+# open-source cards from GitHub; the places of my talks (map on the talks page); the latest publications in the sidebar from the git history;
 # then asks GitHub Pages to rebuild the site.
 name: Nightly data
 
@@ -28,6 +28,8 @@ jobs:
       - run: python3 scripts/make_latest_publications.py
       - run: python3 scripts/make_openalex.py
         continue-on-error: true  # OpenAlex or GitHub being down must not stop the rest
+      - run: python3 scripts/make_talk_map.py
+        continue-on-error: true  # the geocoder is only asked about new places
       - run: python3 scripts/make_github.py
         continue-on-error: true
         env:
@@ -36,7 +38,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Update the nightly data' js/crowd-globe.json _data/crowd.json _data/citations.json \
-            _data/coauthor_institutions.json _data/repos.json _data/latest_publications.json
+            _data/coauthor_institutions.json _data/citation_stats.json _data/talk_map.json _data/repos.json _data/latest_publications.json
           git push
           gh api -X POST repos/${{ github.repository }}/pages/builds
         env:

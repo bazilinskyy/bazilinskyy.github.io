@@ -1,0 +1,349 @@
+[
+  {
+    "place": "Brisbane, QLD, Australia",
+    "lat": -27.469,
+    "lon": 153.0235,
+    "talks": [
+      {
+        "title": "Associate chair",
+        "kind": "AutoUI",
+        "year": 2025
+      },
+      {
+        "title": "Enhancing cyclist safety in the EU: A study on lateral overtaking distance across seven scenarios using lab and crowdsourced methods",
+        "kind": "Conference talk",
+        "year": 2025
+      },
+      {
+        "title": "Sustainability chair",
+        "kind": "AutoUI",
+        "year": 2025
+      }
+    ]
+  },
+  {
+    "place": "Kyoto, Japan",
+    "lat": 35.0116,
+    "lon": 135.7681,
+    "talks": [
+      {
+        "title": "Blind driving by means of auditory feedback",
+        "kind": "Conference talk",
+        "year": 2016
+      },
+      {
+        "title": "Sonifying the location of an object: A comparison of three methods",
+        "kind": "Conference talk",
+        "year": 2016
+      }
+    ]
+  },
+  {
+    "place": "Las Palmas de Gran Canaria, Spain",
+    "lat": 28.1289,
+    "lon": -15.4349,
+    "talks": [
+      {
+        "title": "An auditory dataset of passing vehicles recorded with a smartphone",
+        "kind": "Conference talk",
+        "year": 2018
+      },
+      {
+        "title": "Eye movements while cycling in GTA V",
+        "kind": "Conference talk",
+        "year": 2018
+      }
+    ]
+  },
+  {
+    "place": "Stanford, CA, USA",
+    "lat": 37.4265,
+    "lon": -122.1703,
+    "talks": [
+      {
+        "title": "Associate chair",
+        "kind": "AutoUI",
+        "year": 2024
+      },
+      {
+        "title": "Chair of open data",
+        "kind": "AutoUI",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "place": "The Hague, The Netherlands",
+    "lat": 52.0749,
+    "lon": 4.2697,
+    "talks": [
+      {
+        "title": "Auditory interface for automated driving",
+        "kind": "Conference talk",
+        "year": 2017
+      },
+      {
+        "title": "Usefulness and satisfaction of take-over requests for highly automated driving",
+        "kind": "Conference talk",
+        "year": 2017
+      }
+    ]
+  },
+  {
+    "place": "Valencia, Spain",
+    "lat": 39.4697,
+    "lon": -0.3763,
+    "talks": [
+      {
+        "title": "Human-centered Design",
+        "kind": "Session chair",
+        "year": 2026
+      },
+      {
+        "title": "Teaching multimodal interaction in cars to first-time users",
+        "kind": "Conference talk",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "place": "Antibes, France",
+    "lat": 43.5814,
+    "lon": 7.1237,
+    "talks": [
+      {
+        "title": "Coupled simulator for research on the interaction between pedestrians and (automated) vehicles",
+        "kind": "Conference talk",
+        "year": 2020
+      }
+    ]
+  },
+  {
+    "place": "Berlin, Germany",
+    "lat": 52.5174,
+    "lon": 13.3951,
+    "talks": [
+      {
+        "title": "Challenge your peers: What are the key considerations when designing an automotive HMI for multiple users?",
+        "kind": "Session chair",
+        "year": 2025
+      }
+    ]
+  },
+  {
+    "place": "Brussels, Belgium",
+    "lat": 50.8467,
+    "lon": 4.3525,
+    "talks": [
+      {
+        "title": "Erasmus Mundus in the future–charting the way forward",
+        "kind": "Session chair",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "place": "Budapest, Hungary",
+    "lat": 47.4979,
+    "lon": 19.0402,
+    "talks": [
+      {
+        "title": "Object-alignment performance in a head-mounted display versus a monitor",
+        "kind": "Conference talk",
+        "year": 2016
+      }
+    ]
+  },
+  {
+    "place": "Eindhoven, The Netherlands",
+    "lat": 51.4393,
+    "lon": 5.4786,
+    "talks": [
+      {
+        "title": "Associate chair",
+        "kind": "RO-MAN",
+        "year": 2025
+      }
+    ]
+  },
+  {
+    "place": "Florence, Italy",
+    "lat": 43.7698,
+    "lon": 11.2556,
+    "talks": [
+      {
+        "title": "Visual feedback for in-car voice assistants",
+        "kind": "Conference talk",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "place": "Gothenburg, Sweden",
+    "lat": 57.7072,
+    "lon": 11.967,
+    "talks": [
+      {
+        "title": "Work-in-Progress chair",
+        "kind": "AutoUI",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "place": "Graz, Styria, Austria",
+    "lat": 47.0709,
+    "lon": 15.4383,
+    "talks": [
+      {
+        "title": "Use of auditory interfaces for takeover requests in highly automated driving: A proposed driving simulator study",
+        "kind": "Conference talk",
+        "year": 2015
+      }
+    ]
+  },
+  {
+    "place": "Guangzhou, China",
+    "lat": 23.1288,
+    "lon": 113.259,
+    "talks": [
+      {
+        "title": "Work-in-Progress chair",
+        "kind": "AutoUI",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "place": "Krakow, Poland",
+    "lat": 50.0619,
+    "lon": 19.9369,
+    "talks": [
+      {
+        "title": "Crafting Your Experience: Mastering the Art of Showcasing Your Skills on Your CV",
+        "kind": "Session chair",
+        "year": 2025
+      }
+    ]
+  },
+  {
+    "place": "Las Vegas, NV, USA",
+    "lat": 36.1674,
+    "lon": -115.1484,
+    "talks": [
+      {
+        "title": "An international crowdsourcing study into people’s statements on fully automated driving",
+        "kind": "Conference talk",
+        "year": 2015
+      }
+    ]
+  },
+  {
+    "place": "Lisbon, Portugal",
+    "lat": 38.7078,
+    "lon": -9.1366,
+    "talks": [
+      {
+        "title": "How to be an entrepreneurial researcher",
+        "kind": "Session chair",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "place": "London, UK",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "talks": [
+      {
+        "title": "Performance engineering and testing. The challenges on mobile platforms",
+        "kind": "Conference talk",
+        "year": 2013
+      }
+    ]
+  },
+  {
+    "place": "Los Angeles, USA",
+    "lat": 34.0537,
+    "lon": -118.2428,
+    "talks": [
+      {
+        "title": "Blind driving by means of a steering-based predictor algorithm",
+        "kind": "Conference talk",
+        "year": 2017
+      }
+    ]
+  },
+  {
+    "place": "Montreal, Canada",
+    "lat": 45.5032,
+    "lon": -73.5698,
+    "talks": [
+      {
+        "title": "Blind driving by means of the track angle error",
+        "kind": "Conference talk",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "place": "New York, USA",
+    "lat": 40.7127,
+    "lon": -74.006,
+    "talks": [
+      {
+        "title": "Crowdsourced assessment of 227 text-based eHMIs for a crossing scenario",
+        "kind": "Conference talk",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "place": "Nice, France",
+    "lat": 43.7009,
+    "lon": 7.2684,
+    "talks": [
+      {
+        "title": "Public Transportation and Safety II",
+        "kind": "Session chair",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "place": "Orlando, FL, USA",
+    "lat": 28.5421,
+    "lon": -81.379,
+    "talks": [
+      {
+        "title": "Assessing the clarity of eHMIs via crowdsourcing",
+        "kind": "Conference talk",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "place": "Seoul, South Korea",
+    "lat": 37.5667,
+    "lon": 126.9783,
+    "talks": [
+      {
+        "title": "Get out of the way! Examining eHMIs in critical driver-pedestrian encounters in a coupled simulator",
+        "kind": "Conference talk",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "place": "Toulouse, France",
+    "lat": 43.6045,
+    "lon": 1.4442,
+    "talks": [
+      {
+        "title": "Environmental impact of transportation on Europe: view of science and industry",
+        "kind": "Session chair",
+        "year": 2019
+      }
+    ]
+  }
+]

@@ -5,6 +5,11 @@ layout: gridlay
 permalink: /talks/
 ---
 
+{% if site.data.talk_map %}
+# Where I have presented
+{% include talks-map.html %}
+{% endif %}
+
 # Chairing duties for conferences
 
 {% if site.data.chairing_autoui %}

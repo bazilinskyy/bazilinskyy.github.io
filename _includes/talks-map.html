@@ -1,0 +1,101 @@
+{%- comment -%}
+Where I gave talks or chaired, from _data/talk_map.json (scripts/make_talk_map.py, nightly).
+Drawn like the collaborations map: world plus Europe enlarged, dots sized by the number of
+talks, click for the list. The libraries load only once the map scrolls into view.
+{%- endcomment -%}
+<style>
+#talks-map { --sea:#dfeaf6; --land:#f8fafc; --border:#cbd5e1; --dot:#2563eb; --frame:#64748b; margin: 4px 0 12px; position: relative }
+[data-theme="dark"] #talks-map { --sea:#0d1a2b; --land:#1f2a3a; --border:#2f3e55; --dot:#5b8def; --frame:#8899a6 }
+#talks-map svg { display:block; width:100%; height:auto; border-radius:5px }
+#talks-map-note { font-size:90%; text-align:center; margin-top:4px }
+#talks-map circle.place { cursor:pointer }
+#talks-pop { position:absolute; display:none; z-index:5; max-width:320px; max-height:260px; overflow:auto; padding:8px 26px 8px 10px;
+  background:var(--well-bg, #192734); border:1px solid var(--well-border, #2e3f4d); border-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,.35);
+  font-size:13px; text-align:left }
+#talks-pop b { display:block; margin-bottom:4px }
+#talks-pop ul { margin:0; padding-left:16px } #talks-pop small { opacity:.75 }
+#talks-pop button { position:absolute; top:2px; right:4px; border:0; background:none; color:inherit; font-size:16px; cursor:pointer }
+</style>
+<div id="talks-map" markdown="0">
+  <svg viewBox="0 0 960 470" role="img" aria-label="Map of the places where I gave talks or chaired sessions, with Europe enlarged"></svg>
+  <div id="talks-map-note"></div>
+  <div id="talks-pop" role="dialog" aria-label="Talks at this place"></div>
+</div>
+<script>
+(function () {
+  const data = {{ site.data.talk_map | jsonify }};
+  const EUROPE = [[-11, 35.5], [31, 63]], INSET = [12, 246, 268, 212];  // lon/lat box; x, y, w, h of the inset in the South Pacific
+  const box = document.getElementById('talks-map'), svg = box.querySelector('svg'), NS = 'http://www.w3.org/2000/svg';
+  const el = (name, attrs, parent) => {
+    const e = document.createElementNS(NS, name);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    return parent.appendChild(e);
+  };
+  const talks = data.reduce((n, d) => n + d.talks.length, 0);
+  const countries = new Set(data.map(d => d.place.split(', ').pop())).size;
+  document.getElementById('talks-map-note').textContent =
+    `${talks} talks and chairing roles in ${data.length} cities in ${countries} countries (online ones not shown). Click a dot to see them.`;
+
+  const pop = document.getElementById('talks-pop');
+  function show(d, e) {
+    const close = Object.assign(document.createElement('button'), {type: 'button', textContent: '×', title: 'Close'});
+    close.addEventListener('click', () => { pop.style.display = 'none'; });
+    const list = document.createElement('ul');
+    for (const t of d.talks) {
+      const li = list.appendChild(document.createElement('li'));
+      li.append(t.title + ' ', Object.assign(document.createElement('small'), {textContent: `(${t.kind}, ${t.year})`}));
+    }
+    pop.replaceChildren(close, Object.assign(document.createElement('b'), {textContent: d.place}), list);
+    pop.style.display = 'block';
+    const b = box.getBoundingClientRect(), r = e.target.getBoundingClientRect();
+    const x = (e.clientX || r.left + r.width / 2) - b.left, y = (e.clientY || r.top + r.height / 2) - b.top;
+    pop.style.left = Math.max(0, Math.min(x + 10, b.width - pop.offsetWidth)) + 'px';
+    pop.style.top = Math.max(0, Math.min(y + 10, b.height - pop.offsetHeight)) + 'px';
+  }
+  document.addEventListener('click', e => { if (!pop.contains(e.target)) pop.style.display = 'none'; });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') pop.style.display = 'none'; });
+
+  function layer(g, proj, w, scale) {
+    const path = d3.geoPath(proj);
+    el('path', {d: path(w.land), fill: 'var(--land)'}, g);
+    el('path', {d: path(w.borders), fill: 'none', stroke: 'var(--border)', 'stroke-width': 0.5}, g);
+    for (const d of data.slice().reverse()) {  // most talks last, so on top
+      const [x, y] = proj([d.lon, d.lat]);
+      const c = el('circle', {class: 'place', cx: x, cy: y, r: scale * (3 + 2 * Math.sqrt(d.talks.length)), fill: 'var(--dot)', 'fill-opacity': 0.75,
+        stroke: 'var(--land)', 'stroke-width': 0.8, tabindex: 0, role: 'button', 'aria-label': `${d.place}: show the talks`}, g);
+      el('title', {}, c).textContent = `${d.place}: ${d.talks.length}`;
+      c.addEventListener('click', e => { e.stopPropagation(); show(d, e); });
+      c.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(d, e); } });
+    }
+    return path;
+  }
+
+  const script = src => new Promise((ok, fail) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
+  async function draw() {
+    if (!window.d3) await script('https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js');
+    if (!window.topojson) await script('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js');
+    const atlas = await (await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json')).json();
+    const w = {land: topojson.feature(atlas, atlas.objects.land), borders: topojson.mesh(atlas, atlas.objects.countries, (a, b) => a !== b)};
+    const world = d3.geoNaturalEarth1().fitExtent([[6, 6], [954, 464]], {type: 'Sphere'});
+    el('path', {d: d3.geoPath(world)({type: 'Sphere'}), fill: 'var(--sea)'}, svg);
+    layer(el('g', {}, svg), world, w, 1);
+    const [[lw, ls], [le, ln]] = EUROPE, pts = [];  // the Europe box, curving with the projection
+    for (let x = lw; x <= le; x += 2) pts.push([x, ls]);
+    for (let x = le; x >= lw; x -= 2) pts.push([x, ln]);
+    el('path', {d: d3.geoPath(world)({type: 'LineString', coordinates: [...pts, pts[0]]}), fill: 'none', stroke: 'var(--frame)', 'stroke-width': 1, 'stroke-dasharray': '3 2'}, svg);
+    const [x, y, wd, ht] = INSET;
+    const europe = d3.geoAzimuthalEqualArea().rotate([-(lw + le) / 2, -(ls + ln) / 2])
+      .fitExtent([[x + 4, y + 4], [x + wd - 4, y + ht - 4]], {type: 'MultiPoint', coordinates: [[lw, ls], [le, ls], [lw, ln], [le, ln], [(lw + le) / 2, ln], [(lw + le) / 2, ls]]});
+    el('rect', {x, y, width: wd, height: ht, rx: 4}, el('clipPath', {id: 'talks-eu'}, el('defs', {}, svg)));
+    el('rect', {x, y, width: wd, height: ht, rx: 4, fill: 'var(--sea)'}, svg);
+    layer(el('g', {'clip-path': 'url(#talks-eu)'}, svg), europe, w, 0.75);
+    el('rect', {x, y, width: wd, height: ht, rx: 4, fill: 'none', stroke: 'var(--frame)', 'stroke-width': 1, 'stroke-dasharray': '3 2'}, svg);
+    el('text', {x: x + 8, y: y + 16, fill: 'var(--frame)', 'font-size': 12}, svg).textContent = 'Europe';
+  }
+
+  let started = false;
+  new IntersectionObserver(([en], obs) => {
+    if (en.isIntersecting && !started) { started = true; obs.disconnect(); draw().catch(e => console.error('talks map:', e)); }
+  }).observe(box);
+})();
+</script>
