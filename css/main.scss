@@ -1223,6 +1223,7 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 }
 .news-logo {
     flex: none;
+    margin: 0;  /* the site-wide image margin would push logos below the text badges */
     width: 28px;
     height: 28px;
     border-radius: 6px;
