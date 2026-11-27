@@ -138,6 +138,16 @@ it appears here too. Nothing on this page is written twice.
 {% endfor %}
 </div>
 
+{% if site.data.memberships %}
+## Academic service
+
+<div class="rowl1 cv-list">
+{% for m in site.data.memberships %}
+{{ forloop.index }}. <strong>{{ m.title }}</strong> ({{ m.period }}) – {% if m.url %}<a href="{{ m.url }}" target="_blank">{% endif %}{{ m.org }}{% if m.url %}</a>{% endif %}.
+{% endfor %}
+</div>
+{% endif %}
+
 {% if site.data.research_visits %}
 ## Research visits
 
