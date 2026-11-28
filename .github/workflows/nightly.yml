@@ -2,7 +2,7 @@
 # (the numbers on the research page) from the mapping of github.com/crowd-dataset/crowd; the
 # citation counts and co-author institutions from OpenAlex; and the
 # open-source cards from GitHub; the places of my talks (map on the talks page); the latest publications in the sidebar from the git history;
-# then asks GitHub Pages to rebuild the site.
+# thumbnails of new publication images; then asks GitHub Pages to rebuild the site.
 name: Nightly data
 
 on:
@@ -35,11 +35,16 @@ jobs:
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |  # thumbnails of new publication images (the list shows them ~110 px wide)
+          python3 -m venv /tmp/thumbs && /tmp/thumbs/bin/pip install -q pillow
+          /tmp/thumbs/bin/python scripts/make_thumbs.py
+        continue-on-error: true
       - run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add images/thumbs
           git commit -m 'Update the nightly data' js/crowd-globe.json _data/crowd.json _data/citations.json \
-            _data/coauthor_institutions.json _data/citation_stats.json _data/talk_map.json _data/bib.json _data/repos.json _data/latest_publications.json _data/feed_publications.json
+            _data/coauthor_institutions.json _data/citation_stats.json _data/talk_map.json _data/bib.json _data/repos.json _data/latest_publications.json _data/feed_publications.json images/thumbs
           git push
           gh api -X POST repos/${{ github.repository }}/pages/builds
         env:

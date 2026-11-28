@@ -106,8 +106,6 @@ permalink: /about/
 ## Collaborations
 <div class="rowl1" style="padding-top: 10px;">
 
-{% include collab-map.html %}
-
 {% for collaborator in site.data.collaborators %}
 {{ forloop.index }}. {% if collaborator.name_url %}<a href="{{ collaborator.name_url }}" target="_blank">{% endif %}<strong>{{ collaborator.name }}</strong>{% if collaborator.name_url %}</a>{% endif %} ({{ collaborator.field }}, {% if collaborator.institution_url %}<a href="{{ collaborator.institution_url }}" target="_blank">{% endif %}{{ collaborator.institution }}{% if collaborator.institution_url %}</a>{% endif %}).
 {% endfor %}
@@ -142,5 +140,12 @@ permalink: /about/
 {% for item in site.data.media %}
 {{ forloop.index }}. {% if item.url %}<a href="{{ item.url }}" target="_blank"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}, {{ item.outlet }} ({{ item.year }}){% if item.file %} [<a href="{{ site.url }}{{ site.baseurl }}/media/{{ item.file }}" target="_blank">copy</a>]{% endif %}.
 {% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.coauthor_institutions %}
+## Where my co-authors are
+<div class="rowl1" style="padding-top: 10px;" markdown="0">
+{% include collab-map.html %}
 </div>
 {% endif %}

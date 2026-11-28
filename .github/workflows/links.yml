@@ -20,7 +20,7 @@ jobs:
         with:
           ruby-version: '3.1'
           bundler-cache: true
-      - run: bundle exec jekyll build
+      - run: bundle exec jekyll build && mkdir -p lychee
       - uses: lycheeverse/lychee-action@v2
         id: lychee
         with:
@@ -28,10 +28,14 @@ jobs:
           # 502/503: server errors, nearly always temporary (doi.org, 4TU, TU Delft repository).
           # --fallback-extensions: GitHub Pages serves /p/name from p/name.html.
           # publications/ only holds redirect stubs to /p/.
+          # A browser user agent and a cookie jar: some university sites drop requests from bots
+          # (timeouts) and some redirect until a cookie is set (vti.se: 307), though both work.
           args: >-
             --root-dir ${{ github.workspace }}/_site --fallback-extensions html
             --accept 200..=299,403,429,502,503,999 --max-retries 3 --retry-wait-time 10
-            --timeout 30 --exclude-path _site/publications --no-progress '_site/**/*.html'
+            --timeout 45 --cookie-jar lychee/cookies.json
+            --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
+            --exclude-path _site/publications --no-progress '_site/**/*.html'
           output: lychee/out.md
           fail: false
       - env:

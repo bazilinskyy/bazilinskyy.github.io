@@ -5,11 +5,6 @@ layout: gridlay
 permalink: /talks/
 ---
 
-{% if site.data.talk_map %}
-# Where I have presented
-{% include talks-map.html %}
-{% endif %}
-
 # Chairing duties for conferences
 
 {% if site.data.chairing_autoui %}
@@ -79,7 +74,12 @@ permalink: /talks/
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for outreach in site.data.outreach %}
-{{ forloop.index }}. <a href="{{ outreach.url | replace:'.html', '' }}" target="_blank"><strong>{{ outreach.title }}</strong></a> ({{ outreach.year }})<br/> {{outreach.event}}, {{outreach.place}}{% if workshop.online %} (online){% endif %}.
+{{ forloop.index }}. <a href="{{ outreach.url | replace:'.html', '' }}" target="_blank"><strong>{{ outreach.title }}</strong></a> ({{ outreach.year }})<br/> {{outreach.event}}, {{outreach.place}}{% if outreach.online %} (online){% endif %}.
 {% endfor %}
 </div>
+{% endif %}
+
+{% if site.data.talk_map %}
+# Where I have presented
+{% include talks-map.html %}
 {% endif %}

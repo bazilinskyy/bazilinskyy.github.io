@@ -1,0 +1,12 @@
+{%- comment -%}
+A publication's image in the publications list: the 240 px thumbnail from images/thumbs
+(scripts/make_thumbs.py) where the list shows it small, the original on phones, where it spans
+the screen (below $tablet-width, 600 px). The page assigns "thumbs" (the thumbnail file names);
+without a thumbnail the original is used. Usage: {% include pub-thumb.html publi=publi %}
+{%- endcomment -%}
+{%- assign tn = include.publi.image | split: '.' | first -%}
+{%- if thumbs contains tn -%}
+<img loading="lazy" src="{{ site.baseurl }}/images/thumbs/{{ tn }}.jpg" srcset="{{ site.baseurl }}/images/thumbs/{{ tn }}.jpg 240w, {{ site.baseurl }}/p/{{ include.publi.image }} 600w" sizes="(max-width: 600px) 95vw, 120px" alt="{{ include.publi.title | escape }}" class="img-responsive"/>
+{%- else -%}
+<img loading="lazy" src="{{ site.baseurl }}/p/{{ include.publi.image }}" alt="{{ include.publi.title | escape }}" class="img-responsive"/>
+{%- endif -%}

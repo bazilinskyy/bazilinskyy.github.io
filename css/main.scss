@@ -39,9 +39,10 @@ $phone-width: 480px;
     --reset-hover-color:      #8899a6;
     --reset-hover-border:     #2e3f4d;
     --pub-count-color:        #4d6070;
-    --chart-bar:              #33566e;
-    --chart-bar-wd:           #2b3f4d;
-    --chart-bar-hover:        #4a7ea3;
+    --chart-bar:              #4a7ea3;
+    --chart-bar-wd:           #34505f;
+    --chart-bar-hover:        #6fa3c8;
+    --chart-label:            #8fa0ad;
     --mark-bg:                #4d431c;
     --mark-text:              #ffdf80;
     --pub-tag-bg:             #1a2633;
@@ -156,6 +157,7 @@ $phone-width: 480px;
     --chart-bar:              #9db9cd;
     --chart-bar-wd:           #c4d2dc;
     --chart-bar-hover:        #5b8fb3;
+    --chart-label:            #546E7A;
     --mark-bg:                #fff3b8;
     --mark-text:              #4a3c00;
     --pub-tag-bg:             rgba(0, 0, 0, 0.07);
@@ -739,7 +741,8 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 
 /* Output per year */
 /* the chart keeps its drawn size and the wrapper scrolls, so bars and labels
-   stay the same whatever the viewport or however many years accumulate */
+   stay the same whatever the viewport or however many years accumulate; a
+   script scrolls it to the newest years on load */
 .pub-chart-wrap {
     overflow-x: auto;
     overflow-y: hidden;
@@ -768,7 +771,7 @@ h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:h
 
 .pub-chart-y,
 .pub-chart-n {
-    fill: var(--filter-label);
+    fill: var(--chart-label);
     font-size: 9px;
     text-anchor: middle;
 }

@@ -62,8 +62,10 @@
 <div class="well" style="padding: 0px">
 <h4 style="padding-left: 10px">Latest publications</h4>
   <div style="display: block; border-top: 1px solid rgba(145,165,180,.6); padding: 10px">
+  {% assign thumbs = site.static_files | where_exp: "f", "f.path contains '/images/thumbs/'" | map: "basename" %}
   {% for p in site.data.latest_publications %}
-    <a class="latest-pub" href="{{ site.baseurl }}/p/{{ p.name }}"><img src="{{ site.baseurl }}/p/{{ p.image }}" alt="" loading="lazy" /><span>{{ p.title }}</span></a>
+    {% assign tn = p.image | split: '.' | first %}
+    <a class="latest-pub" href="{{ site.baseurl }}/p/{{ p.name }}"><img src="{{ site.baseurl }}{% if thumbs contains tn %}/images/thumbs/{{ tn }}.jpg{% else %}/p/{{ p.image }}{% endif %}" alt="" loading="lazy" /><span>{{ p.title }}</span></a>
     <div class="latest-pub-venue">{{ p.venue }}{% if p.year != "" %}, {{ p.year }}{% endif %}</div>
   {% endfor %}
     <a href="{{ site.baseurl }}/p/">All publications →</a>

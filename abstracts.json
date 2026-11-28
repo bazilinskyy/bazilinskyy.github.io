@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /p/abstracts.json
+sitemap: false
+---
+{%- comment -%}
+The abstracts of the publications page, keyed by the id of each abstract box. The page itself
+leaves them out (a third of its size) and fetches this file the first time someone opens an
+abstract or searches.
+{%- endcomment -%}
+{
+{%- assign first = true -%}
+{%- for publi in site.publications -%}
+{%- if publi.abstract and publi.image -%}
+{%- unless first -%},{%- endunless -%}{%- assign first = false %}
+{{ publi.image | remove: '.jpg' | jsonify }}: {{ publi.abstract | strip | jsonify }}
+{%- endif -%}
+{%- endfor %}
+}

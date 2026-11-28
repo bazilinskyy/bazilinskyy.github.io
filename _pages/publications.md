@@ -33,6 +33,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {%- assign step = 34 -%}
 {%- assign chartw = shown | times: step -%}
 {%- assign ordered = site.data.years | reverse -%}
+{%- assign thumbs = site.static_files | where_exp: "f", "f.path contains '/images/thumbs/'" | map: "basename" -%}
 
 # Publications
 
@@ -41,6 +42,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {% assign i = 0 %}{% for y in ordered %}{% assign of_year = site.publications | where: "year", y.year %}{% assign n_pre = of_year | where_exp: "p", "p.tags contains 'preprint'" | size %}{% assign n_keep = of_year | where: "working", false | size %}{% assign n = of_year | size | minus: n_pre | plus: n_keep %}{% if n > 0 %}{% assign h = n | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#{{ y.year }}"><title>{{ y.year }}: {{ n }} publication{% if n != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ n }}</text><rect class="pub-chart-bar" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">{{ y.year }}</text></a>{% assign i = i | plus: 1 %}{% endif %}{% endfor %}{% if undated > 0 %}{% assign h = undated | times: 88 | divided_by: peak %}{% assign x = i | times: step %}<a href="#working-documents"><title>Working documents: {{ undated }} publication{% if undated != 1 %}s{% endif %}</title><rect class="pub-chart-hit" x="{{ x }}" y="0" width="{{ step }}" height="118"></rect><text class="pub-chart-n" x="{{ x | plus: 17 }}" y="{{ 96 | minus: h }}">{{ undated }}</text><rect class="pub-chart-bar pub-chart-wd" x="{{ x | plus: 4 }}" y="{{ 100 | minus: h }}" width="{{ step | minus: 8 }}" height="{{ h }}" rx="2"></rect><text class="pub-chart-y" x="{{ x | plus: 17 }}" y="114">WD</text></a>{% endif %}
 </svg>
 </div>
+<script>(function (w) { w.scrollLeft = w.scrollWidth; })(document.currentScript.previousElementSibling);  // newest years in view on phones</script>
 
 <div id="pub-filters">
 <div class="filter-group">
@@ -141,7 +143,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
+{% include pub-thumb.html publi=publi %}
 {% endif %}
 </li>
 <li class="flex-item2">
@@ -156,9 +158,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {% if publi.code %}<a href="{{ publi.code }}" target="_blank"><button class="btn-code">CODE</button></a>{% endif %}
 {% if publi.suppmat %}<a href="{{ publi.suppmat }}" target="_blank"><button class="btn-suppmat">SUPPLEMENT</button></a>{% endif %}
 {% if publi.abstract %}
-<div class="collapse" id="{{publi.image | remove: '.jpg'}}"><div class="well-abstract">
-{{publi.abstract}}
-</div></div>
+<div class="collapse" id="{{publi.image | remove: '.jpg'}}"><div class="well-abstract" data-abs="{{publi.image | remove: '.jpg'}}"></div></div>
 {% endif %}
 {% if bibpresent == true %}
 <div class="collapse" id="{{publi.pdf}}2"><div class="well-bib">
@@ -213,7 +213,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 <ul class="flex-container">
 <li class="flex-item1">
 {% if publi.image %}
-<img loading="lazy" src="{{ site.baseurl }}/p/{{ publi.image }}" alt="{{ publi.title | escape }}" class="img-responsive"/>
+{% include pub-thumb.html publi=publi %}
 {% endif %}
 </li>
 <li class="flex-item2">
@@ -229,9 +229,7 @@ Bar heights are relative to the busiest year; each bar links to its heading.
 {% if publi.suppmat %}<a href="{{ publi.suppmat }}" target="_blank"><button class="btn-suppmat">SUPPLEMENT</button></a>{% endif %}
 {% if publi.abstract %}
 <br/>
-<div class="collapse" id="{{publi.image | remove: '.jpg'}}"><div class="well-abstract">
-{{publi.abstract}}
-</div></div>
+<div class="collapse" id="{{publi.image | remove: '.jpg'}}"><div class="well-abstract" data-abs="{{publi.image | remove: '.jpg'}}"></div></div>
 {% endif %}
 {% if bibpresent == true %}
 <div class="collapse" id="{{publi.image | remove: '.jpg'}}2"><div class="well-bib">
@@ -256,9 +254,8 @@ Download all papers in bib file <a href="{{ site.baseurl }}/p/bazilinskyy.bib">h
 var groups = document.querySelectorAll('.filter-group');
 var search = document.getElementById('pub-search');
 
-// Abstracts are already in the page inside each entry, so searching them costs no extra
-// bytes. Cache the plain text of every highlightable field once so a keystroke never has
-// to walk the DOM. Each selector must wrap text only, since marking rewrites innerHTML.
+// Cache the plain text of every highlightable field once so a keystroke never has
+// to walk the DOM (abstracts once they arrive, see loadAbstracts). Each selector must wrap text only, since marking rewrites innerHTML.
 var MARKABLE = '.pub-title, .pub-authors, .pub-venue, .pub-year, .pub-tag';
 var entryData = new Map();
 document.querySelectorAll('.publication-entry').forEach(function (entry) {
@@ -273,6 +270,24 @@ abstractLower: abstractEl ? abstractEl.textContent.toLowerCase() : ''
 });
 });
 function field(el) { return { el: el, text: el.textContent, sig: '' }; }
+// The abstracts are not in the page (a third of its size): /p/abstracts.json is fetched the first
+// time someone opens one or uses the search, then fills every box and the search index.
+var loading = null;
+function loadAbstracts() {
+if (!loading) loading = fetch('{{ site.baseurl }}/p/abstracts.json').then(function (r) { return r.json(); }).then(function (d) {
+document.querySelectorAll('.well-abstract[data-abs]').forEach(function (el) { el.innerHTML = d[el.getAttribute('data-abs')] || ''; });
+entryData.forEach(function (data) {
+if (!data.abstract) return;
+data.abstract.text = data.abstract.el.textContent;
+data.abstract.sig = '';
+data.abstractLower = data.abstract.text.toLowerCase();
+});
+applyFilters();
+}).catch(function () { loading = null; });
+return loading;
+}
+document.querySelectorAll('.btn-abstract').forEach(function (a) { a.addEventListener('click', loadAbstracts); });
+search.addEventListener('focus', loadAbstracts);
 function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 function escapeHtml(s) { return s.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
 function mark(f, terms) {
@@ -392,6 +407,7 @@ applyFilters();
 });
 readUrl();
 applyFilters();
+if (search.value.trim()) loadAbstracts();   // a shared link with ?q= searches the abstracts too
 })();
 </script>
 
