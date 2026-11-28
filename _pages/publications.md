@@ -249,6 +249,13 @@ Download all papers in bib file <a href="{{ site.baseurl }}/p/bazilinskyy.bib">h
 
 \* Joint first author.
 
+{% if site.data.citation_stats %}
+## Citations
+<div class="rowl1" style="padding-top: 10px;" markdown="0">
+{% include citation-chart.html %}
+</div>
+{% endif %}
+
 <script>
 (function () {
 var groups = document.querySelectorAll('.filter-group');
@@ -331,6 +338,7 @@ if (match) visible++;
 var countEl = document.getElementById('pub-count');
 if (countEl) countEl.textContent = visible + ' paper' + (visible !== 1 ? 's' : '');
 document.querySelectorAll('h2').forEach(function (h2) {
+if (h2.id === 'citations') return;      // not a group of papers: always shown
 var hasPaper = false;
 var el = h2.nextElementSibling;
 while (el && el.tagName !== 'H2') {

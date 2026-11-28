@@ -95,13 +95,6 @@ permalink: /about/
 </div>
 {% endif %}
 
-{% if site.data.citation_stats %}
-## Citations
-<div class="rowl1" style="padding-top: 10px;" markdown="0">
-{% include citation-chart.html %}
-</div>
-{% endif %}
-
 {% if site.data.collaborators %}
 ## Collaborations
 <div class="rowl1" style="padding-top: 10px;">
