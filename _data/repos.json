@@ -6,7 +6,7 @@
     "language": "C#",
     "stars": 46,
     "forks": 35,
-    "pushed": "2026-11-26"
+    "pushed": "2026-11-28"
   },
   {
     "name": "crowd-dataset/crowd",
@@ -15,7 +15,7 @@
     "language": "PostScript",
     "stars": 14,
     "forks": 4,
-    "pushed": "2026-11-26"
+    "pushed": "2026-11-28"
   },
   {
     "name": "multiped",
@@ -32,8 +32,8 @@
     "description": "Coupled CARLA: a human-factors driving simulator for real places. Any place on Earth from open data, SUMO traffic, drivers, pedestrians, cyclists, AV passengers and drone pilots in one world (successor of coupled-sim)",
     "language": "Python",
     "stars": 1,
-    "forks": 0,
-    "pushed": "2026-11-25"
+    "forks": 1,
+    "pushed": "2026-11-28"
   },
   {
     "name": "trust-crowdsourced",
